@@ -1,0 +1,53 @@
+@import "../variables.less";
+header {
+  .dropdown-menu {
+    float: none;
+    left: auto;
+  }
+  .dropdown-menu > li > a:focus, 
+  .dropdown-menu > li > a:hover {
+    background-image: none !important;
+  }
+  .nav > li > a {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .nav > li > a:hover,
+  .nav > li > a:focus {
+    background-color: transparent !important;
+  }
+  a.label:hover, a.label:focus {
+    color: @color-primary !important;
+  }
+  .nav-item-back a {
+    text-align: left;
+  }
+  a {
+    text-decoration: none !important;
+  }
+  .label {
+    padding-left: 0px;
+    padding-right: 0px;
+    line-height: var(--bs-body-line-height);
+  }
+}
+@media only screen and (max-width: 1199px) {
+  header {
+    .nav-item .label {
+      text-align: left;
+      border-radius: 0px;
+    }
+    .nav-items-dropdown > li:hover > .dropdown > a,
+    .nav-items-dropdown > li:hover > a {
+      border-radius: 0px;
+    }
+    .dropdown-menu > li > a:focus, 
+    .dropdown-menu > li > a:hover {
+      background-color: @color-primary !important;
+    }
+    .nav > li > a:hover,
+    .nav > li > a:focus {
+      background-color: @color-primary !important;
+    }
+  }
+}

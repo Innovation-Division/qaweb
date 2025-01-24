@@ -1,0 +1,45 @@
+@extends('layouts.app')
+
+@section('content')
+
+
+    <div class="container" style="text-align: left;">
+        <div class="row">
+            <div class="col-md-12">
+                <br>
+                <div class="top-container">
+                    <div class="category-name container">
+                        <div class="row text-center">
+
+                            <h1 id="h111" name="h111" style="font-size: 50px !important;opacity: 0.8;">
+                            </h1>
+                        </div>
+                    </div>
+                    <br>
+                    {{ csrf_field() }}
+                    <div class="progress" class="col-md-12">
+                        <div class="progress-bar progress-bar-success" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="max-height: 4px !important;width:17%;background-color:red  !important;color:red !important;"></div>
+                    </div>
+                    <div class="col-md-12" id="homepagediv">
+                        <h1 style="font-size: 40px !important;color: #000000;opacity: 0.7;"></h1>
+                    </div>
+                    <div class="col-md-12" id="homepagediv">
+                        <h1 style="font-size: 40px !important;color: #000000;opacity: 0.7;">Thank you for getting in touch!</h1>
+                    </div>
+                    <div class="col-md-12" id="homepagediv">
+                        <h1 style="font-size: 20px !important;color: #000000;opacity: 0.7;">We have received your inquiry. Please keep your lines open for updates. </h1>
+                    </div>
+                    <div class="col-md-12" id="homepagediv">
+                        <h1 style="font-size: 20px !important;color: #000000;opacity: 0.7;">For urgent inquiries, you may contact us through our 24/7 Client Services hotline at (02) 8830-6000. </h1>
+                    </div>
+                    <div class="col-md-12" id="homepagediv" style="margin-bottom: 200px;"><button class="btn btn-default current" style="font-family: muli" onclick="window.location='{{ url('/') }}'" title="Continue Shopping" type="button">
+                            Back to Home</button>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+@endsection

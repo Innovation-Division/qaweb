@@ -1,0 +1,331 @@
+.bg-layout1 {
+    position: relative;
+    &:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        width: 354px;
+        height: 398px;
+        top: 17px;
+        left: -64px;
+        background: url("@{images}/bg/tree-left.svg") no-repeat 0px 0px;
+    }
+    &:after {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        width: 115px;
+        height: 93px;
+        top: 300px;
+        right: 7px;
+        background: url("@{images}/bg/2dots.svg") no-repeat 0px 0px;
+    }
+}
+.bg-layout2 {
+    position: relative;
+    &:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        width: 115px;
+        height: 93px;
+        top: 0px;
+        left: 25px;
+        background: url("@{images}/bg/2dots.svg") no-repeat 0px 0px;
+    }
+    &:after {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        width: 334px;
+        height: 464px;
+        bottom: 0px;
+        right: 0px;
+        background: url("@{images}/bg/tree-right.svg") no-repeat 0px 0px;
+    }
+}
+.bg-layout3 {
+    position: relative;
+    &:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        width: 52px;
+        height: 66px;
+        bottom: 0px;
+        left: 20px;
+        background: url("@{images}/bg/dots.svg") no-repeat 0px 0px;
+    }
+}
+.bg-layout4 {
+    position: relative;
+    &:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        width: 399px;
+        height: 459px;
+        top: -162px;
+        left: -74px;
+        background: url("@{images}/bg/tree-left1.svg") no-repeat 0px 0px;
+    }
+    &:after {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        width: 318px;
+        height: 464px;
+        bottom: -103px;
+        right: 0px;
+        background: url("@{images}/bg/tree-right1.svg") no-repeat 0px 0px;
+    }
+}
+.bg-layout5 .main-content {
+    position: relative;
+    &:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        width: 253px;
+        height: 276px;
+        top: 90px;
+        left: -74px;
+        background: url("@{images}/bg/tree-left--1.svg") no-repeat 0px 0px;
+    }
+    &:after {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        width: 115px;
+        height: 93px;
+        top: 5px;
+        right: 0px;
+        background: url("@{images}/bg/2dots.svg") no-repeat 0px 0px;
+    }
+    .inner {
+        &:after {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            width: 247px;
+            height: 287px;
+            bottom: 0px;
+            right: 0px;
+            background: url("@{images}/bg/tree-right--1.svg") no-repeat 0px 0px;
+        }
+    }
+}
+.bg-layout6 .main-content {
+    position: relative;
+    &:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        width: 253px;
+        height: 276px;
+        top: 90px;
+        left: -74px;
+        background: url("@{images}/bg/tree-left--1.svg") no-repeat 0px 0px;
+    }
+    &:after {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        width: 115px;
+        height: 93px;
+        top: 5px;
+        right: 0px;
+        background: url("@{images}/bg/2dots.svg") no-repeat 0px 0px;
+    }
+}
+.bg-layout7 {
+    position: relative;
+    &:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        width: 52px;
+        height: 66px;
+        left: 5px;
+        bottom: 50px;
+        background: url("@{images}/bg/dots.svg") no-repeat 0px 0px;
+    }
+    &:after {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        width: 247px;
+        height: 367px;
+        bottom: 0px;
+        right: 0px;
+        background: url("@{images}/bg/tree-right--1.svg") no-repeat 0px 0px;
+    }
+}
+.bgcolor-primary {
+    background-color: @color-primary !important;
+}
+.bgcolor-secondary {
+    background-color: @color-secondary !important;
+}
+.bgcolor-white {
+    background-color: @color-common-white !important;
+}
+
+@media @desktop-min {
+    .bg-layout1 {
+        &:before {
+            width: 233px;
+            height: 262px;
+            top: 249px;
+            left: -64px;
+            background-size: auto 100%;
+        }
+        &::after {
+            content: none;
+        }
+    }
+    .bg-layout2 {
+        &::before {
+            content: none;
+        }
+        &:after {
+            width: 245px;
+            height: 337px;
+            bottom: -167px;
+            right: 0px;
+            background-size: auto 100%;
+        }
+    }
+    .bg-layout3 {
+        &:before {
+            width: 30px;
+            height: 38px;
+            bottom: 0px;
+            left: 10px;
+            background-size: auto 100%;
+        }
+    }
+    .bg-layout4 {
+        &:before {
+            width: 227px;
+            height: 348px;
+            top: -88px;
+            left: 0px;
+            background-position: right top;
+            background-size: auto 100%;
+        }
+        &:after {
+            width: 192px;
+            height: 255px;
+            bottom: 0px;
+            right: 0px;
+            background-size: auto 100%;
+        }
+    }
+    .bg-layout5 .main-content {
+        position: relative;
+        &:before {
+            width: 112px;
+            height: 163px;
+            top: 83px;
+            left: 0px;
+            background: url("@{images}/bg/tree-left.svg") no-repeat right 0px;
+            background-size: 130px;
+        }
+        &:after {
+            width: 30px;
+            background-size: 30px auto;
+        }
+        .inner {
+            &:after {
+                width: 147px;
+                height: 198px;
+                bottom: 0px;
+                right: 0px;
+                background-size: 170px;
+            }
+        }
+    }
+    .bg-layout6 .main-content {
+        position: relative;
+        &:before {
+            width: 112px;
+            height: 163px;
+            top: 83px;
+            left: 0px;
+            background: url("@{images}/bg/tree-left.svg") no-repeat right 0px;
+            background-size: 130px;
+        }
+        &:after {
+            width: 30px;
+            background-size: 30px auto;
+        }
+    }
+    .bg-layout7 {
+        &:before {
+            content: none;
+        }
+        &:after {
+            width: 147px;
+            height: 198px;
+            bottom: 0px;
+            right: 0px;
+            background-size: 170px;
+        }
+    }
+}
+
+@media @mobile {
+    .bg-layout1 {
+        &:before {
+            width: 156px;
+            height: 262px;
+            top: 295px;
+            left: 0px;
+            background-size: auto 100%;
+            background-position: right top;
+        }
+        &::after {
+            content: none;
+        }
+    }
+    .bg-layout2 {
+        &::before {
+            content: none;
+        }
+        &:after {
+            width: 148px;
+            height: 226px;
+            bottom: -88px;
+            right: 0px;
+            background-size: auto 100%;
+        }
+    }
+    .bg-layout3 {
+        &:before {
+            width: 30px;
+            height: 38px;
+            bottom: 0px;
+            left: 10px;
+            background-size: auto 100%;
+        }
+    }
+    .bg-layout4 {
+        &:before {
+            width: 172px;
+            height: 273px;
+            top: auto;
+            bottom: 17px;
+            left: 0px;
+            background-position: right top;
+            background-size: auto 100%;
+        }
+        &:after {
+            width: 135px;
+            height: 193px;
+            bottom: -51px;
+            right: 0px;
+            background-size: auto 100%;
+        }
+    }
+}

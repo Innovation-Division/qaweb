@@ -1,0 +1,76 @@
+.list-arrow {
+    list-style: none;
+    padding-left: 1.6rem;
+    li {
+        position: relative;
+        &:before {
+            content: "";
+            background: url("@{images}/icons/east-cyan.svg") no-repeat center top;
+            background-size: contain;
+            width: 1em;
+            height: 0.7em;
+            position: absolute;
+            top: 0.45em;
+            left: -29px;
+        }
+    }
+    &.lh-lg li:before {
+        top: 0.75em;
+    }
+    ul {
+        list-style: none;
+    }
+}
+.clist-checklist-mini {
+    list-style: none;
+    list-style-type: none !important;
+    padding-left: 1.6rem;
+    li {
+        padding-left: 5px !important;
+        position: relative;
+        &:before {
+            content: "";
+            background: url("@{images}/checker_mini_white.svg") no-repeat center top;
+            background-size: contain;
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            top: 0.35em;
+            left: -26px;
+        }
+    }
+    &.lh-lg li:before {
+        top: 0.65em;
+    }
+    ul {
+        list-style: none;
+    }
+}
+ul.list-disc {
+    list-style-type: disc !important;
+    li:before {
+        content: none;
+    }
+}
+ul.list-circle {
+    list-style-type: circle !important;
+    li:before {
+        content: none;
+    }
+}
+@media @desktop-min {
+    .list-arrow {
+        padding-left: 1.3rem;
+        li:before {
+            left: -23px;
+        }
+    }
+    .clist-checklist-mini {
+        padding-left: 1.3rem;
+        li:before {
+            left: -21px;
+            width: 16px;
+            height: 16px;
+        }
+    }
+}

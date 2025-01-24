@@ -1,0 +1,98 @@
+.pagination {
+    padding: 10px;
+
+    .paginationItem {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        a {
+            padding: 0;
+            border: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+            font-weight: 600;
+            background-color: transparent;
+            color: @color-primary;
+            padding: 4px 8px;
+            border-radius: 8px;
+            margin: 0 5px;
+        }
+
+        &.active {
+            a {
+                background-color: @color-primary;
+                color: @text-secondary;
+            }
+        }
+
+        &:hover {
+            a {
+                background-color: @color-primary;
+                color: @text-secondary;
+            }
+        }
+    }
+
+    .paginationArrow {
+        background-color: transparent;
+        border: 1px solid @color-primary;
+        border-radius: 5px;
+        margin-right: 5px;
+
+        a {
+            margin: 0px;
+            padding: 7px 15px;
+            background-color: transparent;
+
+            span {
+                padding: 0 0 4px;
+                background-color: transparent !important;
+
+                svg {
+                    fill: @color-primary;
+                }
+            }
+        }
+
+        &:hover {
+            background-color: @color-primary;
+
+            a {
+                span {
+                    svg {
+                        fill: @text-secondary;
+                    }
+                }
+            }
+        }
+
+        &.paginationArrowRight {
+            margin-left: 5px;
+            margin-right: 0px;
+            svg {
+                transform: rotateY(180deg);
+            }
+        }
+    }
+}
+
+@media @desktop-min {
+  .pagination {
+      .paginationItem {
+          a {
+              font-size: 12px;
+          }
+      }
+      .paginationArrow {
+          a {
+              padding: 3px 10px;
+          }
+          a span svg {
+              width: 8px;
+          }
+      }
+  }
+}

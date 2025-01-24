@@ -1,0 +1,86 @@
+@extends('layouts.app')
+
+@section('content')
+	 <div class="top-container">          
+            <div class="breadcrumbs">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 a-left">
+                            <ul>
+                                 <li class="home"><a href="{{ url('/') }}" title="Go to Home Page">Home</a> <span
+                            class="breadcrumbs-split"><i class="icon-keyboard_arrow_right"></i></span></li>
+                               <li class="category4"><span> Products</span> </li>
+                        <li class="category6"><span
+                            class="breadcrumbs-split"><i class="fa fa-angle-right"></i></span></li>
+                                <li class="category6"><a href="{{ url('/product-lines') }}" title="">
+                                    {{$cocogen_admin_parentproduct[0]['parentName']}}</a> <span class="breadcrumbs-split"><i class="icon-keyboard_arrow_right">
+                                    </i></span></li>
+                                <li class="product"><strong>{{$cocogen_admin_parentproduct[0]['name']}} Lines </strong> </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-container col1-layout">
+            <div class="main container">
+                <div class="col-main">
+                    <div class="page-title category-title">
+                 
+                    </div>
+                    <div class="category-products like-category-grid-block">
+                        <ul class="products-grid columns3">
+                        <!-- fi -->
+                        @foreach($cocogen_admin_subparentproduct as $cocogen_admin_subparentproducts)
+                     <li class="item">
+                        <div class="item-area box-shadow">
+                            <div class="product-image-area">
+                                <div class="loader-container">
+                                    <div class="loader">
+                                        <i class="ajax-loader medium animate-spin"></i>
+                                    </div>
+                                </div>
+                                <a href="{{ url('/') }}/{{$cocogen_admin_subparentproducts->link}}" class="quickview-icon"><i class="icon-export">
+                                </i><span>Quick View </span></a><a href="{{ url('/') }}/{{$cocogen_admin_subparentproducts->link}}" title="{{$cocogen_admin_subparentproducts->name}}"
+                                    class="product-image" style="height: 180px;">
+                                    <img id="product-collection-image-25" class="landscape" src="{{ url('') }}/{{$cocogen_admin_subparentproducts->imagelink}}"
+                                        title="{{$cocogen_admin_subparentproducts->name}}"   alt="{{$cocogen_admin_subparentproducts->name}}" width="300" >
+                                </a>
+                            </div>
+                            <div class="details-area" style="height: 95px;">
+                                <div class="product-name-wrapper abs">
+                                    <div class="product-icon box-shadow">
+                                        <img class="product-icon-image"  src="{{ url('') }}/{{$cocogen_admin_subparentproducts->imagelink}}"
+                                            title="{{$cocogen_admin_subparentproducts->link}}">
+                                    </div>
+                                    <h2 class="product-name" >
+                                        <a href="{{ url('/') }}/{{$cocogen_admin_subparentproducts->link}}" title="" style="font-size: 15px;color: #00539e;opacity: 0.9">{{$cocogen_admin_subparentproducts->name}} </a>
+                                    </h2>
+                                    <div class="short-description-wrapper" style="overflow-wrap: break-word;">
+                                       {{$cocogen_admin_subparentproducts->description}}
+                                    </div>
+                                </div>
+                                <div class="actions abs">
+                                    <a href="{{ url('/send-inquiry')}}/{{$cocogen_admin_subparentproducts->link}}" dataid="25" class="click-here inquiry col-md-12 col-sm-12 col-xs-12"
+                                        title="INQUIRY">
+                                        <!-- <i class="icon-cart"></i> -->
+                                        <span>&nbsp;INQUIRY </span></a>
+                                    <div class="clearer">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    @endforeach
+                        
+                   
+                        </ul>    
+                    </div>
+                    <div class="swatches-js">
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+@endsection

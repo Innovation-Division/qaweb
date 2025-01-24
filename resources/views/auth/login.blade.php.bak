@@ -1,0 +1,539 @@
+@extends('layouts.app')
+
+@section('content')
+
+    <style type="text/css">
+        @media all and (min-width:1911px) and (max-width: 2000px) {
+            .col-3 {
+                float: left;
+                width: 90%;
+                margin: 10px 3%;
+                position: relative;
+                margin-bottom: 40px;
+            }
+
+            .fullscreen1 {
+                background-image: url('{{ url('/images/epolicy/epartner.jpg') }}');
+                height: 120vh;
+                width: 100vw;
+                margin-left: -10px;
+                position: relative;
+                background-size: cover;
+                background-repeat: no-repeat;
+                margin-top: -200px;
+                margin-bottom: 50px;
+            }
+
+            .fullscreen {
+                background-image: url('{{ url('/images/epolicy/epolicy.jpg') }}');
+                height: 120vh;
+                width: 100vw;
+                margin-left: -10px;
+                position: relative;
+                background-size: cover;
+                background-repeat: no-repeat;
+                margin-top: -200px;
+                margin-bottom: 50px;
+            }
+
+            .panel {
+                border-radius: 3%;
+                margin-top: 240px !important;
+                margin-left: 130px;
+                margin-right: -100px;
+
+            }
+
+
+
+        }
+
+        @media all and (min-width:1681px) and (max-width: 1910px) {
+            .col-3 {
+                float: left;
+                width: 90%;
+                margin: 10px 3%;
+                position: relative;
+                margin-bottom: 17px !important;
+            }
+
+            .fullscreen1 {
+                background-image: url('{{ url('/images/epolicy/epartner.jpg') }}');
+                height: 120vh;
+                width: 100vw;
+                position: relative;
+                background-size: cover;
+                background-repeat: no-repeat;
+                margin-top: -90px;
+                margin-bottom: 180px !important;
+            }
+
+            .fullscreen {
+                background-image: url('{{ url('/images/epolicy/epolicy.jpg') }}');
+                height: 120vh;
+                width: 100vw;
+                position: relative;
+                background-size: cover;
+                background-repeat: no-repeat;
+                margin-top: -90px;
+                margin-bottom: 180px !important;
+            }
+
+            .copl2nd {
+                margin-left: 100px;
+                margin-right: -100px;
+
+            }
+
+            .panel {
+                border-radius: 3%;
+                margin-top: 120px !important;
+
+                margin-right: -100px;
+
+            }
+
+
+
+        }
+
+        @media all and (min-width:801px) and (max-width: 1680px) {
+            .col-3 {
+                float: left;
+                width: 90%;
+                margin: 10px 3%;
+                position: relative;
+                margin-bottom: 17px !important;
+            }
+
+            .fullscreen1 {
+                background-image: url('{{ url('/images/epolicy/epartner.jpg') }}');
+                height: 120vh;
+                width: 100vw;
+                position: relative;
+                background-size: cover;
+                background-repeat: no-repeat;
+                margin-top: -130px;
+                margin-bottom: 180px !important;
+            }
+
+            .fullscreen {
+                background-image: url('{{ url('/images/epolicy/epolicy.jpg') }}');
+                height: 120vh;
+                width: 100vw;
+                position: relative;
+                background-size: cover;
+                background-repeat: no-repeat;
+                margin-top: -130px;
+                margin-bottom: 180px !important;
+            }
+
+            .copl2nd {
+                margin-left: 100px;
+                margin-right: -100px;
+
+            }
+
+            .panel {
+                border-radius: 3%;
+                margin-top: 160px !important;
+                margin-left: -20px !important;
+                margin-right: 40px !important;
+
+            }
+
+
+        }
+
+
+
+        @media all and (min-width:0px) and (max-width: 380px) {
+            .col-3 {
+                float: left;
+                width: 90%;
+                margin: 10px 3%;
+                position: relative;
+                margin-bottom: 0px !important;
+            }
+
+            .fullscreen1 {
+                background-image: url('{{ url('/images/epolicy/epartnermobile.jpg') }}');
+                position: relative;
+                min-height: 700px;
+                background-size: cover;
+                background-repeat: no-repeat;
+                margin-left: -5px;
+                border-bottom: 200px !important
+            }
+
+            .fullscreen {
+                background-image: url('{{ url('/images/epolicy/policyholdermobile.jpg') }}');
+                position: relative;
+                min-height: 650px;
+                background-size: cover;
+                background-repeat: no-repeat;
+                margin-left: -5px;
+                border-bottom: 200px !important
+            }
+
+            .panel {
+                border-radius: 3%;
+                margin-top: 120px !important;
+                margin-left: 0px !important;
+                width: 110%;
+
+            }
+        }
+
+        @media all and (min-width:381px) and (max-width: 800px) {
+            .col-3 {
+                float: left;
+                width: 90%;
+                margin: 10px 3%;
+                position: relative;
+                margin-bottom: 0px !important;
+            }
+
+            .fullscreen1 {
+                background-image: url('{{ url('/images/epolicy/epartnermobile.jpg') }}');
+                position: relative;
+                min-height: 750px;
+                background-size: cover;
+                background-repeat: no-repeat;
+                margin-left: -5px;
+                border-bottom: 200px !important
+            }
+
+            .fullscreen {
+                background-image: url('{{ url('/images/epolicy/policyholdermobile.jpg') }}');
+                position: relative;
+                min-height: 750px;
+                background-size: cover;
+                background-repeat: no-repeat;
+                margin-left: -5px;
+                border-bottom: 200px !important
+            }
+
+            .panel {
+                border-radius: 3%;
+                margin-top: 120px !important;
+                margin-left: 0px !important;
+                width: 110%;
+
+            }
+        }
+
+    </style>
+    <style type="text/css">
+        html,
+        body {
+            border: 0;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font: 14px "Lato", Arial, sans-serif;
+            min-width: 100%;
+            min-height: 100%;
+            color: #666;
+        }
+
+        .container {
+            margin: 0 auto;
+            max-width: 1200px;
+            background-color:
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .row {
+            float: left;
+            width: 100%;
+            padding: 20px 0 50px;
+        }
+
+        h2 {
+            text-align: left;
+            color: #2079df;
+            font-size: 30px;
+            float: left;
+            width: 100%;
+            margin: 30px 0;
+            position: relative;
+            line-height: 10px;
+            font-weight: 400;
+        }
+
+        :focus {
+            outline: none;
+        }
+
+        .col-3 {
+            float: left;
+            width: 90%;
+            margin: 10px 3%;
+            position: relative;
+            margin-bottom: 40px;
+        }
+
+        /* necessary to give position: relative to parent. */
+        input[name="email"] {
+            font: 15px/24px "Lato", Arial, sans-serif;
+            color: #333;
+            width: 100%;
+            box-sizing: border-box;
+            letter-spacing: 1px;
+        }
+
+        input[name="password"] {
+            font: 15px/24px "Lato", Arial, sans-serif;
+            color: #333;
+            width: 100%;
+            box-sizing: border-box;
+            letter-spacing: 1px;
+        }
+
+        .panel {
+            border-radius: 3%;
+            margin-top: 70px;
+            margin-left: 130px;
+            margin-right: -100px;
+
+        }
+
+    </style>
+    <script type="text/javascript">
+        // JavaScript for label effects only
+        jQuery(window).load(function() {
+
+            jQuery(".col-3 input").val("");
+
+            jQuery(".input-effect input").focusout(function() {
+                if (jQuery(this).val() != "") {
+                    jQuery(this).addClass("has-content");
+                } else {
+                    jQuery(this).removeClass("has-content");
+                }
+            })
+        });
+    </script>
+    <script type="text/javascript">
+        var divs = ["Menu1", "Menu2"];
+        var visibleDivId = null;
+
+        function toggleVisibility(divId) {
+            if (visibleDivId === divId) {
+                //visibleDivId = null;
+            } else {
+                visibleDivId = divId;
+            }
+            hideNonVisibleDivs();
+        }
+
+        function hideNonVisibleDivs() {
+            var i, divId, div;
+            for (i = 0; i < divs.length; i++) {
+                divId = divs[i];
+                div = document.getElementById(divId);
+                if (visibleDivId === divId) {
+                    div.style.display = "block";
+                } else {
+                    div.style.display = "none";
+                }
+            }
+        }
+    </script>
+    <?php
+
+    if (old('menu1hid')) {
+        $Menu1 = '';
+        $Menu2 = "style = \"display:none \"";
+    } elseif (old('menu2hid')) {
+        $Menu1 = "style = \"display:none \"";
+        $Menu2 = '';
+    } else {
+        $Menu2 = '';
+        $Menu1 = "style = \"display:none \"";
+    }
+    ?>
+
+
+    <div id="Menu1" <?php echo $Menu1; ?>>
+        <div class="container-fluid fullscreen1">
+            <div class="row">
+                <div class="col-md-6">
+                    <!-- <img src="{{ url('/images/epolicy/epolicy.jpg') }}" class="img-fluid tab1">   -->
+                </div>
+                <div class="col-md-4 copl2nd" style="text-align: left;" style="max-width: 20px ;">
+                    <form method="POST" action="{{ url('/login') }}">
+                        <input type="hidden" id="menu1hid" name="menu1hid" value="a">
+                        @csrf
+                        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                            <div class="panel-body">
+                                <div class="panel panel-default">
+                                    <div class="panel-body">
+                                        <div class="col-3 input-effect" style="margin-top: 3%;text-align: right;">
+                                            <a href="#" onclick="toggleVisibility('Menu2');" style="font-size: 13px;color: #00539e;"><strong> POLICYHOLDER </strong></a>
+                                            |
+                                            <a href="#" onclick="toggleVisibility('Menu1');" style="font-size: 13px;color: #139e8d;text-decoration: underline"><strong>PARTNER </strong></a> &nbsp; &nbsp; &nbsp;&nbsp;
+                                        </div>
+                                        @if (session('errormessag'))
+                                            <div class="col-3 input-effect" style="margin-bottom: -30px">
+                                                <div class="error-msg">
+                                                    <i class="fa fa-times-circle"></i>
+                                                    {{ session('errormessag') }}
+                                                </div>
+                                            </div>
+                                        @elseif($errors->first('email') === 'This field is required.')
+                                            <div class="col-3 input-effect" style="margin-bottom: -30px">
+                                                <div class="error-msg">
+                                                    <i class="fa fa-times-circle"></i>
+                                                    The email is required!
+                                                </div>
+                                            </div>
+                                        @elseif($errors->has('email'))
+                                            <div class="col-3 input-effect" style="margin-bottom: -30px">
+                                                <div class="error-msg">
+                                                    <i class="fa fa-times-circle"></i>
+                                                    {{ $errors->first('email') }}
+                                                </div>
+                                            </div>
+                                        @elseif($errors->first('password') === 'This field is required.')
+                                            <div class="col-3 input-effect" style="margin-bottom: -30px">
+                                                <div class="error-msg">
+                                                    <i class="fa fa-times-circle"></i>
+                                                    The password is required!
+                                                </div>
+                                            </div>
+                                        @elseif($errors->has('menu1hid'))
+                                            <div class="col-3 input-effect" style="margin-bottom: -30px">
+                                                <div class="error-msg">
+                                                    <i class="fa fa-times-circle"></i>
+                                                    The e-mail address does not exist in our client database. Please try logging in via the epolicyholder tab.
+                                                </div>
+                                            </div>
+
+                                        @endif
+
+
+                                        <div class="col-3 input-effect signn" style="margin-top: 5%">
+                                            <span class="span-modal" style="font-size: 35px;color: #139e8d;opacity: 0.9">Sign In</span>
+                                        </div>
+                                        <div class="col-3 input-effect">
+                                            <input name="email" id="email" class="effect-16 required-entry validate-email" type="text" placeholder="Email Address *" value="{{ old('email') }}">
+                                            <span class="focus-border"></span>
+                                        </div>
+                                        <div class="col-3 input-effect">
+                                            <input name="password" id="password" class="effect-16 required-entry validate-email" type="password" placeholder="Password*">
+                                            <span class="focus-border"></span>
+                                        </div>
+                                        <div class="col-3 input-effect">
+                                            <button type="submit" class="btn btn-success form-control" title="Login" name="send1" id="send1" style="background-color: #139e8d;opacity: 0.9">Get Started</button>
+                                            <a href="{{ route('forgotpassword') }}" style="color:#139e8d !important;float: left !important;margin-top: 10px; ">Forgot Password?</a>
+                                            <a href="{{ route('resendpassword') }}" style="color:#139e8d !important;float: right !important;margin-top: 10px; ">Resend Activation Link</a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-2">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="Menu2" <?php echo $Menu2; ?>>
+        <div class="container-fluid fullscreen">
+            <div class="row">
+                <div class="col-md-6">
+                    <!-- <img src="{{ url('/images/epolicy/epolicy.jpg') }}" class="img-fluid tab1">   -->
+                </div>
+                <div class="col-md-4 copl2nd" style="text-align: left;" style="max-width: 20px ;">
+                    <form method="POST" action="{{ url('/login') }}">
+                        <input type="hidden" id="menu2hid" name="menu2hid" value="a">
+                        @csrf
+                        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                            <div class="panel-body">
+                                <div class="panel panel-default">
+                                    <div class="panel-body">
+                                        <div class="col-3 input-effect" style="margin-top: 3%;text-align: right;">
+                                            <a href="#" onclick="toggleVisibility('Menu2');" style="font-size: 13px;color: #00539e;text-decoration: underline"><strong> POLICYHOLDER </strong></a>
+                                            |
+                                            <a href="#" onclick="toggleVisibility('Menu1');" style="font-size: 13px;color: #139e8d;"><strong>PARTNER </strong></a> &nbsp; &nbsp; &nbsp;&nbsp;
+                                        </div>
+                                        @if (session('errormessag'))
+                                            <div class="col-3 input-effect" style="margin-bottom: -30px">
+                                                <div class="error-msg">
+                                                    <i class="fa fa-times-circle"></i>
+                                                    {{ session('errormessag') }}
+                                                </div>
+                                            </div>
+                                        @elseif($errors->first('email') === 'This field is required.')
+                                            <div class="col-3 input-effect" style="margin-bottom: -30px">
+                                                <div class="error-msg">
+                                                    <i class="fa fa-times-circle"></i>
+                                                    The email is required!
+                                                </div>
+                                            </div>
+                                        @elseif($errors->has('email'))
+                                            <div class="col-3 input-effect" style="margin-bottom: -30px">
+                                                <div class="error-msg">
+                                                    <i class="fa fa-times-circle"></i>
+                                                    {{ $errors->first('email') }}
+                                                </div>
+                                            </div>
+                                        @elseif($errors->first('password') === 'This field is required.')
+                                            <div class="col-3 input-effect" style="margin-bottom: -30px">
+                                                <div class="error-msg">
+                                                    <i class="fa fa-times-circle"></i>
+                                                    The password is required!
+                                                </div>
+                                            </div>
+                                        @elseif($errors->has('menu2hid'))
+                                            <div class="col-3 input-effect" style="margin-bottom: -30px">
+                                                <div class="error-msg">
+                                                    <i class="fa fa-times-circle"></i>
+                                                    The e-mail address does not exist in our client database. Please try logging in via the Partner tab.
+                                                </div>
+                                            </div>
+
+                                        @endif
+
+                                        <div class="col-3 input-effect signn" style="margin-top: 5%">
+                                            <span class="span-modal " style="font-size: 35px;color: #003592;opacity: 0.9">Sign In</span>
+                                        </div>
+                                        <div class="col-3 input-effect">
+                                            <input name="email" id="email" class="effect-16 required-entry validate-email" type="text" placeholder="Email Address *" value="{{ old('email') }}">
+                                            <span class="focus-border"></span>
+                                        </div>
+                                        <div class="col-3 input-effect">
+                                            <input name="password" id="password" class="effect-16 required-entry validate-email" type="password" placeholder="Password*">
+                                            <span class="focus-border"></span>
+                                        </div>
+                                        <div class="col-3 input-effect">
+                                            <button type="submit" class="btn btn-success form-control" title="Login" name="send2" id="send2" style="background-color: #003592;opacity: 0.9">Get Started</button>
+                                            <a href="{{ route('forgotpassword') }}" style="color:#003592 !important;float: left !important;margin-top: 10px; ">Forgot Password?</a><br>
+                                            <a href="{{ route('resendpassword') }}" style="color:#003592 !important;float: right !important;margin-top: 10px; ">Resend Activation Link</a>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-2">
+                </div>
+            </div>
+        </div>
+    </div>
+@endsection

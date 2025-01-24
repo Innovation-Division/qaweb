@@ -1,0 +1,359 @@
+@extends('layouts.app')
+@section('content')
+
+<style type="text/css">
+
+
+    .list-thumb {
+          max-width: 1400px;
+          margin: 20px auto;
+        }
+
+        .img-list a {
+          text-decoration: none;
+        }
+
+        .li-sub p {
+          margin: 0;
+        }
+
+        .list-thumb li {
+          /*border-bottom: 1px solid #ccc;*/
+          display: table;
+          border-collapse: collapse;
+          width: 100%;
+        }
+        .inner {
+          display: table-row;
+          overflow: hidden;
+        }
+        .li-img {
+          display: table-cell;
+          vertical-align: middle;
+          width: 50%;
+
+          padding-right: 1em;
+
+        }
+        .li-img img {
+          display: block;
+          /*width: 100%;*/
+          width: 220px;
+         /* height: auto;*/
+          border-radius: 25px  0px  0px 25px;
+          height: 198px;
+
+          padding-right: 10px;
+
+
+        }
+        .li-text {
+          display: table-cell;
+          vertical-align: middle;
+          width: 70%;
+        }
+        .li-head {
+          margin: 10px 0 0 0;
+        }
+        .li-sub {
+          margin: 0;
+        }
+
+        @media all and (min-width: 45em) {
+          .list-thumb li {
+            float: left;
+            width: 50%;
+          }
+        }
+
+        @media all and (min-width: 75em) {
+          .list-thumb li {
+            /*width: 33.33333%;*/
+            width: 33.33333%;
+          }
+        }
+
+        /* for flexbox */
+        @supports(display: flex) {
+          .list {
+            display: flex;
+            flex-wrap: wrap;
+          }
+
+          .li-img,
+          .li-text,
+          .list-thumb li {
+            display: block;
+            float: none;
+          }
+
+          .li-img {
+            align-self: center; /* to match the middle alignment of the original */
+
+          }
+
+          .inner {
+            display: flex;
+          }
+
+          .li-sub1 {
+            font-size: 14px;
+          }
+        }
+
+        /* for grid */
+        @supports(display: grid) {
+          .list-thumb {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+            grid-gap: 20px;
+          }
+
+          .list-thumb li {
+            width: auto; /* this overrides the media queries */
+
+            border: 1px solid #ccc;
+            /*border-radius: 25px;*/
+            /*border-radius: 25px 25px 25px 25px;*/
+            /* border-radius: 50%;*/
+
+
+            -moz-border-radius: 25px;
+
+            -webkit-border-radius: 25px;
+
+            -khtml-border-radius: 25px;
+
+            border-radius: 25px;
+            box-shadow: 5px 6px 6px #888888;
+
+            /*width: 450px;*/
+            height: 200px;
+           /* margin-top: -20px;*/
+
+
+
+          }
+        }
+
+
+        @media only screen and (max-width:500px) {
+            /*.list-thumb li {
+                  width: 360px;
+
+
+
+            }
+
+            .list-thumb {
+
+            }
+
+            .li-text {
+
+              font-size: 10px;
+              padding-left: 25px;
+            }
+
+            .li-text h3 {
+
+               font-size: 5px;
+            }*/
+
+
+         @supports(display: grid) {
+          .list-thumb {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+            grid-gap: 20px;
+
+
+          }
+
+          .list-thumb li {
+            /*width: auto;  */
+            /*this overrides the media queries */
+
+            border: 1px solid #ccc;
+            /*border-radius: 25px;*/
+            /*border-radius: 25px 25px 25px 25px;*/
+            /* border-radius: 50%;*/
+
+
+            -moz-border-radius: 25px;
+
+            -webkit-border-radius: 25px;
+
+            -khtml-border-radius: 25px;
+
+            border-radius: 25px;
+            box-shadow: 5px 6px 6px #888888;
+
+            width: 350px;
+            height: 150px;
+            margin-left: 20px;
+
+          /*display: block;
+          margin-left: auto;
+          margin-right: auto;*/
+
+            /*height: 200px;*/
+
+
+
+          }
+        }
+
+
+        .li-text {
+
+              font-size: 8px;
+              padding-left: 25px;
+              padding-top: 10px;
+            }
+
+        .li-sub1 {
+            font-size: 8px;
+          }
+
+
+
+
+        .li-img img {
+          display: block;
+          /*width: 100%;*/
+          width: 200px;
+         /* height: auto;*/
+          border-radius: 25px  0px  0px 25px;
+          height: 150px;
+
+          padding-right: 10px;
+
+
+        }
+
+
+
+
+        }
+
+ </style>
+
+<div class="top-container">
+    <!-- config enabled always -->
+    <div class="custom-banner custom-page-banner" data-uri-path="">
+    </div>
+    <div class="breadcrumbs">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 a-left">
+                    <ul>
+                        <li class="home"><a href="{{ url('/products') }}" title="Go to Home Page">Home</a> <span
+                            class="breadcrumbs-split"><i class="icon-keyboard_arrow_right"></i></span></li>
+                        <li class="category6"><a href="{{ url('/products') }}" title="">Products</a> <span
+                            class="breadcrumbs-split"><i class="fa fa-angle-right"></i></span></li>
+                        <li class="category6"><strong>Properties for Sale</strong> </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="category-name container">
+        <h1>
+            Properties for Sale
+        </h1>
+    </div>
+    <div class="category-banner container">
+        <p>
+
+ <?php
+    $date1 = new DateTime('1963-01-28');
+    $date2 = new DateTime("now");
+    $interval = $date1->diff($date2);
+    $years = $interval->format('%y');
+    $months = $interval->format('%m');
+    $days = $interval->format('%d');
+    if($years!=0){
+        $ago = $years.' year(s) ago';
+    }else{
+        $ago = ($months == 0 ? $days.' day(s) ago' : $months.' month(s) ago');
+    }
+?>
+
+
+
+
+
+            Build up your net worth with COCOGEN's selection of real estate properties for sale.
+</p>
+    </div>
+
+</div>
+<div class="main-container col1-layout">
+    <!-- <div class="main container">
+     <div class="row">
+        <div class="col-md-15 col-md-15">
+
+        <div class="col-main">
+            <div class="page-title category-title">
+                <h1>
+                    Properties for Sale</h1>
+            </div>
+        </div>
+
+         </div>
+        </div>
+    </div> -->
+
+
+
+
+
+
+
+<div class="supports">
+
+            <ul class="list-thumb img-list">
+
+            @foreach($cocogen_property as $cocogen_properties)
+              <li>
+                  <a href="{{URL('/propertydetails')}}/{{$cocogen_properties->id}}" class="inner">
+                  <div class="li-img" style="max-width: 100%; height: 100%; ">
+                        <img src="{{ url('') }}/{{$cocogen_properties->imagelink}}" >
+                  </div>
+                  <div class="li-text">
+                      <!-- <h3 class="li-head" style="text-align: left; font-weight: bold; color: #737070; font-size: 14px;">{{$cocogen_properties->name}}</h3> -->
+                      <div class="li-sub1" style="text-align: left; font-weight: bold; color: #737070;">
+                        <p>{{$cocogen_properties->name}}</p>
+                      </div>
+                      <div class="li-sub" style="text-align: left; color: #999696;">
+                        <p>{{$cocogen_properties->location}}</p>
+                      </div>
+
+
+
+                      <div class="li-sub1" style="text-align: left; font-weight: bold; color: #737070;">
+                        <p>{{$cocogen_properties->description}}</p>
+                      </div>
+                      <div class="li-sub" style="text-align: left; color: #999696;">
+                        <p>{{$cocogen_properties->lot_size}} sqm.</p>
+                      </div>
+
+
+                      <div class="li-sub1" style="text-align: left; font-weight: bold; color: #737070; ">
+                        <p>Php  {{ $cocogen_properties->price }}</p>
+                      </div>
+
+                      <!-- <h3 class="li-head" style="text-align: left; font-weight: bold; color: #737070;  font-size: 14px;">Php  {{ $cocogen_properties->price }}</h3> -->
+                  </div>
+                </a>
+              </li>
+              @endforeach
+            </ul>
+
+    </div>
+</div>
+
+
+@endsection

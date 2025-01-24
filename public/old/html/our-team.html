@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <title>Cocogen Insurance</title>
+
+        <link rel="icon" href="assets/img/favicon.ico" type="image/x-ico" />
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+
+        <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet/less" type="text/css" href="assets/css/about.less" />
+
+        <!-- DEV MODE -->
+        <script src="https://cdn.jsdelivr.net/npm/less@4.1.1" data-env="development"></script>
+        <script>
+            less.watch();
+        </script>
+        <!-- -->
+    </head>
+
+    <body>
+        <div class="about">
+            <section class="breadcrumbs">
+                <img class="breadcrumbBanner" src="assets/img/breadcrumbs/about.png" alt="excel plus banner" />
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-12">
+                            <div class="row justify-content-center">
+                                <div class="col-12">
+                                    <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
+                                        <ol class="breadcrumb">
+                                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                            <li class="breadcrumb-item"><a href="#">About</a></li>
+                                            <li class="breadcrumb-item" aria-current="page">Our Team</li>
+                                        </ol>
+                                    </nav>
+                                </div>
+                                <div class="col-xs-12 align-self-end">
+                                    <h1 class="pageTitle">Our Team</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="board">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-xs-12">
+                            <ul class="nav nav-tabs boardTabs justify-content-center align-items-center" id="boardMembers">
+                                <li class="nav-item boardTab">
+                                    <button class="nav-link active" id="directors-tab" data-bs-toggle="tab" data-bs-target="#directors" type="button" role="tab" aria-controls="directors" aria-selected="true">Board of Directors</button>
+                                </li>
+                                <li class="nav-item boardTab">
+                                    <button class="nav-link" id="management-tab" data-bs-toggle="tab" data-bs-target="#management" type="button" role="tab" aria-controls="management" aria-selected="true">Management Committee</button>
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="boardMembersContent">
+                                <div class="tab-pane fade show active" id="directors" role="tabpanel" aria-labelledby="directors-tab">
+                                    <div class="items row py-2">
+                                        <div class="col-sm-12 col-md-6 col-lg-4">
+                                            <div class="member">
+                                                <div class="imageContainer">
+                                                    <img src="assets/img/bod/barza.png" alt="board member" />
+                                                </div>
+                                                <div class="memberProfile">
+                                                    <p class="fw-bold mb-1 name">Justice Romeo F. Barza (Ret.)</p>
+                                                    <p class="fs-6 title">Chairman, Independent Director</p>
+                                                    <button
+                                                        class="btn btn-secondary-inverted d-none d-lg-block"
+                                                        data-bs-toggle="modal"
+                                                        data-bs-target="#modal-team"
+                                                        data-description="<p class='fs-6'>Justice Barza is the Chairman of the Board of Directors of Cocogen Insurance, Inc and a current director of Cocolife. He also serves as the Chairman of other Cocolife subsidiaries including Cocolife Asset Management Company, Inc., Cocolife Fixed Income Fund, Inc., United Fund, Inc., and Cocolife Dollar Fund Builder, Inc. He is also a Director of HealthAssist, Inc.</p>
+                                                        <p class='fs-6'>Justice Barza served the Judiciary as the Presiding Justice of Court of Appeals, appointed by President Rodrigo Duterte on December 8, 2017; Associate Justice of the Court of Appeals; Presiding Judge of the Regional Trial Court, Branch 61 Makati City; Presiding Judge, Regional Trial Court, Branch 3 Batangas City; National President of the Philippine Judges Association; Trustee of the Philippine Judicial Academy; and President of the Region IV RTC Judges Association.</p>
+                                                        <p class='fs-6'>He was also the owner of Barza Law Office; and the Founding Partner of Carpio Barza Cruz & Rossell Law Offices (now Villaraza and Angangco Law Office), Teves Campos Hernandez & Lim Law Office, and Pelaez Jalandoni & Adriano Law Office.</p>
+                                                        <p class='fs-6'>He graduated from the University of the Philippines with a Bachelor of Arts degree in Foreign Service. He took up law from the same university and graduated with a law degree in 1974.</p>"
+                                                    >
+                                                        View profile
+                                                    </button>
+                                                    <button
+                                                        class="btn btn-secondary-light d-block d-lg-none"
+                                                        data-bs-toggle="modal"
+                                                        data-bs-target="#modal-team"
+                                                        data-description="<p class='fs-6'>Justice Barza is the Chairman of the Board of Directors of Cocogen Insurance, Inc and a current director of Cocolife. He also serves as the Chairman of other Cocolife subsidiaries including Cocolife Asset Management Company, Inc., Cocolife Fixed Income Fund, Inc., United Fund, Inc., and Cocolife Dollar Fund Builder, Inc. He is also a Director of HealthAssist, Inc.</p>
+                                                        <p class='fs-6'>Justice Barza served the Judiciary as the Presiding Justice of Court of Appeals, appointed by President Rodrigo Duterte on December 8, 2017; Associate Justice of the Court of Appeals; Presiding Judge of the Regional Trial Court, Branch 61 Makati City; Presiding Judge, Regional Trial Court, Branch 3 Batangas City; National President of the Philippine Judges Association; Trustee of the Philippine Judicial Academy; and President of the Region IV RTC Judges Association.</p>
+                                                        <p class='fs-6'>He was also the owner of Barza Law Office; and the Founding Partner of Carpio Barza Cruz & Rossell Law Offices (now Villaraza and Angangco Law Office), Teves Campos Hernandez & Lim Law Office, and Pelaez Jalandoni & Adriano Law Office.</p>
+                                                        <p class='fs-6'>He graduated from the University of the Philippines with a Bachelor of Arts degree in Foreign Service. He took up law from the same university and graduated with a law degree in 1974.</p>"
+                                                    >
+                                                        View profile
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-6 col-lg-4">
+                                            <div class="member">
+                                                <div class="imageContainer">
+                                                    <img src="assets/img/bod/dagohoy.png" alt="board member" />
+                                                </div>
+                                                <div class="memberProfile">
+                                                    <p class="fw-bold mb-1 name">Atty. Dennis G. Dagohoy</p>
+                                                    <p class="fs-6 title">Vice Chairman</p>
+                                                    <button
+                                                        class="btn btn-secondary-inverted d-none d-lg-block"
+                                                        data-bs-toggle="modal"
+                                                        data-bs-target="#modal-team"
+                                                        data-description="<p class='fs-6'>Atty. Dagohoy is the Vice Chairman of Cocogen Insurance, Inc. He is also the President of Cocoplans, Inc. He is a Certified Public Accountant.</p>
+                                                        <p class='fs-6'>His work experiences include: Assistant Vice President for Mindanao, Cocoplans, Inc.; Division Manager, Pryce Plans; Sales Manager, Prudential Life Plan; Chief Accountant and Officer-in-Charge, FMDA Corp.; Chief Accountant/ Administrative Officer, Homes Group Inc.; and Auditor, Joaquin Cunanan & Co. Pricewaterhouse Phil. He also taught law subjects at the University of Mindanao, Commerce Department in Davao City from 1994-1996.</p>
+                                                        <p class='fs-6'>He graduated from Ateneo de Davao University with a bachelor’s degree in Accounting and obtained his Bachelor Degree in Law from the same school.</p>"
+                                                    >
+                                                        View profile
+                                                    </button>
+                                                    <button
+                                                        class="btn btn-secondary-light d-block d-lg-none"
+                                                        data-bs-toggle="modal"
+                                                        data-bs-target="#modal-team"
+                                                        data-description="<p class='fs-6'>Atty. Dagohoy is the Vice Chairman of Cocogen Insurance, Inc. He is also the President of Cocoplans, Inc. He is a Certified Public Accountant.</p>
+                                                        <p class='fs-6'>His work experiences include: Assistant Vice President for Mindanao, Cocoplans, Inc.; Division Manager, Pryce Plans; Sales Manager, Prudential Life Plan; Chief Accountant and Officer-in-Charge, FMDA Corp.; Chief Accountant/ Administrative Officer, Homes Group Inc.; and Auditor, Joaquin Cunanan & Co. Pricewaterhouse Phil. He also taught law subjects at the University of Mindanao, Commerce Department in Davao City from 1994-1996.</p>
+                                                        <p class='fs-6'>He graduated from Ateneo de Davao University with a bachelor’s degree in Accounting and obtained his Bachelor Degree in Law from the same school.</p>"
+                                                    >
+                                                        View profile
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-6 col-lg-4">
+                                            <div class="member">
+                                                <div class="imageContainer">
+                                                    <img src="assets/img/bod/de-jesus.png" alt="board member" />
+                                                </div>
+                                                <div class="memberProfile">
+                                                    <p class="fw-bold mb-1 name">Atty. Darren M. De Jesus</p>
+                                                    <p class="fs-6 title">President</p>
+                                                    <button
+                                                        class="btn btn-secondary-inverted d-none d-lg-block"
+                                                        data-bs-toggle="modal"
+                                                        data-bs-target="#modal-team"
+                                                        data-description="<p class='fs-6'>Atty. De Jesus is currently the President of Cocogen Insurance, Inc. He is also the founding partner of Yebra De Jesus Loon Law Offices (YDL Law).</p>
+                                                        <p class='fs-6'>He was formerly the Deputy Secretary General of the Inter-Parliamentary and Public Affairs Department of the House of Representatives. Previously, he was the Head Executive Assistant, Office of the Speaker. He also served Bangko Sentral ng Pilipinas (BSP) as part of the Office of the General Counsel and Legal Services. He likewise practiced litigation and dispute resolution in Angara Abello Concepcion Regala & Cruz Law Offices (ACCRALAW).</p>
+                                                        <p class='fs-6'>Atty. De Jesus was chosen by the US State Department as the Philippines’ representative in the International Visitors Leadership Program (IVLP) in 2018 on “US Federalism and Democracy”, and by China as delegate in the Young Leaders’ Roundtable Discussion in the 2019 Boao Forum for Asia. In 2017, Atty. De Jesus was part of the Philippine delegation to the World Bank – IMF Annual Meeting.</p>
+                                                        <p class='fs-6'>He graduated from the Ateneo de Manila School of Law in 2009 and School of Science and Engineering in 2005.</p>"
+                                                    >
+                                                        View profile
+                                                    </button>
+                                                    <button
+                                                        class="btn btn-secondary-light d-block d-lg-none"
+                                                        data-bs-toggle="modal"
+                                                        data-bs-target="#modal-team"
+                                                        data-description="<p class='fs-6'>Atty. De Jesus is currently the President of Cocogen Insurance, Inc. He is also the founding partner of Yebra De Jesus Loon Law Offices (YDL Law).</p>
+                                                        <p class='fs-6'>He was formerly the Deputy Secretary General of the Inter-Parliamentary and Public Affairs Department of the House of Representatives. Previously, he was the Head Executive Assistant, Office of the Speaker. He also served Bangko Sentral ng Pilipinas (BSP) as part of the Office of the General Counsel and Legal Services. He likewise practiced litigation and dispute resolution in Angara Abello Concepcion Regala & Cruz Law Offices (ACCRALAW).</p>
+                                                        <p class='fs-6'>Atty. De Jesus was chosen by the US State Department as the Philippines’ representative in the International Visitors Leadership Program (IVLP) in 2018 on “US Federalism and Democracy”, and by China as delegate in the Young Leaders’ Roundtable Discussion in the 2019 Boao Forum for Asia. In 2017, Atty. De Jesus was part of the Philippine delegation to the World Bank – IMF Annual Meeting.</p>
+                                                        <p class='fs-6'>He graduated from the Ateneo de Manila School of Law in 2009 and School of Science and Engineering in 2005.</p>"
+                                                    >
+                                                        View profile
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-6 col-lg-4">
+                                            <div class="member">
+                                                <div class="imageContainer">
+                                                    <img src="assets/img/bod/loon.png" alt="board member" />
+                                                </div>
+                                                <div class="memberProfile">
+                                                    <p class="fw-bold mb-1 name">Atty. Jose Martin A. Loon</p>
+                                                    <!-- <p class="fs-6 title">President</p> -->
+                                                    <button
+                                                        class="btn btn-secondary-inverted d-none d-lg-block"
+                                                        data-bs-toggle="modal"
+                                                        data-bs-target="#modal-team"
+                                                        data-description="<p class='fs-6'>He is currently the President & CEO of Cocolife. He is also the founding partner of Yebra De Jesus Loon Law Offices (YDL Law).</p>
+                                                        <p class='fs-6'>He obtained his Master of Laws degree from Georgetown University, his Juris Doctor degree from the University of the Philippines College of Law, and his Bachelor of Arts degree from the Ateneo de Manila University.</p>
+                                                        <p class='fs-6'>In UP, he was a Member of the Order of Purple Feather, UP Law Honor Society, the UP University Student Council, and the Sigma Rho Fraternity. He also served as Legal Intern at the UP College of Law Office of Legal Aid.</p>
+                                                        <p class='fs-6'>He is a Professorial Lecturer in the UP College of Law and in the Master of Laws program of the San Beda University. He also taught International Security Studies and Politics and Governance at the Ateneo de Manila University, and Legal Research, Persons and Family Relations Law and Transportation Law, Manuel L. Quezon University School of Law.</p>
+                                                        <p class='fs-6'>He was appointed as the youngest Member Consultative Committee to Review the 1987 Constitution, serving alongside former Supreme Court Justices and members of the legislature. He also held the following positions, among others: Consultant, Office of the President of San Miguel Corporation; and Independent Director of Cyberbay Corporation.</p>"
+                                                    >
+                                                        View profile
+                                                    </button>
+                                                    <button
+                                                        class="btn btn-secondary-light d-block d-lg-none"
+                                                        data-bs-toggle="modal"
+                                                        data-bs-target="#modal-team"
+                                                        data-description="<p class='fs-6'>He is currently the President & CEO of Cocolife. He is also the founding partner of Yebra De Jesus Loon Law Offices (YDL Law).</p>
+                                                        <p class='fs-6'>He obtained his Master of Laws degree from Georgetown University, his Juris Doctor degree from the University of the Philippines College of Law, and his Bachelor of Arts degree from the Ateneo de Manila University.</p>
+                                                        <p class='fs-6'>In UP, he was a Member of the Order of Purple Feather, UP Law Honor Society, the UP University Student Council, and the Sigma Rho Fraternity. He also served as Legal Intern at the UP College of Law Office of Legal Aid.</p>
+                                                        <p class='fs-6'>He is a Professorial Lecturer in the UP College of Law and in the Master of Laws program of the San Beda University. He also taught International Security Studies and Politics and Governance at the Ateneo de Manila University, and Legal Research, Persons and Family Relations Law and Transportation Law, Manuel L. Quezon University School of Law.</p>
+                                                        <p class='fs-6'>He was appointed as the youngest Member Consultative Committee to Review the 1987 Constitution, serving alongside former Supreme Court Justices and members of the legislature. He also held the following positions, among others: Consultant, Office of the President of San Miguel Corporation; and Independent Director of Cyberbay Corporation.</p>"
+                                                    >
+                                                        View profile
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-6 col-lg-4">
+                                            <div class="member">
+                                                <div class="imageContainer">
+                                                    <img src="assets/img/bod/yebra.png" alt="board member" />
+                                                </div>
+                                                <div class="memberProfile">
+                                                    <p class="fw-bold mb-1 name">Atty. Alloysius R. Yebra</p>
+                                                    <!-- <p class="fs-6 title">President</p> -->
+                                                    <button
+                                                        class="btn btn-secondary-inverted d-none d-lg-block"
+                                                        data-bs-toggle="modal"
+                                                        data-bs-target="#modal-team"
+                                                        data-description="<p class='fs-6'>Atty. Yebra is the current Vice President of Risk and Compliance Division of Cocolife. He is also a Professional Lecturer in Special Penal Laws, Public International Law, Environmental Law, and Legal Logic at the University of the East College of Law and Criminal Law and Labor Law at the Legal Edge Bar Review Center.</p>
+                                                        <p class='fs-6'>He took Bachelor of Arts in Legal Management from the University of Sto. Tomas and Bachelor of Laws from the San Beda University College of Law.</p>"
+                                                    >
+                                                        View profile
+                                                    </button>
+                                                    <button
+                                                        class="btn btn-secondary-light d-block d-lg-none"
+                                                        data-bs-toggle="modal"
+                                                        data-bs-target="#modal-team"
+                                                        data-description="<p class='fs-6'>Atty. Yebra is the current Vice President of Risk and Compliance Division of Cocolife. He is also a Professional Lecturer in Special Penal Laws, Public International Law, Environmental Law, and Legal Logic at the University of the East College of Law and Criminal Law and Labor Law at the Legal Edge Bar Review Center.</p>
+                                                        <p class='fs-6'>He took Bachelor of Arts in Legal Management from the University of Sto. Tomas and Bachelor of Laws from the San Beda University College of Law.</p>"
+                                                    >
+                                                        View profile
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-6 col-lg-4">
+                                            <div class="member">
+                                                <div class="imageContainer">
+                                                    <img src="assets/img/bod/diangco.png" alt="board member" />
+                                                </div>
+                                                <div class="memberProfile">
+                                                    <p class="fw-bold mb-1 name">Ms. Carolina G. Diangco</p>
+                                                    <p class="fs-6 title">Independent Director</p>
+                                                    <button
+                                                        class="btn btn-secondary-inverted d-none d-lg-block"
+                                                        data-bs-toggle="modal"
+                                                        data-bs-target="#modal-team"
+                                                        data-description="<p class='fs-6'>Director Diangco is a member of Cocolife Board of Directors. She is also currently a member of the Board of Directors of Bank of Commerce and CAMCI. She was also a member of the Board of Directors of United Coconut Planters Bank and UCPB Rural Bank.</p>
+                                                        <p class='fs-6'>He took Bachelor of Arts in Legal Management from the University of Sto. Tomas and Bachelor of Laws from the San Beda University College of Law.</p>
+                                                        <p class='fs-6'>She served as the Treasurer of CIIF Finance Corporation, UCPB Foundation Corporation, and UCPB Securities, Inc. and the Controller of Mastercaterers Inc., UCPB Condominium Corporation and UCPB Properties, Inc.</p>
+                                                        <p class='fs-6'>Her previous work experiences are the following: SVP-Controller, United Coconut Planters Bank, Consultant, Central Visayas Finance Corporation.</p>
+                                                        <p class='fs-6'>She graduated from the University of the Philippines with a degree of Bachelor of Science in Business Administration major in Accountancy.</p>"
+                                                    >
+                                                        View profile
+                                                    </button>
+                                                    <button
+                                                        class="btn btn-secondary-light d-block d-lg-none"
+                                                        data-bs-toggle="modal"
+                                                        data-bs-target="#modal-team"
+                                                        data-description="<p class='fs-6'>Director Diangco is a member of Cocolife Board of Directors. She is also currently a member of the Board of Directors of Bank of Commerce and CAMCI. She was also a member of the Board of Directors of United Coconut Planters Bank and UCPB Rural Bank.</p>
+                                                        <p class='fs-6'>He took Bachelor of Arts in Legal Management from the University of Sto. Tomas and Bachelor of Laws from the San Beda University College of Law.</p>
+                                                        <p class='fs-6'>She served as the Treasurer of CIIF Finance Corporation, UCPB Foundation Corporation, and UCPB Securities, Inc. and the Controller of Mastercaterers Inc., UCPB Condominium Corporation and UCPB Properties, Inc.</p>
+                                                        <p class='fs-6'>Her previous work experiences are the following: SVP-Controller, United Coconut Planters Bank, Consultant, Central Visayas Finance Corporation.</p>
+                                                        <p class='fs-6'>She graduated from the University of the Philippines with a degree of Bachelor of Science in Business Administration major in Accountancy.</p>"
+                                                    >
+                                                        View profile
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-6 col-lg-4">
+                                            <div class="member">
+                                                <div class="imageContainer">
+                                                    <img src="assets/img/bod/andal.png" alt="board member" />
+                                                </div>
+                                                <div class="memberProfile">
+                                                    <p class="fw-bold mb-1 name">Mr. Avelino Andal</p>
+                                                    <!-- <p class="fs-6 title">Independent Director</p> -->
+                                                    <button
+                                                        class="btn btn-secondary-inverted d-none d-lg-block"
+                                                        data-bs-toggle="modal"
+                                                        data-bs-target="#modal-team"
+                                                        data-description="<p class='fs-6'>Director Andal is a member of the Cocolife Board of Directors. He is the main host of the public affairs shows Tulay TV Show airing on PTV4.</p>
+                                                        <p class='fs-6'>He is the Editor-in-Chief of the weekly publication of Monday Times, with circulation in Quezon, Batangas, Cavite and Laguna, Philippine Monday Times and Diyaryung Lingguhan ng Batangenyo.</p>
+                                                        <p class='fs-6'>His work experiences include the following: Member of the Movie and Television Review and Classification Board (MTRCB); Administrator, Philippine Coconut Authority; Member of the Board, Quezon Metro Water District; President, Khaos Fuel Solutions Inc., Chicago, Illinois, USA; President and General Manager, Ala Industries; Elected Board Member, 2nd District, Quezon Provincial Board; and Chairman & Board President, American Builders Corp.</p>
+                                                        <p class='fs-6'>He studied at the Mapua Institute of Technology with a degree of Bachelor of Science in Business Management. He also took some units for Bachelor of Science in Mechanical Engineering degree.</p>"
+                                                    >
+                                                        View profile
+                                                    </button>
+                                                    <button
+                                                        class="btn btn-secondary-light d-block d-lg-none"
+                                                        data-bs-toggle="modal"
+                                                        data-bs-target="#modal-team"
+                                                        data-description="<p class='fs-6'>Director Andal is a member of the Cocolife Board of Directors. He is the main host of the public affairs shows Tulay TV Show airing on PTV4.</p>
+                                                        <p class='fs-6'>He is the Editor-in-Chief of the weekly publication of Monday Times, with circulation in Quezon, Batangas, Cavite and Laguna, Philippine Monday Times and Diyaryung Lingguhan ng Batangenyo.</p>
+                                                        <p class='fs-6'>His work experiences include the following: Member of the Movie and Television Review and Classification Board (MTRCB); Administrator, Philippine Coconut Authority; Member of the Board, Quezon Metro Water District; President, Khaos Fuel Solutions Inc., Chicago, Illinois, USA; President and General Manager, Ala Industries; Elected Board Member, 2nd District, Quezon Provincial Board; and Chairman & Board President, American Builders Corp.</p>
+                                                        <p class='fs-6'>He studied at the Mapua Institute of Technology with a degree of Bachelor of Science in Business Management. He also took some units for Bachelor of Science in Mechanical Engineering degree.</p>"
+                                                    >
+                                                        View profile
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-6 col-lg-4">
+                                            <div class="member">
+                                                <div class="imageContainer">
+                                                    <img src="assets/img/bod/nario.png" alt="board member" />
+                                                </div>
+                                                <div class="memberProfile">
+                                                    <p class="fw-bold mb-1 name">Atty. Narciso P. Nario, Jr</p>
+                                                    <!-- <p class="fs-6 title">Independent Director</p> -->
+                                                    <button
+                                                        class="btn btn-secondary-inverted d-none d-lg-block"
+                                                        data-bs-toggle="modal"
+                                                        data-bs-target="#modal-team"
+                                                        data-description="<p class='fs-6'>Atty. Nario is the First Vice President and Corporate Secretary of Cocolife. He served as the Vice President and Head of the Corporate Services Division of CIIF Oil Mills Group.</p>
+                                                        <p class='fs-6'>He finished his Bachelor of Arts and Bachelor of Laws degrees at the University of Sto. Tomas.</p>"
+                                                    >
+                                                        View profile
+                                                    </button>
+                                                    <button
+                                                        class="btn btn-secondary-light d-block d-lg-none"
+                                                        data-bs-toggle="modal"
+                                                        data-bs-target="#modal-team"
+                                                        data-description="<p class='fs-6'>Atty. Nario is the First Vice President and Corporate Secretary of Cocolife. He served as the Vice President and Head of the Corporate Services Division of CIIF Oil Mills Group.</p>
+                                                        <p class='fs-6'>He finished his Bachelor of Arts and Bachelor of Laws degrees at the University of Sto. Tomas.</p>"
+                                                    >
+                                                        View profile
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-6 col-lg-4">
+                                            <div class="member">
+                                                <div class="imageContainer">
+                                                    <img src="assets/img/bod/uy.png" alt="board member" />
+                                                </div>
+                                                <div class="memberProfile">
+                                                    <p class="fw-bold mb-1 name">Mr. Johnny Y. Uy</p>
+                                                    <!-- <p class="fs-6 title">Independent Director</p> -->
+                                                    <button
+                                                        class="btn btn-secondary-inverted d-none d-lg-block"
+                                                        data-bs-toggle="modal"
+                                                        data-bs-target="#modal-team"
+                                                        data-description="<p class='fs-6'>Director Uy is the Chief Executive Officer of G.U.Y. Trading. He is currently an Instructor of Disaster Readiness and Risk Reduction at the Hope Christian High School.</p>
+                                                        <p class='fs-6'>He is an alumnus of Adamson University with a degree of Bachelor of Science in Electronics Engineering. He took his second degree of Bachelor of Commerce – Management from Chiang Kai Shek College.
+
+                                                        </p>"
+                                                    >
+                                                        View profile
+                                                    </button>
+                                                    <button
+                                                        class="btn btn-secondary-light d-block d-lg-none"
+                                                        data-bs-toggle="modal"
+                                                        data-bs-target="#modal-team"
+                                                        data-description="<p class='fs-6'>Director Uy is the Chief Executive Officer of G.U.Y. Trading. He is currently an Instructor of Disaster Readiness and Risk Reduction at the Hope Christian High School.</p>
+                                                        <p class='fs-6'>He is an alumnus of Adamson University with a degree of Bachelor of Science in Electronics Engineering. He took his second degree of Bachelor of Commerce – Management from Chiang Kai Shek College.
+
+                                                        </p>"
+                                                    >
+                                                        View profile
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-6 col-lg-4">
+                                            <div class="member">
+                                                <div class="imageContainer">
+                                                    <img src="assets/img/bod/argel.png" alt="board member" />
+                                                </div>
+                                                <div class="memberProfile">
+                                                    <p class="fw-bold mb-1 name">Atty. Golda Margareth D. Argel</p>
+                                                    <!-- <p class="fs-6 title">Independent Director</p> -->
+                                                    <button
+                                                        class="btn btn-secondary-inverted d-none d-lg-block"
+                                                        data-bs-toggle="modal"
+                                                        data-bs-target="#modal-team"
+                                                        data-description="<p class='fs-6'>Atty. Argel is a Certified Public Accountant. She works with Medialdea Bello & Suarez Law Office as a Senior Associate. She also served as Legal Consultant of the Philippine Charity Sweepstakes Office (PCSO).</p>
+                                                        <p class='fs-6'>She studied at the San Beda University with a degree of Bachelor of Science in Accountancy. She finished her Juris Doctor degree at the Ateneo de Manila University.</p>"
+                                                    >
+                                                        View profile
+                                                    </button>
+                                                    <button
+                                                        class="btn btn-secondary-light d-block d-lg-none"
+                                                        data-bs-toggle="modal"
+                                                        data-bs-target="#modal-team"
+                                                        data-description="<p class='fs-6'>Atty. Argel is a Certified Public Accountant. She works with Medialdea Bello & Suarez Law Office as a Senior Associate. She also served as Legal Consultant of the Philippine Charity Sweepstakes Office (PCSO).</p>
+                                                        <p class='fs-6'>She studied at the San Beda University with a degree of Bachelor of Science in Accountancy. She finished her Juris Doctor degree at the Ateneo de Manila University.</p>"
+                                                    >
+                                                        View profile
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-6 col-lg-4">
+                                            <div class="member">
+                                                <div class="imageContainer">
+                                                    <img src="assets/img/bod/bandila.png" alt="board member" />
+                                                </div>
+                                                <div class="memberProfile">
+                                                    <p class="fw-bold mb-1 name">Mr. Jackson M. Bandila</p>
+                                                    <!-- <p class="fs-6 title">Independent Director</p> -->
+                                                    <button
+                                                        class="btn btn-secondary-inverted d-none d-lg-block"
+                                                        data-bs-toggle="modal"
+                                                        data-bs-target="#modal-team"
+                                                        data-description="<p class='fs-6'>Director Bandila was a former Consultant of the Regional Board of Investment and Office of the Provincial Governor of Maguindanao.</p>
+                                                        <p class='fs-6'>He finished his college at Notre Dame University in Cotabato City with a degree of Bachelor of Science in Biology.
+                                                        </p>"
+                                                    >
+                                                        View profile
+                                                    </button>
+                                                    <button
+                                                        class="btn btn-secondary-light d-block d-lg-none"
+                                                        data-bs-toggle="modal"
+                                                        data-bs-target="#modal-team"
+                                                        data-description="<p class='fs-6'>Director Bandila was a former Consultant of the Regional Board of Investment and Office of the Provincial Governor of Maguindanao.</p>
+                                                        <p class='fs-6'>He finished his college at Notre Dame University in Cotabato City with a degree of Bachelor of Science in Biology.
+                                                        </p>"
+                                                    >
+                                                        View profile
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-6 col-lg-4">
+                                            <div class="member">
+                                                <div class="imageContainer">
+                                                    <img src="assets/img/bod/de-claro.png" alt="board member" />
+                                                </div>
+                                                <div class="memberProfile">
+                                                    <p class="fw-bold mb-1 name"> Mr. Ramon Manuel G. De Claro</p>
+                                                    <p class="fs-6 title">Independent Director</p>
+                                                    <button
+                                                        class="btn btn-secondary-inverted d-none d-lg-block"
+                                                        data-bs-toggle="modal"
+                                                        data-bs-target="#modal-team"
+                                                        data-description="<p class='fs-6'>Director De Claro is the President of Renato Realty and Development Corporation. He also serves as the Managing Director of Clargis Food Ventures, Inc.</p>
+                                                        <p class='fs-6'>He is a Director and Treasurer of Banh Mi Kitchen Services, Inc., Manester Development Corporation, Galvez Realty and Development Co., Inc., and a Director of MBPP Enterprises, Inc.</p>
+                                                        <p class='fs-6'>He finished his Bachelor of Sciences Major in Communication Technology Management at the Ateneo de Manila University. He obtained his Masters in Entrepreneurship from Ateneo Graduate School of Business.</p>"
+                                                    >
+                                                        View profile
+                                                    </button>
+                                                    <button
+                                                        class="btn btn-secondary-light d-block d-lg-none"
+                                                        data-bs-toggle="modal"
+                                                        data-bs-target="#modal-team"
+                                                        data-description="<p class='fs-6'>Director De Claro is the President of Renato Realty and Development Corporation. He also serves as the Managing Director of Clargis Food Ventures, Inc.</p>
+                                                        <p class='fs-6'>He is a Director and Treasurer of Banh Mi Kitchen Services, Inc., Manester Development Corporation, Galvez Realty and Development Co., Inc., and a Director of MBPP Enterprises, Inc.</p>
+                                                        <p class='fs-6'>He finished his Bachelor of Sciences Major in Communication Technology Management at the Ateneo de Manila University. He obtained his Masters in Entrepreneurship from Ateneo Graduate School of Business.</p>"
+                                                    >
+                                                        View profile
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-6 col-lg-4">
+                                            <div class="member">
+                                                <div class="imageContainer">
+                                                    <img src="assets/img/bod/pama.png" alt="board member" />
+                                                </div>
+                                                <div class="memberProfile">
+                                                    <p class="fw-bold mb-1 name">Adm. Alexander P. Pama (Ret.)</p>
+                                                    <p class="fs-6 title">Independent Director</p>
+                                                    <button
+                                                        class="btn btn-secondary-inverted d-none d-lg-block"
+                                                        data-bs-toggle="modal"
+                                                        data-bs-target="#modal-team"
+                                                        data-description="<p class='fs-6'>Director Pama is a retired Vice Admiral of the Armed Forces of the Philippines. He is currently the Co-Chair of the Board of Directors of ARISE Philippines.</p>
+                                                        <p class='fs-6'>He also serves as a Consultant at the National Resilience Council and for Disaster Resilience of SM Prime Holdings Inc. He is an Adjunct Professor at the Asian Institute of Management and a visiting Lecturer at the Ateneo de Manila University.</p>
+                                                        <p class='fs-6'>He is a member of the Philippine Military Academy Class of 1979 and a graduate of the Naval Command Course at the US Naval War College in Newport, Rhode Island, USA. He had his post graduate course in National Security at the Christian Albrechts University, Kiel, Germany. He also took courses in Business Management in the Ateneo Graduate School of Business.</p>"
+                                                    >
+                                                        View profile
+                                                    </button>
+                                                    <button
+                                                        class="btn btn-secondary-light d-block d-lg-none"
+                                                        data-bs-toggle="modal"
+                                                        data-bs-target="#modal-team"
+                                                        data-description="<p class='fs-6'>Director Pama is a retired Vice Admiral of the Armed Forces of the Philippines. He is currently the Co-Chair of the Board of Directors of ARISE Philippines.</p>
+                                                        <p class='fs-6'>He also serves as a Consultant at the National Resilience Council and for Disaster Resilience of SM Prime Holdings Inc. He is an Adjunct Professor at the Asian Institute of Management and a visiting Lecturer at the Ateneo de Manila University.</p>
+                                                        <p class='fs-6'>He is a member of the Philippine Military Academy Class of 1979 and a graduate of the Naval Command Course at the US Naval War College in Newport, Rhode Island, USA. He had his post graduate course in National Security at the Christian Albrechts University, Kiel, Germany. He also took courses in Business Management in the Ateneo Graduate School of Business.</p>"
+                                                    >
+                                                        View profile
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-6 col-lg-4">
+                                            <div class="member">
+                                                <div class="imageContainer">
+                                                    <img src="assets/img/bod/ortiz.png" alt="board member" />
+                                                </div>
+                                                <div class="memberProfile">
+                                                    <p class="fw-bold mb-1 name">Gen. Arturo B. Ortiz (Ret.)</p>
+                                                    <p class="fs-6 title">Independent Director</p>
+                                                    <button
+                                                        class="btn btn-secondary-inverted d-none d-lg-block"
+                                                        data-bs-toggle="modal"
+                                                        data-bs-target="#modal-team"
+                                                        data-description="<p class='fs-6'>Director Ortiz is a recipient of the Medal of Valor from the Armed Forces of the Philippines. He served as the Commanding General of the Philippine Army.</p>
+                                                        <p class='fs-6'>He is a member of the Philippine Military Academy Class of 1979. He took General Engineering at St. Louis University in Baguio City. He finished his Masters in Business Administration at the Ateneo de Manila University.</p>"
+                                                    >
+                                                        View profile
+                                                    </button>
+                                                    <button
+                                                        class="btn btn-secondary-light d-block d-lg-none"
+                                                        data-bs-toggle="modal"
+                                                        data-bs-target="#modal-team"
+                                                        data-description="<p class='fs-6'>Director Ortiz is a recipient of the Medal of Valor from the Armed Forces of the Philippines. He served as the Commanding General of the Philippine Army.</p>
+                                                        <p class='fs-6'>He is a member of the Philippine Military Academy Class of 1979. He took General Engineering at St. Louis University in Baguio City. He finished his Masters in Business Administration at the Ateneo de Manila University.</p>"
+                                                    >
+                                                        View profile
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-6 col-lg-4">
+                                            <div class="member">
+                                                <div class="imageContainer">
+                                                    <img src="assets/img/logo-530x750.png" alt="board member" />
+                                                </div>
+                                                <div class="memberProfile">
+                                                    <p class="fw-bold mb-1 name">Mr. Jose Manuel C. Razon</p>
+                                                    <!-- <p class="fs-6 title">Independent Director</p> -->
+                                                    <button
+                                                        class="btn btn-secondary-inverted d-none d-lg-block"
+                                                        data-bs-toggle="modal"
+                                                        data-bs-target="#modal-team"
+                                                    >
+                                                        View profile
+                                                    </button>
+                                                    <button
+                                                        class="btn btn-secondary-light d-block d-lg-none"
+                                                        data-bs-toggle="modal"
+                                                        data-bs-target="#modal-team"
+                                                    >
+                                                        View profile
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-center">
+                                        <div class="col-sm-12 col-md-6 col-lg-4">
+                                            <div class="member">
+                                                <div class="imageContainer">
+                                                    <img src="assets/img/bod/gaerlan.png" alt="board member" />
+                                                </div>
+                                                <div class="memberProfile">
+                                                    <p class="fw-bold mb-1 name">Atty. Rhett Gaerlan</p>
+                                                    <p class="fs-6 title">Corporate Secretary</p>
+                                                    <button
+                                                        class="btn btn-secondary-inverted d-none d-lg-block"
+                                                        data-bs-toggle="modal"
+                                                        data-bs-target="#modal-team"
+                                                    >
+                                                        View profile
+                                                    </button>
+                                                    <button
+                                                        class="btn btn-secondary-light d-block d-lg-none"
+                                                        data-bs-toggle="modal"
+                                                        data-bs-target="#modal-team"
+                                                    >
+                                                        View profile
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-center">
+                                        <div class="col-sm-12 col-md-6 col-lg-4">
+                                            <div class="member">
+                                                <div class="imageContainer">
+                                                    <img src="assets/img/bod/lacas.png" alt="board member" />
+                                                </div>
+                                                <div class="memberProfile">
+                                                    <p class="fw-bold mb-1 name">Atty. Jose Mari Carlo D. Lacas</p>
+                                                    <p class="fs-6 title">Vice President<br/> Compliance Department</p>
+                                                    <button
+                                                        class="btn btn-secondary-inverted d-none d-lg-block"
+                                                        data-bs-toggle="modal"
+                                                        data-bs-target="#modal-team"
+                                                    >
+                                                        View profile
+                                                    </button>
+                                                    <button
+                                                        class="btn btn-secondary-light d-block d-lg-none"
+                                                        data-bs-toggle="modal"
+                                                        data-bs-target="#modal-team"
+                                                    >
+                                                        View profile
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-6 col-lg-4">
+                                            <div class="member">
+                                                <div class="imageContainer">
+                                                    <img src="assets/img/bod/perez.png" alt="board member" />
+                                                </div>
+                                                <div class="memberProfile">
+                                                    <p class="fw-bold mb-1 name">Atty. Augusto M. Perez, Jr.</p>
+                                                    <p class="fs-6 title">Vice President<br/> Risk Management</p>
+                                                    <button
+                                                        class="btn btn-secondary-inverted d-none d-lg-block"
+                                                        data-bs-toggle="modal"
+                                                        data-bs-target="#modal-team"
+                                                    >
+                                                        View profile
+                                                    </button>
+                                                    <button
+                                                        class="btn btn-secondary-light d-block d-lg-none"
+                                                        data-bs-toggle="modal"
+                                                        data-bs-target="#modal-team"
+                                                    >
+                                                        View profile
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="management" role="tabpanel" aria-labelledby="management-tab">
+                                    <div class="row py-5">
+                                        <div class="col-sm-12 col-md-6 col-lg-4">
+                                            <div class="member">
+                                                <div class="imageContainer">
+                                                    <img src="assets/img/mngt/de-jesus.png" alt="board member" />
+                                                </div>
+                                                <div class="memberProfile">
+                                                    <p class="fw-bold mb-1 name">Atty. Darren M. De Jesus</p>
+                                                    <p class="fs-6 title">President</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-6 col-lg-4">
+                                            <div class="member">
+                                                <div class="imageContainer">
+                                                    <img src="assets/img/mngt/libo-on.png" alt="board member" />
+                                                </div>
+                                                <div class="memberProfile">
+                                                    <p class="fw-bold mb-1 name">Joel G. Libo-on</p>
+                                                    <p class="fs-6 title">Senior Vice president <br/> Insurance Management Division</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-6 col-lg-4">
+                                            <div class="member">
+                                                <div class="imageContainer">
+                                                    <img src="assets/img/mngt/parreñas.png" alt="board member" />
+                                                </div>
+                                                <div class="memberProfile">
+                                                    <p class="fw-bold mb-1 name">Magdalena A. Parreñas</p>
+                                                    <p class="fs-6 title">First Vice president <br/> Financial Management Division</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-6 col-lg-4">
+                                            <div class="member">
+                                                <div class="imageContainer">
+                                                    <img src="assets/img/mngt/bautista.png" alt="board member" />
+                                                </div>
+                                                <div class="memberProfile">
+                                                    <p class="fw-bold mb-1 name">Atty. Deodar Lovell C. Bautista</p>
+                                                    <p class="fs-6 title">Vice president <br/> Corporate Strategy and Innovation Division</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-6 col-lg-4">
+                                            <div class="member">
+                                                <div class="imageContainer">
+                                                    <img src="assets/img/mngt/beltejar.png" alt="board member" />
+                                                </div>
+                                                <div class="memberProfile">
+                                                    <p class="fw-bold mb-1 name">Atty. Jan Robert V. Beltejar</p>
+                                                    <p class="fs-6 title">Vice president <br/> Corporate Resources Division</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-6 col-lg-4">
+                                            <div class="member">
+                                                <div class="imageContainer">
+                                                    <img src="assets/img/mngt/macapagal.png" alt="board member" />
+                                                </div>
+                                                <div class="memberProfile">
+                                                    <p class="fw-bold mb-1 name">Justino C. Macapagal</p>
+                                                    <p class="fs-6 title">Vice president <br/> Branch Business Group</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-6 col-lg-4">
+                                            <div class="member">
+                                                <div class="imageContainer">
+                                                    <img src="assets/img/mngt/devesa.png" alt="board member" />
+                                                </div>
+                                                <div class="memberProfile">
+                                                    <p class="fw-bold mb-1 name">Atty. Van Lee Roy C. Devesa</p>
+                                                    <p class="fs-6 title">Vice president <br/> Operations Group</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-6 col-lg-4">
+                                            <div class="member">
+                                                <div class="imageContainer">
+                                                    <img src="assets/img/mngt/garcia.png" alt="board member" />
+                                                </div>
+                                                <div class="memberProfile">
+                                                    <p class="fw-bold mb-1 name">Arlene S. Garcia</p>
+                                                    <p class="fs-6 title">Vice president <br/> Casualty, Marine, Motor Underwriting Group</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-6 col-lg-4">
+                                            <div class="member">
+                                                <div class="imageContainer">
+                                                    <img src="assets/img/mngt/nob.png" alt="board member" />
+                                                </div>
+                                                <div class="memberProfile">
+                                                    <p class="fw-bold mb-1 name">Atty. Francisco M. Nob</p>
+                                                    <p class="fs-6 title">Vice president <br/> Claims Department</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-6 col-lg-4">
+                                            <div class="member">
+                                                <div class="imageContainer">
+                                                    <img src="assets/img/mngt/parreñas.png" alt="board member" />
+                                                </div>
+                                                <div class="memberProfile">
+                                                    <p class="fw-bold mb-1 name">Magdalena A. Parreñas</p>
+                                                    <p class="fs-6 title">Vice president <br/> Strategic Planning and Research, Innovation, and Development Department</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-6 col-lg-4">
+                                            <div class="member">
+                                                <div class="imageContainer">
+                                                    <img src="assets/img/mngt/moral.png" alt="board member" />
+                                                </div>
+                                                <div class="memberProfile">
+                                                    <p class="fw-bold mb-1 name">Engr. Michael Teodoro S. Del Moral</p>
+                                                    <p class="fs-6 title">Vice president <br/> Business Development and Corporate Sales Department</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-6 col-lg-4">
+                                            <div class="member">
+                                                <div class="imageContainer">
+                                                    <img src="assets/img/mngt/parreñas.png" alt="board member" />
+                                                </div>
+                                                <div class="memberProfile">
+                                                    <p class="fw-bold mb-1 name">Magdalena A. Parreñas</p>
+                                                    <p class="fs-6 title">Vice president <br/> Legal Services Department</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="divider">
+                <img src="assets/img/wave-lines.svg" alt="divider" />
+            </section>
+        </div>
+
+        <div class="modal fade modal-team" tabindex="-1" role="dialog" id="modal-team">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                    <div class="modal-header d-flex justify-content-end">
+                        <div class="container">
+                            <div class="d-flex justify-content-end">
+                                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                                    <svg id="close" data-name="close" xmlns="http://www.w3.org/2000/svg" width="67.891" height="67.891" viewBox="0 0 67.891 67.891">
+                                        <path id="Path_1686" data-name="Path 1686" d="M37.741,34.059l-8.6-8.6,8.6-8.6a2.608,2.608,0,0,0-3.688-3.688l-8.6,8.6-8.6-8.6a2.5,2.5,0,0,0-3.688,0,2.52,2.52,0,0,0,0,3.688l8.6,8.6-8.6,8.6a2.522,2.522,0,0,0,0,3.688,2.591,2.591,0,0,0,3.688,0l8.6-8.6,8.6,8.6a2.62,2.62,0,0,0,3.688,0A2.591,2.591,0,0,0,37.741,34.059Z" transform="translate(8.494 8.487)" fill="#fff" />
+                                        <path id="Path_1687" data-name="Path 1687" d="M37.321,7.945A29.381,29.381,0,0,1,58.1,58.1,29.381,29.381,0,0,1,16.545,16.545a29.182,29.182,0,0,1,20.775-8.6m0-4.57A33.946,33.946,0,1,0,71.266,37.321,33.94,33.94,0,0,0,37.321,3.375Z" transform="translate(-3.375 -3.375)" fill="#fff" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-12 col-lg-5 align-items-center">
+                                    <div class="image-container text-center">
+                                        <img src="" alt="board member" />
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-lg-7 d-flex align-items-center">
+                                    <div class="modal-text">
+                                        <div class="name">
+                                            <p class="mb-0"></p>
+                                            <label class="fs-6 mb-0"></label>
+                                        </div>
+                                        <div class="description"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer justify-content-center">
+                        <div class="imageContainer">
+                            <img class="logo" src="assets/img/logo_white.png" alt="cocogen logo" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $(document).on("show.bs.modal", "#modal-team", function (e) {
+                    let target = $(e.relatedTarget);
+                    let name = target.parent().find(".name").html();
+                    let title = target.parent().find(".title").html();
+                    let photo = target.parent().parent().find("img").attr("src");
+                    let description = target.data("description");
+                    let modalContent = $(e.currentTarget).find(".modal-body");
+
+                    if (typeof photo == "undefined") {
+                        photo = "";
+                    }
+
+                    if (typeof name == "undefined") {
+                        name = "";
+                    }
+
+                    if (typeof title == "undefined") {
+                        title = "";
+                    }
+
+                    if (typeof description == "undefined") {
+                        description = "";
+                    }
+
+                    modalContent.find("img").attr("src", photo);
+                    modalContent.find("p").first().html(name);
+                    modalContent.find("label").html(title);
+                    modalContent.find(".description").html(description);
+                });
+            });
+        </script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    </body>
+</html>

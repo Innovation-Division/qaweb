@@ -1,0 +1,561 @@
+.form-title h2 {
+    text-align: center;
+    font: 700 20px 'Muli';
+    color: #000;
+    word-break: break-word;
+    word-wrap: break-word;
+}
+
+.mega-form-builds {
+    padding-top: 35px;
+}
+
+.mega-form-builds input,
+.mega-form-builds textarea,
+.mega-form-builds select {
+    background-color: transparent;
+    margin: 0;
+}
+.mega-form-builds label {
+    position: relative;
+}
+.mega-form-builds label.custom-title {
+    padding-top: 7px;
+    padding-right: 7px;
+}
+.mega-form-builds select {
+    /*font-size: 12px;*/
+    /*font-style: italic;*/
+    /*color: #a89d99;*/
+}
+.mega-form-builds input:moz-placeholder{
+    font-size: 12px;
+    font-style: italic;
+    color: #a89d99;
+}
+.mega-form-builds input:placeholder{
+    font-size: 12px;
+    font-style: italic;
+    color: #a89d99;
+}
+.mega-form-builds input:ms-input-placeholder{
+    font-size: 12px;
+    font-style: italic;
+    color: #a89d99;
+}
+.mega-form-builds input:webkit-input-placeholder{
+    font-size: 12px;
+    font-style: italic;
+    color: #a89d99;
+}
+.mega-form-builds input:placeholder,
+.mega-form-builds select:placeholder{
+    font-size: 12px;
+    font-style: italic;
+    color: #a89d99;
+}
+.mega-form-builds select option {
+    color:#000;
+}
+.mega-form-builds .form-group {
+    margin-bottom: 0;
+}
+.mega-form-builds .fieldset-group-set.has-error input[data-bv-excluded="true"] {
+    margin-bottom: 20px;
+}
+
+.mega-form-builds .fieldset-group-set:first-child .actions .btn-delete {
+    /*display: none;*/
+}
+.btn-delete {
+    background: #c12020;
+}
+.mega-form-builds .fieldset-group-set .actions .btn-add {
+    display: none;
+}
+.btn-add {
+    background: #00559f;
+}
+.mega-form-builds .fieldset-group-set:last-child .actions .btn-add {
+    display: inline-block;
+}
+.mega-form-builds .fieldset-group-set:last-child .actions > div {
+    margin-bottom: 5px;
+}
+.mega-form-builds .align-center {
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+.mega-form-builds .form-group-actions .actions {
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+
+.mega-form-builds .radio_type_title {
+    margin-bottom: 0px;
+}
+
+.mega-form-builds .radio_type {
+    margin-bottom: 10px;
+}
+
+.mega-form-builds .fieldset-header h3 {
+    font: 700 16px 'Muli';
+    color: #000;
+    text-transform: uppercase;
+}
+
+.mega-form-builds .form-control-feedback.icon  {
+    line-height: 34px;
+}
+
+.mega-form-builds span.help-block {
+    margin-top: 0;
+}
+
+.mega-form-builds span.help-block small.help-block {
+    font: italic 300 12px 'Muli';
+    margin-left: 0;
+}
+
+.mega-form-builds .field-item-note {
+    font: italic 300 12px 'Muli';
+}
+
+.mega-form-builds .fieldset-header .fieldset-header-info {
+    font: italic 300 12px 'Muli';
+    margin-bottom: 11px;
+    color: #000;
+}
+
+.mega-form-builds input[type="submit"],
+.mega-form-builds input[type="reset"],
+.mega-form-builds input[type="button"] {
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    font: 700 17px 'Muli';
+    padding: 7px 35px 7px 35px;
+    text-transform: uppercase;
+    background-color: #00549F;
+}
+
+.mega-form-builds input[type="button"][class="btn btn-change"] {
+    padding: 5px 0;
+}
+
+.mega-form-builds input[type="submit"]:hover,
+.mega-form-builds input[type="reset"]:hover,
+.mega-form-builds input[type="button"]:hover {
+    color: #0053a1;
+    background-color:#fff;
+    border: 2px solid #007aec;
+    padding: 5px 33px 5px 33px;
+}
+
+.mega-form-builds input[type="button"][class="btn btn-change"]:hover {
+    padding: 3px 0;
+}
+
+.mega-form-builds .btn-back-wrapper:hover input[type="button"] {
+    color: #0053a1;
+    background-color:#fff;
+    border: 2px solid #007aec;
+    padding: 5px 33px 5px 33px;
+}
+
+.mega-form-builds .btn-cont-back .btn-back-wrapper {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+}
+
+.mega-form-builds .btn-cont-back .btn-back-wrapper:hover:before {
+    color: #0053a1;
+}
+
+.mega-form-builds div[data-slide],
+.mega-form-builds div[data-fieldset-row="value_vehicle"] {
+    display: none;
+}
+
+.mega-form-builds .btn-cont-back .btn-left {
+    text-align: left;
+}
+
+.mega-form-builds .btn-cont-back .btn-back-wrapper:before {
+    color: #fff;
+    content: '\e314';
+    font-family: 'icomoon';
+    font-size: 24px;
+    left: 5px;
+    position: absolute;
+    top: 50%;
+    -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.mega-form-builds .btn-cont-back .btn-center {
+    text-align: center;
+}
+
+.mega-form-builds .btn-cont-back .btn-right {
+    text-align: right;
+}
+
+.mega-form-builds div[data-fieldset-row="value_vehicle"] .row input[type="button"]{
+    width: 100%;
+}
+
+.mega-form-builds .value_vehicle {
+    margin-bottom: 3px;
+}
+
+.mega-form-builds div[data-fieldset-row="value_vehicle"] span {
+    font-size: 14px;
+}
+.mega-form-builds > div.append-btn {
+    display: none;
+}
+
+.mega-form-builds > div[data-slide][style="display: none;"] + div.append-btn {
+    display: none;
+}
+
+.mega-form-builds > div[data-slide][style="display: block;"] + div.append-btn {
+    display: block;
+}
+
+.ui-widget-header {
+    border: 1px solid #084ae7;
+    /*background: #037df3 url(images/ui-bg_gloss-wave_35_f6a828_500x100s.png) 50% 50% repeat-x;*/
+    background: #037df3;
+    color: #fff;
+    font-weight: bold;
+}
+
+.mega-form-builds .calendar_input {
+    background: url(https://choose.ucpbgen.com/get-insured-today/assets/images/calendar_icon.png) right center no-repeat;
+}
+
+.mega-form-builds [data-fieldset-group="inssurance"] label.radio-inline {
+    font-size: 15px;
+}
+
+.mega-form-builds [data-fieldset-group="key_term"] label.good_health {
+    font-size: 16px;
+    padding-right: 25px;
+}
+
+.mega-form-builds .date-form-wrapper:before {
+    content: ' ';
+    right: 10px;
+    top: 50%;
+    -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    font-family: 'icomoon';
+    font-size: 18px;
+    position: absolute;
+}
+
+.mega-form-builds .date-form-wrapper {
+    position: relative;
+}
+
+.mega-form-builds .select-form-wrapper:before {
+    content: '\e313';
+    right: 10px;
+    top: 50%;
+    -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    font-family: 'icomoon';
+    font-size: 18px;
+    position: absolute;
+}
+
+.mega-form-builds .select-form-wrapper {
+    position: relative;
+}
+
+.mega-form-builds .select-form-wrapper select {
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    -webkit-appearance: none;
+    z-index: 1;
+    position: relative;
+    padding-right: 32px;
+    font-size: 12px;
+}
+
+.mega-form-builds [class*="col-"] {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.mega-form-builds .fieldset-group-set {
+    display: block;
+    padding: 20px 15px 10px 15px;
+    background-color: #ededed;
+    position: relative;
+    border-top: 2px solid #ccc;
+    margin: 0;
+}
+
+.mega-form-builds .form-control::-moz-placeholder {
+    color: #999;
+    opacity: 1;
+    font: italic 300 12px 'Muli';
+}
+
+.mega-form-builds .form-control:-ms-input-placeholder {
+    color: #999;
+    font: italic 300 12px 'Muli';
+}
+
+.mega-form-builds .form-control::-webkit-input-placeholder {
+    color: #999;
+    font: italic 300 12px 'Muli';
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+.mega-form-builds .slider-range.value_vehicle-fmv {
+    background: #000;
+    border: 1px solid #000;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.mega-form-builds input[type="checkbox"][name="insurance_required[for_rent]"] {
+    margin-top: 0;
+}
+
+.form-group.fieldset-group span {
+    display: inline-block;
+}
+
+.mega-form-builds div[data-slide] div[data-fieldset-row="upload_orcr"] .uploader .img-section .image-wrapper {
+    width: 110px;
+    height: 110px;
+    overflow: hidden;
+    position: relative;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+    background-size: cover !important;
+    background-position: center center;
+}
+.mega-form-builds .radio-inline .form-control-feedback.icon,
+.mega-form-builds .checkbox-inline .form-control-feedback.icon {
+    right: -35px !important;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.mega-form-builds div[data-fieldset-row="age_property"] .col-md-12 {
+    margin-bottom: 0;
+}
+
+.mega-form-builds div[data-fieldset-row="address_details"] label.checkbox-inline,
+.mega-form-builds div[data-fieldset-row="property_valuation"] .fieldset-group span,
+.mega-form-builds div[data-fieldset-row="property_valuation_others"] .fieldset-group span {
+    font-weight: bold;
+}
+
+/* TOOLTIP */
+.form-group.fieldset-group span.tooltip-icon {
+    color: #00539E;
+}
+
+.mega-form-builds span.tooltip-text {
+    text-align: justify;
+    background: #e4e4e4;
+    border: 1px solid #a0a0a0;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: normal;
+    padding: 15px 20px ;
+    position: absolute;
+    visibility: hidden;
+    width: 250px;
+    z-index: 2;
+}
+
+/* CONSTRUCTION TABLE */
+.mega-form-builds div[data-fieldset-row="construction_header"] span.construction-title {
+    font-weight: bold;
+    text-align: center;
+}
+
+.mega-form-builds div[data-fieldset-row="construction"] span.construction-row-title {
+    font-weight: bold;
+}
+
+.mega-form-builds div[data-fieldset-row="construction"] div.fieldset-header,
+.mega-form-builds div[data-fieldset-row="construction"] span.construction-checkbox-label {
+    display: none;
+}
+
+.mega-form-builds div[data-fieldset-row="construction"] .checkbox {
+    padding-top: 0;
+    text-align: center;
+}
+
+.mega-form-builds div[data-fieldset-row="coverage_details"] i.form-control-feedback.icon {
+    display: none !important;
+}
+
+.mega-form-builds div[data-slide] div[data-fieldset-row="coverage_details"] .fieldset-group.has-error div[data-fieldset-group="coverage_details"] label {
+    color: #a94442;
+}
+
+@media (min-width: 992px) {
+    .mega-form-builds [data-fieldset-row="person_to_contact"] .field-item-note {
+        padding-top: 2px;
+    }
+}
+@media (max-width: 992px) {
+    .mega-form-builds div[class*="col-"].btn-cont-back .pull-right {
+        float: none !important;
+        text-align: center;
+    }
+    .has-feedback .form-control {
+        padding-right: 22.5px;
+    }
+    .mega-form-builds .align-center{
+        text-align: right;
+        position: absolute;
+        top: 50%;
+        right: 12px;
+        padding: 0;
+        width: 8%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+    .mega-form-builds .fieldset-group-set .select-form-wrapper,
+    .mega-form-builds .fieldset-group-set input.form-control {
+        width: 94%;
+    }
+    .mega-form-builds .fieldset-group-set {
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+    .mega-form-builds .align-center > div{
+        margin-bottom: 4px;
+        padding: 4px 8px;
+    }
+    .btn-cont-back {
+        text-align: center;
+    }
+    .btn-cont-back .col-cus-btn-12 {
+        float: none !important;
+        display: inline-block;
+        margin-right: 10px;
+    }
+}
+@media (max-width:991px) {
+    .mega-form-builds .fieldset-group-set .row div[class^="col-"] > input.form-control + .form-control-feedback.icon,
+    .mega-form-builds .fieldset-group-set .row div[class^="col-"] > .date-form-wrapper input.form-control + .form-control-feedback.icon {
+        right: 60px;
+    }
+
+    /* CONSTRUCTION TABLE */
+    .mega-form-builds div[data-fieldset-row="construction_header"] div.fieldset-group {
+        display: none;
+    }
+
+    .mega-form-builds div[data-fieldset-row="construction"] span.construction-checkbox-label {
+        display: block;
+    }
+
+    .mega-form-builds div[data-fieldset-row="construction"] div.checkbox {
+        margin-bottom: 0;
+    }
+
+    .mega-form-builds div[data-fieldset-row="construction"] .checkbox {
+        text-align: left;
+    }
+}
+
+@media (max-width: 768px) {
+    .mega-form-builds .add-top {
+        margin-top: 30px;
+    }
+    .mega-form-builds .fieldset-group-set .select-form-wrapper,
+    .mega-form-builds .fieldset-group-set input.form-control {
+        width: 90%;
+    }
+    .mega-form-builds .fieldset-group-set .row div[class^="col-"] > input.form-control + .form-control-feedback.icon,
+    .mega-form-builds .fieldset-group-set .row div[class^="col-"] > .date-form-wrapper input.form-control + .form-control-feedback.icon {
+        right: 82px;
+    }
+}
+
+@media (max-width: 650px) {
+    .mega-form-builds div[class*="col-"].btn-cont-back input{
+        display: block;
+        margin: auto;
+        margin-bottom: 5px;
+    }
+    .mega-form-builds input[type="submit"],
+    .mega-form-builds input[type="reset"],
+    .mega-form-builds input[type="button"],
+    .btn-cont-back .col-cus-btn-12 {
+        display: block;
+        width: 100%;
+        margin-bottom: 4px;
+    }
+    .mega-form-builds .fieldset-group-set .row div[class^="col-"] > input.form-control + .form-control-feedback.icon,
+    .mega-form-builds .fieldset-group-set .row div[class^="col-"] > .date-form-wrapper input.form-control + .form-control-feedback.icon {
+        right: 70px;
+    }
+}
+@media (max-width: 560px) {
+    .mega-form-builds .fieldset-group-set .row div[class^="col-"] > input.form-control + .form-control-feedback.icon,
+    .mega-form-builds .fieldset-group-set .row div[class^="col-"] > .date-form-wrapper input.form-control + .form-control-feedback.icon {
+        right: 60px;
+    }
+}
+@media (max-width: 450px) {
+    .mega-form-builds .fieldset-group-set .row div[class^="col-"] > input.form-control + .form-control-feedback.icon,
+    .mega-form-builds .fieldset-group-set .row div[class^="col-"] > .date-form-wrapper input.form-control + .form-control-feedback.icon {
+        right: 48px;
+    }
+}
+@media (max-width: 380px) {
+    .mega-form-builds .fieldset-group-set .row div[class^="col-"] > input.form-control + .form-control-feedback.icon,
+    .mega-form-builds .fieldset-group-set .row div[class^="col-"] > .date-form-wrapper input.form-control + .form-control-feedback.icon {
+        right: 44px;
+    }
+}
+@media (max-width: 350px) {
+    .mega-form-builds input[type="submit"],
+    .mega-form-builds input[type="reset"],
+    .mega-form-builds input[type="button"] {
+        padding: 7px 26px;
+    }
+}
+
+.mega-form-builds div[data-fieldset-row="insurance_required"] .fieldset-group > .col-md-12:first-child {
+    margin-bottom: 0;
+}

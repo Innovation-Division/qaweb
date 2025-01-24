@@ -1,0 +1,29 @@
+
+body {
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth; /* Smooth scrolling */
+    color: #333; /* Default text color */
+}
+.test{
+  margin-top:1000px;
+}
+
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Lighten on hover */
+}
+
+.section {
+    /* padding-top: 210px; Padding for space */
+    /* margin: 60px 0; Margin for spacing between sections */
+    background-color: #f4f4f4; /* Light background for sections */
+    height: 100vh;
+}
+
+.section:nth-child(even) {
+    background-color: #e0e0e0; /* Alternate background color for even sections */
+}
+
+h2 {
+    color: #008080; /* Teal color for headings */
+}

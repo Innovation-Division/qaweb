@@ -1,0 +1,21 @@
+<svg id="left" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60" height="45" viewBox="0 0 60 45">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.443" x2="0.578" y2="1.182" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#e4509a"/>
+      <stop offset="1" stop-color="#003d38"/>
+    </linearGradient>
+    <clipPath id="clip-path">
+      <rect id="Banner_Image" data-name="Banner Image" width="60" height="45" transform="translate(140 57)" fill="url(#linear-gradient)" style="mix-blend-mode: screen;isolation: isolate"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect id="Banner_Image-2" data-name="Banner Image" width="764" height="102" fill="url(#linear-gradient)" style="mix-blend-mode: screen;isolation: isolate"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_17" data-name="Mask Group 17" transform="translate(-140 -57)" clip-path="url(#clip-path)">
+    <g id="Group_561" data-name="Group 561">
+      <g id="shape_left" data-name="shape left" clip-path="url(#clip-path-2)">
+        <path id="Path_1731" data-name="Path 1731" d="M2.218,154.227S-13.357,114.955,38.138,87.9,77.975,64.124,95.12.015c-.166-.44,94.264,12.116,94.264,12.116l-.02,113.728" transform="matrix(0.07, 0.998, -0.998, 0.07, 221.362, 15.811)" fill="teal" stroke="#db3e8d" stroke-width="8"/>
+      </g>
+    </g>
+  </g>
+</svg>

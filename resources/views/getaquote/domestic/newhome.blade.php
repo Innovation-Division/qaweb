@@ -1,0 +1,149 @@
+@extends('layouts.layout1')
+
+@section('content')
+
+<section class="banner banner-inquiry">
+	<div class="container-fluid breadcrumb-container">
+		<nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+			<ol class="breadcrumb rfs-1-5">
+					<li class="breadcrumb-item"><a href="#">Home</a></li>
+					<li class="breadcrumb-item" aria-current="page">Get a Quote</li>
+					<li class="breadcrumb-item active" aria-current="page">Domestic Travel Excel Plus Quote</li>
+			</ol>
+		</nav>
+	</div>
+	<div class="container">
+		<div class="content">
+			<h1 class="rfs-3-13 rfs-md-2-13 rfs-sm-1-10 ff-bold">Domestic Travel Excel Plus Quote</h1>
+		</div>
+	</div>
+</section>
+
+<div class="main-content container">
+	<div class="inner">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="top-container">  
+					{{ csrf_field() }}
+					<div id="newapps" >@include('getaquote.domestic.new')</div>
+				</div>	           
+			</div>           
+		</div>
+	</div>
+</div>
+<script src="{{ asset('js/address_domestic.js') }}"></script>
+<style type="text/css">
+	/* .modal {
+	  text-align: center;
+	  top:30%;
+	} */
+
+	#homepagediv{
+		margin-top: 150px;
+		margin-bottom: 220px;
+	}
+
+
+	@media screen and (min-width: 768px) { 
+	  /* .modal:before {
+	    display: inline-block;
+	    vertical-align: middle;
+	    content: " ";
+	    height: 100%;
+	  } */
+	}
+
+	/* .modal-dialog {
+	  display: inline-block;
+	  text-align: left;
+	  vertical-align: middle;
+	} */
+
+	#btnnewApplication,
+	#btnRenewal{
+		min-width: 267px;
+		margin-left: 20px;
+		min-height: 60px;
+		background-color: #C0C0C0;
+		color: #000000;
+		margin-top: 20px;
+	}
+
+
+	#btnnewApplication:hover {
+	  background-color: #4CAF50; /* Green */
+	  color: white;
+	}
+
+	#btnRenewal:hover {
+	  background-color: #4CAF50; /* Green */
+	  color: white;
+	}
+
+
+	@media only screen and (max-width: 800px) {
+		#homepagediv{
+			margin-top: 10px;
+			margin-bottom: 30px;
+		}
+
+}
+</style>
+
+
+<script type="text/javascript">
+// Remove criterion
+
+</script>
+<style type="text/css">
+	.delete-row, .delete-row_part {
+		margin-top: 32px;
+	  height: 52px;
+	  width: 52px;
+	  min-width: 52px !important;
+	  border-radius: 5px;
+	  background: #ffffff !important;
+	  border: 2px solid #707070 !important;
+	  color: #707070 !important;
+	  padding: 4px;
+	  display: flex;
+	  align-items: center;
+	  justify-content: center;
+	}
+
+	.delete-row-person-emergency, .delete-row_part {
+		margin-top: 32px;
+	  height: 52px;
+	  width: 52px;
+	  min-width: 52px !important;
+	  border-radius: 5px;
+	  background: #ffffff !important;
+	  border: 2px solid #707070 !important;
+	  color: #707070 !important;
+	  padding: 4px;
+	  display: flex;
+	  align-items: center;
+	  justify-content: center;
+	}
+	
+	.delete-row-bene, .delete-row_part{
+		margin-top: 32px;
+	  height: 52px;
+	  width: 52px;
+	  min-width: 52px !important;
+	  border-radius: 5px;
+	  background: #ffffff !important;
+	  border: 2px solid #707070 !important;
+	  color: #707070 !important;
+	  padding: 4px;
+	  display: flex;
+	  align-items: center;
+	  justify-content: center;
+	}
+
+
+</style>
+<section class="divider">
+	<img src="{{ asset('assets/img/wave-lines.svg') }}" alt="divider" />
+</section>
+@endsection

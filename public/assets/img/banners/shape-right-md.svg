@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="79" height="71" viewBox="0 0 79 71">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.443" x2="0.578" y2="1.182" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#e4509a"/>
+      <stop offset="1" stop-color="#003d38"/>
+    </linearGradient>
+    <clipPath id="clip-path">
+      <rect id="Banner_Image" data-name="Banner Image" width="79" height="71" transform="translate(755)" fill="url(#linear-gradient)" style="mix-blend-mode: screen;isolation: isolate"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect id="Banner_Image-2" data-name="Banner Image" width="1633" height="160" fill="url(#linear-gradient)" style="mix-blend-mode: screen;isolation: isolate"/>
+    </clipPath>
+  </defs>
+  <g id="right" transform="translate(-755)" clip-path="url(#clip-path)">
+    <g id="Group_740" data-name="Group 740" transform="translate(-299)">
+      <g id="shape_right" data-name="shape right" clip-path="url(#clip-path-2)">
+        <path id="Path_2535" data-name="Path 2535" d="M2633.442-6.245s2.66,57.9,111.111,83.483,28.534,57.607,52.472,93.609c-.356.688,750.71,1.621,750.71,1.621V-5.47" transform="translate(-1575.097 -0.373)" fill="teal" stroke="#db3e8d" stroke-width="8"/>
+      </g>
+    </g>
+  </g>
+</svg>

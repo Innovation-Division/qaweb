@@ -1,0 +1,11 @@
+<svg id="dots" xmlns="http://www.w3.org/2000/svg" width="52" height="66" viewBox="0 0 52 66">
+  <circle id="dot" cx="6" cy="6" r="6" transform="translate(52) rotate(90)" fill="#e4509a"/>
+  <circle id="dot-2" data-name="dot" cx="6" cy="6" r="6" transform="translate(52 27) rotate(90)" fill="#e4509a"/>
+  <circle id="dot-3" data-name="dot" cx="6" cy="6" r="6" transform="translate(52 54) rotate(90)" fill="#e4509a"/>
+  <circle id="dot-4" data-name="dot" cx="6" cy="6" r="6" transform="translate(32) rotate(90)" fill="#e4509a"/>
+  <circle id="dot-5" data-name="dot" cx="6" cy="6" r="6" transform="translate(32 27) rotate(90)" fill="#e4509a"/>
+  <circle id="dot-6" data-name="dot" cx="6" cy="6" r="6" transform="translate(32 54) rotate(90)" fill="#e4509a"/>
+  <circle id="dot-7" data-name="dot" cx="6" cy="6" r="6" transform="translate(12) rotate(90)" fill="#e4509a"/>
+  <circle id="dot-8" data-name="dot" cx="6" cy="6" r="6" transform="translate(12 27) rotate(90)" fill="#e4509a"/>
+  <circle id="dot-9" data-name="dot" cx="6" cy="6" r="6" transform="translate(12 54) rotate(90)" fill="#e4509a"/>
+</svg>

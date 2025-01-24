@@ -1,0 +1,223 @@
+@extends('layouts.app')
+
+@section('content')
+
+  <br>
+   <div class="category-name container" >
+        <h1 >
+           Blogs
+        </h1><br>	<br>	
+    </div>
+<div class="container">
+	<div class="row">
+		<div id="users" class="col-md-12">
+			<div class="filter-group row">
+				<div class="col-sm-offset-8 col-md-4">
+					<input autofocus type="text" id="myInput" class="search form-control" style="font-family: muli;" placeholder="Search" value="" />
+				</div>
+			
+				<!-- <div class="form-group col-xs-12 col-sm-12">
+					<button class="btn btn-danger" onclick="resetList();">Clear</button>
+				</div> -->
+			</div>
+			<ul class="list">
+				@foreach($cocogen_admin_pages_blogs as $cocogen_admin_pages_blog)
+					<li class="list--list-item" >
+						<table>	
+							<tr style="cursor: pointer !important;" data-href="{{ url('/') }}/{{ $cocogen_admin_pages_blog->link }}">
+								<td style="vertical-align:  super;width: 350px"><img src="{{ $cocogen_admin_pages_blog->location }}" class="img-responsive newimages" style="max-height: 200px;max-width: 350px;vertical-align:  super">	</td>
+								<td>
+								<a id="link" name="link" class="link newlink" href="{{ url('/') }}/{{ $cocogen_admin_pages_blog->link }}" style="font-size: 20px;margin-left: 10px;" target="_blank"> {{ $cocogen_admin_pages_blog->name }}</a>
+								<h6 class="newh61" style="opacity: 0.5;margin-left: 10px;">{{ url('/') }}/{{ $cocogen_admin_pages_blog->link }}</h6>
+								
+  								<span id="category" name="category"></span>
+  								<p id="content" name="content" class="content newp1" style="margin-left: -40px;margin-top: -40px; opacity: 0.5;max-height: 220px;max-width: 100%;">{{$cocogen_admin_pages_blog->summary}}... </p>
+  							</td>	
+							</tr>
+						</table>
+					</li>				
+				@endforeach				
+			</ul>
+			<style type="text/css">
+				@media all and (min-width:0px) and (max-width: 800px) {
+
+					      table tr td img.newimages{
+					        width: 100% !important;
+					        display: block;
+					      }
+
+					       table tr td a.newlink{
+					        display: block;
+					        margin-top: 200px;
+					        margin-left: -300px !important;
+					        font-size: 10px;
+					      }
+
+					      table tr td h6.newh61{
+					        display: none !important;
+					      }
+					      table tr td h6.newh62{
+					        margin-left: -300px !important;
+					        display: none !important;
+					      }
+
+					      table tr td p.newp1{
+					        margin-left: -350px !important;
+					        display: none !important;
+					      }
+
+					}
+			</style>
+				<script type="text/javascript">
+					jQuery(document).ready(function($) {
+				    jQuery('*[data-href]').on('click', function() {
+				        window.location = $(this).data("href");
+				        
+				    });
+				});
+				</script>
+			<ul class="pagination"></ul>
+		</div>
+	</div>
+
+<script src="{{asset('/js/search/lodash.min.js') }}"></script>
+<script src="{{asset('/js/search/list.min.js') }}"></script>
+
+		
+<style>
+		* {
+		  box-sizing: border-box;
+		}
+
+		#myInput {
+		  background-image: url('{{ url('/images/searchicon1.png') }}');" 
+		  background-position: 10px 12px;
+		  background-repeat: no-repeat;
+		  width: 100%;
+		  font-size: 16px;
+		  padding: 12px 20px 12px 40px;
+		  border: 1px solid #ddd;
+		  margin-bottom: 12px;
+		}
+
+		#myUL {
+		  list-style-type: none;
+		  padding: 0;
+		  margin: 0;
+		  text-align: left;
+		  padding: 2px;
+		  border-top: 0px;
+
+		}
+		#myUL li {
+		   border: 1px solid #ddd;
+		  margin-top: -1px; /* Prevent double borders */
+		  background-color: #f6f6f6;
+		  padding: 12px;
+		  text-decoration: none;
+		  font-size: 18px;
+		  color: black;
+		  display: block
+		 
+		}
+
+		#myUL li a {
+		 
+		}
+
+		#myUL li p {
+		 	font-size: 10px;
+		 	opacity: 0.5;
+		}
+		#myUL li span {
+		 	font-size: 10px;
+		 	opacity: 0.5;
+		}
+
+		#myUL li a:hover:not(.header) {
+		  background-color: #eee;
+		}	
+
+</style>
+<style type="text/css">
+	$BorderColor: #cccccc !global;
+
+		.container {
+			margin-top:0px;
+			margin-bottom:0px;
+
+		}
+		.list {
+			list-style-type: none;
+		  	padding: 0;
+		  	margin: 0;
+		  	text-align: left;	
+		  	border-top: 0px;
+
+		
+		}
+		.list--list-item {
+			border: 1px solid #ddd;
+			margin-top: -3px; /* Prevent double borders */
+			background-color: #f6f6f6;
+			padding: 12px;
+			max-height: 220px;
+			text-decoration: none;
+			color: black;
+			display: block;
+				&:last-child {
+					border-bottom:0;
+					margin:0;
+				}
+			}
+		@media (max-width: 768px) {
+			.list--list-item {			
+			
+			max-height: 500px;
+			
+		}
+		.no-result {
+			display:none;
+		}
+</style>
+
+<script >
+	jQuery(document).ready(function($) {
+			jQuery('.no-result').hide();
+			var options = {
+				valueNames: [
+					'link',
+					'category',
+					'catname',
+					'content'
+				],
+				page: 10,
+				pagination: true
+			};
+
+			var userList = new List('users', options);
+			  userList.on('updated', function (list) {
+					if (list.matchingItems.length > 0) {
+
+						jQuery('.no-result').hide()
+					} else {
+						jQuery('.no-result').show()
+					}
+				});                           
+			jQuery(function(){
+			  //updateList();
+				userList.on('updated', function (list) {
+					if (list.matchingItems.length > 0) {
+
+						jQuery('.no-result').hide()
+					} else {
+						jQuery('.no-result').show()
+					}
+				});
+
+			});
+			});
+
+			var userList = new List('users', options);
+</script>
+@endsection

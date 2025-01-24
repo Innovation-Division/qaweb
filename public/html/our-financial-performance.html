@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <title>Cocogen Insurance</title>
+
+        <link rel="icon" href="assets/img/favicon.ico" type="image/x-ico" />
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+
+        <link rel="stylesheet/less" type="text/css" href="assets/css/about.less" />
+
+        <!-- DEV MODE -->
+        <script src="https://cdn.jsdelivr.net/npm/less@4.1.1" data-env="development"></script>
+        <script>
+            less.watch();
+        </script>
+        <!-- -->
+    </head>
+
+    <body>
+        <div class="about">
+            <section class="breadcrumbs">
+                <img class="breadcrumbBanner" src="assets/img/breadcrumbs/about.png" alt="excel plus banner" />
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-12">
+                            <div class="row justify-content-center">
+                                <div class="col-12">
+                                    <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
+                                        <ol class="breadcrumb">
+                                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                            <li class="breadcrumb-item"><a href="#">About</a></li>
+                                            <li class="breadcrumb-item" aria-current="page">Our Financial Performance</li>
+                                        </ol>
+                                    </nav>
+                                </div>
+                                <div class="col-xs-12 align-self-end">
+                                    <h1 class="pageTitle">Our Financial Performance</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="chart">
+                <div class="container-fluid">
+                    <div class="row justify-content-center">
+                        <div class="col-10">
+                            <div class="text-center">
+                                <h2 class="mb-3">Gross Premiums Written</h2>
+                                <p class="fs-4 mt-2">*Pesos in millions</p>
+                            </div>
+                            <div class="chart-container mb-4">
+                                <canvas id="chart"></canvas>
+                            </div>
+                            <div class="grossTable">
+                                <table class="table">
+                                    <thead>
+                                        <tr class="table-active">
+                                            <th></th>
+                                            <th>2013</th>
+                                            <th>2014</th>
+                                            <th>2015</th>
+                                            <th>2016</th>
+                                            <th>2017</th>
+                                            <th>2018</th>
+                                            <th>2019</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>NET Income after tax</td>
+                                            <td>8</td>
+                                            <td>76</td>
+                                            <td>94</td>
+                                            <td>111</td>
+                                            <td>115</td>
+                                            <td>84</td>
+                                            <td>101</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Total assets</td>
+                                            <td>8,313</td>
+                                            <td>5,932</td>
+                                            <td>4,748</td>
+                                            <td>4,419</td>
+                                            <td>4,500</td>
+                                            <td>4,770</td>
+                                            <td>5,166</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Net worth</td>
+                                            <td>922</td>
+                                            <td>963</td>
+                                            <td>1,020</td>
+                                            <td>1,138</td>
+                                            <td>1,292</td>
+                                            <td>1,290</td>
+                                            <td>1,432</td>
+                                        </tr>
+                                        <tr>
+                                            <td>500</td>
+                                            <td>500</td>
+                                            <td>500</td>
+                                            <td>500</td>
+                                            <td>500</td>
+                                            <td>500</td>
+                                            <td>500</td>
+                                            <td>500</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="divider">
+                <img src="assets/img/wave-lines.svg" alt="divider" />
+            </section>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0/dist/chart.min.js"></script>
+
+        <script>
+            const ctx = document.getElementById("chart").getContext("2d");
+            const myChart = new Chart(ctx, {
+                type: "bar",
+                data: {
+                    labels: ["2013", "2014", "2015", "2016", "2017", "2018", "2019"],
+                    datasets: [
+                        {
+                            data: [2566, 2589, 2388, 2511, 2741, 2917, 3425],
+                            backgroundColor: "#007a70",
+                        },
+                    ],
+                },
+                options: {
+                    maintainAspectRatio: false,
+                    responsive: true,
+                    scales: {
+                        y: {
+                            min: 0,
+                            max: 4000,
+                            ticks: {
+                                maxTicksLimit: 8,
+                            },
+                        },
+                    },
+                    plugins: { legend: { display: false } },
+                },
+            });
+        </script>
+    </body>
+</html>

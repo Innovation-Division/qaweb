@@ -1,0 +1,12 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+class cocogen_bonds_obligee2 extends Model
+{
+     protected $table = 'cocogen_bonds_obligee2';
+
+
+}

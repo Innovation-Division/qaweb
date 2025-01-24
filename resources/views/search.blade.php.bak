@@ -1,0 +1,214 @@
+@extends('layouts.app')
+
+@section('content')
+
+<style>
+		* {
+		  box-sizing: border-box;
+		}
+
+		#myInput {
+		  background-image: url('{{ url('/images/searchicon1.png') }}');" 
+		  background-position: 10px 12px;
+		  background-repeat: no-repeat;
+		  width: 100%;
+		  font-size: 16px;
+		  padding: 12px 20px 12px 40px;
+		  border: 1px solid #ddd;
+		  margin-bottom: 12px;
+		}
+
+		#myUL {
+		  list-style-type: none;
+		  padding: 0;
+		  margin: 0;
+		  text-align: left;
+		  padding: 2px;
+		  border-top: 0px;
+
+		}
+		#myUL li {
+		   border: 1px solid #ddd;
+		  margin-top: -1px; /* Prevent double borders */
+		  background-color: #f6f6f6;
+		  padding: 12px;
+		  text-decoration: none;
+		  font-size: 18px;
+		  color: black;
+		  display: block
+		 
+		}
+
+		#myUL li a {
+		 
+		}
+
+		#myUL li p {
+		 	font-size: 10px;
+		 	opacity: 0.5;
+		}
+		#myUL li span {
+		 	font-size: 10px;
+		 	opacity: 0.5;
+		}
+
+		#myUL li a:hover:not(.header) {
+		  background-color: #eee;
+		}	
+
+</style>
+<style type="text/css">
+	$BorderColor: #cccccc !global;
+
+		.container {
+			margin-top:0px;
+			margin-bottom:0px;
+
+		}
+		.list {
+			list-style-type: none;
+		  	padding: 0;
+		  	margin: 0;
+		  	text-align: left;	
+		  	border-top: 0px;
+
+		
+		}
+		.list--list-item {
+			border: 1px solid #ddd;
+			margin-top: -3px; /* Prevent double borders */
+			background-color: #f6f6f6;
+			padding: 12px;
+			max-height: 159px;
+			text-decoration: none;
+			color: black;
+			display: block;
+				&:last-child {
+					border-bottom:0;
+					margin:0;
+				}
+			}
+		@media (max-width: 768px) {
+			.list--list-item {			
+			
+			max-height: 500px;
+			
+		}
+		.no-result {
+			display:none;
+		}
+</style>
+
+<script >
+	jQuery(document).ready(function($) {
+		//	jQuery('.no-result').hide();
+			var options = {
+				valueNames: [
+					'link',
+					'category',
+					'catname',
+					'content'
+				],
+				page: 10,
+				pagination: true
+			};
+
+			var userList = new List('users', options);
+			  userList.on('updated', function (list) {
+					if (list.matchingItems.length > 0) {
+
+						jQuery('.no-result').hide()
+					} else {
+						jQuery('.no-result').show()
+					}
+				});                           
+			jQuery(function(){
+			  //updateList();
+				userList.on('updated', function (list) {
+					if (list.matchingItems.length > 0) {
+
+						jQuery('.no-result').hide()
+					} else {
+						jQuery('.no-result').show()
+					}
+				});
+
+			});
+			});
+
+			var userList = new List('users', options);
+</script>
+
+  <br>
+<div class="container">
+	<div class="row">
+		<div id="users" class="col-xs-12">
+			<div class="filter-group row">
+				<div class="form-group col-xs-12 col-sm-12 col-md-6">
+					<input autofocus type="text" id="mySearch"  name="mySearch"  class="search form-control" style="font-family: muli;" placeholder="Search" value="<?php echo htmlentities($search); ?>" onkeyup="fileterValue()" />
+				</div>
+			
+			</div>
+			<ul class="list" id="myMenu">
+			 	@foreach($cocogen_searchs as $cocogen_search)
+					<li class="list--list-item" >
+						
+						<a id="link" name="link" class="link" href="{{ url('/') }}/{{ $cocogen_search->link }}" style="font-size: 20px;margin-left: 10px;margin-top: 100px" target="_blank"> {{ $cocogen_search->name }}</a>
+						<h6 style="opacity: 0.5;margin-left: 10px;">{{ url('/') }}/{{ $cocogen_search->link }}</h6>
+  						<span id="catname" name="catname" class="catname" style="opacity: 0.5;margin-left: 10px;"><strong>Category:</strong> {{$cocogen_search->category}}</span>
+  						<span id="category" name="category"><?php $contents =  strip_tags($cocogen_search->content);?></span>
+  						<span id="category" name="category"><?php $contents1 =  preg_replace('/\s+/', ' ', $contents);?></span>
+  						<span id="category" name="category"><?php $content = mb_strimwidth($contents1, 0, 500, "...") ?></span>
+  						<p id="content" name="content" class="content" style="margin-left: -40px;margin-top: -40px; opacity: 0.5;">{{ $content }}... </p>
+					</li>				
+				@endforeach	
+			</ul>
+				
+			<div class="no-result">
+				<ul class="list">
+					<li class="list--list-item" >
+						<p style="text-align: center;font-style: italic;opacity: 0.5;">No record found</p>
+					</li>	
+				</ul>
+			</div>
+			<ul class="pagination"></ul>
+		</div>
+	</div>
+<!-- 
+<script src="{{asset('/js/search/lodash.min.js') }}"></script>
+
+
+<script src="{{asset('/js/search/list.min.js') }}"></script> -->
+<script>
+$(document).ready(function(){
+			fileterValue();
+});
+</script>
+<script type="text/javascript">
+	function fileterValue() {
+  // Declare variables
+  var input, filter, ul, li;
+  input = document.getElementById("mySearch");
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("myMenu");
+  li = ul.getElementsByTagName("li");
+  var countno = 0;
+  // Loop through all list items, and hide those who don't match the search query
+  for (let i = 0; i < li.length; i++) {
+
+    if (li[i].innerHTML.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    	countno = countno + 1;
+
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+  if(countno==0){
+  	jQuery('.no-result').show();
+  }else{
+  	jQuery('.no-result').hide();
+  }
+}
+</script>
+@endsection

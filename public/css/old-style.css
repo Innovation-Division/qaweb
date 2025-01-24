@@ -1,0 +1,67 @@
+/* ==========================================================================
+   CHAT
+   ========================================================================== */
+
+.occIcon-31902-76901 .occIconState {
+    position: relative !important;
+}
+
+.pop-up-chat {
+    position: fixed;
+    bottom: 0;
+    right: 5%;
+    min-width: 280px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    z-index: 2;
+}
+
+.pop-up-chat.show {
+    bottom: 0 !important;
+}
+
+.chat-header {
+    background: #53b947;
+    -webkit-border-radius: 10px 10px 0 0;
+    border-radius: 10px 10px 0 0;
+    -webkit-box-shadow: inset 0 0 10px 0 rgba(254, 254, 254, 0.3);
+    box-shadow: inset 0 0 10px 0 rgba(254, 254, 254, 0.3);
+    padding: 10px;
+    cursor: pointer;
+    text-align: left;
+}
+
+.chat-header span {
+    color: #fff;
+    display: inline-block;
+}
+
+.chat-header>div {
+    display: inline-block;
+}
+
+.chat-header .icons {
+    float: right;
+}
+
+.chat-header .icons>span {
+    font-size: 1.3rem;
+}
+
+.chat-header .title span {
+    font-size: 1rem;
+    margin-right: 5px;
+}
+
+.chat-header .title span:not(.fa) {
+    text-transform: uppercase;
+    font: 60 display: block;
+}
+
+.chat-body span img {
+    width: 100%;
+    display: block !important;
+}

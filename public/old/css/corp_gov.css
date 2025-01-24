@@ -1,0 +1,82 @@
+
+/*ACCORDION*/
+/*.panel-heading  a:before {
+   font-family: 'Glyphicons Halflings';
+   content: "\e114";
+   float: right;
+   transition: all 0.5s;
+}*/
+.panel-title>a:after{content:"\f068";font-family:'fontawesome';display:block;position:absolute;right:20px;top:50%;color:#fff;margin-top:-10px}
+.panel-title>a.collapsed:after{content:"\f067";font-family:'fontawesome';color:#08c}
+#accordion_cor_gov.panel-group {
+  margin: 0;
+}
+
+#accordion_cor_gov.panel-group .panel-default>.panel-heading {
+  background: #006969;
+  border: 0;
+  color: #fff;
+
+}
+
+#accordion_cor_gov.panel-group .panel-default>.panel-heading .panel-title a {
+  color: #fff;
+  background: 0 none;
+  min-height: auto;
+  border-radius: 0;
+  border: 0;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+#accordion_cor_gov.panel-group .panel-default>.panel-heading .panel-title a:after {
+  right: 14px;
+  color: #fff;
+}
+
+#accordion_cor_gov.panel-group .panel-default>.panel-collapse .panel-body {
+  padding: 10px;
+  line-height: 18px;
+
+}
+
+#accordion_cor_gov.panel-group .panel-default>.panel-collapse .panel-body ol li>ol {
+  margin: 0;
+
+}
+
+#Layer2Sub.panel-title>a:after{content:"\f068";font-family:'fontawesome';display:block;position:absolute;right:20px;top:50%;color:#006969;margin-top:-10px}
+#Layer2Sub.panel-title>a.collapsed:after{content:"\f067";font-family:'fontawesome';color:#006969}
+
+#Layer2Sub.panel-group .panel-default>.panel-heading {
+  background-color: #bfdfde;
+  color:#006969
+  border: 0;
+
+}
+
+#Layer2Sub.panel-group .panel-default>.panel-heading .panel-title a {
+  color: #006969;
+  background: 0 none;
+  min-height: auto;
+  border-radius: 0;
+  border: 0;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+#Layer2Sub.panel-group .panel-default>.panel-heading .panel-title a:after {
+  right: 14px;
+  color: #006969;
+}
+
+#Layer2Sub.panel-group .panel-default>.panel-collapse .panel-body {
+  padding: 10px;
+  line-height: 18px;
+
+}
+
+#Layer2Sub.panel-group .panel-default>.panel-collapse .panel-body ol li>ol {
+  margin: 0;
+
+}

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <title>Cocogen Insurance</title>
+
+        <link rel="icon" href="assets/img/favicon.ico" type="image/x-ico" />
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+
+        <link rel="stylesheet/less" type="text/css" href="assets/css/about.less" />
+
+        <!-- DEV MODE -->
+        <script src="https://cdn.jsdelivr.net/npm/less@4.1.1" data-env="development"></script>
+        <script>
+            less.watch();
+        </script>
+        <!-- -->
+    </head>
+
+    <body>
+        <div class="about">
+            <section class="breadcrumbs">
+                <img class="breadcrumbBanner" src="assets/img/breadcrumbs/about.png" alt="excel plus banner" />
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-12">
+                            <div class="row justify-content-center">
+                                <div class="col-12">
+                                    <nav style="--bs-breadcrumb-divider: '>' +" aria-label="breadcrumb">
+                                        <ol class="breadcrumb">
+                                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                            <li class="breadcrumb-item"><a href="#">About</a></li>
+                                            <li class="breadcrumb-item" aria-current="page">News and Updates</li>
+                                        </ol>
+                                    </nav>
+                                </div>
+                                <div class="col-xs-12 align-self-end">
+                                    <h1 class="pageTitle">News and Updates</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="newsArticles">
+                <div class="container-fluid">
+                    <div class="row justify-content-center">
+                        <div class="col-xs-12 col-lg-10">
+                            <div id="articleList" class="articleList">
+                                <div class="d-flex justify-content-end article-search">
+                                    <form>
+                                        <label for="article-search">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20.341" height="20.341" viewBox="0 0 20.341 20.341">
+                                                <path id="Path_1687" data-name="Path 1687" d="M17.537,15.793h-.919l-.326-.314a7.571,7.571,0,1,0-.814.814l.314.326v.919l5.815,5.8,1.733-1.733Zm-6.978,0a5.233,5.233,0,1,1,5.233-5.233A5.226,5.226,0,0,1,10.559,15.793Z" transform="translate(-3 -3)" fill="teal" />
+                                            </svg>
+                                        </label>
+                                        <input type="search" class="form-control fuzzy-search" autocomplete="false" placeholder="Search..." id="article-search" />
+                                    </form>
+                                </div>
+                                <div class="listContainer">
+                                    <ul class="list"></ul>
+                                </div>
+                                <div>
+                                    <ul class="pagination">
+                                        <!-- <li class="page-item paginationItem paginationArrow"><a class="page-link" href="#"
+                                        aria-label="Previous">
+                                        <span aria-hidden="true">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 16 16">
+                                                <g id="Symbol_83" data-name="Symbol 83"
+                                                    transform="translate(1270 523) rotate(180)">
+                                                    <path id="Path_10" data-name="Path 10"
+                                                        d="M8,0,6.545,1.455l5.506,5.506H0V9.039H12.052L6.545,14.545,8,16l8-8Z"
+                                                        transform="translate(1254 507)" />
+                                                </g>
+                                            </svg>
+
+                                        </span>
+                                    </a></li>
+                                <li class="page-item paginationItem active"><a class="page-link"
+                                        href="#"><span>1</span></a>
+                                </li>
+                                <li class="page-item paginationItem"><a class="page-link" href="#"><span>2</span></a>
+                                </li>
+                                <li class="page-item paginationItem paginationArrow paginationArrowRight"><a
+                                        class="page-link" href="#" aria-label="Next">
+                                        <span aria-hidden="true">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 16 16">
+                                                <g id="Symbol_83" data-name="Symbol 83"
+                                                    transform="translate(1270 523) rotate(180)">
+                                                    <path id="Path_10" data-name="Path 10"
+                                                        d="M8,0,6.545,1.455l5.506,5.506H0V9.039H12.052L6.545,14.545,8,16l8-8L10.752,2.752Z"
+                                                        transform="translate(1254 507)" />
+                                                </g>
+                                            </svg>
+                                        </span>
+                                    </a></li> -->
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="newsLink">
+                <div class="container-fluid">
+                    <div class="row justify-content-center">
+                        <div class="col-10">
+                            <div class="row align-items-center justify-content-center">
+                                <div class="col-xs-12 col-lg-4">
+                                    <a href="#">
+                                        <div class="newsSelectionItem d-flex align-items-center justify-content-center">
+                                            <div class="imageContainer blogBg">
+                                                <img src="assets/img/blog.png" alt="blog" />
+                                            </div>
+                                            <span> Blogs </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="divider py-2">
+                <img src="assets/img/wave-lines.svg" alt="divider" />
+            </section>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/2.3.1/list.min.js"></script>
+
+        <script>
+            var values = [
+                {
+                    image: "assets/img/article.png",
+                    date: "May 26, 2021",
+                    title: "Cocogen launches Pro-Tech Computer Insurance",
+                    link: "#",
+                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do",
+                    readButton: "#",
+                },
+                {
+                    image: "assets/img/article.png",
+                    date: "May 27, 2021",
+                    title: "Cocogen launches Pro-Tech Computer Insurance",
+                    link: "#",
+                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do",
+                    readButton: "#",
+                },
+                {
+                    image: "assets/img/article.png",
+                    date: "May 28, 2021",
+                    title: "Cocogen launches Pro-Tech Computer Insurance",
+                    link: "#",
+                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do",
+                    readButton: "#",
+                },
+                {
+                    image: "assets/img/article.png",
+                    date: "May 29, 2021",
+                    title: "Page 2 -- Cocogen launches Pro-Tech Computer Insurance",
+                    link: "#",
+                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do",
+                    readButton: "#",
+                },
+                {
+                    image: "assets/img/article.png",
+                    date: "May 30, 2021",
+                    title: "Page 2 -- Cocogen launches Pro-Tech Computer Insurance",
+                    link: "#",
+                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do",
+                    readButton: "#",
+                },
+                {
+                    image: "assets/img/article.png",
+                    date: "May 31, 2021",
+                    title: "Page 2 -- Cocogen launches Pro-Tech Computer Insurance",
+                    link: "#",
+                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do",
+                    readButton: "#",
+                },
+                {
+                    image: "assets/img/article.png",
+                    date: "May 29, 2021",
+                    title: "Page 3 -- Cocogen launches Pro-Tech Computer Insurance",
+                    link: "#",
+                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do",
+                    readButton: "#",
+                },
+                {
+                    image: "assets/img/article.png",
+                    date: "May 30, 2021",
+                    title: "Page 3 -- Cocogen launches Pro-Tech Computer Insurance",
+                    link: "#",
+                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do",
+                    readButton: "#",
+                },
+                {
+                    image: "assets/img/article.png",
+                    date: "May 31, 2021",
+                    title: "Page 3 -- Cocogen launches Pro-Tech Computer Insurance",
+                    link: "#",
+                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do",
+                    readButton: "#",
+                },
+            ];
+
+            var options = {
+                valueNames: [{ name: "image", attr: "src" }, "date", { name: "link", attr: "href" }, "title", "description", { name: "readButton", attr: "href" }],
+                item: '<div class="card articleItem">' + '<div class="imageContainer">' + '<img class="image" src="" class="card-img-top" alt="article">' + "</div>" + '<div class="card-body articleItemBody">' + '<p class="date"></p>' + '<a href="#" class="link">' + '<p class="title"></p>' + "</a>" + '<p class="description"></p>' + '<div class="d-flex align-items-center">' + '<a href="#" class="readButton btn btn-secondary-light">Read Article</a>' + "</div>" + "</div>" + "</div >",
+                page: 3,
+                pagination: {
+                    item: '<li class="paginationItem"><a class="page"></a></li>',
+                    name: "page",
+                },
+            };
+
+            var articleList = new List("articleList", options, values);
+        </script>
+    </body>
+</html>

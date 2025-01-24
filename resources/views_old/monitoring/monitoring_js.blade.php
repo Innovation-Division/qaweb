@@ -1,0 +1,327 @@
+@csrf
+<script type="text/javascript">
+    document.addEventListener("DOMContentLoaded", function() {
+        var el;
+        window.TomSelect && (new TomSelect(el = document.getElementById('padtype'), {
+            copyClassesToDropdown: false,
+            dropdownParent: 'body',
+            controlInput: '<input>',
+            render: {
+                item: function(data, escape) {
+                    if (data.customProperties) {
+                        return '<div><span class="dropdown-item-indicator">' + data
+                            .customProperties + '</span>' + escape(data.text) + '</div>';
+                    }
+                    return '<div>' + escape(data.text) + '</div>';
+                },
+                option: function(data, escape) {
+                    if (data.customProperties) {
+                        return '<div><span class="dropdown-item-indicator">' + data
+                            .customProperties + '</span>' + escape(data.text) + '</div>';
+                    }
+                    return '<div>' + escape(data.text) + '</div>';
+                },
+            },
+        }));
+    });
+</script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        var _token = jQuery('input[name="_token"]').val();
+        $("#modalhide").hide();
+        $("#modalhide2").hide();
+        $('#uploadTab').hide();
+        $('#mypolicy2monitoring2').hide();
+        $('input[type="file"]').change(function(e) {
+            var fileName = e.target.files[0].name;
+            $('.uploadimage').html(fileName);
+            $('.imgname').val(fileName);
+            $('#mypolicy2monitoring2 tbody').empty();
+            var removeLink = "  <a class='removeFile' href=\"#\">Remove</a>";
+            $('.uploadimage').append(removeLink);
+        });
+        $(this).on("click", ".removeFile", function(e) {
+            e.preventDefault();
+            $('.imgname').val('');
+            $('#mypolicy2monitoring2 tbody').empty();
+            $('.removeFile').parent().empty();
+            $("#file-upload").val(null);
+        });
+        //start the upload
+        $("#upload-form2").submit(function(e) {
+            e.preventDefault();
+
+            // REQUIRED
+            $(".padtype").remove();
+            $(".padtypeinfo_check_error").remove();
+            $(".padtype_info_check_success").remove();
+
+            $(".intermediary").remove();
+            $(".intermediary_check_error").remove();
+            $(".intermediary_info_check_success").remove();
+
+
+            errornumber = 0;
+
+            if ($('#padtype').val() == "") {
+                $('#padtype').css('border-color', '#F44336');
+                $("#padtype").after(
+                    "<div class='padtype v-error-msg' style='opacity:0.7;color:#F44336;'>Pad Type is Required</div>"
+                );
+                $('#padtype').after(
+                    '<i class="fa fa-times-circle padtypeinfo_check_error fa-2x" aria-hidden="true" style=" float: right;top:-45px; position: relative;left:-10px !important;color: #F44336;size:20px;"></i>'
+                );
+                errornumber = 1;
+            } else {
+                $('#padtype').after(
+                    '<i class="fa fa-check-circle padtype_info_check_success fa-2x" aria-hidden="true" style=" float: right;top:-45px; position: relative;left:-10px !important;color: #4BB543;size:20px;"></i>'
+                );
+                $('#padtype').css('border-color', '#4BB543');
+            }
+            if ($('#intermediary').val() == "") {
+                $('#intermediary').css('border-color', '#F44336');
+                $("#intermediary").after(
+                    "<div class='intermediary v-error-msg' style='opacity:0.7;color:#F44336;'>Intermediary is Required</div>"
+                );
+                $('#intermediary').after(
+                    '<i class="fa fa-times-circle intermediary_check_error fa-2x" aria-hidden="true" style=" float: right;top:-45px; position: relative;left:-10px !important;color: #F44336;size:20px;"></i>'
+                );
+                errornumber = 1;
+            } else {
+                $('#intermediary').after(
+                    '<i class="fa fa-check-circle intermediary_info_check_success fa-2x" aria-hidden="true" style=" float: right;top:-45px; position: relative;left:-10px !important;color: #4BB543;size:20px;"></i>'
+                );
+                $('#intermediary').css('border-color', '#4BB543');
+            }
+
+            if (errornumber == 1) {
+                return false;
+            } else {
+                // Show loading screen
+                $('#loading-screen').removeClass('hidden');
+            }
+            // Show loading screen
+            $('#loading-screen').removeClass('hidden');
+            var reqpad = jQuery('#reqaddpads').val();
+            jQuery('#padrequest').val(reqpad);
+            var _token = jQuery('input[name="_token"]').val(); //generated by csrf field
+            var formData = new FormData(this);
+            $.ajax({
+                url: "{{ route('import') }}",
+                method: "POST",
+                data: formData,
+                type: "POST",
+                cache: false,
+                contentType: false,
+                processData: false,
+                success: function(data) {
+                    // Hide loading screen
+                    if (data === '') {
+                        $('#btn-modal-redirect').show();
+                    }
+
+                    $('#loading-screen').addClass('hidden')
+                    if (data.Error && data.Error === 'Check your Policy Format') {
+                        alert('No record found!');
+                    } else {
+                        if (data == 'sentrequest') {
+                            $('#status').val('PENDING');
+                            $('#modal-success').modal('show');
+                        } else {
+                            $('#mypolicy2monitoring2 tbody').empty();
+
+                            if (data.expired) {
+                                let modalBody = "";
+                                modalBody += "";
+                                data.expired.forEach(function(id) {
+                                    if (id !== "" && id !== null) {
+                                        modalBody += "Series " + id +
+                                            " is Expired<br>";
+                                    }
+                                });
+                                modalBody += "";
+                                $("#modalBody").html(modalBody);
+                                $('#mypolicy2monitoring2').hide();
+                                // $("body").append(data);
+                                $("[data-target='#modal-exist']").click();
+
+                            }
+
+                            if (!data.nonExistentIds) {
+                                $('#mypolicy2monitoring2').show();
+                                $.each(data, function(key, value) {
+                                    var tr = $("<tr />")
+                                    $.each(value, function(k, v) {
+                                        tr.append(
+                                            $("<td />", {
+                                                html: v
+                                            })[0].outerHTML
+                                        );
+                                        $("table #ajaxresponse").append(tr)
+                                    })
+                                    $('#ajaxresponse').show();
+                                })
+                            } else {
+                                if (data.nonExistentIds) {
+                                    let modalBody = "";
+                                    modalBody += "";
+                                    data.nonExistentIds.forEach(function(id) {
+                                        if (id !== "" && id !== null) {
+                                            modalBody += "Series " + id +
+                                                " is not assigned to the producer<br>";
+                                        }
+                                    });
+                                    modalBody += "";
+                                    $("#modalBody").html(modalBody);
+                                    $("body").append(data);
+                                    $("[data-target='#modal-exist']").click();
+
+                                }
+                            }
+
+                            if (data.duplicate) {
+                                let modalBody = "";
+                                modalBody += "";
+                                data.duplicate.forEach(function(id) {
+                                    if (id !== "" && id !== null) {
+                                        modalBody += "Series " + id +
+                                            " is Duplicate<br>";
+                                    }
+                                });
+                                modalBody += "";
+                                $("#modalBody").html(modalBody);
+                                $('#mypolicy2monitoring2').hide();
+                                $("[data-target='#modal-exist']").click();
+
+                            }
+
+                        }
+                    }
+                    $('.removeFile').parent().empty();
+
+
+                },
+                error: function(data) {
+                    $('#loading-screen').addClass('hidden');
+                    var errors = JSON.parse(data.responseText);
+                    for (var i = 0; i < errors.length; i++) {
+                        var error = errors[i];
+                        var message = "An error occurred while uploading the file:\n";
+                        message += "PAD Type: " + error.padtype + "\n";
+                        message += "PAD Range: " + error.padrange + "\n";
+                        message += "Intermediary: " + error.intermediary + "\n";
+                        message += "Date Uploaded: " + error.dateupload + "\n";
+                        message += "Record Count: " + error.recordcount + "\n";
+                        message += "Uploader: " + error.uploader + "\n";
+
+                        // Display the error message to the user
+                        alert(message);
+                    }
+                },
+
+            });
+        });
+
+    });
+</script>
+<script>
+    $(document).on("change", "#intermediary", function() {
+
+        $('#intermediaryname').val($("#intermediary option:selected").text());
+        $('#intermediarynum').val($("#intermediary").val());
+        $('#mypolicy2monitoring2').hide();
+
+        $('#ajaxresponse tr:last').remove();
+        var _token = jQuery('input[name="token"]').val(); //generated by csrf field
+        var intermediary = jQuery('#intermediary').val(); //generated by csrf
+
+        $.ajax({
+            type: "GET",
+            url: "{{ route('checkApprove') }}",
+            data: {
+                intermediary: intermediary,
+                _token: _token
+            },
+            error: function(data) {
+                var errors = data.responseJSON;
+                jQuery.each(data, function(key, value) {
+                    alert(value);
+                });
+            },
+
+            success: function(data) {
+                $('#padtype').val('');
+                jQuery('#status').val(data);
+                if (data == "NO REQUEST") {
+                    jQuery('#status').val(data);
+                    jQuery('#uploadTab').hide();
+                } else {
+                    jQuery('#status').val(data[0]);
+                    if (data[1] == '0') {
+                        jQuery('#uploadTab').hide();
+                    } else {
+                        jQuery('#uploadTab').show();
+                    }
+
+                }
+                if (data === "APPROVED" || data === "RELEASED") {
+                    $("#checkValue").show();
+                } else {
+                    $("#checkValue").hide();
+                }
+            }
+        });
+    });
+</script>
+<script>
+    $(document).ready(function() {
+        var _token = jQuery('input[name="_token"]').val();
+        jQuery.ajax({
+            url: "{{ url('/get-quote/agent') }}",
+            method: 'POST',
+            data: {
+                _token: _token
+            },
+            success: function(data) {
+                // process the data and add it to the dropdown
+                data.forEach(function(agent) {
+                    // construct the option HTML with the agent name and number
+                    var optionHtml = '<option value="' + agent.agent_no + '">' + ' ' + agent
+                        .agent_no + '-' + agent.agent_name + '</option>';
+
+                    // append the option to the intermediary dropdown
+                    $('#intermediary').append(optionHtml);
+                });
+
+                // Initialize TomSelect
+                var intermediarySelect = document.getElementById('intermediary');
+                new TomSelect(intermediarySelect, {
+                    copyClassesToDropdown: false,
+                    dropdownParent: 'body',
+                    controlInput: '<input>',
+                    render: {
+                        item: function(agent, escape) {
+
+                            if (agent.value) {
+                                return '<div><span class="dropdown-item-indicator">' +
+                                    '</span>' + escape(agent
+                                        .text) + '</div>';
+                            }
+                            return '<div>' + escape(agent.agent_name) + '</div>';
+                        },
+                        option: function(agent, escape) {
+                            if (agent.value) {
+                                return '<div><span class="dropdown-item-indicator">' +
+                                    '</span>' + escape(agent
+                                        .text) + '</div>';
+                            }
+                            return '<div>' + escape(agent.text) + '</div>';
+                        },
+                    },
+                });
+
+
+            }
+        });
+    });
+</script>

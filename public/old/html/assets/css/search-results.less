@@ -1,0 +1,65 @@
+@import "./variables.less";
+
+.search-form {
+    min-width: 422px;
+    form {
+        border-bottom: 1px solid #C5C5C5;
+        input {
+            // font-size: 24px;
+            border: none;
+            padding-left: 0px;
+            padding-top: 0px;
+            padding-bottom: 0px;
+        }
+        button {
+            // font-size: 20px;
+            min-width: 87px;
+            padding: 11px 20px 16px !important;
+        }
+    }
+}
+.results {
+    .item {
+        margin-top: 2rem;
+        box-shadow: 0px 10px 20px #00000000;
+        -webkit-box-shadow: 0px 10px 20px #00000000;
+        -moz-box-shadow: 0px 10px 20px #00000000;
+        border: 1px solid #B8B8B8;
+        border-radius: 10px;
+        padding: 20px 30px;
+        background-color: #ffffff;
+        &:first-child {
+            margin-top: 0px;
+        }
+        &:hover {
+            box-shadow: 0px 0px 20px #d3c3c329;
+            -webkit-box-shadow: 0px 0px 20px #00000029;
+            -moz-box-shadow: 0px 0px 20px #00000029;
+        }
+        p {
+            font-size: .9rem;
+        }
+    }
+}
+@media @desktop-min {
+    .search-form {
+        form {
+            input {
+                font-size: 16px;
+            }
+            button {
+                font-size: 18px;
+            }
+        }
+    }
+    .results {
+        .item {
+            padding: 20px;
+        }
+    }
+}
+@media @if (Agent::isMobile()) {
+    .search-form {
+        min-width: auto;
+    }
+}

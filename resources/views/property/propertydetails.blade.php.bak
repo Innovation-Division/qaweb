@@ -1,0 +1,811 @@
+@extends('layouts.app')
+
+@section('content')
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+<style type="text/css">
+	
+
+
+	.carousel-inner > .item > img,
+	.carousel-inner > .item > a > img {
+	      margin: auto;
+	      padding-top: 85px;
+      	/*padding-bottom: 150px;*/
+	  }
+	  
+	#myCarousel{
+		max-width: 650px;
+		margin: 0 auto;
+		background: #fff;
+	}
+
+	#thumbCarousel{
+		/*max-width: 1000px;*/
+		margin: 0 auto;
+		overflow: hidden;
+		/*background: #fff;*/
+		/*background: orange;*/
+		padding: 10px 0;
+		width: 200px;
+	}
+
+	#thumbCarousel .thumb{
+		float: left;
+		margin-right: 10px;
+		border: 1px solid #e6e6e6;
+		/*background: #fff*/;
+		/*background: black;*/
+		
+	}
+
+	#thumbCarousel .thumb:last-child{
+		margin-right: 0;
+		;
+	}
+
+	.thumb:hover{
+		cursor: pointer;
+	}
+
+	.thumb img{
+		opacity: 0.5;
+
+		width: 100px;
+		height: 100px;
+	}
+
+	.thumb img:hover{
+		opacity: 1;
+	}
+
+	.thumb.active img{
+		opacity: 1;
+	  border: 1px solid #808080;
+	}
+
+	#slider-thumbs ul {
+		     
+			width: 200px;
+		  }
+
+
+
+
+
+			.input-wrapper {
+			  width: 100%;
+			  margin-bottom: 20px;
+			  border-color: green;
+			  border-style: double;
+			  
+
+			}
+			.map-wrapper {
+			  width: 100%;
+			  height: 350px;
+			  border-color: green;
+			  border-style: grey;
+			}
+			.map-canvas {
+			    width: 100%;
+			    height: 100%;
+			    margin: 0 auto;
+			    border-color: green;
+			}
+
+
+
+
+
+@media only screen and (max-width:500px) {
+     .carousel-inner > .item > a > img {
+	      
+	      max-width: 100%;
+      	/*padding-bottom: 150px;*/
+	  }
+
+	  #slider-thumbs {
+
+	  	width: 60px;
+	  	/*background-color: green;*/
+	  	/*position: relative;*/
+	  }
+
+
+	  #slider-thumbs ul {
+
+	  	width: 60px;
+	  	/*background-color: blue;*/
+	  	height: 300px;
+	  	position: relative;
+	  	/*left: 300px;*/
+	  }
+
+	  #myCarousel  {
+
+	  	height: 320px;
+	  	/*background-color: red;*/
+
+	  }
+
+	 
+
+	  #myCarousel a {
+
+	  	height: 300px;
+	  	margin-top: 10px;
+	  	top: -30px;
+	  }
+	  
+	  #thumbCarousel li img {
+	  	width: 50px;
+	  	height: 50px;
+
+	  }
+	  .carousel-inner  {
+		/*width: 250px;
+	  	height: 20px;
+	  	margin-top: -285px;
+	  	margin-left: 100px;*/
+
+		width: 250px;
+		position: relative;
+		top: -285px;
+		left: 80px;
+
+	  }
+
+	  #slogan {
+
+	  	/*margin-bottom: 150px;*/
+	  }
+
+	  .carousel-inner > .item > img,
+	.carousel-inner > .item > a > img {
+	      margin: auto;
+	      padding-top: 40px;
+      	/*padding-bottom: 150px;*/
+	  }
+}
+
+
+</style>
+
+
+<script type="text/javascript">
+	
+	$(document).ready(function(){
+	 
+		//carousel-control
+		
+		$("#myCarousel").mouseover(function(){
+			$("#myCarousel .carousel-control").show();
+		});
+
+		$("#myCarousel").mouseleave(function(){
+			$("#myCarousel .carousel-control").hide();
+		});
+		
+		//active thumbnail
+		
+		$("#thumbCarousel .thumb").on("click", function(){
+			$(this).addClass("active");
+			$(this).siblings().removeClass("active");
+		
+		});
+		
+		//carousel slides
+		
+		$('#myCarousel').on('slid.bs.carousel', function(){
+		   var index = $('.carousel-inner .item.active').index();
+		   //console.log(index);
+		   var thumbnailActive = $('#thumbCarousel .thumb[data-slide-to="'+index+'"]');
+		   thumbnailActive.addClass('active');
+		   $(thumbnailActive).siblings().removeClass("active");
+		   //console.log($(thumbnailActive).siblings()); 
+		});
+	 });
+
+
+	$(function() {
+
+			  var canvas = document.getElementById('map-canvas');
+
+			  var latlng = new google.maps.LatLng('{{$cocogen_admin_branch_json[0]["lat"]}}', '{{$cocogen_admin_branch_json[0]["lng"]}}');
+
+			  var mapOptions = {
+			    zoom: 14,
+			    center: latlng,
+			    mapTypeId: google.maps.MapTypeId.ROADMAP,
+			    scrollwheel: false
+			  };
+
+			  var mapObj = new google.maps.Map(canvas, mapOptions);
+			  var marker = [];
+			  var infoWindow = [];
+
+			  // マーカーデータ
+			  var markerData = [
+			    {
+			      position: new google.maps.LatLng('{{$cocogen_admin_branch_json[0]["lat"]}}', '{{$cocogen_admin_branch_json[0]["lng"]}}'),
+			      title: '{{$cocogen_admin_branch_json[0]["name"]}}',
+			       content: '{{$cocogen_admin_branch_json[0]["location"]}}',
+				  /*icon: '//drive.google.com/uc?export=view&id=1ir7dzJwVH6gpil5dP1-1fGdfsNPmnrPj',*/
+ 					icon: '{{ url("/images/locationproperty.png") }}',
+
+			    }
+			    // {
+			    //   position: new google.maps.LatLng(35.681282, 139.779044),
+			    //   title: '店舗aaa',
+			    //   content: '添付コンテンツA',
+					  // icon: '//drive.google.com/uc?export=view&id=1ir7dzJwVH6gpil5dP1-1fGdfsNPmnrPj',
+			    // },
+			    // {
+			    //   position: new google.maps.LatLng(35.681282, 139.769044),
+			    //   title: '店舗bbb',
+			    //   content: '添付コンテンツB',
+					  // icon: '//drive.google.com/uc?export=view&id=1ir7dzJwVH6gpil5dP1-1fGdfsNPmnrPj',
+			    // },
+			    // {
+			    //   position: new google.maps.LatLng(35.682382, 139.756084),
+			    //   title: '店舗yyy',
+			    //   content: '添付コンテンツY',
+					  // icon: '//drive.google.com/uc?export=view&id=1ir7dzJwVH6gpil5dP1-1fGdfsNPmnrPj',
+			    // }
+			  ];
+
+			  // マーカーの表示
+			  for (i = 0; i< markerData.length; i++) {
+			    marker[i] = new google.maps.Marker({
+			      position: markerData[i].position,
+			      map: mapObj,
+			      title: markerData[i].title,
+ 				  content: markerData[i].content,
+
+			      icon: markerData[i].icon,
+			    });
+
+			    infoWindow[i] = new google.maps.InfoWindow({ // 吹き出しの追加
+			      content: '<div class="name" style="font-weight: bold;  text-align: center; color: green">' + markerData[i]['title'] + '</div>' + '<br>  <div class="name" style="font-style: italic;">' + markerData[i]['content'] + '</div>'
+			    });
+			    
+			    markerEvent(i);
+			  }
+			  
+			  function markerEvent(i) {
+			    marker[i].addListener('click', function() {
+			      infoWindow[i].open(mapObj, marker[i]);
+			    });
+			  }
+			  
+			  $('#input-form').submit(function() {
+			    setAddress($('#address').val());
+			    return false;
+			  });
+
+			  // 住所検索
+			  function setAddress(address) {
+				  var sad = address;
+				  var geocoder = new google.maps.Geocoder();
+				  geocoder.geocode({'address':sad}, function(results, status) {
+				  	if (status == google.maps.GeocoderStatus.OK) {
+				  		mapObj.setCenter(results[0].geometry.location);
+				  	} else {
+				  		alert('住所から場所を特定できませんでした。');
+				  	}
+				  });
+			  }
+
+			});
+
+
+</script>
+
+
+<div class="top-container">
+	<div class="custom-banner custom-page-banner" data-uri-path="/updates/career-opportunities">
+		</div>
+
+	<div class="breadcrumbs">
+    <div class="container">
+        <div class="row">
+        <div class="col-sm-12 a-left">
+			    <ul>
+			        <li class="home">
+			            <a href="{{ url('/') }}" title="Go to Home Page">Home</a>
+			            <span class="breadcrumbs-split"><i class="fa fa-angle-right"></i></span>
+			        </li>
+			        <li class="category29">
+			            <a href="{{ url('/updates') }}" title="">Updates</a>
+			            <span class="breadcrumbs-split"><i class="fa fa-angle-right"></i></span>
+			        </li>
+			        <li class="category35">
+			            <strong>Property Details</strong>
+			        </li>
+			    </ul>
+			</div>
+        </div>
+    </div>
+</div>
+</div>
+@if(count($errors) > 0)
+ 			@if($errors->has('fName') || $errors->first('lName') || $errors->has('email') || $errors->has('mobileNumber') || $errors->has('positionApplied') || $errors->has('message'))
+                  <br><br>
+                        <div class="col-md-12 col-md-offset-0" style="text-align: left;font-family: muli;">
+                            <div class="error-msg">
+                              <i class="fa fa-times-circle"></i>
+                            
+                           <?php 
+                              $idname = "";
+
+                              if($errors->first('fName') === "The name format is invalid."){
+                                    $message = "The email must be a valid email address.";
+                                }elseif($errors->first('lName') === "The name format is invalid."){
+                                    $message = "The email must be a valid email address.";                                
+                                }elseif($errors->first('email') === "The email must be a valid email address."){
+                                    $message = "The email must be a valid email address.";
+                                }else{
+                                    if($errors->has('fName')){
+                                      $idname = "first name";
+                                    }
+
+                                    if($errors->has('lName')){
+                                      if($idname){
+                                        $idname = $idname .", last name";
+                                      }else{
+                                        $idname = "last name";
+                                      }                
+                                    }
+
+                                    if($errors->has('email')){
+                                      
+                                      if($idname){
+                                        $idname = $idname .", email";
+                                      }else{
+                                        $idname = "email";
+                                      }            
+                                    }
+
+                                    if($errors->has('mobileNumber')){
+                                      if($idname){
+                                        $idname = $idname .", mobile no.";
+                                      }else{
+                                        $idname = "contact no.";
+                                      }                
+                                    }
+
+                                    if($errors->has('positionApplied')){
+                                      if($idname){
+                                        $idname = $idname .", position applied";
+                                      }else{
+                                        $idname = "position applied";
+                                      }                
+                                    }                                   
+
+
+                                    if($errors->has('message')){
+                                      
+                                      if($idname){
+                                        $idname = $idname .", message";
+                                      }else{
+                                        $idname = "message";
+                                      }            
+                                    }
+
+
+                                   $message  = "The ".$idname." field is required.";
+                                }                              
+                            
+                            ?> 
+                              {{$message}}
+                            </div>
+                        </div> 
+                        <br><br> 
+                        @elseif($errors->has('filename')) 
+                        <br><br>
+					        <div class="col-md-10 col-md-offset-1" style="text-align: left;font-family: muli;">
+					            <div class="error-msg">
+					              <i class="fa fa-times-circle"></i>
+					              Attach file is required!
+					            </div>
+					        </div>
+					        <br><br> 
+					       
+                        @endif
+                @endif
+
+
+@if(session('message'))
+        <br><br>
+        <div class="col-md-10 col-md-offset-1" style="text-align: left;font-family: muli">
+            <div class='alert bg bg-success'>
+                  <i class="fa fa-check-circle"></i> 
+                {{session('message')}}
+            </div>
+        </div>
+        <br>    <br> 
+    @endif
+ @if(session('messagefailed'))
+    <br><br>
+        <div class="col-md-10 col-md-offset-1" style="text-align: left;font-family: muli;">
+            <div class="error-msg">
+              <i class="fa fa-times-circle"></i>
+              {{session('messagefailed')}}
+            </div>
+        </div>
+        <br><br> 
+       
+@endif
+
+    <div class="category-name container">
+        <h1>Property Details</h1>
+    </div>
+
+   <div class="category-banner container" id="slogan" >
+        <p>
+    
+<?php
+    $date1 = new DateTime('1963-01-28');
+    $date2 = new DateTime("now");
+    $interval = $date1->diff($date2);
+    $years = $interval->format('%y');
+    $months = $interval->format('%m');
+    $days = $interval->format('%d');
+    if($years!=0){
+        $ago = $years.' year(s) ago';
+    }else{
+        $ago = ($months == 0 ? $days.' day(s) ago' : $months.' month(s) ago');
+    }
+?> 
+      
+
+            
+<!-- With {{$years}} years in the non-life insurance industry, you can trust COCOGEN to provide
+            quality insurance solutions like no other. -->
+Build up your net worth with COCOGEN's selection of real estate properties for sale.
+
+
+            </p>
+    </div>       
+<div class="main-container col1-layout">
+  <div class="main container">
+  <div class="col-main">
+    
+  <div class="page-title category-title">
+	        <h1>Property Details</h1>
+  </div>
+
+<!--Bootstrap Responsive Thumbnail Slider/Carousel. If you like my work, please credit author: www.action360.ca @action360ca Enjoy!-->
+
+
+
+<div class="container">
+	<div class="row">
+	<!--Carousel-->
+	 <div class="col-md-7 col-sm-7">
+	 	<div class="row" style="margin-bottom: 95px;">
+	 	   <div id="myCarousel" class="carousel slide" data-interval="false">
+				 <div class="col-sm-2" id="slider-thumbs">
+
+
+					<ul id="thumbCarousel" style="">
+					@foreach($cocogen_property_images as $cocogen_property_image)
+				         <li data-target="#myCarousel" data-slide-to="{{$cocogen_property_image->toOrder}}" class="thumb {{$cocogen_property_image->active}}" >
+				             <a><img src="{{ url('') }}/{{$cocogen_property_image->imagelink}}" title="{{$cocogen_property_image->title}}"></a>
+				         </li>
+				         @endforeach
+				         <!-- <li data-target="#myCarousel" data-slide-to="1" class="thumb">
+	                        <a><img src="https://s14.postimg.cc/l8gc3onp9/pixel2.png"></a>
+	                    </li>
+
+	                    <li data-target="#myCarousel" data-slide-to="2" class="thumb">
+	                        <a><img src="https://s14.postimg.cc/8ttk3djcd/pixel5.png"></a>
+	                    </li>
+	                    <li data-target="#myCarousel" data-slide-to="3" class="thumb">
+	                        <a><img src="https://s14.postimg.cc/8ttk3djcd/pixel5.png"></a>
+	                    </li>
+
+	                    <li data-target="#myCarousel" data-slide-to="4" class="thumb">
+	                        <a><img src="https://s14.postimg.cc/8ttk3djcd/pixel5.png"></a>
+	                    </li> -->
+				     </ul>
+
+				 </div>
+
+
+
+
+
+
+
+
+
+				 <div class="col-md-10 col-sm-10" id="slider-thumbs">
+				 	<div class="carousel-inner" role="listbox" style="height: 520px;">
+				 	 @foreach($cocogen_property_images as $cocogen_property_image)
+
+				 		<div class="item {{$cocogen_property_image->active}}">
+				        	<img src="{{ url('') }}/{{$cocogen_property_image->imagelink}}" alt="" title="{{$cocogen_property_image->title}}">
+				     	</div>
+				     	<!-- <div class="item">
+				       		<img src="https://s14.postimg.cc/k665l54w1/pixel2.png" alt="">
+				      	</div>
+					    <div class="item">
+					        <img src="https://s14.postimg.cc/4xg87dycx/pixel5.png" alt="">
+					      </div>
+					    <div class="item">
+					        <img src="https://s14.postimg.cc/4xg87dycx/pixel5.png" alt="">
+					      </div>
+					    <div class="item">
+					        <img src="https://s14.postimg.cc/4xg87dycx/pixel5.png" alt="">
+				      	</div> -->
+				      	@endforeach
+
+
+
+
+				      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+					  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+					  <span class="sr-only">Previous</span>
+				      </a>
+				      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+						  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+						  <span class="sr-only">Next</span>
+				      </a> 	
+
+
+			 	
+					</div>
+				 </div>
+			</div>
+
+			</div>	
+		<!--End Carousel-->
+		</div>
+
+	<div class="col-md-5 col-sm-5" style="margin-top: -65px;">
+				<div class="career-form mega-form-builds">
+						<div class="product-view">
+	                                <div class="short-description">
+	                                @foreach($cocogen_property_id as $cocogen_properties_id)
+	                                    <div class="product-name col-md-12">
+	                                        <h1 style="font-weight: bold; font-size: 40px">{{$cocogen_properties_id->name}}</h1>
+	                                    </div>
+
+	                                    <div class="std col-md-12 prod-desc">
+	                                        <!-- <p style="line-height: inherit;">Location</p> -->
+	                                        <label >Location</label>
+	                                        <br>
+	                                        <!-- <label style="font-weight: bold; font-size: 25px; color: black;" >Novaliches, Quezon City</label> -->
+	                                        <label style="font-weight: bold; font-size: 20px; color: black;" >{{$cocogen_properties_id->location}}</label>
+											
+
+											<br>
+											<br>
+	                                        <label >Type</label>
+	                                        <br>
+	                                        <label style="font-weight: bold; font-size: 20px; color: black;" >{{$cocogen_properties_id->description}}</label>
+	                                        <br>
+											<br>
+	                                        <label >Area</label>
+	                                        <br>
+	                                        <label style="font-weight: bold; font-size: 20px; color: black;" >{{$cocogen_properties_id->lot_size}} sqm.</label>
+	                                        <br>
+											<br>
+	                                        <label >Price</label>
+	                                        <br>
+	                                        
+	                                        <label style="font-weight: bold; font-size: 20px; color: black;" >Php {{ $cocogen_properties_id->price}} </label>
+	                                         
+	                                        <br>
+											<br>
+	                                        <label >Contact Person</label>
+	                                        <br>
+	                                        
+	                                        <label style="font-weight: bold; font-size: 20px; color: black;" >{{$cocogen_property_contact[0]["contact_name"]}}</label>
+	                                        <br>
+	                                        <label style="font-weight: bold; font-size: 20px; color: black;" >{{$cocogen_property_contact[0]["contact_no"]}}</label>
+	                                    </div>
+	                       @endforeach
+	                                    
+	                                   <div class="col-md-6">
+											<label for="fName" class="hide">First Name</label>
+										</div>
+	                                </div>
+	                    </div>
+
+
+				
+					
+					<script type="text/javascript">
+					    //<![CDATA[
+					    var dataForm = new VarienForm('career-form', true);
+					    //]]>
+					    var onloadCallback = function() {
+					        grecaptcha.render('html_element', {
+					            'sitekey': '6Lfl1cMUAAAAANJEoCM5_TMjiuVVcyDkw279Kb_z'
+					        });
+					    };
+					    function validateRecaptcha() {
+					        var response = grecaptcha.getResponse();
+					        if (response.length === 0) {
+					            alert("Please confirm if you're not a robot.");
+					            return false;
+					        } else {
+					            //alert("validated");
+					            return true;
+					        }
+					    }
+					</script>
+					<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+					<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"   async defer>
+			    </script>
+				</div>
+			</div>
+
+			 
+		  </div>
+	  </div>
+
+  
+
+
+
+<div class="container">
+	<div class="row">
+		
+		<div class="col-md-7 col-sm-7" style="margin-bottom: 95px;">
+			<div class="career-form mega-form-builds">
+				<form onsubmit="return validateRecaptcha();" class="form-horizontal" id="career-form" method="post" action="{{route('propertyinquire')}}" enctype="multipart/form-data">
+					{{ csrf_field() }}
+					<div class="col-md-12">
+						<div class="form-page-header fieldset-header">
+							<h3 style="font-weight: bold;">Inquire now!</h3>
+						</div>
+					</div>
+					<div class="col-md-6  {{ $errors->has('fName') ? ' has-error' : '' }}">
+						<label for="fName" class="hide">First Name</label>
+						<input type="text" class="form-control required-entry validate-alpha-only" placeholder="First Name *" name="fName" id="fName" value="{{old('fName')}}" maxlength="200">
+					</div>
+					<div class="col-md-6 sp-only">
+						<br>
+					</div>
+					<div class="col-md-6  {{ $errors->has('fName') ? ' has-error' : '' }}">
+						<label for="lName" class="hide">Last Name</label>
+						<input type="text" class="form-control required-entry validate-alpha-only" placeholder="Last Name *" name="lName" id="lName" value="{{old('lName')}}" maxlength="200">
+					</div>
+					<div class="col-md-6">
+						<br>
+					</div>
+					
+					<div class="col-md-12  {{ $errors->has('email') ? ' has-error' : '' }}">
+						<label for="email" class="hide">Email</label>
+						<input type="text" class="form-control required-entry validate-email" placeholder="Email Address *" name="email" id="email" value="{{old('email')}}"maxlength="100">
+					</div>
+					<div class="col-md-6">
+						<br>
+					</div>
+					<div class="col-md-12  {{ $errors->has('mobileNumber') ? ' has-error' : '' }}">
+						<input type="text" class="form-control required-entry validate-customContact" placeholder="Contact Number *" id="mobileNumber" name="mobileNumber" value="{{old('mobileNumber')}}" maxlength="100">
+						<label for="mobileNumber" class="field-item-note" style="font-size: 10px;opacity: 0.8;margin-top:3px;">Sample Format: 02-1234567 or 63-1234567890</label>
+					</div>
+					<div class="col-md-6">
+						<br>
+					</div>
+					
+				<div class="col-md-6  ">
+						<br>
+					</div>
+				<div class="col-md-12 {{ $errors->has('message') ? ' has-error' : '' }}">
+					<label for="message" class="hide">Inquiry</label>
+					<textarea rows="5" name="message" id="message" class="form-control required-entry" placeholder="Message *">{{old('message')}}</textarea>
+				</div>	
+				
+				 <!-- <div class="col-md-12">
+					<label for="filename" class="hide">Input File</label>
+					<input type="file" class="required-entry" name="filename" required="required" id="filename" accept="application/msword, application/pdf">
+				</div>  -->
+				 <div class="col-md-6">
+						<br>
+					</div>
+				<div class="col-md-12">
+					<div class="g-recaptcha" data-sitekey="6Lfl1cMUAAAAANJEoCM5_TMjiuVVcyDkw279Kb_z"></div>
+				</div> 
+			
+				<div class="col-md-6">
+						<br>
+					</div>
+			
+				<div class="col-md-12">
+					<div class="pull-left">
+						<input name="executed" type="hidden" value="0" class="executed">
+						<input name="form_key" type="hidden" value="5WS4MkVQbtqFyYQ5">
+						<input type="submit" class="btn btn-primary" value="SUBMIT">
+					</div>
+				</div>
+				</form>
+				<script type="text/javascript">
+				    //<![CDATA[
+				    var dataForm = new VarienForm('career-form', true);
+				    //]]>
+				    var onloadCallback = function() {
+				        grecaptcha.render('html_element', {
+				            'sitekey': '6Lfl1cMUAAAAANJEoCM5_TMjiuVVcyDkw279Kb_z'
+				        });
+				    };
+				    function validateRecaptcha() {
+				        var response = grecaptcha.getResponse();
+				        if (response.length === 0) {
+				            alert("Please confirm if you're not a robot.");
+				            return false;
+				        } else {
+				            //alert("validated");
+				            return true;
+				        }
+				    }
+				</script>
+				<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+				<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"   async defer>
+		    </script>
+			</div>
+		</div>
+
+
+		<div class="col-md-5 col-sm-5">
+		<div class="input-wrapper">
+	      <form id="input-form">
+	        <!-- <input type="text" name=address" id="address" placeholder="住所を入力してください">
+	        <input id="address-btn" type="submit" value="検索"> -->
+	      </form>
+	                                                      
+	    </div>
+	    <div class="map-wrapper">
+	    <div id="map-canvas" class="map-canvas">
+	    	
+	    </div>
+	    </div>
+
+	 </div>
+	</div>
+
+
+
+
+
+</div>
+
+<div class="container">
+	<div class="row">
+	 
+	</div>
+</div>
+
+
+
+
+
+
+<!-- <div class="container">
+	<div class="row">		
+		<div class="col-md-12">
+
+		@include('property.branchlocatorproperty')
+		</div>
+	</div>
+</div> -->
+
+  </div>
+ </div>
+</div>
+
+
+
+
+
+@endsection

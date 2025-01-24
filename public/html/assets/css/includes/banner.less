@@ -1,0 +1,134 @@
+.banner {
+    min-height: 257px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    overflow: hidden;
+    color: @color-common-white;
+    &:before {
+        content: "";
+        position: absolute;
+        width: 236px;
+        height: 189px;
+        bottom: 0px;
+        left: 0px;
+        background: url("@{images}/banners/shape-left.png") no-repeat bottom left;
+    }
+    &:after {
+        content: "";
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        top: 0px;
+        right: 0px;
+        background: url("@{images}/banners/shape-right.png") no-repeat top right;
+        background-size: auto 100%;
+    }
+    .breadcrumb-container {
+        max-width: 1720px;
+        padding-top: 15px;
+    }
+    .breadcrumb-item+.breadcrumb-item::before {
+        color: @color-common-white;
+    }
+    .breadcrumb-item.active {
+        color: @color-common-white;
+    }
+    .container {
+        max-width: 1600px;
+        padding-left: calc(1.5rem * 0.5);
+        padding-right: calc(1.5rem * 0.5);
+    }
+    .content {
+        position: absolute;
+        top: auto;
+        bottom: 0px;
+        padding-bottom: 40px;
+    }
+    h1 {
+        margin: 0px;  
+    }
+}
+.banner-product {
+    background-image: url("@{images}/banners/product-gradient.jpg");
+}
+.banner-service {
+    background-image: url("@{images}/banners/services-gradient.jpg");
+}
+.banner-inquiry {
+    background-image: url("@{images}/banners/inquiries-gradient.jpg"); 
+}
+.banner-about {
+    background-image: url("@{images}/banners/about-gradient.jpg"); 
+}
+@media only screen and (max-width: 1720px) {
+    .banner {
+        .container {
+            max-width: 100%;
+            padding-left: 18px;
+            padding-right: 18px;
+        }
+        .content {
+            padding-left: 120px;
+        }
+    }
+}
+@media @desktop-min {
+    .banner {
+        min-height: 160px;
+        &:before {
+            width: 115px;
+            height: 65px;
+            background: url("@{images}/banners/shape-left-md.svg") no-repeat bottom left;
+        }
+        &:after {
+            width: 79px;
+            height: 71px;
+            background: url("@{images}/banners/shape-right-md.svg") no-repeat bottom left;
+        }
+        .container {
+            max-width: 100%;
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+        .content {
+            top: 0px;
+            bottom: 0px;
+            padding: 0px;
+            display: flex;
+            align-items: center;
+        }
+        h1 {
+            margin-top: 15px;
+        }
+        .breadcrumb {
+            font-size: 1rem !important;
+        }
+    }
+}
+@media @tablet {
+    .banner {
+        .breadcrumb-container {
+            display: none;
+        }
+    }
+}
+@media @mobile {
+    .banner {
+        min-height: 102px;
+        &:before {
+            width: 60px;
+            height: 45px;
+            background: url("@{images}/banners/shape-left-sm.svg") no-repeat bottom left;
+        }
+        &:after {
+            width: 40px;
+            height: 48px;
+            background: url("@{images}/banners/shape-right-sm.svg") no-repeat bottom left;
+        }
+        h1 {
+            margin-top: 10px;
+        }
+    }
+}

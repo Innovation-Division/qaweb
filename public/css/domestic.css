@@ -1,0 +1,829 @@
+.a-btn-slide-text:hover{
+		color: #349B9B !important;
+		border-color: #349B9B !important;
+}
+input[type="text"],
+select.form-control {
+	/* border-radius: 5px;
+	border-color: #808080; */
+  /*background: transparent;
+  border: none;
+  border-color: 1px solid #000000;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-radius: 0;*/
+}
+
+/* .firstform{
+	margin-top: -20px;
+} */
+
+/* #modal_covid19_summary {
+	text-align: center;
+	top:1% !important;
+} */
+#modal_covid19_summary .modal-body {
+	padding: 15px 50px;
+}
+#modal_covid19_summary .modal-body h4 {
+	display: block;
+	margin-bottom: 15px;
+}
+
+#modal_PWD {
+	text-align: center;
+	/* top:30% !important;
+	border-color: green; */
+}
+
+input[type="text"]:focus,
+select.form-control:focus {
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+</style>
+<style type="text/css">
+
+.ui-datepicker {
+background-color: #fff;
+		font-size: 160%;
+}
+
+.ui-datepicker-header {
+background-color: #008080;
+border-color: #008080;
+
+}
+
+.ui-datepicker-title {
+color: white;
+}
+
+.ui-widget-content .ui-state-default {
+border: 0px;
+text-align: center;
+background: #fff;
+font-weight: normal;
+color: #008080;
+}
+
+.ui-widget-content .ui-state-default:hover {
+border: 0px;
+text-align: center;
+background: #008080;
+font-weight: normal;
+color: #fff;
+}
+
+.ui-widget-content .ui-state-active {
+border: 0px;
+background: #008080;
+color: #fff;
+}
+option:checked {
+	background: red linear-gradient(0deg, red 0%, red 100%);
+}
+.btn-white-residence_province {
+	background-color: #ffffff;
+	border-color: #808080;
+}
+.btn-white-residence_municipality {
+	background-color: #ffffff;
+	border-color: #808080;
+}
+.btn-white-residence_barangay{
+	background-color: #ffffff;
+	border-color: #808080;
+}
+
+.btn-white-mailing_province {
+	background-color: #ffffff;
+	border-color: #808080;
+}
+.btn-white-mailing_municipality {
+	background-color: #ffffff;
+	border-color: #808080;
+}
+.btn-white-mailing_barangay{
+	background-color: #ffffff;
+	border-color: #808080;
+}
+.btn-white-noofunit{			
+	background-color: #ffffff;
+	border-color: #808080;
+}
+.btn-white-occupation_personal_info{
+	background-color: #ffffff;
+	border-color: #808080;
+}
+.btn-white-gender{			
+	background-color: #ffffff;
+	border-color: #808080;
+}
+.btn-white-status_other_personal_info{
+	background-color: #ffffff;
+	border-color: #808080;
+}
+.btn-white-type_of_id_personal_info,
+.btn-white-status_other_personal_info{
+	background-color: #ffffff;
+	border-color: #808080;
+}
+/* #basic{
+	min-width: 250px;
+	min-height: 60px;
+	background-color: #C0C0C0;
+	color: #000000;
+	margin-right: 15px;
+} */
+/* #btn_pwd_no,
+#btn_pwd_yes{
+	min-width: 120px;
+	min-height: 60px;
+	background-color: #C0C0C0;
+	color: #000000;
+	margin-right: 15px;
+} */
+
+/* #btn_no,
+#btn_yes{
+	min-width: 90px;
+	min-height: 60px;
+	background-color: #C0C0C0;
+	color: #000000;
+	margin-right: 15px;
+} */
+/* #btn_back_to_applicant_occupation,
+#btn_back_to_home,
+#btn_back_to_applicant{
+	min-width: 120px;
+	min-height: 30px;
+	background-color: #008080;
+	color: #ffffff;
+	margin-right: 15px;
+} */
+
+/* #prime{
+	min-width: 250px;
+	min-height: 60px;
+	background-color: #C0C0C0;
+	color: #000000;
+	margin-right: 15px;
+} */
+/* #basicprinme{
+	min-width: 288px;
+	min-height: 60px;
+	background-color: #C0C0C0;
+	color: #000000;
+} */
+
+/* #NewApplicant{
+	background-color: #C0C0C0;
+	color: #000000;
+}
+#NewApplicant:hover {
+	color: white;
+} */
+/* #btnnoofunit{
+	min-width: 516px;
+	height: 45px;
+	background-color: #00BFFF;
+	color: #ffffff;
+	margin-left: -15px;
+} */
+/* #primbasicvaldiv{
+	min-width: 556px;
+} */
+/* .validation_others_pwd_personal_info,
+.validation_beneficiary_personal_info,
+.validation_relationship_personal_info,
+.validation_occupation_other_personal_info,
+.validation_middleName_personal_info,
+.validation_firstName_personal_info,
+.validation_lastName_personal_info,
+.validation_gender_personal_info,
+.validation_contactNo_personal_info,
+.validation_gender_personal_info,
+.validation_occupation_personal_info,
+.validation_dateofBirth_personal_info,	
+.validation_email_personal_info{
+	margin-top: 5px ;
+} */
+
+.blue-btn:hover,
+.blue-btn:active,
+.blue-btn:focus,
+.blue-btn {
+	background: transparent;
+	/* border: solid 1px #27a9e0;*/
+	border-radius: 3px;
+	color: #ffffff;
+	background-color: #e4509a;
+	font-size: 16px;
+	margin-bottom: 20px;
+	outline: none !important;
+	padding: 10px 20px;
+}
+
+.fileUpload {
+	position: relative;
+	overflow: hidden;
+	height: 46px;
+	font-size: 20px;
+}
+.fileUpload input.uploadlogo {
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+	cursor: pointer;
+	opacity: 0;
+	filter: alpha(opacity=0);
+	width: 100%;
+	height: 46px;
+}
+
+/*Chrome fix*/
+input::-webkit-file-upload-button {
+	cursor: pointer !important;
+	height: 46px;
+	width: 100%;
+}
+
+/* #upload_label{
+	margin-top:-30px !important;
+} */
+
+/* #upload_file{
+	margin-top:-30px !important;
+} */
+
+#f3_summary{
+	margin-left: -16px;
+}
+/* #agent_name_div{
+	margin-left: -90px;
+	margin-right: 20px;
+	margin-top: 25px;
+} */
+
+/* #agent_name_summary{
+	margin-right: 30px !important;
+} */
+
+#f4_summary{
+	margin-left: -90px ;
+	margin-top: 25px;
+}
+
+#btnsubmit{
+	min-height: 60px;
+	min-width: 257px;
+}
+
+#btnagree{
+	min-height: 60px;
+	min-width: 200px;
+}
+
+#addApplicant{
+	/* min-width: 257px;
+	min-height: 60px;
+	background-color: #C0C0C0;
+	color: #000000;
+	margin-right: 18px; */
+
+}
+@media only screen and (max-width: 1439px) {
+    .fileUpload {
+        height: 42px;
+        font-size: 18px;
+        padding-top: 7px;
+    }
+}
+@media only screen and (max-width: 800px) {
+	/* .firstform{
+		margin-top: 0px;
+	}
+	.address_mobile{
+			margin-bottom: 15px !important;
+	}
+	
+	.personal_ifno_mobile{
+			margin-bottom: 15px !important;
+	} */
+
+		/* #basic{
+		min-width: 258px;
+		min-height: 60px;
+		background-color: #C0C0C0;
+		color: #000000;
+		margin-bottom: 10px;
+	} */
+
+	/* #prime{
+		min-width: 258px;
+		min-height: 60px;
+		background-color: #C0C0C0;
+		color: #000000;
+		margin-bottom: 10px;
+	} */
+	/* #basicprinme{
+		min-width: 258px;
+		min-height: 60px;
+		background-color: #C0C0C0;
+		color: #000000;
+		margin-bottom: 10px;	
+	} */
+
+	/* #btnnoofunit{
+			min-width: 258px;
+			background-color: #e4509a;
+			color: #ffffff;			
+			height: 45px;
+			margin-left: -15px;
+	} */
+
+	/* #primbasicvaldiv{
+			margin-left:-14px;
+			margin-top: 15px;
+			width: 285px;
+	} */
+
+	/* .validation_others_pwd_personal_info_check_error,
+	.validation_beneficiary_personal_info_check_error,
+	.validation_relationship_personal_info_check_error,
+	.validation_occupation_other_personal_info,
+	.validation_idno_other_personal_info_check_error,
+	.validation_place_of_birth_other_personal_info_check_error,
+	.validation_nationality_other_personal_info_check_error,
+	.validation_middleName_personal_info_check_error,
+	.validation_lastName_personal_info_check_error,
+	.validation_contactNo_personal_info_check_error,
+	.validation_dateofBirth_personal_info_check_error,
+	.validation_gender_personal_info_check_error,
+	.validation_email_personal_info_check_error,
+	.validation_firstName_personal_info_check_error{
+		top:-47px !important;
+	}
+	
+	.validation_others_pwd_personal_info_check_success,
+	.validation_beneficiary_personal_info_check_success,
+	.validation_relationship_personal_info_check_success,
+	.validation_idno_other_personal_info_check_success,
+	.validation_place_of_birth_other_personal_info_check_success,
+	.validation_nationality_other_personal_info_check_success,
+	.validation_middleName_personal_info_check_success,
+	.validation_lastName_personal_info_check_success,
+		.validation_contactNo_personal_info_check_success,
+		.validation_dateofBirth_personal_info_check_success,
+		.validation_gender_personal_info_check_success,
+		.validation_email_personal_info_check_success,
+	.validation_firstName_personal_info_check_success{
+		top:-50px !important;
+	}
+
+	.validation_occupation_personal_info_check_error,
+	.validation_occupation_personal_info_check_success {
+				top:-35px !important;
+	} */
+
+	/* .validation_dateofBirth_personal_info{
+		margin-top: -12px !important;
+		margin-bottom: 10px !important;
+	}
+
+	.validation_others_pwd_personal_info,
+	.validation_idno_other_personal_info,
+	.validation_place_of_birth_other_personal_info,
+	.validation_nationality_other_personal_info,
+	.validation_email_personal_info,
+	.validation_contactNo_personal_info,
+	.validation_lastName_personal_info,
+	.validation_middleName_personal_info,
+	.validation_firstName_personal_info{
+		margin-top: -12px !important;
+		margin-bottom: 10px !important;
+	}
+
+	.validation_status_other_personal_info{
+		margin-bottom: 10px !important;
+	} */
+
+	.fileUpload {
+			position: relative;
+			overflow: hidden;
+			height: 42px;
+			margin-top: 15px;
+			/* width: 100% !important; */
+		}
+	#agent_name_div{
+		margin-left: -10px  !important;
+		margin-right: 20px;
+		margin-top: 25px;
+	}
+
+	#f4_summary{
+		margin-left: -10px !important;
+		margin-top: 25px;
+	}
+
+	#CheckCoverage{
+		margin-left: 10px !important;
+	}
+
+	/* #addApplicant{
+			margin-bottom: 10px;
+
+		} */
+	#btnsubmit{
+		min-height: 60px;
+		min-width: 257px;
+	}
+}
+/* end only demo styles */
+
+/* .checkbox-custom, .radio-custom {
+		opacity: 0;
+		position: absolute;   
+}
+
+.checkbox-custom, .checkbox-custom-label, .radio-custom, .radio-custom-label {
+		display: inline-block;
+		vertical-align: middle;
+		margin: 5px;
+		cursor: pointer;
+}
+
+.checkbox-custom-label, .radio-custom-label {
+		position: relative;
+}
+
+.checkbox-custom + .checkbox-custom-label:before, .radio-custom + .radio-custom-label:before {
+		content: '';
+		background: #fff;
+		border: 2px solid #008080;
+		display: inline-block;
+		vertical-align: middle;
+		width: 20px;
+		height: 20px;
+		padding: 2px;
+		margin-right: 10px;
+		text-align: center;
+}
+
+.checkbox-custom:checked + .checkbox-custom-label:before {
+		background: #008080;
+		box-shadow: inset 0px 0px 0px 4px #fff;
+}
+
+.checkbox-custom:focus + .checkbox-custom-label, .radio-custom:focus + .radio-custom-label {
+	outline: 1px solid #ddd;
+} */
+.BlockUIConfirm {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 100vh;
+	width: 100vw;
+	z-index: 50;
+}
+
+.BlockUIConfirm2 {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 100vh;
+	width: 100vw;
+	z-index: 50;
+}
+
+.BlockCantFintCar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 100vh;
+	width: 100vw;
+	z-index: 50;
+}
+
+.blockui-mask {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #333;
+	opacity: 0.8;
+}
+
+.RowDialogBody {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+	max-width: 600px;
+	opacity: 1;
+	background-color: white;
+	border-radius: 4px;
+}
+
+.RowDialogBody > div:not(.confirm-body) {
+	padding: 8px 10px;
+}
+
+.confirm-header {
+	width: 100%;
+	border-radius: 4px 4px 0 0;
+	font-size: 13pt;
+	font-weight: bold;
+	margin: 0;
+}
+
+/* .row-dialog-hdr-success {
+	border-top: 4px solid #5cb85c;
+	border-bottom: 1px solid transparent;
+} */
+
+.row-dialog-hdr-info {
+	border-top: 4px solid #5bc0de;
+	border-bottom: 1px solid transparent;
+}
+
+/* .confirm-body {
+	border-top: 1px solid #ccc;
+	padding:20px 10px;
+	border-bottom: 1px solid #ccc;
+} */
+
+.confirm-btn-panel {
+	width: 100%;
+}
+.row-dialog-btn {
+	cursor: pointer;
+}
+
+.btn-naked {
+	background-color: transparent;
+}
+.table {
+	/* border: 1px solid #5bafaf; */
+}
+.table-data .table > thead:first-child > tr:first-child > th {
+    border: none !important;
+}
+.table-data .table .col1 {
+    color: #fff;
+}
+.table-data .table > thead:first-child > tr:first-child > th,
+.table-data .table > tbody > tr > td,
+.table-data .table > tfoot > tr > td {
+    border-top: none !important;
+		border-bottom: 1px solid #B8B8B8 !important;
+		border-right: 1px solid #B8B8B8 !important;
+    padding: 1.3rem 1.5rem;
+}
+.table-data .table > thead:first-child > tr:first-child > th,
+.table-data .table > thead > tr > th {
+    padding: 1rem 1.5rem;
+		vertical-align: middle;
+		border-bottom: 1px solid #B8B8B8;
+}
+.table-data .table > thead > tr > th.col1,
+.table-data .table > thead:first-child > tr:first-child > th.col1,
+.table-data .table > tbody > tr > td.col1 {
+    border-bottom: 1px solid #5bafaf !important;
+		border-right: none !important;
+}
+.table-data .table > thead:first-child > tr:first-child > th {
+	border-top: 1px solid #B8B8B8 !important;
+}
+.table-data .table > thead:first-child > tr:first-child > th.col1 {
+	border-top: 1px solid #008080 !important;
+}
+.table-data1 .table {
+	border: none !important;
+	min-width: 500px;
+}
+.table-data1 .table > thead > tr > th {
+	border-bottom: none;
+}
+.table-data1 .table > thead:first-child > tr:first-child,
+.table-data1 .table > tfoot > tr:first-child {
+	/* border-top: none !important; */
+}
+.table-data1 .table > thead:first-child > tr:first-child > th {
+	/* border-top: none !important; */
+}
+.table-data1 .table > thead:first-child > tr:first-child > th,
+.table-data1 .table > tbody > tr > td,
+.table-data1 .table > tfoot > tr > td {
+    padding: 1.8rem 1.8rem;
+		border-right: 1px solid #B8B8B8;
+}
+.table-data1 .table > thead:first-child > tr:first-child > th:first-child {
+    border-radius: 10px 0px 0px 0px;
+}
+.table-data1 .table > thead:first-child > tr:first-child > th:last-child {
+    border-radius: 0px 10px 0px 0px;
+    border-right: none;
+}
+.table-data1 .table > tfoot:last-child > tr:last-child > td:first-child {
+    border-radius: 0px 0px 0px 10px;
+}
+.table-data1 .table > tfoot:last-child > tr:last-child > td:last-child {
+    border-radius: 0px 0px 10px 0px;
+    border-right: none;
+}
+.table-data1 .table > tbody > tr > td {
+	border-bottom: 1px solid #B8B8B8;
+}
+.table-data1 .table > tbody > tr > td:last-child {
+    border-right: none;
+}
+.table-data1 .table > tbody > tr > td.col1 {
+	position: relative;
+}
+.table-data1 .table > tbody > tr > td.col1:before {
+  content: "";
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	border-left: 1px solid #B8B8B8;
+}
+.table-data1 .table > tbody > tr > td:last-child {
+	position: relative;
+}
+.table-data1 .table > tbody > tr > td:last-child:after {
+  content: "";
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	right: 0px;
+	border-right: 1px solid #B8B8B8;
+}
+.pkg-options button {
+	margin-right: 10px;
+}
+.pkg-options button:last-child {
+	margin-right: 0px;
+}
+.pkg-sub-form label {
+	margin-right: 20px;
+}
+#primbasicvaldiv {
+	min-width: 300px;
+	position: relative;
+}
+.fa-2x, .fa-lg {
+	font-size: 1.2rem;
+}
+.v-error-msg {
+	color: #CF3C4B;
+  font-size: 15px;
+}
+/* .fa-times-circle.fa-2x, .fa-times-circle.fa-lg {
+	color: #CF3C4B;
+} */
+.has-feedback label ~ .form-control-feedback {
+	top: 36px;
+	font-size: 1rem;
+}
+.form-group-agent-code.has-feedback .form-control-feedback {
+	top: 0px;
+	font-size: 1rem;
+}
+.has-error .form-control-feedback {
+	color: #CF3C4B;
+}
+.has-success .form-control-feedback {
+	color: #4BB543;
+}
+.input-lg ~ .form-control-feedback {
+	height: 52px;
+	line-height: 52px;
+}
+.has-error .bootstrap-select .dropdown-toggle,
+.has-success .bootstrap-select .dropdown-toggle {
+	padding-right: 60px;
+}
+.has-error .input-lg.selectb5 ~ .form-control-feedback,
+.has-success .input-lg.selectb5 ~ .form-control-feedback {
+	width: 26px;
+	right: 34px;
+}
+.has-error .input-lg.selectb5 ~ .form-control-feedback,
+.has-success .input-lg.selectb5 ~ .form-control-feedback {
+	width: 26px;
+	right: 34px;
+}
+.pwd-options > * {
+	min-height: 52px;
+	display: flex;
+	align-items: center;
+}
+#pwd_div_others {
+	padding-left: 10px;
+}
+
+#NewApplicant {
+	margin-bottom: 10px !important;
+}
+#CheckCoverage {
+	margin-bottom: 10px !important;
+}
+.form-group-agent-code {
+	display: flex;
+	align-items: center;
+}
+.form-group-agent-code label {
+	width: 160px;
+	margin-right: 10px;
+}
+.modal .modal-content {
+	background-color: #fff;
+	color: inherit;
+}
+@media only screen and (max-width: 1439px) {
+	.has-feedback label ~ .form-control-feedback {
+		top: 29px;
+	}
+	.form-group-agent-code.has-feedback .form-control-feedback {
+		top: 29px;
+	}
+	.input-lg ~ .form-control-feedback {
+		height: 42px;
+		line-height: 42px;
+	}
+}
+@media only screen and (max-width: 991px) {
+	.table-data .table > tbody > tr > td {
+			border-top: none !important;
+			/* border-bottom: none !important; */
+			padding: .6rem 1rem;
+	}
+		/* #basicprinmepanel {
+			min-width: 300px;
+		} */
+	.fa-times-circle.fa-2x, .fa-times-circle.fa-lg {
+		/* top: -30px !important; */
+	}
+	.has-feedback label ~ .form-control-feedback {
+		top: 29px;
+	}
+	.form-group-agent-code.has-feedback .form-control-feedback {
+		top: 29px;
+	}
+	.input-lg ~ .form-control-feedback {
+		height: 42px;
+		line-height: 42px;
+	}
+	#modal_covid19_summary .modal-body {
+		padding: 15px 20px;
+	}
+}
+@media only screen and (max-width: 600px) {
+	.table-data .table > tbody > tr > td {
+			border-top: none !important;
+			border-bottom: none !important;
+			padding: .6rem 1rem;
+	}
+	#basicprinmepanel {
+		flex-direction: column;
+		justify-content: flex-start;
+	}
+	#primbasicvaldiv {
+		min-width: 100%;
+	}
+	.nulabel {
+		width: 100%;
+	}
+	.pwd_div_others_option {
+		flex-direction: column;
+		align-items: start;
+	}
+	#pwd_div_others {
+		padding-left: 0px;
+		margin-top: 10px;
+		width: 100%;
+	}
+	#CheckCoverage{
+		margin-left: 0px !important;
+	}
+	.form-group-agent-code {
+		display: block;
+	}
+	.form-group-agent-code label {
+		width: auto;
+		margin-right: 0px;
+	}
+	#modal_covid19_summary .modal-body {
+		padding: 15px 15px;
+	}
+}

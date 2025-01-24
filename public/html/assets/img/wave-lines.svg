@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="85" viewBox="0 45 1920 85">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_1147" data-name="Rectangle 1147" width="1920" height="149" transform="translate(0 3172)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="wave" transform="translate(0 -3172)" clip-path="url(#clip-path)">
+    <g id="wave_divider" data-name="wave divider" transform="translate(-154 3216)">
+      <path id="Path_349" data-name="Path 349" d="M2026.333,1211.953s401.333-13.333-105.333,0-453.333-46.667-844-40-381,67.088-661,38.9-380-105.708-584-64.834" transform="translate(168 -1134.358)" fill="none" stroke="#e4509a" stroke-width="1"/>
+      <path id="Path_348" data-name="Path 348" d="M-150,1219.7s88.667-129.747,570-40.414,582.667-44,952-13.333,478.667,65.333,604,0" transform="translate(281 -1136.358)" fill="none" stroke="teal" stroke-width="1"/>
+    </g>
+  </g>
+</svg>

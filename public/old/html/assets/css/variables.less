@@ -1,0 +1,41 @@
+@color-primary: #008080;
+@color-primary-dark: #005959;
+@color-primary-very-dark: #006565;
+@color-primary-light: #73D4D3;
+
+@color-secondary: #db3e8d;
+@color-secondary-dark: #992b62;
+
+@color-inverted: #ffffff;
+@color-border: #927c7c;
+@color-border-2: #ced4da;
+@color-border-3: #707070;
+@color-dark: #3b3b3b;
+@color-verydarkgray: #707070;
+
+@color-common-white: #ffffff;
+
+@text-primary: #2f313d;
+@text-secondary: #ffffff;
+@text-tertiary: #707070;
+@text-light: #434343;
+
+@color-danger: #cf3c4b;
+
+@bg-green: #e3f0ef;
+
+@images: "../img";
+
+// Media Query
+
+@desktop-uhd: ~"only screen and (min-width: 1921px)";
+@desktop-hd: ~"only screen and (max-width: 1600px)";
+@desktop: ~"only screen and (max-width: 1440px)";
+@desktop-min: ~"only screen and (max-width: 1439px)";
+@tablet: ~"only screen and (max-width: 991px)";
+@tablet-max: ~"only screen and (max-width: 1024px)";
+@tablet-lg: ~"only screen and (max-width: 1024px)";
+@tablet-min: ~"only screen and (max-width: 768px)";
+@if (Agent::isMobile()): ~"only screen and (max-width: 600px)";
+@if (Agent::isMobile())-mini: ~"only screen and (max-width: 480px)";
+@if (Agent::isMobile())-min: ~"only screen and (max-width: 375px)";

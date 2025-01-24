@@ -1,0 +1,105 @@
+@extends('layouts.app')
+
+@section('content')
+<script>
+  gtag('event', 'page_view', {
+    'send_to': 'AW-936227039',
+    'value': 'replace with value',
+    'items': [{
+      'id': '6488316056',
+      'google_business_vertical': 'retail'
+    }]
+  });
+</script>
+	<div class="top-container">
+            <!-- config enabled always -->
+            <div class="custom-banner custom-page-banner" data-uri-path="/protection-for-my-loved-ones">
+            </div>
+            <div class="breadcrumbs">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 a-left">
+                            <ul>
+                                <li class="home"><a href="{{ url('/') }}" title="Go to Home Page">Home</a>
+                                    <span class="breadcrumbs-split"><i class="icon-keyboard_arrow_right"></i></span>
+                                </li>
+                                <li class="cms_page"><strong>{{$cocogen_admin_ineedprotection[0]['title']}}</strong> </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="category-name container">
+                <h1>
+                    {{$cocogen_admin_ineedprotection[0]['title']}}
+                </h1>
+            </div>
+            <div class="category-banner container">
+                <p>
+                    {{$cocogen_admin_ineedprotection[0]['description']}}</p>
+            </div>
+        </div>
+        <div class="main-container col1-layout">
+            <div class="main container">
+                <div class="col-main">
+                    <div class="page-title category-title">
+                        <h1>
+                            Product Lines</h1>
+                    </div>
+                    <div class="category-products like-category-grid-block">
+                        <ul class="products-grid columns3">
+                            <!-- All-in pa -->
+                            @foreach($results as $cocogen_admin_parentproducts)
+                                                 <li class="item">
+                                                    <div class="item-area box-shadow">
+                                                        <div class="product-image-area">
+                                                            <div class="loader-container">
+                                                                <div class="loader">
+                                                                    <i class="ajax-loader medium animate-spin"></i>
+                                                                </div>
+                                                            </div>
+                                                            <a href="{{ url('/') }}/{{$cocogen_admin_parentproducts->link}}" class="quickview-icon"><i class="icon-export">
+                                                            </i><span>Quick View </span></a><a href="{{ url('/') }}/{{$cocogen_admin_parentproducts->link}}" title="{{$cocogen_admin_parentproducts->name}}"
+                                                                class="product-image" style="height: 180px;">
+                                                                <img id="product-collection-image-25" class="landscape" src="{{ url('') }}/{{$cocogen_admin_parentproducts->imagelink}}"
+                                                                    title="{{$cocogen_admin_parentproducts->name}}"   alt="{{$cocogen_admin_parentproducts->name}}" width="300" style="height: 105%">
+                                                            </a>
+                                                        </div>
+                                                        <div class="details-area" style="height: 95px;">
+                                                            <div class="product-name-wrapper abs">
+                                                                <div class="product-icon box-shadow">
+                                                                    <img class="product-icon-image"  src="{{ url('') }}/{{$cocogen_admin_parentproducts->imagelink}}"
+                                                                        title="{{$cocogen_admin_parentproducts->link}}">
+                                                                </div>
+                                                                <h2 class="product-name" >
+                                                                    <a href="{{ url('/') }}/{{$cocogen_admin_parentproducts->link}}" title="" style="font-size: 15px;color: #00539e;opacity: 0.9">{{$cocogen_admin_parentproducts->name}} </a>
+                                                                </h2>
+                                                                <div class="short-description-wrapper" style="overflow-wrap: break-word;">
+                                                                   {{$cocogen_admin_parentproducts->description}}
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="actions abs" style="text-align: center">
+                                                                <a href="{{ url('/send-inquiry')}}/{{$cocogen_admin_parentproducts->link}}" dataid="25" class="click-here inquiry col-md-12 col-sm-12 col-xs-12"
+                                                                    title="INQUIRY">
+                                                                    <span>&nbsp;INQUIRY </span></a>
+                                                                <div class="clearer">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                @endforeach
+
+
+                        </ul>
+
+
+                    </div>
+                    <div class="swatches-js">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+@endsection

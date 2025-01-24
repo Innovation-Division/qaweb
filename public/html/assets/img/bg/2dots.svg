@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="115" height="93" viewBox="0 0 115 93">
+  <g id="Group_639" data-name="Group 639" transform="translate(-25 -1573)">
+    <g id="dots" transform="translate(25 1573)">
+      <circle id="dot" cx="6" cy="6" r="6" transform="translate(52) rotate(90)" fill="#e4509a"/>
+      <circle id="dot-2" data-name="dot" cx="6" cy="6" r="6" transform="translate(52 27) rotate(90)" fill="#e4509a"/>
+      <circle id="dot-3" data-name="dot" cx="6" cy="6" r="6" transform="translate(52 54) rotate(90)" fill="#e4509a"/>
+      <circle id="dot-4" data-name="dot" cx="6" cy="6" r="6" transform="translate(32) rotate(90)" fill="#e4509a"/>
+      <circle id="dot-5" data-name="dot" cx="6" cy="6" r="6" transform="translate(32 27) rotate(90)" fill="#e4509a"/>
+      <circle id="dot-6" data-name="dot" cx="6" cy="6" r="6" transform="translate(32 54) rotate(90)" fill="#e4509a"/>
+      <circle id="dot-7" data-name="dot" cx="6" cy="6" r="6" transform="translate(12) rotate(90)" fill="#e4509a"/>
+      <circle id="dot-8" data-name="dot" cx="6" cy="6" r="6" transform="translate(12 27) rotate(90)" fill="#e4509a"/>
+      <circle id="dot-9" data-name="dot" cx="6" cy="6" r="6" transform="translate(12 54) rotate(90)" fill="#e4509a"/>
+    </g>
+    <g id="dots-2" data-name="dots" transform="translate(88 1600)">
+      <circle id="dot-10" data-name="dot" cx="6" cy="6" r="6" transform="translate(52) rotate(90)" fill="#e4509a"/>
+      <circle id="dot-11" data-name="dot" cx="6" cy="6" r="6" transform="translate(52 27) rotate(90)" fill="#e4509a"/>
+      <circle id="dot-12" data-name="dot" cx="6" cy="6" r="6" transform="translate(52 54) rotate(90)" fill="#e4509a"/>
+      <circle id="dot-13" data-name="dot" cx="6" cy="6" r="6" transform="translate(32) rotate(90)" fill="#e4509a"/>
+      <circle id="dot-14" data-name="dot" cx="6" cy="6" r="6" transform="translate(32 27) rotate(90)" fill="#e4509a"/>
+      <circle id="dot-15" data-name="dot" cx="6" cy="6" r="6" transform="translate(32 54) rotate(90)" fill="#e4509a"/>
+      <circle id="dot-16" data-name="dot" cx="6" cy="6" r="6" transform="translate(12) rotate(90)" fill="#e4509a"/>
+      <circle id="dot-17" data-name="dot" cx="6" cy="6" r="6" transform="translate(12 27) rotate(90)" fill="#e4509a"/>
+      <circle id="dot-18" data-name="dot" cx="6" cy="6" r="6" transform="translate(12 54) rotate(90)" fill="#e4509a"/>
+    </g>
+  </g>
+</svg>

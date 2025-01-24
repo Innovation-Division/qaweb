@@ -1,0 +1,102 @@
+.customquote-personal {
+    padding-top: 35px;
+}
+
+.customquote-personal input,
+.customquote-personal select {
+    background-color: transparent;
+    ;
+}
+
+.customquote-personal .fieldset-group-set:first-child .actions .btn-delete {
+    display: none;
+}
+
+.customquote-personal .fieldset-group-set .actions .btn-add {
+    display: none;
+}
+
+.customquote-personal .fieldset-group-set:last-child .actions .btn-add {
+    display: inline-block;
+}
+
+.customquote-personal .align-center {
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+.customquote-personal .form-group-actions .actions {
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+
+.customquote-personal .radio_type_title {
+    margin-bottom: 0px;
+}
+
+.customquote-personal .radio_type {
+    margin-bottom: 10px;
+}
+
+.customquote-personal .fieldset-header h3 {
+    font-family: 'Muli-Bold';
+    font-size: 16px;
+    color: black;
+    text-transform: uppercase;
+}
+
+.customquote-personal .form-control-feedback.icon  {
+    line-height: 34px;
+}
+
+.customquote-personal span.help-block {
+    margin-top: 0;
+}
+
+.customquote-personal span.help-block small.help-block {
+    font-family: 'Muli-LightItalic';
+    font-size: 12px;
+    margin-left: 0;
+}
+
+.customquote-personal .field-item-note {
+    font-family: 'Muli-LightItalic';
+    font-size: 12px;
+}
+
+.customquote-personal .fieldset-header .fieldset-header-info {
+    font-family: 'Muli-LightItalic';
+    margin-bottom: 11px;
+    font-size: 12px;
+    color: black;
+}
+
+.customquote-personal input[type="submit"],
+.customquote-personal input[type="reset"],
+.customquote-personal input[type="button"] {
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    font-family: 'Muli-Bold';
+    font-size: 17px;
+    padding: 7px 35px 7px 35px;
+    text-transform: uppercase;
+    background-color: #007aec;
+}
+
+.customquote-personal input[type="submit"]:hover,
+.customquote-personal input[type="reset"]:hover,
+.customquote-personal input[type="button"]:hover {
+    color: #0053a1;
+    background-color:#fff;
+    border: 2px solid #007aec;
+    padding: 5px 33px 5px 33px;
+}
+
+.customquote-personal .btn-back-wrapper:hover input[type="button"] {
+    color: #0053a1;
+    background-color:#fff;
+    border: 2px solid #007aec;
+    padding: 5px 33px 5px 33px;
+}

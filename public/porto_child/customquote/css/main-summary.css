@@ -1,0 +1,25 @@
+
+.summary-table-wrapper table {
+	counter-reset: table-romaners;
+}
+.summary-table-wrapper table tr:first-child{
+	counter-reset: table-numberers;
+}
+.summary-table-wrapper table tr > td[data-counter="num"] {
+	padding-left: 80px;
+}
+.summary-table-wrapper table tr > td[data-counter="roman"] {
+	padding-left: 45px;
+}
+.summary-table-wrapper table tr > td[data-counter="num"]::before {
+	content: counter(table-numberers) ". ";
+	counter-increment: table-numberers;
+	left: 60px;
+	position: absolute;
+}
+.summary-table-wrapper table tr > td[data-counter="roman"]::before {
+	content: counter(table-romaners, upper-roman) ". ";
+	counter-increment: table-romaners;
+	left: 30px;
+	position: absolute;
+}

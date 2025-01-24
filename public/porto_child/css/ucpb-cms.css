@@ -1,0 +1,339 @@
+/* ==========================================================================
+   OVER RIDE FOR CMS PAGES STARTS HERE
+   ========================================================================== */
+.category-row {
+	padding: 0;
+}
+
+.lib-panel .row,
+.lib-panel .col-md-6 {
+	background: none;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+}
+
+.lib-panel {
+	background-color: #17819c;
+	position: relative;
+	float: left;
+	overflow: hidden;
+	margin-top: 30px;
+	text-align: center;
+	cursor: pointer;
+	font-family: 'Muli';
+	color: #fff;
+	width: 99%;
+}
+
+.lib-panel .image-box a {
+	display: block;
+}
+
+.lib-panel .thumbnail-wrapper {
+	height: inherit;
+	max-height: 180px;
+}
+
+.lib-panel .thumbnail-wrapper .lib-img-show.landscape {
+	height: inherit;
+	width: 100%;
+	left: 0;
+	opacity: 0.7;
+	-webkit-transition: opacity 0.35s, transform 0.35s;
+	-o-transition: opacity 0.35s, transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale(1.15);
+	-moz-transform: scale(1.15);
+	-ms-transform: scale(1.15);
+	-o-transform: scale(1.15);
+	transform: scale(1.15);
+	margin: 0;
+}
+
+.lib-panel:hover .thumbnail-wrapper .lib-img-show {
+	opacity: 0.5;
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-ms-transform: scale(1);
+	-o-transform: scale(1);
+	transform: scale(1);
+}
+
+.lib-panel .action-box {
+	z-index: 1000;
+	text-indent: 200%;
+	white-space: nowrap;
+	font-size: 0;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+}
+
+.lib-panel .action-box .btn.view-details {
+	border: 0;
+    background: none;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.lib-panel .lib-row.lib-header {
+	background: none 0;
+	color: #fff;
+	text-transform: uppercase;
+	margin: 0;
+	margin-top: -2%;
+	-webkit-transition: transform 0.35s;
+	-o-transition: transform 0.35s;
+	transition: transform 0.35s;
+	-webkit-transform: translate3d(0, 20px, 0);
+	-moz-transform: translate3d(0, 20px, 0);
+	-ms-transform: translate3d(0, 20px, 0);
+	-o-transform: translate3d(0, 20px, 0);
+	transform: translate3d(0, 20px, 0);
+	padding: 0 20px;
+}
+
+.lib-panel .lib-row.lib-header a {
+	color: #fff;
+	font-weight: 700;
+	line-height: 1;
+}
+
+.lib-panel .lib-row.lib-desc {
+	margin: 0 15px;
+	padding: 10px;
+	border: 1px solid #fff;
+	visibility: hidden;
+	line-height: 1;
+	-webkit-transition: opacity 0.35s, transform 0.35s;
+	-o-transition: opacity 0.35s, transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(0, 100%, 0) scale(1.1);
+	-moz-transform: translate3d(0, 100%, 0) scale(1.1);
+	-ms-transform: translate3d(0, 100%, 0) scale(1.1);
+	-o-transform: translate3d(0, 100%, 0) scale(1.1);
+	transform: translate3d(0, 100%, 0) scale(1.1);
+}
+
+.lib-panel:hover .lib-row.lib-desc {
+	visibility: visible;
+	-webkit-transform: translate3d(0, 20px, 0) scale(1);
+	-moz-transform: translate3d(0, 20px, 0) scale(1);
+	-ms-transform: translate3d(0, 20px, 0) scale(1);
+	-o-transform: translate3d(0, 20px, 0) scale(1);
+	transform: translate3d(0, 20px, 0) scale(1);
+}
+
+.category-row .lib-item .lib-panel .caption-box.detail-box,
+.category-row .lib-item:hover .lib-panel .caption-box.detail-box {
+	bottom: 5%;
+}
+
+.category-row .lib-item .lib-panel:hover .caption-box.detail-box {
+	bottom: 25%;
+}
+
+@media (max-width: 1199px) {
+	.category-row .lib-item .lib-panel .caption-box.detail-box {
+		bottom: -5%;
+	}
+	.category-row .lib-item .lib-panel:hover .caption-box.detail-box {
+		bottom: 20%;
+	}
+}
+
+@media (max-width: 1024px) {
+	.category-row .lib-item .lib-panel:hover .caption-box.detail-box {
+		bottom: 22px;
+	}
+}
+
+@media (max-width: 992px) {
+	.category-row .lib-item .lib-panel .caption-box.detail-box,
+	.category-row .lib-item:hover .lib-panel .caption-box.detail-box {
+		bottom: 5%;
+	}
+
+	.category-row .lib-item .lib-panel:hover .caption-box.detail-box {
+		bottom: 30%;
+	}
+}
+
+@media (max-width: 877px) {
+	.category-row .lib-item .lib-panel .caption-box.detail-box,
+	.category-row .lib-item:hover .lib-panel .caption-box.detail-box {
+		bottom: 0;
+	}
+
+	.category-row .lib-item .lib-panel:hover .caption-box.detail-box {
+		bottom: 25%;
+	}
+}
+
+@media (max-width: 768px) {
+	.category-row .lib-item .lib-panel .caption-box.detail-box,
+	.category-row .lib-item:hover .lib-panel .caption-box.detail-box {
+		bottom: 0;
+	}
+
+	.category-row .lib-item .lib-panel:hover .caption-box.detail-box {
+		bottom: 24%;
+	}
+}
+
+@media (max-width: 767px) {
+	.lib-panel .thumbnail-wrapper {
+		max-height: inherit;
+	}
+	.lib-panel .lib-row.lib-header a {
+		font-size: 3rem;
+	}
+	.lib-panel .lib-row.lib-desc {
+		font-size: 2rem;
+		margin-top: 2%;
+	}
+	.category-row .lib-item .lib-panel .caption-box.detail-box,
+	.category-row .lib-item:hover .lib-panel .caption-box.detail-box {
+		bottom: 20%;
+	}
+
+	.category-row .lib-item .lib-panel:hover .caption-box.detail-box {
+		bottom: 40%;
+	}
+}
+
+@media (max-width: 640px) {
+	.category-row .lib-item .lib-panel .caption-box.detail-box,
+	.category-row .lib-item:hover .lib-panel .caption-box.detail-box {
+		bottom: 20%;
+	}
+
+	.category-row .lib-item .lib-panel:hover .caption-box.detail-box {
+		bottom: 34%;
+	}
+}
+
+@media (max-width: 550px) {
+	.lib-panel .lib-row.lib-header a {
+		font-size: 1.9rem;
+	}
+	.lib-panel .lib-row.lib-desc {
+		font-size: 1.2rem;
+	}
+}
+
+@media (max-width: 490px) {
+	.lib-panel {
+		margin: 10px 0;
+	}
+	.category-row .lib-item .lib-panel .caption-box.detail-box,
+	.category-row .lib-item:hover .lib-panel .caption-box.detail-box {
+		bottom: 0;
+	}
+
+	.category-row .lib-item .lib-panel:hover .caption-box.detail-box {
+		bottom: 30%;
+	}
+}
+
+@media (max-width: 460px) {
+	.category-row .lib-item .lib-panel .caption-box.detail-box,
+	.category-row .lib-item:hover .lib-panel .caption-box.detail-box {
+		bottom: 10%;
+	}
+	.category-row .lib-item .lib-panel:hover .caption-box.detail-box {
+		bottom: 25%;
+	}
+}
+
+@media (max-width: 390px) {
+	.category-row .lib-item .lib-panel .caption-box.detail-box,
+	.category-row .lib-item:hover .lib-panel .caption-box.detail-box {
+		bottom: 0;
+	}
+	.category-row .lib-item .lib-panel:hover .caption-box.detail-box {
+		bottom: 20%;
+	}
+}
+
+@media (max-width: 380px) {
+	.category-row .lib-item .lib-panel:hover .caption-box.detail-box {
+		bottom: 18%;
+	}
+}
+
+@media (max-width: 370px) {
+	.category-row .lib-item .lib-panel .caption-box.detail-box,
+	.category-row .lib-item:hover .lib-panel .caption-box.detail-box {
+		bottom: -5%;
+	}
+	.category-row .lib-item .lib-panel:hover .caption-box.detail-box {
+		bottom: 25%;
+	}
+	body.category-updates .category-row .lib-item .lib-panel:hover .caption-box.detail-box {
+		bottom: 20%;
+	}
+	.lib-panel .lib-row.lib-header {
+		padding: 0 10px;
+	}
+	.lib-panel .lib-row.lib-desc {
+		margin-left: 10px;
+		margin-right: 10px;
+		padding: 5px;
+	}
+}
+
+@media (max-width: 350px) {
+	.category-row .lib-item .lib-panel:hover .caption-box.detail-box {
+		bottom: 15%;
+	}
+	.lib-panel .lib-row.lib-header a {
+		font-size: 1.7rem;
+		letter-spacing: -1px;
+	}
+	body.category-inquiries .category-row .lib-item .lib-panel .caption-box.detail-box {
+		bottom: 8%;
+	}
+
+	body.category-inquiries .category-row .lib-item .lib-panel:hover .caption-box.detail-box {
+		bottom: 30%;
+	}
+}
+
+@media (max-width: 340px) {
+	.category-row .lib-item .lib-panel .caption-box.detail-box,
+	.category-row .lib-item:hover .lib-panel .caption-box.detail-box {
+		bottom: 0;
+	}
+	.category-row .lib-item .lib-panel:hover .caption-box.detail-box,
+	body.category-updates .category-row .lib-item .lib-panel:hover .caption-box.detail-box {
+		bottom: 27%;
+	}
+	.lib-panel .lib-row.lib-header h3 a{
+		font-size: 16px;
+	}
+	.lib-panel .lib-row.lib-desc {
+		margin: 0;
+		font-size: 1rem;
+	}
+}
+
+@media (max-width: 300px) {
+	.category-row .lib-item .lib-panel .caption-box.detail-box,
+	.category-row .lib-item:hover .lib-panel .caption-box.detail-box {
+		bottom: -15%;
+	}
+	.category-row .lib-item .lib-panel:hover .caption-box.detail-box,
+	body.category-updates .category-row .lib-item .lib-panel:hover .caption-box.detail-box {
+		bottom: 15%;
+	}
+	.lib-panel .lib-row.lib-header h3 a {
+		display: inline-block;
+	}
+}

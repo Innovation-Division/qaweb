@@ -1,0 +1,92 @@
+  .add-field{
+  margin-left: 15px;
+}
+  input { -webkit-user-select:text;}
+ 
+ @media screen and (min-width: 800px) {
+                          .invoice_no_class{
+                            width:106% !important;
+                            margin-left: 19px !important;
+                          }
+                          .amount_class{
+                            width:110%;
+                            margin-left: 35px !important;
+                          }
+
+                          .invoice_no_label_class{
+                            margin-left: 19px !important;
+                          }
+
+                          .amount_label_class{
+                            margin-left: 35px  !important;
+                          }
+
+
+                          .validation_amount{
+                            min-width: 500px !important;
+                          }
+
+                          .policy_no_class{
+                            width:106% !important;
+                            
+                          }
+
+                          .add-field{
+                            margin-left: 35px !important;
+                          }
+
+                          .multi-field{
+                            margin-bottom: 20px;
+                          }
+
+                      }
+
+                      @media  (max-width: 800px) {
+                          /*#email,*/
+                          .invoice_no_class{
+                            width:108%;
+                            
+                          }
+
+                          .contact_no_class,
+                          .amount_label_class,
+                          .invoice_no_label_class{
+                            margin-top: 20px;
+                          }
+
+
+                          .policy_no_class{
+                            width:108% !important;
+                            
+                          }
+
+                          .amount_class{
+                            width:108% !important;
+                            
+                          }
+                          .validation_contact_invoice_no{
+                            margin-left: 0px !important;
+                          }
+
+                          .validation_policyno_check_error,
+                          .validation_policyno_check_success{
+                            left: 20px !important;
+                          }
+
+                          .validation_invoince_check_error,
+                          .validation_invoince_check_success{
+                            left: 20px !important;
+                          }
+                          
+                          .validation_amount{
+                            margin-left: 0px !important;
+                          }
+
+
+
+                          .validation_amount_check_error,
+                          .validation_amount_check_success{
+                            left: 20px !important;
+                          }
+
+                       }

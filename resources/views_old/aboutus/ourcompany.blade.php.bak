@@ -1,0 +1,62 @@
+@extends('layouts.app')
+
+@section('content')
+<script>
+  gtag('event', 'page_view', {
+    'send_to': 'AW-936227039',
+    'value': 'replace with value',
+    'items': [{
+      'id': '6488316056',
+      'google_business_vertical': 'retail'
+    }]
+  });
+</script>
+
+<div class="top-container">
+    <div class="breadcrumbs">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 a-left" >
+                    @if($cocogen_admin_breadcrumbs)
+                        <ul>
+                            <?php for ($i = 0; $i < count($cocogen_admin_breadcrumbs); $i++) {?>
+                                @if($i+1 === count($cocogen_admin_breadcrumbs))
+                                    @if($cocogen_admin_breadcrumbs[$i]['links'])
+                                        <li class="home"><a href="{{ url('') }}{{$cocogen_admin_breadcrumbs[$i]['links']}}" > {{$cocogen_admin_breadcrumbs[$i]['name']}}</a></li>
+                                    @else
+                                        <li class="category4"><span> {{$cocogen_admin_breadcrumbs[$i]['name']}} </span> </li>
+                                    @endif
+                                @else
+                                    @if($cocogen_admin_breadcrumbs[$i]['links'])
+                                        <li class="home"><a href="{{ url('') }}{{$cocogen_admin_breadcrumbs[$i]['links']}}" > {{$cocogen_admin_breadcrumbs[$i]['name']}}</a><span class="breadcrumbs-split"> <i class="fa fa-angle-right" aria-hidden="true"></i></span></li>
+                                    @else
+                                        <li class="category4"><span> {{$cocogen_admin_breadcrumbs[$i]['name']}} </span> <span class="breadcrumbs-split"> <i class="fa fa-angle-right" aria-hidden="true"></i></span></li>
+                                    @endif
+                                @endif
+                            <?php } ?>
+                        </ul>
+                    @endif
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{!!html_entity_decode($cocogen_admin_pages[0]['content'])!!}
+<a href="#" id="totop" style="display: none;"><i class="fa fa-chevron-up"></i></a>
+{!!$cocogen_admin_pages[0]['jvScripts']!!}
+<style type="text/css">
+    @media all and (min-width:0px) and (max-width: 800px) {
+
+      div.rowpaldiv1{
+        margin-top: 10px !important;
+      }
+      div.rowpaldiv2{
+        margin-top: 100px !important;
+      }
+
+
+}
+</style>
+
+
+@endsection

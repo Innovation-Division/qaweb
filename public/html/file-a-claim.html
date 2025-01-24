@@ -1,0 +1,1178 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <title>Cocogen Insurance</title>
+
+        <link rel="icon" href="assets/img/favicon.ico" type="image/x-ico" />
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+
+        <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
+        <link rel="stylesheet/less" type="text/css" href="assets/css/products.less" />
+
+        <!-- DEV MODE -->
+        <script src="https://cdn.jsdelivr.net/npm/less@4.1.1" data-env="development"></script>
+        <script>
+            less.watch();
+        </script>
+        <!-- -->
+    </head>
+
+    <body>
+        <div class="product">
+            <section class="breadcrumbs">
+                <img class="breadcrumbBanner" src="assets/img/breadcrumbs/services.png" alt="excel plus banner" />
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-12">
+                            <div class="row justify-content-center">
+                                <div class="col-12">
+                                    <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
+                                        <ol class="breadcrumb">
+                                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                            <li class="breadcrumb-item"><a href="#">Services</a></li>
+                                            <li class="breadcrumb-item" aria-current="page">File a Claim</li>
+                                        </ol>
+                                    </nav>
+                                </div>
+                                <div class="col-xs-12 align-self-end">
+                                    <h1 class="pageTitle">File a Claim</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="productSelection file-a-claim">
+                <div class="container">
+                    <div class="row justify-content-center align-items-center">
+                        <div class="col-xs-12">
+                            <div class="mb-5">
+                                <p class="text-center fs-5 mb-4">When you're dealing with a loss, getting your insurance claim going can be overwhelming. Don't worry, we are here to help you through the process.</p>
+                                <p class="text-center fs-5">Be one step ahead and come prepared with the different claims requirements and documents needed to get started.</p>
+                            </div>
+                            <div class="row justify-content-center">
+                                <div class="col-sm-12 col-md-8 col-lg-6 col-xl-4 justify-content-center">
+                                    <div class="card productSelectionItem">
+                                        <div class="productImage">
+                                            <img class="card-img-top" src="assets/img/cards/auto.png" alt="Motor" />
+                                        </div>
+                                        <div class="card-body productContent">
+                                            <h5 class="card-title productName"><a href="#">Motor</a></h5>
+                                            <div class="card-footer productFooter">
+                                                <a href="#" data-bs-toggle="modal" data-bs-target="#modal-motor-insurance" class="btn btn-secondary-light productButton">View Checklist</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-8 col-lg-6 col-xl-4 justify-content-center">
+                                    <div class="card productSelectionItem">
+                                        <div class="productImage">
+                                            <img class="card-img-top" src="assets/img/cards/fire.png" alt="fire" />
+                                        </div>
+                                        <div class="card-body productContent">
+                                            <h5 class="card-title productName"><a href="#">Fire</a></h5>
+                                            <div class="card-footer productFooter">
+                                                <a href="#" data-bs-toggle="modal" data-bs-target="#modal-fire-insurance" class="btn btn-secondary-light productButton">View Checklist</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-8 col-lg-6 col-xl-4 justify-content-center">
+                                    <div class="card productSelectionItem">
+                                        <div class="productImage">
+                                            <img class="card-img-top" src="assets/img/cards/marine.png" alt="marine" />
+                                        </div>
+                                        <div class="card-body productContent">
+                                            <h5 class="card-title productName"><a href="#">Marine</a></h5>
+                                            <div class="card-footer productFooter">
+                                                <a href="#" data-bs-toggle="modal" data-bs-target="#modal-marine-insurance" class="btn btn-secondary-light productButton">View Checklist</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-8 col-lg-6 col-xl-4 justify-content-center">
+                                    <div class="card productSelectionItem">
+                                        <div class="productImage">
+                                            <img class="card-img-top" src="assets/img/cards/engineering.png" alt="engineering" />
+                                        </div>
+                                        <div class="card-body productContent">
+                                            <h5 class="card-title productName"><a href="#">Engineering</a></h5>
+                                            <div class="card-footer productFooter">
+                                                <a href="#" data-bs-toggle="modal" data-bs-target="#modal-engineering-insurance" class="btn btn-secondary-light productButton">View Checklist</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-8 col-lg-6 col-xl-4 justify-content-center">
+                                    <div class="card productSelectionItem">
+                                        <div class="productImage">
+                                            <img class="card-img-top" src="assets/img/cards/bonds.png" alt="bonds" />
+                                        </div>
+                                        <div class="card-body productContent">
+                                            <h5 class="card-title productName"><a href="#">Bonds</a></h5>
+                                            <div class="card-footer productFooter">
+                                                <a href="#" data-bs-toggle="modal" data-bs-target="#modal-bonds-insurance" class="btn btn-secondary-light productButton">View Checklist</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-8 col-lg-6 col-xl-4 justify-content-center">
+                                    <div class="card productSelectionItem">
+                                        <div class="productImage">
+                                            <img class="card-img-top" src="assets/img/cards/data.png" alt="liability" />
+                                        </div>
+                                        <div class="card-body productContent">
+                                            <h5 class="card-title productName"><a href="#">Liability</a></h5>
+                                            <div class="card-footer productFooter">
+                                                <a href="#" data-bs-toggle="modal" data-bs-target="#modal-liability-insurance" class="btn btn-secondary-light productButton">View Checklist</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-8 col-lg-6 col-xl-4 justify-content-center">
+                                    <div class="card productSelectionItem">
+                                        <div class="productImage">
+                                            <img class="card-img-top" src="assets/img/cards/liability.png" alt="liability" />
+                                        </div>
+                                        <div class="card-body productContent">
+                                            <h5 class="card-title productName"><a href="#">Miscellaneous Casualty</a></h5>
+                                            <div class="card-footer productFooter">
+                                                <a href="#" data-bs-toggle="modal" data-bs-target="#modal-miscellaneous-insurance" class="btn btn-secondary-light productButton">View Checklist</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="divider">
+                <img src="assets/img/wave-lines.svg" alt="divider" />
+            </section>
+        </div>
+
+        <div class="modal fade" tabindex="-1" role="dialog" id="modal-motor-insurance">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                    <div class="modal-header d-flex justify-content-between">
+                        <div class="logo">
+                            <div class="imageContainer">
+                                <img class="logo" src="assets/img/logo_white.png" alt="cocogen logo" />
+                            </div>
+                        </div>
+                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                            <svg id="close" data-name="close" xmlns="http://www.w3.org/2000/svg" width="67.891" height="67.891" viewBox="0 0 67.891 67.891">
+                                <path id="Path_1686" data-name="Path 1686" d="M37.741,34.059l-8.6-8.6,8.6-8.6a2.608,2.608,0,0,0-3.688-3.688l-8.6,8.6-8.6-8.6a2.5,2.5,0,0,0-3.688,0,2.52,2.52,0,0,0,0,3.688l8.6,8.6-8.6,8.6a2.522,2.522,0,0,0,0,3.688,2.591,2.591,0,0,0,3.688,0l8.6-8.6,8.6,8.6a2.62,2.62,0,0,0,3.688,0A2.591,2.591,0,0,0,37.741,34.059Z" transform="translate(8.494 8.487)" fill="#fff" />
+                                <path id="Path_1687" data-name="Path 1687" d="M37.321,7.945A29.381,29.381,0,0,1,58.1,58.1,29.381,29.381,0,0,1,16.545,16.545a29.182,29.182,0,0,1,20.775-8.6m0-4.57A33.946,33.946,0,1,0,71.266,37.321,33.94,33.94,0,0,0,37.321,3.375Z" transform="translate(-3.375 -3.375)" fill="#fff" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-heading">
+                            <div class="text-center">
+                                <h2 class="modal-title text-color-light">Claims Checklist for Motor Insurance</h2>
+                            </div>
+                            <div class="text-center mb-5">
+                                <p class="fs-6">COCOGEN policyholders have exclusive access to Gawa Agad, an innovative claims program designed to improve claims processing time by allowing our clients to go directly to our accredited repair shops and coordinate requirements needed.</p>
+                            </div>
+                            <div class="text-center mb-5">
+                                <button class="btn btn-secondary fs-6">Download now</button>
+                            </div>
+                        </div>
+                        <div class="modal-text px-0 py-0 border-0 tri-column">
+                            <div class="d-flex justify-content-between">
+                                <div class="content-group text-center">
+                                    <div class="label py-2 px-4">
+                                        <p class="py-1 mb-0 text-center fs-4 text-color-primary fw-bold">Insured</p>
+                                    </div>
+                                    <div class="text-start">
+                                        <div class="content">
+                                            <label>A. Partial Loss/Total Loss</label>
+                                            <div class="text">
+                                                <ul class="list-checklist-mini">
+                                                    <li>Claimant's Incident Report (Cocogen form to be accomplished by the Insured)</li>
+                                                    <li>Pictures of Damage</li>
+                                                    <li>Police Report and/or Driver's</li>
+                                                    <li>Affidavit</li>
+                                                    <li>Registration Certificate and OR</li>
+                                                    <li>Driver's License and OR</li>
+                                                    <li>Stencils of Motor and Serial No.</li>
+                                                    <li>Copy of Insurance Policy</li>
+                                                    <li>Copy of OR or Proof of Premium Payment</li>
+                                                    <li>Pictures of Damage</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="content">
+                                            <label>B. Carnap</label>
+                                            <div class="text">
+                                                <ul class="list-checklist-mini">
+                                                    <li>Certificate of Non-Recovery</li>
+                                                    <li>Alarm Sheet</li>
+                                                    <li>Complaint Sheet</li>
+                                                    <li>Police Report</li>
+                                                    <li>Registration Certificate and OR</li>
+                                                    <li>Driver's License and OR</li>
+                                                    <li>Copy of Policy</li>
+                                                    <li>Copy of OR of Premium Payment</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="content">
+                                            <label>B. Bodily Inquiry</label>
+                                            <div class="text">
+                                                <p>Note: In addition to item A above</p>
+                                                <ul class="list-checklist-mini">
+                                                    <li>Original Medical Receipts /OR</li>
+                                                    <li>Medical Certificate</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content-group text-center">
+                                    <div class="label py-2 px-4">
+                                        <p class="py-1 mb-0 text-center fs-4 text-color-primary fw-bold">Third Party (TP)</p>
+                                    </div>
+                                    <div class="text-start">
+                                        <div class="content">
+                                            <label>A. Vehicle</label>
+                                            <div class="text">
+                                                <p class="mb-0 text-decoration-underline fst-italic">TP Claimant</p>
+                                                <ul class="list-checklist-mini">
+                                                    <li>Pictures of Damage</li>
+                                                    <li>Police Report and/or Driver's</li>
+                                                    <li>Affidavit</li>
+                                                    <li>Registration Certificate and OR</li>
+                                                </ul>
+                                                <p class="mb-0 text-decoration-underline fst-italic">Insured</p>
+                                                <ul class="list-checklist-mini">
+                                                    <li>Registration Certificate and OR</li>
+                                                    <li>Driver's License and OR</li>
+                                                    <li>Driver's Affidavit</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="content">
+                                            <label>B. Property Damage</label>
+                                            <div class="text">
+                                                <p class="mb-0 text-decoration-underline fst-italic">TP Claimant</p>
+                                                <ul class="list-checklist-mini">
+                                                    <li>Quotation of Repair Estimate</li>
+                                                    <li>Pictures of Damage</li>
+                                                </ul>
+                                                <p class="mb-0 text-decoration-underline fst-italic">Insured</p>
+                                                <ul class="list-checklist-mini">
+                                                    <li>Registration Certificate and OR</li>
+                                                    <li>Driver's License and OR</li>
+                                                    <li>Driver's Affidavit</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="content">
+                                            <label>C. Bodily Injury</label>
+                                            <div class="text">
+                                                <p class="mb-0 text-decoration-underline fst-italic">TP Claimant</p>
+                                                <ul class="list-checklist-mini">
+                                                    <li>Original Medical Receipts /OR</li>
+                                                    <li>Medical Certificate</li>
+                                                </ul>
+                                                <p class="mb-0 text-decoration-underline fst-italic">Insured</p>
+                                                <ul class="list-checklist-mini">
+                                                    <li>Registration Certificate and OR</li>
+                                                    <li>Driver's License and OR</li>
+                                                    <li>Driver's Affidavit</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content-group text-center">
+                                    <div class="label py-2 px-4">
+                                        <p class="py-1 mb-0 text-center fs-4 text-color-primary fw-bold">Recovery</p>
+                                    </div>
+                                    <div class="text-start">
+                                        <div class="content">
+                                            <label>A. For Recovery Purposes</label>
+                                            <div class="text">
+                                                <p>NOTE: If Insured was reportedly bumped by a third party, Insured has to provide the following documents of party at fault:</p>
+                                                <ul class="list-checklist-mini">
+                                                    <li>Registration Certificate and OR</li>
+                                                    <li>Driver's License and OR</li>
+                                                    <li>Copy of Insurance Policy</li>
+                                                    <li>Copy of TIN and SSS ID</li>
+                                                    <li>Contact Number</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="content">
+                                            <label>B. Recovery of Other Insurance Company</label>
+                                            <div class="text">
+                                                <p>NOTE: Insurance company has to submit their claim documents:</p>
+                                                <ul class="list-checklist-mini">
+                                                    <li>Release of Claim</li>
+                                                    <li>Payment Voucher</li>
+                                                    <li>Registration Certificate and OR</li>
+                                                    <li>Driver's License and OR</li>
+                                                    <li>Policy of Adverse Party</li>
+                                                    <li>Pictures of Damage</li>
+                                                    <li>Repair Estimate / Computation of Liability</li>
+                                                    <li>Letter of Authority</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" tabindex="-1" role="dialog" id="modal-fire-insurance">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                    <div class="modal-header d-flex justify-content-between">
+                        <div class="logo">
+                            <div class="imageContainer">
+                                <img class="logo" src="assets/img/logo_white.png" alt="cocogen logo" />
+                            </div>
+                        </div>
+                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                            <svg id="close" data-name="close" xmlns="http://www.w3.org/2000/svg" width="67.891" height="67.891" viewBox="0 0 67.891 67.891">
+                                <path id="Path_1686" data-name="Path 1686" d="M37.741,34.059l-8.6-8.6,8.6-8.6a2.608,2.608,0,0,0-3.688-3.688l-8.6,8.6-8.6-8.6a2.5,2.5,0,0,0-3.688,0,2.52,2.52,0,0,0,0,3.688l8.6,8.6-8.6,8.6a2.522,2.522,0,0,0,0,3.688,2.591,2.591,0,0,0,3.688,0l8.6-8.6,8.6,8.6a2.62,2.62,0,0,0,3.688,0A2.591,2.591,0,0,0,37.741,34.059Z" transform="translate(8.494 8.487)" fill="#fff" />
+                                <path id="Path_1687" data-name="Path 1687" d="M37.321,7.945A29.381,29.381,0,0,1,58.1,58.1,29.381,29.381,0,0,1,16.545,16.545a29.182,29.182,0,0,1,20.775-8.6m0-4.57A33.946,33.946,0,1,0,71.266,37.321,33.94,33.94,0,0,0,37.321,3.375Z" transform="translate(-3.375 -3.375)" fill="#fff" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-heading">
+                            <div class="text-center">
+                                <h2 class="modal-title text-color-light">Claims Checklist for Fire Insurance</h2>
+                            </div>
+                            <div class="text-center mb-5">
+                                <p class="fs-6">Use this checklist to file a claim against any of the following COCOGEN Insurance policies: Fire, Home Excel Plus, Condo Excel Plus and ProBiz Excel Plus.</p>
+                            </div>
+                            <div class="text-center mb-5">
+                                <button class="btn btn-secondary fs-6">Download now</button>
+                            </div>
+                        </div>
+                        <div class="modal-text px-0 py-0 border-0">
+                            <div class="d-flex justify-content-between">
+                                <div class="content-group text-center">
+                                    <div class="label py-2 px-4">
+                                        <p class="py-1 mb-0 text-center fs-4 text-color-primary fw-bold">Documentary Requirements in case of Fire and Allied Perils</p>
+                                    </div>
+                                    <div class="text-start">
+                                        <div class="content">
+                                            <label>Basic Documents</label>
+                                            <div class="text">
+                                                <ul class="list-checklist-mini">
+                                                    <li>Formal Claim against Cocogen</li>
+                                                    <li>Fire Department Report / Affidavit of Loss (for fire loss)</li>
+                                                    <li>Photographs</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="content">
+                                            <label>Additional Documents for Building</label>
+                                            <div class="text">
+                                                <ul class="list-checklist-mini">
+                                                    <li>Detailed repair estimate</li>
+                                                    <li>Declaration of Real Property</li>
+                                                    <li>DFloor Plan / Construction Plan</li>
+                                                    <li>Building Permit</li>
+                                                    <li>Lease Contract (if lot belongs to other than insured)</li>
+                                                    <li>Transfer Certificate of Title Appraisal Report (if any)</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="content">
+                                            <label>Additional Documents for Stocks, Household Furniture, Fixture, Fittings and Personal Effects, Machinery, Equipment and Accessories</label>
+                                            <div class="text">
+                                                <ul class="list-checklist-mini">
+                                                    <li>Detailed inventory of all stocks and property risk whether damaged or undamaged</li>
+                                                    <li>Purchase / Sales Invoice</li>
+                                                    <li>Income Tax Return / Financial Statements</li>
+                                                    <li>Business License</li>
+                                                    <li>Registration of Business</li>
+                                                    <li>Appraisal Report</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" tabindex="-1" role="dialog" id="modal-marine-insurance">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                    <div class="modal-header d-flex justify-content-between">
+                        <div class="logo">
+                            <div class="imageContainer">
+                                <img class="logo" src="assets/img/logo_white.png" alt="cocogen logo" />
+                            </div>
+                        </div>
+                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                            <svg id="close" data-name="close" xmlns="http://www.w3.org/2000/svg" width="67.891" height="67.891" viewBox="0 0 67.891 67.891">
+                                <path id="Path_1686" data-name="Path 1686" d="M37.741,34.059l-8.6-8.6,8.6-8.6a2.608,2.608,0,0,0-3.688-3.688l-8.6,8.6-8.6-8.6a2.5,2.5,0,0,0-3.688,0,2.52,2.52,0,0,0,0,3.688l8.6,8.6-8.6,8.6a2.522,2.522,0,0,0,0,3.688,2.591,2.591,0,0,0,3.688,0l8.6-8.6,8.6,8.6a2.62,2.62,0,0,0,3.688,0A2.591,2.591,0,0,0,37.741,34.059Z" transform="translate(8.494 8.487)" fill="#fff" />
+                                <path id="Path_1687" data-name="Path 1687" d="M37.321,7.945A29.381,29.381,0,0,1,58.1,58.1,29.381,29.381,0,0,1,16.545,16.545a29.182,29.182,0,0,1,20.775-8.6m0-4.57A33.946,33.946,0,1,0,71.266,37.321,33.94,33.94,0,0,0,37.321,3.375Z" transform="translate(-3.375 -3.375)" fill="#fff" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-heading">
+                            <div class="text-center">
+                                <h2 class="modal-title text-color-light">Claims Checklist for Marine Insurance</h2>
+                            </div>
+                            <div class="text-center mb-5">
+                                <p class="fs-6">Speed up your marine insurance claims processing by having the following documents ready.</p>
+                            </div>
+                            <div class="text-center mb-5">
+                                <button class="btn btn-secondary fs-6">Download now</button>
+                            </div>
+                        </div>
+                        <div class="modal-text px-0 py-0 border-0 stacked">
+                            <div class="d-flex justify-content-between flex-wrap">
+                                <div class="content-group text-center">
+                                    <div class="label py-2 px-4">
+                                        <p class="py-1 mb-0 text-center fs-4 text-color-primary fw-bold">Documentary Requirements in case of Marine Cargo Claim</p>
+                                    </div>
+                                    <div class="text-start">
+                                        <div class="content">
+                                            <label>Basic Documents</label>
+                                            <div class="text">
+                                                <ul class="list-checklist-mini">
+                                                    <li>Formal Claim against Cocogen</li>
+                                                    <li>Original copy of the Policy / Risk Note</li>
+                                                    <li>Original and /or duplicate copy of Bill of Lading (via Vessel)</li>
+                                                    <li>Original and /or duplicate copy of Airway Bill (via Aircraft)</li>
+                                                    <li>Original and/or duplicate copy of Commercial Invoice</li>
+                                                    <li>Original copy of Delivery Receipt</li>
+                                                    <li>Packing List</li>
+                                                    <li>Photographs</li>
+                                                    <li>Duly receipted formal claim against Vessel, Arrastre, Broker and Forwarder</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content-group text-center">
+                                    <div class="label py-2 px-4">
+                                        <p class="py-1 mb-0 text-center fs-4 text-color-primary fw-bold">Documentary Requirements in case of Marine In Land / Truck Risk Claim</p>
+                                    </div>
+                                    <div class="text-start">
+                                        <div class="content">
+                                            <label>Basic Documents</label>
+                                            <div class="text">
+                                                <ul class="list-checklist-mini">
+                                                    <li>Police Report / Incident Report</li>
+                                                    <li>Invoices</li>
+                                                    <li>Registration Certificate and Official Receipt</li>
+                                                    <li>Driver's License and Official Receipt</li>
+                                                    <li>Photographs</li>
+                                                    <li>Original copy of Delivery Receipt</li>
+                                                    <li>Original copy of Waybill, Delivery Receipt</li>
+                                                </ul>
+                                            </div>
+                                            <label>Optional Document</label>
+                                            <div class="text">
+                                                <ul class="list-checklist-mini">
+                                                    <li>Maintenance Record of the Vehicle (atleast six (6) months prior to loss)</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content-group text-center">
+                                    <div class="label py-2 px-4">
+                                        <p class="py-1 mb-0 text-center fs-4 text-color-primary fw-bold">Documentary Requirements in case of Marine Hull Claim</p>
+                                    </div>
+                                    <div class="text-start">
+                                        <div class="content">
+                                            <label>Basic Documents</label>
+                                            <div class="text">
+                                                <ul class="list-checklist-mini">
+                                                    <li>Police Report / Incident Report</li>
+                                                    <li>Marine Note of Protest</li>
+                                                    <li>Coastwise License</li>
+                                                    <li>Repair estimate</li>
+                                                    <li>Photographs</li>
+                                                    <li>Survey Report</li>
+                                                    <li>Certificate of Ownership</li>
+                                                    <li>Certificate of Philippine Registry</li>
+                                                    <li>Minimum Safe Manning Certificate</li>
+                                                    <li>Crew List</li>
+                                                    <li>Cargo Ship Safety Certificate</li>
+                                                    <li>Original copy of Policy</li>
+                                                </ul>
+                                            </div>
+                                            <label>Optional Document</label>
+                                            <div class="text">
+                                                <ul class="list-checklist-mini">
+                                                    <li>Master Oath of Safe Departure</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" tabindex="-1" role="dialog" id="modal-engineering-insurance">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                    <div class="modal-header d-flex justify-content-between">
+                        <div class="logo">
+                            <div class="imageContainer">
+                                <img class="logo" src="assets/img/logo_white.png" alt="cocogen logo" />
+                            </div>
+                        </div>
+                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                            <svg id="close" data-name="close" xmlns="http://www.w3.org/2000/svg" width="67.891" height="67.891" viewBox="0 0 67.891 67.891">
+                                <path id="Path_1686" data-name="Path 1686" d="M37.741,34.059l-8.6-8.6,8.6-8.6a2.608,2.608,0,0,0-3.688-3.688l-8.6,8.6-8.6-8.6a2.5,2.5,0,0,0-3.688,0,2.52,2.52,0,0,0,0,3.688l8.6,8.6-8.6,8.6a2.522,2.522,0,0,0,0,3.688,2.591,2.591,0,0,0,3.688,0l8.6-8.6,8.6,8.6a2.62,2.62,0,0,0,3.688,0A2.591,2.591,0,0,0,37.741,34.059Z" transform="translate(8.494 8.487)" fill="#fff" />
+                                <path id="Path_1687" data-name="Path 1687" d="M37.321,7.945A29.381,29.381,0,0,1,58.1,58.1,29.381,29.381,0,0,1,16.545,16.545a29.182,29.182,0,0,1,20.775-8.6m0-4.57A33.946,33.946,0,1,0,71.266,37.321,33.94,33.94,0,0,0,37.321,3.375Z" transform="translate(-3.375 -3.375)" fill="#fff" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-heading">
+                            <div class="text-center">
+                                <h2 class="modal-title text-color-light">Claims Checklist for Engineering Insurance</h2>
+                            </div>
+                            <div class="text-center mb-5">
+                                <p class="fs-6">Speed up your engineering insurance claims processing by having the following documents ready.</p>
+                            </div>
+                            <div class="text-center mb-5">
+                                <button class="btn btn-secondary fs-6">Download now</button>
+                            </div>
+                        </div>
+                        <div class="modal-text px-0 py-0 border-0 stacked">
+                            <div class="d-flex justify-content-between flex-wrap">
+                                <div class="content-group text-center">
+                                    <div class="label py-2 px-4">
+                                        <p class="py-1 mb-0 text-center fs-4 text-color-primary fw-bold">Documentary Requirements in case of Contractors/ Erection All Risk Claim</p>
+                                    </div>
+                                    <div class="text-start">
+                                        <div class="content">
+                                            <label>Basic Documents</label>
+                                            <div class="text">
+                                                <ul class="list-checklist-mini">
+                                                    <li>Formal Claim against Cocogen</li>
+                                                    <li>Police Report / Incident Report</li>
+                                                    <li>Photographs</li>
+                                                    <li>Estimate &/or Actual Repair Cost</li>
+                                                    <li>Technical Report/Assessment as to the cause of loss</li>
+                                                </ul>
+                                            </div>
+                                            <label>Optional Documents</label>
+                                            <div class="text">
+                                                <ul class="list-checklist-mini">
+                                                    <li>Duly Accomplished and Signed Non-Waiver Agreement</li>
+                                                    <li>Invoices and/or Receipts</li>
+                                                    <li>Copy of Lease</li>
+                                                    <li>Copy of Contract</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content-group text-center">
+                                    <div class="label py-2 px-4">
+                                        <p class="py-1 mb-0 text-center fs-4 text-color-primary fw-bold">Documentary Requirements in case of Electronic Equipment Claim</p>
+                                    </div>
+                                    <div class="text-start">
+                                        <div class="content">
+                                            <label>Basic Documents</label>
+                                            <div class="text">
+                                                <ul class="list-checklist-mini">
+                                                    <li>Police Report / Incident Report</li>
+                                                    <li>Invoices</li>
+                                                    <li>Registration Certificate and Official Receipt</li>
+                                                    <li>Driver's License and Official Receipt</li>
+                                                    <li>Photographs</li>
+                                                </ul>
+                                            </div>
+                                            <label>Optional Document</label>
+                                            <div class="text">
+                                                <ul class="list-checklist-mini">
+                                                    <li>Proof of Purchase (Equipment)</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content-group text-center">
+                                    <div class="label py-2 px-4">
+                                        <p class="py-1 mb-0 text-center fs-4 text-color-primary fw-bold">Documentary Requirements in case of Third Party Property Damage Claim</p>
+                                    </div>
+                                    <div class="text-start">
+                                        <div class="content">
+                                            <label>Basic Documents</label>
+                                            <div class="text">
+                                                <ul class="list-checklist-mini">
+                                                    <li>Formal Claim against Cocogen</li>
+                                                    <li>Photographs of Damaged Units</li>
+                                                    <li>Detailed Estimate</li>
+                                                    <li>Police Report / Affidavit of Loss</li>
+                                                    <li>Accomplished Sworn Statement of claim</li>
+                                                    <li>Accomplished Non Waiver Agreement</li>
+                                                    <li>Demand Letter of the Third party claimant</li>
+                                                    <li>Real Property Tax Declaration</li>
+                                                    <li>Supporting documents of the unit cost/ price per invoice</li>
+                                                </ul>
+                                            </div>
+                                            <label>Optional Documents</label>
+                                            <div class="text">
+                                                <ul class="list-checklist-mini">
+                                                    <li>Repair Invoice (if damage is already repaired)</li>
+                                                    <li>Floor Lay-out</li>
+                                                    <li>Copy of Lease</li>
+                                                    <li>Copy of Lease Contract</li>
+                                                </ul>
+                                            </div>
+                                            <label>Additional Documents for Motor</label>
+                                            <div class="text">
+                                                <ul class="list-checklist-mini">
+                                                    <li>Certificate of No Claim (for damaged vehicle</li>
+                                                    <li>Formal Claim of Third Party against Insured</li>
+                                                    <li>Driver's License of the owner of the vehicle for identity purposes</li>
+                                                    <li>Original Copy of Certificate of No Claim from their insurer</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content-group text-center">
+                                    <div class="label py-2 px-4">
+                                        <p class="py-1 mb-0 text-center fs-4 text-color-primary fw-bold">Documentary Requirements in case of Third Party Bodily Injury / Illness or Health/Death Claim</p>
+                                    </div>
+                                    <div class="text-start">
+                                        <div class="content">
+                                            <label>Basic Documents</label>
+                                            <div class="text">
+                                                <ul class="list-checklist-mini">
+                                                    <li>Formal Claim against Cocogen</li>
+                                                    <li>Original Copy of Official Receipt of medical expenses</li>
+                                                    <li>Death certificate (for Death Claim)</li>
+                                                    <li>Police Report / Affidavit of Loss</li>
+                                                    <li>Birth Certificate (for Death Claim)</li>
+                                                    <li>Hospital Bill/Statement of Account (if hospitalized)</li>
+                                                </ul>
+                                            </div>
+                                            <label>Optional Documents</label>
+                                            <div class="text">
+                                                <ul class="list-checklist-mini">
+                                                    <li>Statement of Account (if hospitalized)</li>
+                                                    <li>Copy of driver's license (if due to vehicular accident)</li>
+                                                    <li>Doctor's prescription</li>
+                                                    <li>Admitting history & Physical Examination</li>
+                                                    <li>Vital signs chart</li>
+                                                    <li>Nurse's daily progress notes</li>
+                                                </ul>
+                                            </div>
+                                            <label>Additional Documents for Motor</label>
+                                            <div class="text">
+                                                <ul class="list-checklist-mini">
+                                                    <li>Additional Documents for Motor</li>
+                                                    <li>Post Mortem Certificate</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" tabindex="-1" role="dialog" id="modal-bonds-insurance">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                    <div class="modal-header d-flex justify-content-between">
+                        <div class="logo">
+                            <div class="imageContainer">
+                                <img class="logo" src="assets/img/logo_white.png" alt="cocogen logo" />
+                            </div>
+                        </div>
+                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                            <svg id="close" data-name="close" xmlns="http://www.w3.org/2000/svg" width="67.891" height="67.891" viewBox="0 0 67.891 67.891">
+                                <path id="Path_1686" data-name="Path 1686" d="M37.741,34.059l-8.6-8.6,8.6-8.6a2.608,2.608,0,0,0-3.688-3.688l-8.6,8.6-8.6-8.6a2.5,2.5,0,0,0-3.688,0,2.52,2.52,0,0,0,0,3.688l8.6,8.6-8.6,8.6a2.522,2.522,0,0,0,0,3.688,2.591,2.591,0,0,0,3.688,0l8.6-8.6,8.6,8.6a2.62,2.62,0,0,0,3.688,0A2.591,2.591,0,0,0,37.741,34.059Z" transform="translate(8.494 8.487)" fill="#fff" />
+                                <path id="Path_1687" data-name="Path 1687" d="M37.321,7.945A29.381,29.381,0,0,1,58.1,58.1,29.381,29.381,0,0,1,16.545,16.545a29.182,29.182,0,0,1,20.775-8.6m0-4.57A33.946,33.946,0,1,0,71.266,37.321,33.94,33.94,0,0,0,37.321,3.375Z" transform="translate(-3.375 -3.375)" fill="#fff" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-heading">
+                            <div class="text-center">
+                                <h2 class="modal-title text-color-light">Claims Checklist for Bonds Insurance</h2>
+                            </div>
+                            <div class="text-center mb-5">
+                                <p class="fs-6">About to make a fidelity claim? We've listed all the documents you have to prepare for a faster, easier process.</p>
+                            </div>
+                            <div class="text-center mb-5">
+                                <button class="btn btn-secondary fs-6">Download now</button>
+                            </div>
+                        </div>
+                        <div class="modal-text px-0 py-0 border-0 stacked">
+                            <div class="d-flex justify-content-between flex-wrap">
+                                <div class="content-group text-center">
+                                    <div class="label py-2 px-4">
+                                        <p class="py-1 mb-0 text-center fs-4 text-color-primary fw-bold">Documentary Requirements in case of Performance Bond Claims</p>
+                                    </div>
+                                    <div class="text-start">
+                                        <div class="content">
+                                            <label>Basic Documents for Obligee</label>
+                                            <div class="text">
+                                                <ul class="list-checklist-mini">
+                                                    <li>Formal Statement of Claim to Surety with details and breakdown of claim</li>
+                                                    <li>The name(s) of individuals and entities involved in the notification.</li>
+                                                    <li>Job titles of all individuals involved.</li>
+                                                    <li>The date of first awareness by the insured of the circumstance or claim being notified</li>
+                                                    <li>
+                                                        Overview of the claim against the individual(s) and/or entity(ies) including '
+                                                        <ul>
+                                                            <li>The factual background;</li>
+                                                            <li>The allegations being made against the individual(s) and/or entity(ies);</li>
+                                                            <li>The nature of action;</li>
+                                                            <li>The nature and amount of redress sought by the claimant, including the amount of damages (if any)</li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>The names, addresses and contact details of any external law firm(s) engaged by individuals or the entity in relation to the Circumstances notified and who they will be representing.</li>
+                                                    <li>The names of the individual lawyers who will be involved in the defense, and their proposed hourly rate.</li>
+                                                    <li>A copy of the engagement letter once a law firm is engaged.</li>
+                                                </ul>
+                                            </div>
+                                            <label>Additional Document/Information to be provided</label>
+                                            <div class="text">
+                                                <ul class="list-checklist-mini">
+                                                    <li>Once expenses have been incurred, a breakdown should be provided to show that such expenses were part of the costs to defend the Insured (e.g. Time charges should be broken down into the no. of hours a particular Lawyer has worked and the particulars of the case worked on). Also, any expenses should be substantiated with an Official Receipt and any pertinent documents that directly relate such expenses to the case</li>
+                                                    <li>Merits of the case and litigation budget.</li>
+                                                    <li>Updates/developments on the case if any</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" tabindex="-1" role="dialog" id="modal-liability-insurance">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                    <div class="modal-header d-flex justify-content-between">
+                        <div class="logo">
+                            <div class="imageContainer">
+                                <img class="logo" src="assets/img/logo_white.png" alt="cocogen logo" />
+                            </div>
+                        </div>
+                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                            <svg id="close" data-name="close" xmlns="http://www.w3.org/2000/svg" width="67.891" height="67.891" viewBox="0 0 67.891 67.891">
+                                <path id="Path_1686" data-name="Path 1686" d="M37.741,34.059l-8.6-8.6,8.6-8.6a2.608,2.608,0,0,0-3.688-3.688l-8.6,8.6-8.6-8.6a2.5,2.5,0,0,0-3.688,0,2.52,2.52,0,0,0,0,3.688l8.6,8.6-8.6,8.6a2.522,2.522,0,0,0,0,3.688,2.591,2.591,0,0,0,3.688,0l8.6-8.6,8.6,8.6a2.62,2.62,0,0,0,3.688,0A2.591,2.591,0,0,0,37.741,34.059Z" transform="translate(8.494 8.487)" fill="#fff" />
+                                <path id="Path_1687" data-name="Path 1687" d="M37.321,7.945A29.381,29.381,0,0,1,58.1,58.1,29.381,29.381,0,0,1,16.545,16.545a29.182,29.182,0,0,1,20.775-8.6m0-4.57A33.946,33.946,0,1,0,71.266,37.321,33.94,33.94,0,0,0,37.321,3.375Z" transform="translate(-3.375 -3.375)" fill="#fff" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-heading">
+                            <div class="text-center">
+                                <h2 class="modal-title text-color-light">Claims Checklist for Liability Insurance</h2>
+                            </div>
+                            <div class="text-center mb-5">
+                                <p class="fs-6">Process your engineering claim with ease by making sure you have the following documents ready.</p>
+                            </div>
+                            <div class="text-center mb-5">
+                                <button class="btn btn-secondary fs-6">Download now</button>
+                            </div>
+                        </div>
+                        <div class="modal-text px-0 py-0 border-0 stacked">
+                            <div class="d-flex justify-content-between flex-wrap">
+                                <div class="content-group text-center">
+                                    <div class="label py-2 px-4">
+                                        <p class="py-1 mb-0 text-center fs-4 text-color-primary fw-bold">Documentary Requirements in case of Directors and Officers Liability / Errors and Omission</p>
+                                    </div>
+                                    <div class="text-start">
+                                        <div class="content">
+                                            <label>Documentation/Information to be provided upon Notification Basic Documents</label>
+                                            <div class="text">
+                                                <ul class="list-checklist-mini">
+                                                    <li>Copies of any relevant correspondence, pleading or other court documents.</li>
+                                                    <li>The name(s) of individuals and entities involved in the notification.</li>
+                                                    <li>Job titles of all individuals involved.</li>
+                                                    <li>The date of first awareness by the insured of the circumstance or claim being notified</li>
+                                                    <li>
+                                                        Overview of the claim against the individual(s) and/or entity(ies) including '
+                                                        <ul>
+                                                            <li>The factual background;</li>
+                                                            <li>The allegations being made against the individual(s) and/or entity(ies);</li>
+                                                            <li>The nature of action;</li>
+                                                            <li>The nature and amount of redress sought by the claimant, including the amount of damages (if any)</li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>The names, addresses and contact details of any external law firm(s) engaged by individuals or the entity in relation to the Circumstances notified and who they will be representing.</li>
+                                                    <li>The names of the individual lawyers who will be involved in the defense, and their proposed hourly rate.</li>
+                                                    <li>A copy of the engagement letter once a law firm is engaged.</li>
+                                                </ul>
+                                            </div>
+                                            <label>Additional Document/Information to be provided</label>
+                                            <div class="text">
+                                                <ul class="list-checklist-mini">
+                                                    <li>Once expenses have been incurred, a breakdown should be provided to show that such expenses were part of the costs to defend the Insured (e.g. Time charges should be broken down into the no. of hours a particular Lawyer has worked and the particulars of the case worked on). Also, any expenses should be substantiated with an Official Receipt and any pertinent documents that directly relate such expenses to the case</li>
+                                                    <li>Merits of the case and litigation budget.</li>
+                                                    <li>Updates/developments on the case if any</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" tabindex="-1" role="dialog" id="modal-miscellaneous-insurance">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                    <div class="modal-header d-flex justify-content-between">
+                        <div class="logo">
+                            <div class="imageContainer">
+                                <img class="logo" src="assets/img/logo_white.png" alt="cocogen logo" />
+                            </div>
+                        </div>
+                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                            <svg id="close" data-name="close" xmlns="http://www.w3.org/2000/svg" width="67.891" height="67.891" viewBox="0 0 67.891 67.891">
+                                <path id="Path_1686" data-name="Path 1686" d="M37.741,34.059l-8.6-8.6,8.6-8.6a2.608,2.608,0,0,0-3.688-3.688l-8.6,8.6-8.6-8.6a2.5,2.5,0,0,0-3.688,0,2.52,2.52,0,0,0,0,3.688l8.6,8.6-8.6,8.6a2.522,2.522,0,0,0,0,3.688,2.591,2.591,0,0,0,3.688,0l8.6-8.6,8.6,8.6a2.62,2.62,0,0,0,3.688,0A2.591,2.591,0,0,0,37.741,34.059Z" transform="translate(8.494 8.487)" fill="#fff" />
+                                <path id="Path_1687" data-name="Path 1687" d="M37.321,7.945A29.381,29.381,0,0,1,58.1,58.1,29.381,29.381,0,0,1,16.545,16.545a29.182,29.182,0,0,1,20.775-8.6m0-4.57A33.946,33.946,0,1,0,71.266,37.321,33.94,33.94,0,0,0,37.321,3.375Z" transform="translate(-3.375 -3.375)" fill="#fff" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-heading">
+                            <div class="text-center">
+                                <h2 class="modal-title text-color-light">Claims Checklist for Miscellaneous Insurance</h2>
+                            </div>
+                            <div class="text-center mb-5">
+                                <p class="fs-6">For other miscellaneous casualty claims processing, you can find all the required documents here.</p>
+                            </div>
+                            <div class="text-center mb-5">
+                                <button class="btn btn-secondary fs-6">Download now</button>
+                            </div>
+                        </div>
+
+                        <div class="modal-text px-0 py-0 border-0 stacked">
+                            <div class="d-flex justify-content-between flex-wrap">
+                                <div class="content-group text-center">
+                                    <div class="label py-2 px-4">
+                                        <p class="py-1 mb-0 text-center fs-4 text-color-primary fw-bold">Documentary Requirements in case of Third Party Property Damage Claim</p>
+                                    </div>
+                                    <div class="text-start">
+                                        <div class="content">
+                                            <label>Basic Documents</label>
+                                            <div class="text">
+                                                <ul class="list-checklist-mini">
+                                                    <li>Formal Claim against Cocogen</li>
+                                                    <li>Photographs of Damaged Units</li>
+                                                    <li>Detailed Estimate</li>
+                                                    <li>Police Report / Affidavit of Loss</li>
+                                                    <li>Accomplished Sworn Statement of claim</li>
+                                                    <li>Accomplished Non Waiver Agreement</li>
+                                                    <li>Demand Letter of the Third party claimant</li>
+                                                    <li>Real Property Tax Declaration</li>
+                                                    <li>Supporting documents of the unit cost/ price per invoice</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content-group text-center">
+                                    <div class="text-start">
+                                        <div class="content">
+                                            <label>Additional Documents for Stocks, Household Furniture, Fixture, Fittings and Personal Effects, Machinery, Equipment and Accessories</label>
+                                            <div class="text">
+                                                <ul class="list-checklist-mini">
+                                                    <li>Formal Claim against Cocogen</li>
+                                                    <li>Certificate of No Claim (for damaged vehicle)</li>
+                                                    <li>Formal Claim of Third Party against Insured</li>
+                                                    <li>OR / CR of Motor Vehicles</li>
+                                                    <li>Driver's license of the owner of the vehicle for identity purposes</li>
+                                                    <li>Original copy of Certificate of No Claim from their insurer</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content-group text-center">
+                                    <div class="text-start">
+                                        <div class="content">
+                                            <label>Optional Documents</label>
+                                            <div class="text">
+                                                <ul class="list-checklist-mini">
+                                                    <li>Repair Invoice (if damage was already repaired)</li>
+                                                    <li>Floor Lay-out</li>
+                                                    <li>Copy of Lease</li>
+                                                    <li>Copy of Lease Contract</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content-group text-center">
+                                    <div class="label py-2 px-4">
+                                        <p class="py-1 mb-0 text-center fs-4 text-color-primary fw-bold">Documentary Requirements in case of Bodily Injury / Illness or Health/Death Claim</p>
+                                    </div>
+                                    <div class="text-start">
+                                        <div class="content">
+                                            <label>Basic Documents</label>
+                                            <div class="text">
+                                                <ul class="list-checklist-mini">
+                                                    <li>Formal Claim against Cocogen</li>
+                                                    <li>Original Copy of Official Receipt of medical expenses</li>
+                                                    <li>Original/ Certified True Copy of Death Certificate (for Death Claim)</li>
+                                                    <li>Police Report / Affidavit of Loss</li>
+                                                    <li>Birth Certificate (for Death Claim)</li>
+                                                    <li>Hospital Bill/Statement of Account(if hospitalized)</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content-group text-center">
+                                    <div class="text-start">
+                                        <div class="content">
+                                            <label>Additional Documents</label>
+                                            <div class="text">
+                                                <ul class="list-checklist-mini">
+                                                    <li>Medical Certificate</li>
+                                                    <li>Post Mortem Certificate</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content-group text-center">
+                                    <div class="text-start">
+                                        <div class="content">
+                                            <label>Optional Documents</label>
+                                            <div class="text">
+                                                <ul class="list-checklist-mini">
+                                                    <li>Statement of Account (if hospitalized)</li>
+                                                    <li>Copy of driver's license (if due to vehicular accident)</li>
+                                                    <li>Doctor's prescription</li>
+                                                    <li>Admitting history & Physical Examination</li>
+                                                    <li>Vital signs chart</li>
+                                                    <li>Nurse's daily progress notes</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content-group text-center">
+                                    <div class="label py-2 px-4">
+                                        <p class="py-1 mb-0 text-center fs-4 text-color-primary fw-bold">Documentary Requirements in case of Burglary/ Robbery/ Hold-Up Claim</p>
+                                    </div>
+                                    <div class="text-start">
+                                        <div class="content">
+                                            <label>Basic Documents</label>
+                                            <div class="text">
+                                                <ul class="list-checklist-mini">
+                                                    <li>Formal Claim against Cocogen</li>
+                                                    <li>Police Report / Affidavit of Loss</li>
+                                                    <li>Audit Report & Breakdown of Loss</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content-group text-center">
+                                    <div class="text-start">
+                                        <div class="content">
+                                            <label>Additional Documents</label>
+                                            <div class="text">
+                                                <ul class="list-checklist-mini">
+                                                    <li>Repair Estimates /Repair invoice (if damage is already repaired)</li>
+                                                    <li>Photos of forcible entry</li>
+                                                    <li>Sales & Collection Report</li>
+                                                    <li>Inventory Report / Book of Accounts</li>
+                                                    <li>Business Permits</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content-group text-center">
+                                    <div class="label py-2 px-4">
+                                        <p class="py-1 mb-0 text-center fs-4 text-color-primary fw-bold">Documentary Requirements in case of Misloading</p>
+                                    </div>
+                                    <div class="text-start">
+                                        <div class="content">
+                                            <label>Basic Documents</label>
+                                            <div class="text">
+                                                <ul class="list-checklist-mini">
+                                                    <li>Formal Claim against Cocogen</li>
+                                                    <li>Police Report / Affidavit of Loss/Preliminary Loss Advise</li>
+                                                    <li>OR/CR of Motor Vehicles</li>
+                                                    <li>Driver's License</li>
+                                                    <li>Original copy of Misloading Receipt</li>
+                                                    <li>Original copy of Towing Receipt</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content-group text-center">
+                                    <div class="label py-2 px-4">
+                                        <p class="py-1 mb-0 text-center fs-4 text-color-primary fw-bold">Documentary Requirements in case of Fidelity Claim</p>
+                                    </div>
+                                    <div class="text-start">
+                                        <div class="content">
+                                            <label>Basic Documents</label>
+                                            <div class="text">
+                                                <ul class="list-checklist-mini">
+                                                    <li>Audit Report showing discovery date & breakdown of loss</li>
+                                                    <li>Documents in support of Audit Report such as official receipts, invoices, sales & collection reports</li>
+                                                    <li>SSS / BIR / NBI / Personal Data Sheet (201 File) / Driver's License No. of the Employee</li>
+                                                </ul>
+                                            </div>
+                                            <label>Optional Documents</label>
+                                            <div class="text">
+                                                <ul class="list-checklist-mini">
+                                                    <li>Company procedures as to duties of employees</li>
+                                                    <li>Action taken to recover loss such as filing of criminal case</li>
+                                                    <li>Duties and responsibilities of the involved employee</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal-heading">
+                            <div class="text-center">
+                                <h2 class="modal-title text-color-light mt-4">Personal Accident Claim</h2>
+                            </div>
+                        </div>
+
+                        <div class="modal-text px-0 py-0 border-0 stacked">
+                            <div class="d-flex justify-content-between">
+                                <div class="content-group text-center">
+                                    <div class="label py-2 px-4">
+                                        <p class="py-1 mb-0 text-center fs-4 text-color-primary fw-bold">Documentary Requirements in case of Medical Expenses Reimbursement</p>
+                                    </div>
+                                    <div class="text-start">
+                                        <div class="content">
+                                            <label>Basic Documents</label>
+                                            <div class="text">
+                                                <ul class="list-checklist-mini">
+                                                    <li>Formal Claim against Cocogen</li>
+                                                    <li>Affidavit or incident report</li>
+                                                    <li>Medical Certificate</li>
+                                                    <li>Doctor's Prescription of Medicines</li>
+                                                    <li>Original copy of official receipts of medicine purchase</li>
+                                                    <li>Statement of Accounts (if hospitalized)</li>
+                                                </ul>
+                                            </div>
+                                            <label>Optional Documents</label>
+                                            <div class="text">
+                                                <ul class="list-checklist-mini">
+                                                    <li>Copy of driver's license (if due to vehicular accident)</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content-group text-center">
+                                    <div class="label py-2 px-4">
+                                        <p class="py-1 mb-0 text-center fs-4 text-color-primary fw-bold">Documentary Requirements in case of Disability/ Death Claim</p>
+                                    </div>
+                                    <div class="text-start">
+                                        <div class="content">
+                                            <label>Basic Documents</label>
+                                            <div class="text">
+                                                <ul class="list-checklist-mini">
+                                                    <li>Formal Claim against Cocogen</li>
+                                                    <li>Affidavit or incident report</li>
+                                                    <li>Original/CertifiedTrue Copy of Death Certificate</li>
+                                                    <li>Original/Certified True Copy of Birth Certificate</li>
+                                                    <li>Marriage Contract (if married)</li>
+                                                    <li>Post-Mortem Certificate (if necessary)</li>
+                                                    <li>Clinical Records (if necessary)</li>
+                                                    <li>Vital signs chart (if necessary)</li>
+                                                    <li>Medical Certificate (if applicable)</li>
+                                                    <li>Admitting history (if available)</li>
+                                                    <li>Photos of affected body part/s</li>
+                                                    <li>Copy of driver's license(if due to MCY accident)</li>
+                                                    <li>Proof/police certification that the Insured was wearing helmet at the time of loss(loss due to MCY)</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content-group text-center">
+                                    <div class="label py-2 px-4">
+                                        <p class="py-1 mb-0 text-center fs-4 text-color-primary fw-bold">Documentary Requirements in case of Educational Assistance Claim</p>
+                                    </div>
+                                    <div class="text-start">
+                                        <div class="content">
+                                            <label>Basic Documents</label>
+                                            <div class="text">
+                                                <ul class="list-checklist-mini">
+                                                    <li>Certificate of enrollment from the school attended</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content-group text-center">
+                                    <div class="label py-2 px-4">
+                                        <p class="py-1 mb-0 text-center fs-4 text-color-primary fw-bold">Documentary Requirements in case of Fire Assistance Benefit Claim</p>
+                                    </div>
+                                    <div class="text-start">
+                                        <div class="content">
+                                            <label>Basic Documents</label>
+                                            <div class="text">
+                                                <ul class="list-checklist-mini">
+                                                    <li>Formal Claim against Cocogen</li>
+                                                    <li>Bureau of Fire Protection Certification</li>
+                                                    <li>Barangay Certificate that insured is a fire victim</li>
+                                                    <li>Photos of the Fire Incident</li>
+                                                    <li>Valid ID's with signature</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    </body>
+</html>

@@ -1,0 +1,335 @@
+@extends('layouts.app')
+
+@section('content')
+<div class="top-container"><!-- config enabled always -->
+	<div class="custom-banner custom-page-banner" data-uri-path="/updates/career-opportunities">
+		</div><div class="breadcrumbs">
+    <div class="container">
+        <div class="row">
+        <div class="col-sm-12 a-left">
+    <ul>
+        <li class="home">
+            <a href="{{ url('/') }}" title="Go to Home Page">Home</a>
+            <span class="breadcrumbs-split"><i class="fa fa-angle-right"></i></span>
+        </li>
+        <li class="category29">
+            <a href="{{ url('/updates') }}" title="">Updates</a>
+            <span class="breadcrumbs-split"><i class="fa fa-angle-right"></i></span>
+        </li>
+        <li class="category35">
+            <strong>Career Opportunities</strong>
+        </li>
+    </ul>
+</div>
+        </div>
+    </div>
+</div>
+@if(count($errors) > 0)
+ 			@if($errors->has('fName') || $errors->first('lName') || $errors->has('email') || $errors->has('mobileNumber') || $errors->has('positionApplied') || $errors->has('message'))
+                  <br><br>
+                        <div class="col-md-12 col-md-offset-0" style="text-align: left;font-family: muli;">
+                            <div class="error-msg">
+                              <i class="fa fa-times-circle"></i>
+
+                           <?php
+                              $idname = "";
+
+                              if($errors->first('fName') === "The name format is invalid."){
+                                    $message = "The email must be a valid email address.";
+                                }elseif($errors->first('lName') === "The name format is invalid."){
+                                    $message = "The email must be a valid email address.";
+                                }elseif($errors->first('email') === "The email must be a valid email address."){
+                                    $message = "The name format is invalid.";
+                                }else{
+                                    if($errors->has('fName')){
+                                      $idname = "first name";
+                                    }
+
+                                    if($errors->has('lName')){
+                                      if($idname){
+                                        $idname = $idname .", last name";
+                                      }else{
+                                        $idname = "last name";
+                                      }
+                                    }
+
+                                    if($errors->has('email')){
+
+                                      if($idname){
+                                        $idname = $idname .", email";
+                                      }else{
+                                        $idname = "email";
+                                      }
+                                    }
+
+                                    if($errors->has('mobileNumber')){
+                                      if($idname){
+                                        $idname = $idname .", mobile no.";
+                                      }else{
+                                        $idname = "contact no.";
+                                      }
+                                    }
+
+                                    if($errors->has('positionApplied')){
+                                      if($idname){
+                                        $idname = $idname .", position applied";
+                                      }else{
+                                        $idname = "position applied";
+                                      }
+                                    }
+
+
+                                    if($errors->has('message')){
+
+                                      if($idname){
+                                        $idname = $idname .", message";
+                                      }else{
+                                        $idname = "message";
+                                      }
+                                    }
+
+
+                                   $message  = "The ".$idname." field is required.";
+                                }
+
+                            ?>
+                              {{$message}}
+                            </div>
+                        </div>
+                        <br><br>
+                        @elseif($errors->has('filename'))
+                        <br><br>
+					        <div class="col-md-10 col-md-offset-1" style="text-align: left;font-family: muli;">
+					            <div class="error-msg">
+					              <i class="fa fa-times-circle"></i>
+					              Attach file is required!
+					            </div>
+					        </div>
+					        <br><br>
+
+                        @endif
+                @endif
+
+
+@if(session('message'))
+        <br><br>
+        <div class="col-md-10 col-md-offset-1" style="text-align: left;font-family: muli">
+            <div class='alert bg bg-success'>
+                  <i class="fa fa-check-circle"></i>
+                {{session('message')}}
+            </div>
+        </div>
+        <br>    <br>
+    @endif
+ @if(session('messagefailed'))
+    <br><br>
+        <div class="col-md-10 col-md-offset-1" style="text-align: left;font-family: muli;">
+            <div class="error-msg">
+              <i class="fa fa-times-circle"></i>
+              {{session('messagefailed')}}
+            </div>
+        </div>
+        <br><br>
+
+@endif
+
+    <div class="category-name container">
+        <h1>Career Opportunities</h1>
+    </div>
+
+            <div class="category-banner container">
+            Join our roster of exceptional people! <br> See our career opportunities below, shoot us a message, and upload your resume!
+            </div></div>
+             <div class="main-container col1-layout">
+            <div class="main container">
+                <div class="col-main">
+
+<div class="page-title category-title">
+        <h1>Career Opportunities</h1>
+</div>
+
+    <div class="container">
+	<div class="row">
+		<div class="col-md-7 col-sm-7">
+			<div class="career-wrapper">
+				<div class="panel-group" id="career-list">
+					<?php $i = 0 ?>
+					@foreach($cocogen_careers as $cocogen_career)
+					<?php if ($i === 0){
+								$n = "in";
+								$expand = "true";
+							}else{
+								$n = "";
+								$expand = "false";
+							} ?>
+
+						<div class="panel panel-default career-list">
+							<div class="panel-heading" id="heading{{ $cocogen_career->id }}">
+								<h2 class="panel-title"><a href="#career-list-{{ $cocogen_career->id }}" data-toggle="collapse" data-parent="#career-list" aria-expanded="{{$expand}}" class="">{{ $cocogen_career->job }}</a></h2>
+							</div>
+
+							<div class="panel-collapse collapse {{$n}}" id="career-list-{{ $cocogen_career->id }}" aria-expanded="true" style="">
+								<div class="panel-body">
+
+
+
+									<p><strong>Department:</strong> {{ $cocogen_career->department }}</p>
+									<p><strong>Type:</strong> {{ $cocogen_career->type }}</p>
+																		<br>
+									<p><strong>Job Description:</strong></p>
+									<p></p><p>
+
+										@foreach($cocogen_careers_job_descriptions as $cocogen_careers_job_description)
+
+											@if((int)$cocogen_careers_job_description->careerID === $cocogen_career->id )
+												•
+												{{$cocogen_careers_job_description->jobDescription}}
+												<br>
+											@endif
+										@endforeach
+									</p><p></p>
+									<br>
+									<p><strong>Qualifications:</strong></p>
+									<p></p><p>
+										@foreach($cocogen_careers_qualifications as $cocogen_careers_qualification)
+											@if((int)$cocogen_careers_qualification->careerID === $cocogen_career->id )
+												•
+												{{$cocogen_careers_qualification->qualification}}
+												<br>
+											@endif
+
+										@endforeach
+									</p><p></p>
+
+								</div>
+							</div>
+						</div>
+						<?php $i++ ?>
+						@endforeach
+
+
+				</div>
+			</div>
+		</div>
+		<div class="col-md-5 col-sm-5">
+			<div class="career-form mega-form-builds">
+				<form onsubmit="return validateRecaptcha();" class="form-horizontal" id="career-form" method="post" action="{{route('careerssave')}}" enctype="multipart/form-data">
+					{{ csrf_field() }}
+					<div class="col-md-12">
+						<div class="form-page-header fieldset-header">
+							<h3 style="font-weight: bold;">Apply now!</h3>
+						</div>
+					</div>
+					<div class="col-md-6  {{ $errors->has('fName') ? ' has-error' : '' }}">
+						<label for="fName" class="hide">First Name</label>
+						<input type="text" class="form-control required-entry validate-alpha-only" placeholder="First Name *" name="fName" id="fName" value="{{old('fName')}}" maxlength="200">
+					</div>
+					<div class="col-md-6 sp-only">
+						<br>
+					</div>
+					<div class="col-md-6  {{ $errors->has('fName') ? ' has-error' : '' }}">
+						<label for="lName" class="hide">Last Name</label>
+						<input type="text" class="form-control required-entry validate-alpha-only" placeholder="Last Name *" name="lName" id="lName" value="{{old('lName')}}" maxlength="200">
+					</div>
+					<div class="col-md-6">
+						<br>
+					</div>
+
+					<div class="col-md-12  {{ $errors->has('email') ? ' has-error' : '' }}">
+						<label for="email" class="hide">Email</label>
+						<input type="text" class="form-control required-entry validate-email" placeholder="Email Address *" name="email" id="email" value="{{old('email')}}"maxlength="100">
+					</div>
+					<div class="col-md-6">
+						<br>
+					</div>
+					<div class="col-md-12  {{ $errors->has('mobileNumber') ? ' has-error' : '' }}">
+						<input type="text" class="form-control required-entry validate-customContact" placeholder="Contact Number *" id="mobileNumber" name="mobileNumber" value="{{old('mobileNumber')}}" maxlength="100">
+						<label for="mobileNumber" class="field-item-note" style="font-size: 10px;opacity: 0.8;margin-top:3px;">Sample Format: 02-1234567 or 63-1234567890</label>
+					</div>
+					<div class="col-md-6">
+						<br>
+					</div>
+					<div class="col-md-12  {{ $errors->has('positionApplied') ? ' has-error' : '' }}">
+						<div class="select-form-wrapper">
+							<label for="positionApplied" class="hide">Position Applied</label>
+							<select class="form-control validate-select" name="positionApplied" id="positionApplied" style="text-transform: capitalize;padding: 8px;">
+								@if(old('positionApplied'))
+									<option value="{{old('positionApplied')}}">{{old('positionApplied')}}</option>
+								@else
+									<option value="">Position Applied *</option>
+								@endif
+								@foreach($cocogen_careers as $cocogen_career)
+								<option value="{{$cocogen_career->job}}" data-value="{{$cocogen_career->job}}">{{$cocogen_career->job}}</option>
+								@endforeach
+ 							</select>
+						</div>
+					</div>
+				<div class="col-md-6  ">
+						<br>
+					</div>
+				<div class="col-md-12 {{ $errors->has('message') ? ' has-error' : '' }}">
+					<label for="message" class="hide">Message</label>
+					<textarea rows="5" name="message" id="message" class="form-control required-entry" placeholder="Message *">{{old('message')}}</textarea>
+				</div>
+
+				<div class="col-md-12">
+					<label for="filename" class="hide">Input File</label>
+					<input type="file" class="required-entry" name="filename" required="required" id="filename" accept="application/msword, application/pdf">
+				</div>
+				<div class="col-md-6">
+						<br>
+					</div>
+				<div class="col-md-12">
+					<div class="g-recaptcha" data-sitekey="6Lfl1cMUAAAAANJEoCM5_TMjiuVVcyDkw279Kb_z"></div>
+				</div>
+
+				<div class="col-md-6">
+						<br>
+					</div>
+
+				<div class="col-md-12">
+					<div class="pull-left">
+						<input name="executed" type="hidden" value="0" class="executed">
+						<input name="form_key" type="hidden" value="5WS4MkVQbtqFyYQ5">
+						<input type="submit" class="btn btn-primary" value="SEND">
+					</div>
+				</div>
+				</form>
+				<script type="text/javascript">
+				    //<![CDATA[
+				    var dataForm = new VarienForm('career-form', true);
+				    //]]>
+				    var onloadCallback = function() {
+				        grecaptcha.render('html_element', {
+				            'sitekey': '6LfgSBoeAAAAADm5EsFyBXq_WxqKEBJv6C1iqFQw'
+				        });
+				    };
+				    function validateRecaptcha() {
+				        var response = grecaptcha.getResponse();
+				        if (response.length === 0) {
+				            alert("Please confirm if you're not a robot.");
+				            return false;
+				        } else {
+				            //alert("validated");
+				            return true;
+				        }
+				    }
+				</script>
+				<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+				<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"   async defer>
+		    </script>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+                </div>
+           </div>
+        </div>
+
+</script>
+
+
+
+@endsection

@@ -1,0 +1,961 @@
+.progress {
+  height: 11px;
+	background-color: #F1F1F1;
+	box-shadow: none;
+}
+.progress-bar {
+	background: #008080;
+}
+
+/* .input-lg{
+	height: 60px !important;
+} */
+
+.fileUpload {
+	position: relative;
+	overflow: hidden;
+	height: 46px;
+	font-size: 20px;
+}
+.fileUpload input.uploadlogo {
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+	cursor: pointer;
+	opacity: 0;
+	filter: alpha(opacity=0);
+	width: 100%;
+	height: 46px;
+}
+
+input[type="text"],
+select.form-control {
+	/* border-radius: 5px;
+	border-color: #808080; */
+  /*background: transparent;
+  border: none;
+  border-color: 1px solid #000000;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-radius: 0;*/
+}
+
+.firstform{
+	/* margin-top: -20px; */
+}
+
+#modal_covid19_summary {
+	text-align: center;
+	/* top:1% !important; */
+}
+
+#modal_PWD {
+	text-align: center;
+	top:30% !important;
+	border-color: green;
+}
+
+input[type="text"]:focus,
+select.form-control:focus {
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+.ui-datepicker {
+	background-color: #fff;
+	font-size: 160%;
+}
+
+.ui-datepicker-header {
+	background-color: #53b947;
+	border-color: #53b947;
+}
+
+.ui-datepicker-title {
+	color: white;
+}
+
+.ui-widget-content .ui-state-default {
+	border: 0px;
+	text-align: center;
+	background: #fff;
+	font-weight: normal;
+	color: #53b947;
+}
+
+.ui-widget-content .ui-state-default:hover {
+	border: 0px;
+	text-align: center;
+	background: #53b947;
+	font-weight: normal;
+	color: #fff;
+}
+
+.ui-widget-content .ui-state-active {
+	border: 0px;
+	background: #53b947;
+	color: #fff;
+}
+option:checked {
+	background: red linear-gradient(0deg, red 0%, red 100%);
+}
+.btn-white-residence_province {
+	background-color: #ffffff;
+	border-color: #808080;
+}
+
+.btn-white-year {
+	background-color: #ffffff;
+	border-color: #808080;
+}
+
+.btn-white-device_access_year {
+	background-color: #ffffff;
+	border-color: #808080;
+}
+
+.btn-white-residence_municipality {
+	background-color: #ffffff;
+	border-color: #808080;
+}
+.btn-white-residence_barangay{
+	background-color: #ffffff;
+	border-color: #808080;
+}
+
+.btn-white-mailing_province {
+	background-color: #ffffff;
+	border-color: #808080;
+}
+.btn-white-mailing_municipality {
+	background-color: #ffffff;
+	border-color: #808080;
+}
+.btn-white-mailing_barangay{
+	background-color: #ffffff;
+	border-color: #808080;
+}
+.btn-white-noofunit{			
+	background-color: #ffffff;
+	border-color: #808080;
+}
+.btn-white-occupation_personal_info{
+	background-color: #ffffff;
+	border-color: #808080;
+}
+.btn-white-gender{			
+	background-color: #ffffff;
+	border-color: #808080;
+}
+.btn-white-status_other_personal_info{
+	background-color: #ffffff;
+	border-color: #808080;
+}
+
+.btn-white-device_province{
+	background-color: #ffffff;
+	border-color: #808080;
+}
+
+.btn-white-device_municipality{
+	background-color: #ffffff;
+	border-color: #808080;
+}
+
+.btn-white-device_barangay{
+	background-color: #ffffff;
+	border-color: #808080;
+}
+
+.btn-white-gender_other_personal_info{
+	background-color: #ffffff;
+	border-color: #808080;
+}
+
+.btn-white-type_of_id_personal_info,
+.btn-white-status_other_personal_info{
+	background-color: #ffffff;
+	border-color: #808080;
+}
+#desktop{
+	/* min-width: 250px;
+	min-height: 60px;
+	background-color: #C0C0C0;
+	color: #000000;
+	margin-right: 15px; */
+}
+#btn_pwd_no,
+#btn_pwd_yes{
+	min-width: 120px;
+	min-height: 60px;
+	background-color: #C0C0C0;
+	color: #000000;
+	margin-right: 15px;
+}
+
+#btn_no,
+#btn_yes{
+	min-width: 90px;
+	min-height: 60px;
+	background-color: #C0C0C0;
+	color: #000000;
+	margin-right: 15px;
+}
+/* #btn_back_to_applicant_occupation,
+#btn_back_to_home,
+#btn_back_to_applicant{
+	min-width: 120px;
+	min-height: 30px;
+	background-color: #53b947;
+	color: #ffffff;
+	margin-right: 15px;
+} */
+
+/* #laptop{
+	min-width: 250px;
+	min-height: 60px;
+	background-color: #C0C0C0;
+	color: #000000;
+	margin-right: 15px;
+} */
+#desktopprinme{
+	min-width: 288px;
+	min-height: 60px;
+	background-color: #C0C0C0;
+	color: #000000;
+}
+#btnnoofunit{
+	min-width: 516px;
+	height: 45px;
+	background-color: #00BFFF;
+	color: #ffffff;
+	margin-left: -15px;
+}
+
+/* #desktop:hover {
+	background-color: #4CAF50;
+	color: white;
+} */
+
+/* #laptop:hover {
+	background-color: #4CAF50;
+	color: white;
+} */
+
+#desktopprinme:hover {
+	background-color: #4CAF50; /* Green */
+	color: white;
+}
+
+
+#primbasicvaldiv{
+	margin-left:-32px;
+}
+.validation_others_pwd_personal_info,
+.validation_beneficiary_personal_info,
+.validation_relationship_personal_info,
+.validation_occupation_other_personal_info,
+.validation_middleName_personal_info,
+.validation_firstName_personal_info,
+.validation_lastName_personal_info,
+.validation_gender_personal_info,
+.validation_contactNo_personal_info,
+.validation_gender_personal_info,
+.validation_occupation_personal_info,
+.validation_dateofBirth_personal_info,	
+.validation_email_personal_info{
+	margin-top: 5px ;
+}
+
+/* .blue-btn:hover,
+.blue-btn:active,
+.blue-btn:focus,
+.blue-btn {
+	background: transparent;
+	border: solid 1px #27a9e0;
+	border-radius: 3px;
+	color: #27a9e0;
+	font-size: 16px;
+	margin-bottom: 20px;
+	outline: none !important;
+	padding: 10px 20px;
+} */
+
+/*Chrome fix*/
+input::-webkit-file-upload-button {
+	cursor: pointer !important;
+	height: 46px;
+	width: 100%;
+}
+
+/* #upload_label{
+	margin-top:-30px !important;
+} */
+
+/* #upload_file{
+	margin-top:-30px !important;
+} */
+
+#f3_summary{
+	margin-left: -16px;
+}
+#agent_name_div{
+	margin-left: -90px;
+	margin-right: 20px;
+	margin-top: 25px;
+}
+
+#agent_name_summary{
+	margin-right: 30px !important;
+}
+
+#f4_summary{
+	margin-left: -90px ;
+	margin-top: 25px;
+}
+
+#btnsubmit{
+	min-height: 60px;
+	min-width: 257px;
+}
+
+#btnagree{
+	min-height: 60px;
+	min-width: 200px;
+}
+
+#addApplicant{
+	min-width: 257px;
+	min-height: 60px;
+	background-color: #C0C0C0;
+	color: #000000;
+	margin-right: 18px;
+
+}
+
+
+	@media only screen and (max-width: 800px) {
+		.firstform{
+			margin-top: 0px;
+		}
+		.address_mobile{
+		  	margin-bottom: 15px !important;
+		}
+		
+		.personal_ifno_mobile{
+		  	margin-bottom: 15px !important;
+		}
+
+	  	/* #desktop{
+			min-width: 258px;
+			min-height: 60px;
+			background-color: #C0C0C0;
+			color: #000000;
+			margin-bottom: 10px;
+		} */
+
+		/* #laptop{
+			min-width: 258px;
+			min-height: 60px;
+			background-color: #C0C0C0;
+			color: #000000;
+			margin-bottom: 10px;
+		} */
+		#desktopprinme{
+			min-width: 258px;
+			min-height: 60px;
+			background-color: #C0C0C0;
+			color: #000000;
+			margin-bottom: 10px;	
+		}
+
+		#btnnoofunit{
+				min-width: 258px;
+				background-color: #00BFFF;
+				color: #ffffff;			
+				height: 45px;
+				margin-left: -15px;
+		}
+
+		#primbasicvaldiv{
+				margin-left:-14px;
+				margin-top: 15px;
+				width: 285px;
+		}
+
+
+
+
+		.validation_others_pwd_personal_info_check_error,
+		.validation_beneficiary_personal_info_check_error,
+		.validation_relationship_personal_info_check_error,
+		.validation_occupation_other_personal_info,
+		.validation_idno_other_personal_info_check_error,
+		.validation_place_of_birth_other_personal_info_check_error,
+		.validation_nationality_other_personal_info_check_error,
+		.validation_middleName_personal_info_check_error,
+		.validation_lastName_personal_info_check_error,
+	 	.validation_contactNo_personal_info_check_error,
+	 	.validation_dateofBirth_personal_info_check_error,
+	 	.validation_gender_personal_info_check_error,
+	 	.validation_email_personal_info_check_error,
+		.validation_firstName_personal_info_check_error{
+			top:-50px !important;
+		}
+		
+		.validation_others_pwd_personal_info_check_success,
+		.validation_beneficiary_personal_info_check_success,
+		.validation_relationship_personal_info_check_success,
+		.validation_idno_other_personal_info_check_success,
+		.validation_place_of_birth_other_personal_info_check_success,
+		.validation_nationality_other_personal_info_check_success,
+		.validation_middleName_personal_info_check_success,
+		.validation_lastName_personal_info_check_success,
+	    .validation_contactNo_personal_info_check_success,
+	    .validation_dateofBirth_personal_info_check_success,
+	    .validation_gender_personal_info_check_success,
+	    .validation_email_personal_info_check_success,
+		.validation_firstName_personal_info_check_success{
+			top:-50px !important;
+		}
+
+	 	.validation_occupation_personal_info_check_error,
+		.validation_occupation_personal_info_check_success {
+	       top:-35px !important;
+		}
+
+		.validation_dateofBirth_personal_info{
+			margin-top: -12px !important;
+			margin-bottom: 10px !important;
+		}
+
+		.validation_others_pwd_personal_info,
+		.validation_idno_other_personal_info,
+		.validation_place_of_birth_other_personal_info,
+		.validation_nationality_other_personal_info,
+		.validation_email_personal_info,
+		.validation_contactNo_personal_info,
+		.validation_lastName_personal_info,
+		.validation_middleName_personal_info,
+		.validation_firstName_personal_info{
+			margin-top: -12px !important;
+			margin-bottom: 10px !important;
+		}
+
+		.validation_status_other_personal_info{
+			margin-bottom: 10px !important;
+		}
+
+		.fileUpload {
+			  position: relative;
+			  overflow: hidden;
+			  height: 46px;
+			  margin-top: 15px;
+			  width: 100% !important;
+			}
+		#agent_name_div{
+			margin-left: -10px  !important;
+			margin-right: 20px;
+			margin-top: 25px;
+		}
+
+		#f4_summary{
+			margin-left: -10px !important;
+			margin-top: 25px;
+		}
+
+		#CheckCoverage{
+			margin-top: 20px !important;
+		}
+
+		#addApplicant{
+				margin-bottom: 10px;
+
+			}
+		#btnsubmit{
+			min-height: 60px;
+			min-width: 257px;
+		}
+
+			
+	}
+
+				
+					/* end only demo styles */
+
+					.checkbox-custom, .radio-custom {
+					    opacity: 0;
+					    position: absolute;   
+					}
+
+					.checkbox-custom, .checkbox-custom-label, .radio-custom, .radio-custom-label {
+					    display: inline-block;
+					    vertical-align: middle;
+					    margin: 5px;
+					    cursor: pointer;
+					}
+
+					.checkbox-custom-label, .radio-custom-label {
+					    position: relative;
+					}
+
+					.checkbox-custom + .checkbox-custom-label:before, .radio-custom + .radio-custom-label:before {
+					    content: '';
+					    background: #fff;
+					    border: 2px solid #53b947;
+					    display: inline-block;
+					    vertical-align: middle;
+					    width: 20px;
+					    height: 20px;
+					    padding: 2px;
+					    margin-right: 10px;
+					    text-align: center;
+					}
+
+					.checkbox-custom:checked + .checkbox-custom-label:before {
+					    background: #53b947;
+					    box-shadow: inset 0px 0px 0px 4px #fff;
+					}
+
+					.checkbox-custom:focus + .checkbox-custom-label, .radio-custom:focus + .radio-custom-label {
+					  outline: 1px solid #ddd; /* focus style */
+					}
+
+/* .BlockUIConfirm {
+          position: fixed;
+          top: 0;
+          left: 0;
+          right: 0;
+          height: 100vh;
+          width: 100vw;
+          z-index: 50;
+        } */
+
+        .BlockUIConfirm2 {
+          position: fixed;
+          top: 0;
+          left: 0;
+          right: 0;
+          height: 100vh;
+          width: 100vw;
+          z-index: 50;
+        }
+
+        .BlockCantFintCar {
+          position: fixed;
+          top: 0;
+          left: 0;
+          right: 0;
+          height: 100vh;
+          width: 100vw;
+          z-index: 50;
+        }
+
+        .blockui-mask {
+          position: absolute;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          background-color: #333;
+          opacity: 0.8;
+        }
+
+        .RowDialogBody {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 100%;
+          max-width: 600px;
+          opacity: 1;
+          background-color: white;
+          border-radius: 4px;
+        }
+
+        .RowDialogBody > div:not(.confirm-body) {
+          padding: 8px 10px;
+        }
+
+        .confirm-header {
+          width: 100%;
+          border-radius: 4px 4px 0 0;
+          font-size: 13pt;
+          font-weight: bold;
+          margin: 0;
+        }
+
+        .row-dialog-hdr-success {
+          /* border-top: 4px solid #5cb85c; */
+          /* border-bottom: 1px solid transparent; */
+        }
+
+        .row-dialog-hdr-info {
+          /* border-top: 4px solid #5bc0de; */
+          /* border-bottom: 1px solid transparent; */
+        }
+
+        .confirm-body {
+          /* border-top: 1px solid #ccc; */
+          /* padding:20px 10px; */
+          /* border-bottom: 1px solid #ccc; */
+        }
+
+        .confirm-btn-panel {
+          width: 100%;
+        }
+        .row-dialog-btn {
+          cursor: pointer;
+        }
+
+        .btn-naked {
+          background-color: transparent;
+        }
+
+
+/* table{
+  width: 100%;
+  text-align:center;
+  padding:10px;
+}
+tr{
+  border: 1px solid #E0607E;
+}
+th{
+  border-left: 5px solid #ffffff;
+  padding: 10px 30px;
+  background-color: #008080;
+  color: #FFF; 
+  border-radius: 10px;
+  height: 65px;
+}
+
+td{
+	padding-top: 10px;
+	padding-left: 3px;
+	padding-right: 3px;
+	padding-top: 5px;
+} */
+
+/* input[type=checkbox] + label {
+	display: block;
+	margin: 0.2em;
+	cursor: pointer;
+	padding: 0.2em;                               
+}
+input[type=checkbox] {
+	display: none;
+}
+
+input[type=checkbox] + label:before {
+	content: "\2714";
+	border: 0.1em solid #808080;
+	border-radius: 0.2em;
+	display: inline-block;
+	width: 1.5em;
+	height: 1.5em;
+	padding-left: 0.2em;
+	padding-bottom: 0.3em;
+	margin-right: 0.2em;
+	vertical-align: bottom;
+	color: transparent;
+	transition: .2s;
+}
+
+input[type=checkbox] + label:active:before {
+	transform: scale(0);
+}
+
+input[type=checkbox]:checked + label:before {
+	background-color: MediumSeaGreen;
+	border-color: MediumSeaGreen;
+	color: #fff;
+}
+
+input[type=checkbox]:disabled + label:before {
+	transform: scale(1);
+	border-color: #aaa;
+}
+
+input[type=checkbox]:checked:disabled + label:before {
+	transform: scale(1);
+	background-color: #bfb;
+	border-color: #bfb;
+} */
+
+.v-error-msg {
+	color: #CF3C4B;
+  font-size: 15px;
+}
+
+.has-feedback label ~ .form-control-feedback {
+	top: 36px;
+	font-size: 1rem;
+}
+.has-feedback.layout1 label ~ .form-control-feedback {
+	top: 0px;
+}
+.form-group-agent-code.has-feedback .form-control-feedback {
+	top: 0px;
+	font-size: 1rem;
+}
+.has-error .form-control-feedback {
+	color: #CF3C4B;
+}
+.has-success .form-control-feedback {
+	color: #4BB543;
+}
+.input-lg ~ .form-control-feedback {
+	height: 52px;
+	line-height: 52px;
+	font-size: 16px;
+}
+.has-error .bootstrap-select .dropdown-toggle,
+.has-success .bootstrap-select .dropdown-toggle {
+	padding-right: 60px;
+}
+.has-error .input-lg.selectb5 ~ .form-control-feedback,
+.has-success .input-lg.selectb5 ~ .form-control-feedback {
+	width: 26px;
+	right: 34px;
+}
+
+.delete-row, .delete-row_part {
+  height: 52px;
+  width: 52px;
+  min-width: 52px !important;
+  border-radius: 5px;
+  background: #ffffff !important;
+  border: 2px solid #707070 !important;
+  color: #707070 !important;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.delete-row svg, .delete-row_part svg {
+  color: #707070 !important;
+  height: 20px;
+  width: 20px;
+  stroke-width: 4px;
+}
+.delete-row span, .delete-row_part span {
+  color: #707070 !important;
+}
+.delete-row:hover,
+.delete-row_part:hover {
+  background: #707070 !important;
+  border-color: #707070 !important;
+  color: #ffffff !important;
+}
+.delete-row:hover svg,
+.delete-row_part:hover svg,
+.delete-row:hover span,
+.delete-row_part:hover span {
+  color: #ffffff !important;
+}
+
+.devices-ins .make-col,
+.parts-ins .make-col {
+	flex-grow: 1;
+}
+.devices-ins .labels,
+.parts-ins .labels {
+	align-items: end;
+	justify-content: center;
+	align-content: center;
+	text-align: center;
+}
+#hardware-body .row > div,
+#part-body .row > div {
+	padding: 0px 5px;
+}
+#hardware-body .row > div:first-child,
+#part-body .row > div:first-child {
+	padding-left: calc(var(--bs-gutter-x) * 0.5);
+}
+#hardware-body .row > div:last-child,
+#part-body .row > div:last-child {
+	padding-right: calc(var(--bs-gutter-x) * 0.5);
+}
+.devices-ins .delete-row-col,
+.parts-ins .delete-row-part-col {
+	width: 69px;
+	padding: 0px;
+	display: flex;
+}
+.table-data1 .table {
+	border: none !important;
+	min-width: 500px;
+}
+.table-data1 .table > thead > tr > th {
+	border-bottom: none;
+}
+.table-data1 .table > thead > tr:first-child,
+.table-data1 .table > tfoot > tr:first-child {
+	/* border-top: none !important; */
+}
+.table-data1 .table > thead > tr:first-child > th {
+	/* border-top: none !important; */
+}
+.table-data1 .table > thead > tr:first-child > th,
+.table-data1 .table > tbody > tr > td,
+.table-data1 .table > tfoot > tr > td {
+	padding: 1.8rem 1.8rem;
+	border-right: 1px solid #B8B8B8;
+}
+.table-data1 .table > thead > tr:first-child > th:first-child {
+	border-radius: 10px 0px 0px 0px;
+}
+.table-data1 .table > thead > tr:first-child > th:last-child {
+	border-radius: 0px 10px 0px 0px;
+	border-right: none;
+	text-align: center;
+}
+.table-data1 .table > tfoot > tr > td:first-child {
+	border-radius: 0px 0px 0px 10px;
+}
+.table-data1 .table > tfoot > tr > td:last-child {
+	border-radius: 0px 0px 10px 0px;
+	border-right: none;
+}
+.table-data1 .table > tbody > tr > td,
+.table-data1 .table > tfoot > tr > td {
+	border-bottom: 1px solid #B8B8B8;
+}
+.table-data1 .table > tfoot > tr:last-child > td {
+	border-bottom: none;
+}
+.table-data1 .table > tbody > tr > td:last-child,
+.table-data1 .table > tfoot > tr > td:last-child {
+	border-right: none;
+}
+.table-data1 .table > tbody > tr > td.col1,
+.table-data1 .table > tfoot > tr > td.col1 {
+	position: relative;
+}
+.table-data1 .table > tbody > tr > td.col1:before,
+.table-data1 .table > tfoot > tr > td.col1:before {
+  content: "";
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	border-left: 1px solid #B8B8B8;
+}
+.table-data1 .table > tbody > tr > td:last-child,
+.table-data1 .table > tfoot > tr > td:last-child {
+	position: relative;
+	text-align: center;
+}
+.table-data1 .table > tbody > tr > td:last-child:after,
+.table-data1 .table > tfoot > tr > td:last-child:after  {
+  content: "";
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	right: 0px;
+	border-right: 1px solid #B8B8B8;
+}
+.table-data1 .table > tfoot > tr:last-child > td:last-child:after {
+	content: none;
+}
+#privacyPolicy .modal-body,
+#termsConditions .modal-body, 
+#exclusionslimitations .modal-body  {
+  font-size: 20px;
+}
+#privacyPolicy .modal-body,
+#termsConditions .modal-body {
+	padding: 15px 50px;
+}
+#exclusionslimitations .modal-body {
+	padding: 15px 30px;
+}
+#privacyPolicy .modal-body h4,
+#termsConditions .modal-body h4,
+#exclusionslimitations .modal-body h4 {
+	display: block;
+	margin-bottom: 15px;
+}
+
+@media only screen and (max-width: 1439px) {
+	.fileUpload {
+			height: 42px;
+			font-size: 18px;
+			padding-top: 7px;
+	}
+	.devices-ins .delete-row-col,
+	.parts-ins .delete-row-part-col {
+		width: 57px;
+	}
+	.delete-row, .delete-row_part {
+		height: 42px;
+		width: 42px;
+		min-width: 42px !important;
+		padding: 0px !important;
+	}
+	#privacyPolicy .modal-body,
+	#termsConditions .modal-body,
+	#exclusionslimitations .modal-body {
+		padding: 15px 20px;
+    font-size: 16px;
+	}
+}
+@media only screen and (max-width: 1439px) {
+	.has-feedback label ~ .form-control-feedback {
+		top: 29px;
+	}
+	.has-feedback.layout1 label ~ .form-control-feedback {
+		top: 0px;
+	}
+	.form-group-agent-code.has-feedback .form-control-feedback {
+		top: 29px;
+	}
+	.input-lg ~ .form-control-feedback {
+		height: 42px;
+		line-height: 42px;
+	}
+}
+@media only screen and (max-width: 991px) {
+	.has-feedback label ~ .form-control-feedback {
+		top: 29px;
+	}
+	.has-feedback.layout1 label ~ .form-control-feedback {
+		top: 29px;
+	}
+	.input-lg ~ .form-control-feedback {
+		height: 42px;
+		line-height: 42px;
+	}
+	#hardware-body .row > div,
+	#part-body .row > div {
+		padding-left: calc(var(--bs-gutter-x) * 0.5);
+		padding-right: calc(var(--bs-gutter-x) * 0.5);
+	}
+	.delete-row-col,
+	.delete-row-part-col {
+		width: 100% !important;
+	}
+	.delete-row,
+	.delete-row_part {
+		width: auto;
+		padding: 8px 20px 12px !important;
+	}
+	#privacyPolicy .modal-body,
+	#termsConditions .modal-body,
+	#exclusionslimitations .modal-body {
+		padding: 15px 20px;
+    font-size: 16px;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	#privacyPolicy .modal-body,
+	#termsConditions .modal-body,
+	#exclusionslimitations .modal-body {
+		padding: 15px 15px;
+	}
+}

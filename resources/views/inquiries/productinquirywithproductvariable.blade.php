@@ -1,0 +1,188 @@
+@extends('layouts.app')
+
+@section('content')
+    <div class="top-container">
+            <!-- config enabled always -->
+            <div class="custom-banner custom-page-banner" data-uri-path="/inquiries/product-inquiry/">
+            </div>
+            <div class="breadcrumbs">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 a-left">
+                            <ul>
+                                <li class="home"><a href="{{ url('/') }}" title="Go to Home Page">Home</a>
+                                    <span class="breadcrumbs-split"><i class="icon-keyboard_arrow_right"></i></span>
+                                </li>
+                                <li class="category42"><strong>Send Inquiry</strong> </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            @if(session('message'))
+                <br><br>
+                <div class="col-md-12 col-md-offset-0" style="text-align: left;font-family: muli">
+                    <div class='alert bg bg-success'>
+                          <i class="fa fa-check-circle"></i>
+                        {{session('message')}}
+                    </div>
+                </div>
+                <br>    <br>
+            @endif
+
+            <div class="category-name container">
+                <h1>
+                    Send Inquiry
+                </h1>
+            </div>
+
+        </div>
+        <div class="main-container col1-layout">
+            <div class="main container">
+                <div class="col-main">
+                    <div class="page-title category-title">
+                        <h1>
+                            Product Inquiry</h1>
+                    </div>
+
+                    <div class="product-inquiry-form mega-form-builds" style="font-family: muli;line-height: ">
+                        <form onsubmit="return validateRecaptcha();" class="form-horizontal" id="product-inquiry-form" method="post" action="{{route('productinquirysavewithviar')}}" enctype="multipart/form-data">
+                        {{ csrf_field() }}
+                            <div class="col-md-4 {{ $errors->has('topic') ? ' has-error' : '' }}">
+                                <label for="topic">Topic</label>
+                                <select  id="topic" name="topic"  class="form-control selectpicker input-lg btn-white" data-style="input-lg btn-white" data-size="10" data-live-search="true"  readonly="readonly">
+                                    <option value="Product Inquiry"  selected="selected">Product Inquiry</option>
+                                </select>
+                                @if ($errors->has('topic'))
+                                    <span class="help-block" style="margin-top: -12px;">
+                                        <strong>{{ $errors->first('topic') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+
+                            <div id="product_div" class="col-md-4 {{ $errors->has('product') ? ' has-error' : '' }}">
+                                <label for="product">Product</label>
+                                <select  id="product" name="product"  class="form-control selectpicker input-lg btn-white" data-style="input-lg btn-white" data-size="10" data-live-search="true" >
+                                            <option value="{{$product}}" data-value="{{$product}}">{{$product}}</option>
+                                </select>
+                                 @if ($errors->has('product'))
+                                    <span class="help-block" style="margin-top: -12px;">
+                                        <strong>{{ $errors->first('product') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+
+                           <div class="clearfix"> </div>
+
+                            <div class="col-md-4 {{ $errors->has('first_name') ? ' has-error' : '' }}" >
+                                <label for="first_name">First Name</label>
+                                <input name="first_name" id="first_name" type="text" class="form-control input-lg btn-white" maxlength="100" value="{{ old('first_name') }}">
+                                @if ($errors->has('first_name'))
+                                    <span class="help-block" style="margin-top: -12px;">
+                                        <strong>{{ $errors->first('first_name') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+
+                            <div class="col-md-4 {{ $errors->has('last_name') ? ' has-error' : '' }}" >
+                                <label for="last_name">Last Name</label>
+                                <input name="last_name" id="last_name" type="text" class="form-control input-lg btn-white" maxlength="100" value="{{ old('last_name') }}">
+                                @if ($errors->has('last_name'))
+                                    <span class="help-block" style="margin-top: -12px;">
+                                        <strong>{{ $errors->first('last_name') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+
+                            <div class="col-md-4 {{ $errors->has('email_address') ? ' has-error' : '' }}">
+                                <label for="email_address">Email Address</label>
+                                <input name="email_address" id="email_address" type="text" class="form-control input-lg btn-white" maxlength="100" value="{{ old('email_address') }}">
+                                @if ($errors->has('email_address'))
+                                    <span class="help-block" style="margin-top: -12px;">
+                                        <strong>{{ $errors->first('email_address') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+
+                            <div class="col-md-12 {{ $errors->has('message') ? ' has-error' : '' }}">
+                                <label for="message">Message</label>
+                                <textarea rows="5" name="message" id="message" class="form-control btn-white" placeholder="Inquiry *">{{ old('message') }}</textarea>
+                                @if ($errors->has('message'))
+                                    <span class="help-block" style="margin-top: -12px;">
+                                        <strong>{{ $errors->first('message') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+
+                            <div class="col-md-12">
+                                <div class="g-recaptcha" data-sitekey="6Lfl1cMUAAAAANJEoCM5_TMjiuVVcyDkw279Kb_z">
+                                </div>
+                            </div>
+
+                            <div class="clearfix">
+                            </div>
+                            <div class="col-md-12">
+                                <div class="break-one"></div>
+                                <div class="pull-left">
+                                    <input name="executed" type="hidden" value="0" class="executed">
+                                    <input name="form_key" type="hidden" value="OUCpy2ti6oV0afZw">
+                                    <input type="submit" class="btn btn-primary" value="SUBMIT">
+                                </div>
+                            </div>
+                        </form>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            var dataForm = new VarienForm('product-inquiry-form', true);
+            var onloadCallback = function() {
+                grecaptcha.render('html_element', {
+                    'sitekey': '6Lfl1cMUAAAAANJEoCM5_TMjiuVVcyDkw279Kb_z'
+                });
+            };
+            function validateRecaptcha() {
+                var response = grecaptcha.getResponse();
+                if (response.length === 0) {
+                    alert("Please confirm if you're not a robot.");
+                    return false;
+                } else {
+                    //alert("validated");
+                    return true;
+                }
+            }
+        </script>
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+        <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
+        <style type="text/css">
+            .btn-white{
+                background-color: #ffffff;
+                border-color: #808080;
+                margin-bottom: 15px !important;
+            }
+        </style>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                jQuery('#product_div').hide();
+                if(jQuery('#topic').val() == "Product Inquiry"){
+                    jQuery('#product_div').show();
+                }else{
+                    jQuery('#product_div').hide();
+                }
+            });
+
+            jQuery('#topic').on('change', function() {
+                if(this.value == "Product Inquiry"){
+                    jQuery('#product_div').show();
+                }else{
+                    jQuery('#product_div').hide();
+                }
+            });
+        </script>
+
+
+
+@endsection

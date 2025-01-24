@@ -1,0 +1,234 @@
+@extends('layouts.app')
+
+@section('content')
+	 <div class="top-container">
+            <!-- config enabled always -->
+            <div class="custom-banner custom-page-banner" data-uri-path="/updates/">
+            </div>
+            <div class="breadcrumbs">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 a-left">
+                            <ul>
+                                <li class="home"><a href="{{ url('/') }}" title="Go to Home Page">Home</a>
+                                    <span class="breadcrumbs-split"><i class="icon-keyboard_arrow_right"></i></span>
+                                </li>
+                                <li class="category29"><strong>Updates</strong> </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="category-name container">
+                <h1>
+                    Updates
+                </h1>
+            </div>
+        </div>
+        <div class="main-container col1-layout">
+            <div class="main container">
+                <div class="col-main">               
+
+                    <div class="category-grid-block category-grid-block-layered-nav">
+                        <div class="category-grid-block-title hide">
+                            <h2>
+                                <span>Updates</span></h2>
+                        </div>
+                        <div class="category-grid-block-content">
+                            <div class="category-row row row-margin-bottom">
+                                <!-- <div class="row-wrapper"> -->
+                                <div class="col-md-4 col-sm-6 lib-item" data-category="view">
+                                    <div class="lib-panel">
+                                        <div class="row box-shadow image-box">
+                                            <a href="{{ url('/news') }}">
+                                                <div class="thumbnail-wrapper">
+                                                    <img class="category-image lib-img-show landscape" src="{{ url('/images/updates/ucpb-gen-non-life-insurance-news.jpg') }}"
+                                                        alt="News and Events" title="News and Events">
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="row box-shadow caption-box detail-box" style="min-height: 90px;">
+                                            <div class="col-md-12">
+                                                <div class="lib-row lib-header">
+                                                    <!-- <a href="https://www.ucpbgen.com/updates/news-and-events">News and Events</a> (0) -->
+                                                    <h3>
+                                                        <a href="{{ url('/news') }}">News and Events </a>
+                                                    </h3>
+                                                    <!-- <div class="lib-header-seperator"></div> -->
+                                                </div>
+                                                <div class="lib-row lib-desc is-truncated" style="overflow-wrap: break-word;font-family: arial">
+                                                   
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row box-shadow caption-box action-box">
+                                            <a href="{{ url('/news') }}" class="btn view-details col-md-12 col-sm-12 col-xs-12">
+                                                VIEW DETAILS</a>
+                                            <div class="btn get-quote col-md-6 hide">
+                                                GET QUOTE</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <div class="col-md-1 col-sm-1 column-divider"></div> -->
+                                <!-- </div> -->
+                                <!-- <div class="row-wrapper"> -->
+                                <div class="col-md-4 col-sm-6 lib-item" data-category="view">
+                                    <div class="lib-panel">
+                                        <div class="row box-shadow image-box">
+                                            <a href="{{ url('/blogs') }}">
+                                                <div class="thumbnail-wrapper">
+                                                    <img class="category-image lib-img-show landscape" src="{{ url('/images/updates/ucpb-gen-non-life-insurance-blog.jpg') }}"
+                                                        alt="Blogs" title="Blogs">
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="row box-shadow caption-box detail-box" style="min-height: 90px;">
+                                            <div class="col-md-12">
+                                                <div class="lib-row lib-header">
+                                                    <!-- <a href="https://www.ucpbgen.com/catalog/category/view/s/blogs/id/32/">Blogs</a> (0) -->
+                                                    <h3>
+                                                        <a href="{{ url('/blogs') }}">Blogs </a>
+                                                    </h3>
+                                                    <!-- <div class="lib-header-seperator"></div> -->
+                                                </div>
+                                                <div class="lib-row lib-desc is-truncated" style="overflow-wrap: break-word;font-family: arial">
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row box-shadow caption-box action-box">
+                                            <a href="{{ url('/blogs') }}" class="btn view-details col-md-12 col-sm-12 col-xs-12">
+                                                VIEW DETAILS</a>
+                                            <div class="btn get-quote col-md-6 hide">
+                                                GET QUOTE</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <div class="col-md-1 col-sm-1 column-divider"></div> -->
+                                <div class="col-5-clearfix">
+                                </div>
+                                <!-- </div> -->
+                                <!-- <div class="row-wrapper"> -->
+                                  <div class="col-md-4 col-sm-6 lib-item" data-category="view">
+                                    <div class="lib-panel">
+                                        <div class="row box-shadow image-box">
+                                            <a href="{{ url('/property') }}">
+                                                <div class="thumbnail-wrapper">
+                                                    <img class="category-image lib-img-show landscape" src="{{ url('/images/COCOGEN Properties for Sale Menu.png') }}"
+                                                        alt="Blogs" title="Blogs">
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="row box-shadow caption-box detail-box" style="min-height: 90px;">
+                                            <div class="col-md-12">
+                                                <div class="lib-row lib-header">
+                                                    <!-- <a href="https://www.ucpbgen.com/catalog/category/view/s/blogs/id/32/">Blogs</a> (0) -->
+                                                    <h3>
+                                                        <a href="{{ url('/property') }}">Properties for Sale </a>
+                                                    </h3>
+                                                    <!-- <div class="lib-header-seperator"></div> -->
+                                                </div>
+                                                <div class="lib-row lib-desc is-truncated" style="overflow-wrap: break-word;font-family: arial">
+                                                   
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row box-shadow caption-box action-box">
+                                            <a href="{{ url('/property') }}" class="btn view-details col-md-12 col-sm-12 col-xs-12">
+                                                VIEW DETAILS</a>
+                                            <div class="btn get-quote col-md-6 hide">
+                                                GET QUOTE</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <div class="col-md-1 col-sm-1 column-divider"></div> -->
+                                <!-- <div class="col-3-clearfix">
+                                </div> -->
+                                <!-- </div> -->
+                                <!-- <div class="row-wrapper"> -->
+                              <!--   <div class="col-md-4 col-sm-6 lib-item" data-category="view">
+                                    <div class="lib-panel">
+                                        <div class="row box-shadow image-box">
+                                            <a href="https://www.ucpbgen.com/updates/properties-for-sale">
+                                                <div class="thumbnail-wrapper">
+                                                    <img class="category-image lib-img-show landscape" src="https://cdn.ucpbgen.com/media/catalog/category/image_2_.png"
+                                                        alt="Properties For Sale" title="Properties For Sale">
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="row box-shadow caption-box detail-box" style="min-height: 90px;">
+                                            <div class="col-md-12">
+                                                <div class="lib-row lib-header">
+                                                   
+                                                    <h3>
+                                                        <a href="https://www.ucpbgen.com/updates/properties-for-sale">Properties For Sale
+                                                        </a>
+                                                    </h3>
+                                                   
+                                                </div>
+                                                <div class="lib-row lib-desc is-truncated" style="overflow-wrap: break-word;">
+                                                    With our list of properties for sale comprising of residential and...
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row box-shadow caption-box action-box">
+                                            <a href="https://www.ucpbgen.com/updates/properties-for-sale" class="btn view-details col-md-12 col-sm-12 col-xs-12">
+                                                VIEW DETAILS</a>
+                                            <div class="btn get-quote col-md-6 hide">
+                                                GET QUOTE</div>
+                                        </div>
+                                    </div>
+                                </div> -->
+                                <!-- <div class="col-md-1 col-sm-1 column-divider"></div> -->
+<!--                                 <div class="col-5-clearfix">
+                                </div> -->
+                                <!-- </div> -->
+                                <!-- <div class="row-wrapper"> -->
+                              <!--   <div class="col-md-4 col-sm-6 lib-item" data-category="view">
+                                    <div class="lib-panel">
+                                        <div class="row box-shadow image-box">
+                                            <a href="https://www.ucpbgen.com/updates/magilas">
+                                                <div class="thumbnail-wrapper">
+                                                    <img class="category-image lib-img-show landscape" src="https://cdn.ucpbgen.com/media/catalog/category/Magilas_Logo_hires_copy.png"
+                                                        alt="Magilas" title="Magilas">
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="row box-shadow caption-box detail-box" style="min-height: 90px;">
+                                            <div class="col-md-12">
+                                                <div class="lib-row lib-header">
+                                                   
+                                                    <h3>
+                                                        <a href="https://www.ucpbgen.com/updates/magilas">Magilas </a>
+                                                    </h3>
+                                                  
+                                                </div>
+                                                <div class="lib-row lib-desc" style="overflow-wrap: break-word;">
+                                                    UCPB GEN-Adopted Philippine Eagle
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row box-shadow caption-box action-box">
+                                            <a href="https://www.ucpbgen.com/updates/magilas" class="btn view-details col-md-12 col-sm-12 col-xs-12">
+                                                VIEW DETAILS</a>
+                                            <div class="btn get-quote col-md-6 hide">
+                                                GET QUOTE</div>
+                                        </div>
+                                    </div>
+                                </div> -->
+                                <!-- <div class="col-md-1 col-sm-1 column-divider"></div> -->
+                                <!-- </div> -->
+                            </div>
+                        </div>
+                    </div>
+
+                   
+
+                    <div class="page-title category-title">
+                        <h1>
+                            Updates</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+@endsection

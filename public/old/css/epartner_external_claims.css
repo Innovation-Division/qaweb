@@ -1,0 +1,317 @@
+div.dataTables_wrapper div.dataTables_paginate ul.pagination {
+    padding-right: 0px !important;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+    padding : 0px;
+    margin-left: 0px;
+    display: inline;
+    border: none !important;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button a {
+    color: #008080;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button.disabled a {
+    color: #666;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover,
+.dataTables_wrapper .dataTables_paginate .paginate_button:focus,
+.dataTables_wrapper .dataTables_paginate .paginate_button:active {
+    border: none !important;
+    background: none !important;
+}
+
+@media all and (min-width:0px) and (max-width: 800px) {
+    /* .pull-left{float:left!important;}
+    .pull-right{float:left!important;margin-top: 10px;margin-bottom: 10px;} */
+    /*.pull-paget{float:left!important;}*/
+    /*.pull-infot{float:left!important;}*/
+}
+@media all and (min-width:0px) and (max-width: 800px) {
+    .pull-left{float:left!important;}
+    .pull-right{float:left!important;margin-top: 10px;margin-bottom: 10px;}
+    /*.pull-paget{float:left!important;}*/
+    /*.pull-infot{float:left!important;}*/
+}
+
+div.scroll { 
+    width: 100%; 
+    overflow: auto; 
+    white-space: nowrap; 
+} 
+.v-error-msg{
+    color:#CF3C4B;
+}
+
+#claim_motor_recovery_yes_view,
+	#claim_motor_recovery_no_view,
+	#claim_motor_aget_no_view,
+	#claim_motor_aget_yes_view,
+	#claim_motor_recovery_yes,
+	#claim_motor_recovery_no,
+	#claim_motor_aget_no_not,
+	#claim_motor_aget_yes_not{
+		background-color: #C0C0C0;
+		color : #000000;
+		border-radius:5px;
+		line-height:2;
+		padding-left:33px;
+	}
+
+    .claimsbutton {
+        margin-top:45%;
+        font-size: 23px !important;
+        padding: 88px 78px !important;
+        color: #db3e8d !important;
+        background-color:#fff;
+        border: 2px solid #db3e8d !important;
+        border-radius:5px;
+    }
+    .claimsbutton:active,
+    .claimsbutton:hover {
+        background-color:#db3e8d  !important;
+        color: #fff !important;
+    }
+
+    .claimslableselect{
+        text-align:left;
+        font-size:23px;
+        color:#008080;
+    }
+    .labelCreateNEwClaim{
+        width: 100%;
+        top: 19% !important;
+        position: absolute;
+    }
+    #btn_pwd_no,
+	#btn_pwd_yes{
+		min-width: 120px;
+		min-height: 60px;
+		background-color: #C0C0C0;
+		color: #000000;
+		margin-right: 15px;
+	}
+	.ui-datepicker {
+	background-color: #fff;
+			font-size: 160%;
+	}
+
+	.ui-datepicker-header {
+	background-color: #008080;
+	border-color: #008080;
+
+	}
+
+	.ui-datepicker-title {
+	color: white;
+	}
+
+	.ui-widget-content .ui-state-default {
+	border: 0px;
+	text-align: center;
+	background: #fff;
+	font-weight: normal;
+	color: #008080;
+	}
+
+	.ui-widget-content .ui-state-default:hover {
+	border: 0px;
+	text-align: center;
+	background: #008080;
+	font-weight: normal;
+	color: #fff;
+	}
+
+	.ui-widget-content .ui-state-active {
+	border: 0px;
+	background: #008080;
+	color: #fff;
+	}
+	option:checked {
+		background: red linear-gradient(0deg, red 0%, red 100%);
+	}
+
+    .btn_upload {
+        cursor: pointer;
+        display: inline-block;
+        overflow: hidden;
+        position: relative;
+        color: #fff;
+        background-color: #db3e8d;;
+        border: 1px solid #db3e8d;
+        border-radius:20px;
+        height: 20px;
+        font-size:12px;
+        padding-top:1px;
+        padding-bottom:1px;
+        padding-left:10px;
+        padding-right:10px;
+        }
+    
+        .btn_upload:hover,
+        .btn_upload:focus {
+        background-color: #fff;
+        color: #db3e8d;
+        border: 1px solid #db3e8d;
+        }
+    
+        .yes {
+        display: flex;
+        align-items: flex-start;
+        margin-top: 10px !important;
+        }
+    
+        .btn_upload input {
+        cursor: pointer;
+        height: 100%;
+        position: absolute;
+        filter: alpha(opacity=1);
+        -moz-opacity: 0;
+        opacity: 0;
+        }
+    
+        .it {
+        height: 100px;
+        margin-left: 10px;
+        }
+    
+        .btn-rmv1,
+        .btn-rmv2,
+        .btn-rmv3,
+        .btn-rmv4,
+        .btn-rmv5 {
+        display: none;
+        }
+    
+        .rmv {
+        cursor: pointer;
+        color: #fff;
+        border-radius: 30px;
+        border: 1px solid #fff;
+        display: inline-block;
+        background: rgba(255, 0, 0, 1);
+        margin: -5px -10px;
+        }
+    
+        .rmv:hover {
+        background: rgba(255, 0, 0, 0.5);
+        }
+
+        .readonly{
+            background-color:#ffffff !important;
+            cursor:pointer !important;
+        }
+    
+        .time-picker {
+            z-index: 999;
+        }
+
+        .pull-left{
+            float: left !important;
+            }
+            .progress-bar{
+                background:#008080;
+            }
+
+
+            input[type=checkbox] + label {
+                display: block;
+                margin: 0.2em;
+                cursor: pointer;
+                padding: 0.2em;                               
+              }
+              input[type=checkbox] {
+                display: none;
+              }
+
+              input[type=checkbox] + label:before {
+                content: "\2714";
+                border: 0.1em solid #808080;
+                border-radius: 0.2em;
+                display: inline-block;
+                width: 1.5em;
+                height: 1.5em;
+                padding-left: 0.2em;
+                padding-bottom: 0.3em;
+                margin-right: 0.2em;
+                vertical-align: bottom;
+                color: transparent;
+                transition: .2s;
+              }
+
+              input[type=checkbox] + label:active:before {
+                transform: scale(0);
+              }
+
+              input[type=checkbox]:checked + label:before {
+                background-color: MediumSeaGreen;
+                border-color: MediumSeaGreen;
+                color: #fff;
+              }
+
+              input[type=checkbox]:disabled + label:before {
+                transform: scale(1);
+                border-color: #aaa;
+              }
+
+              input[type=checkbox]:checked:disabled + label:before {
+                transform: scale(1);
+                background-color: #bfb;
+                border-color: #bfb;
+              }
+
+              
+        
+            .time-picker {
+                z-index: 999;
+            }
+            .readonly{
+                background-color:#ffffff !important;
+                cursor:pointer !important;
+            } 
+            .ui-datepicker {
+            background-color: #fff;
+                    font-size: 160%;
+            }
+
+            .ui-datepicker-header {
+            background-color: #008080;
+            border-color: #008080;
+
+            }
+
+            .ui-datepicker-title {
+            color: white;
+            }
+
+            .ui-widget-content .ui-state-default {
+            border: 0px;
+            text-align: center;
+            background: #fff;
+            font-weight: normal;
+            color: #008080;
+            }
+
+            .ui-widget-content .ui-state-default:hover {
+            border: 0px;
+            text-align: center;
+            background: #008080;
+            font-weight: normal;
+            color: #fff;
+            }
+
+            .ui-widget-content .ui-state-active {
+            border: 0px;
+            background: #008080;
+            color: #fff;
+            }
+            option:checked {
+                background: red linear-gradient(0deg, red 0%, red 100%);
+            }   
+
+            .btnradiobutton{
+                background-color: #C0C0C0;
+                color : #000000;
+                border-radius:5px;
+                line-height:2;
+                padding-left:33px;
+            }

@@ -1,0 +1,51 @@
+/* Responsive font-size */
+.generate-rfs(@classNamePrefix, @n, @i: 0) when (@i =< @n) {
+    .@{classNamePrefix}-@{i} {
+        font-size: ~"@{i}rem !important";
+    }
+    .generate-rfs-lvl(~"@{classNamePrefix}-@{i}", @i + 1, @i, 1);
+    .generate-rfs(@classNamePrefix, @n, (@i + 1));
+}
+.generate-rfs-lvl(@classNamePrefix, @n, @base, @i: 1) when (@base + (@i * .05) < @n) {
+    @fontSizeVal: @base + (@i * .05);
+    .@{classNamePrefix}-@{i} {
+        font-size: ~"@{fontSizeVal}rem !important";
+    }
+    .generate-rfs-lvl(@classNamePrefix, @n, @base, (@i + 1));
+}
+
+.generate-rfs(rfs, 5);
+@media @desktop {
+    .generate-rfs(rfs-lg, 5);
+}
+@media @desktop-min {
+    .generate-rfs(rfs-md, 5);
+}
+@media @mobile {
+    .generate-rfs(rfs-sm, 5);
+}
+@media @mobile-mini {
+    .generate-rfs(rfs-xs, 5);
+}
+
+.generate-rfs(mrfs, 5);
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+    .generate-rfs(mrfs-sm, 5);
+}
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    .generate-rfs(mrfs-md, 5);
+}
+// Large devices (desktops, 992px and up)
+@media (min-width: 1440px) {
+    .generate-rfs(mrfs-lg, 5);
+}
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1440px) {
+    .generate-rfs(mrfs-xl, 5);
+}
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1440px) {
+    .generate-rfs(mrfs-xxl, 5);
+}

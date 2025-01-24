@@ -1,0 +1,232 @@
+@import "../variables.less";
+
+.BlockUIConfirm {
+  z-index: 1001 !important;
+}
+
+/* breadcrumb */
+.banner .breadcrumb {
+  background: none !important;
+}
+
+/* banner */
+.banner .content {
+  margin-bottom: 0px;
+}
+
+/* get a quote form */
+.get-a-quote input[type="submit"] {
+  min-width: 200px !important;
+}
+
+/* quote tabs */ 
+.quote-process {
+  padding: 0px;
+  text-align: center;
+  counter-reset: process-counter;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  li {
+    background: none;
+    box-shadow: none;
+    padding: 0px;
+  }
+  
+  li {
+    span.bubble {
+      background: #e1e1e1;
+      box-shadow: none;
+      text-shadow: none;
+      position: relative;
+      border-radius: 8px;
+      padding-left: 45px;
+      height: 70px;
+      padding: 10px 15px 15px 55px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0px 10px;
+
+      &:before {
+        font-family: "MuliBold";
+        counter-increment: process-counter;
+        content: counter(process-counter);
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 15px;
+        background: #fff;
+        height: 30px;
+        width: 30px;
+        margin-top: -15px;
+        color: @color-primary;
+        font-size: .8rem;
+        padding: 6px 7px;
+        border-radius: 5px;
+        background-color: @color-primary;
+        color: @color-common-white;
+        transition-property: color, background-color, border-color, box-shadow;
+        transition-duration: 0.15s, 0.15s, 0.15s, 0.15s;
+        transition-timing-function: ease-in-out, ease-in-out, ease-in-out, ease-in-out;
+        transition-delay: 0s, 0s, 0s, 0s;
+      }
+    }
+
+    &.current, &.past {
+      .bubble {
+        background: @color-primary;
+        color: @color-common-white;
+
+        &::before {
+          background-color: @color-common-white;
+          color: @color-primary;
+        }
+        
+        &:after {
+          top: 100%;
+          left: 50%;
+          border: solid transparent;
+          content: "";
+          height: 0;
+          width: 0;
+          position: absolute;
+          pointer-events: none;
+          border-color: rgba(0, 122, 112, 0);
+          border-top-color: @color-primary;
+          border-width: 15px;
+          margin-left: -15px;
+          transition-property: color, background-color, border-color, box-shadow;
+          transition-duration: 0.15s, 0.15s, 0.15s, 0.15s;
+          transition-timing-function: ease-in-out, ease-in-out, ease-in-out, ease-in-out;
+          transition-delay: 0s, 0s, 0s, 0s;
+        }
+      }
+    }
+
+    &.past .bubble {
+      background: @color-secondary;
+      &:before {
+        color: @color-secondary;
+      }
+      &:after {
+        content: none;
+      }
+    }
+  }
+  
+  .btn, .btn-success {
+    span.bubble {
+      &:hover, :focus {
+        background-color: @color-secondary !important;
+        color: @color-inverted !important;
+        &:before {
+          background-color: @color-common-white;
+          color: @color-secondary;
+        }
+        &:after {
+          border-top-color: @color-secondary;
+        }
+      }
+    }
+  }
+
+  .btn-default, .btn-success {
+    &:hover, :focus {
+      background: none;
+    }
+  }
+}
+
+/* confirm modal */
+.confirm-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1000;
+  border: 1px solid #707070;
+}
+
+.blockui-mask {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+  opacity: 0.8;
+}
+
+.confirm-modal .RowDialogBody {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 600px;
+  opacity: 1;
+  background-color: white;
+  border-radius: 4px;
+}
+
+.confirm-modal .RowDialogBody {
+  max-width: 800px;
+}
+
+.confirm-modal .RowDialogBody > div:not(.confirm-body) {
+  padding: 8px 10px;
+}
+
+@media @tablet {
+  /* quote tabs */ 
+  .quote-process {
+    li {
+      width: 80px;
+      .step-label {
+        margin-top: 20px;
+        justify-content: center;
+        color: #373737;
+      }
+      span.bubble {
+        width: 50px;
+        margin: 0 auto;
+        position: relative;
+        padding: 15px;
+        height: 50px;
+        
+        &:before {  
+          left: 50%;
+          width: 24px;
+          height: 24px;
+          margin-left: -11px;
+          margin-top: -12px;
+          padding: 4px 7px;
+        }
+        span {
+          display: none;
+        }
+      }
+      &.current {
+        .step-label {
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+
+  /* confirm modal */
+  .confirm-modal .RowDialogBody {
+    max-width: 90%;
+  }
+}
+
+@media @mobile {
+  /* confirm modal */
+  .confirm-modal .RowDialogBody {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+}

@@ -1,0 +1,105 @@
+/**
+ * WARNING: Do not change this file. Your changes will be lost.
+ * 2018-08-10 10:10:18 */
+
+    html, body { 
+        font-size: 13px; 
+        font-family: Open Sans;
+}
+.data-table button.button:hover > span,
+button.button span{
+    background-color:#62bb46;
+}
+button.button:hover span{
+}
+.data-table button.button:hover > span {border-color:}
+span.new-product-icon{
+}
+span.sale-product-icon{
+}
+.fixed-header .menu > li > a > span.cat-label.cat-label-label1, .main-nav .menu > li > a > span.cat-label.cat-label-label1,.fixed-header .menu > li .nav-sublist-dropdown ul li a > span > span.cat-label.cat-label-label1, .main-nav .menu > li .nav-sublist-dropdown ul li a > span > span.cat-label.cat-label-label1,div.mobile-nav .sw-mobile-menu li>a span.cat-label.cat-label-label1,.menu.side-menu li>a span.cat-label.cat-label-label1{
+}
+.fixed-header .menu > li > a > span.cat-label.cat-label-label2, .main-nav .menu > li > a > span.cat-label.cat-label-label2,.fixed-header .menu > li .nav-sublist-dropdown ul li a > span > span.cat-label.cat-label-label2, .main-nav .menu > li .nav-sublist-dropdown ul li a > span > span.cat-label.cat-label-label2,div.mobile-nav .sw-mobile-menu li>a span.cat-label.cat-label-label2,.menu.side-menu li>a span.cat-label.cat-label-label2{
+}
+.top-container >.breadcrumbs{background-color:#53b947}
+        .header a, .header-container.type8 .menu-icon a{
+        color:#53b947;
+        }
+    .header-container.type1 .main-nav ul.menu>li>a,
+.header-container.type2 .main-nav ul.menu>li>a,
+.header-container.type3 .main-nav ul.menu>li>a,
+.header-container.type19 .main-nav ul.menu>li>a,
+.header-container.type20 .main-nav ul.menu>li>a,
+.header-container.type21 .main-nav ul.menu>li>a,
+.header-container.type4 .main-nav ul.menu>li>a,
+.header-container.type5 .main-nav ul.menu>li>a,
+.header-container.type6 .main-nav ul.menu>li>a,
+.header-container.type22 .main-nav ul.menu>li>a,
+.header-container.type14 .main-nav ul.menu>li>a,
+.header-container.type7 .main-nav ul.menu>li>a,
+.header-container.type13 .main-nav ul.menu>li>a,
+.header-container.type26 .main-nav ul.menu>li>a,
+.header-container.type8 .main-nav ul.menu>li>a,
+.header-container.type9 .main-nav ul.menu>li>a,
+.header-container.type10 .main-nav ul.menu>li>a,
+.header-container.type28 .main-nav ul.menu>li>a,
+.header-container.type11 .main-nav ul.menu>li>a,
+.header-container.type23 .main-nav ul.menu>li>a,
+.header-container.type24 .main-nav ul.menu>li>a,
+.header-container.type12 .menu.side-menu>li>a,
+.header-container.header-newskin .menu.side-menu>li>a{
+    color:#53b947;
+}
+.header-container.type1 .main-nav ul.menu>li:hover,.header-container.type1 .main-nav ul.menu>li.act,
+.header-container.type2 .main-nav ul.menu>li:hover,.header-container.type2 .main-nav ul.menu>li.act,
+.header-container.type3 .main-nav ul.menu>li:hover,.header-container.type3 .main-nav ul.menu>li.act,
+.header-container.type19 .main-nav ul.menu>li:hover,.header-container.type19 .main-nav ul.menu>li.act,
+.header-container.type20 .main-nav ul.menu>li:hover,.header-container.type20 .main-nav ul.menu>li.act,
+.header-container.type21 .main-nav ul.menu>li:hover,.header-container.type21 .main-nav ul.menu>li.act,
+.header-container.type4 .main-nav ul.menu>li:hover,.header-container.type4 .main-nav ul.menu>li.act,
+.header-container.type5 .main-nav ul.menu>li:hover,.header-container.type5 .main-nav ul.menu>li.act,
+.header-container.type6 .main-nav ul.menu>li:hover,.header-container.type6 .main-nav ul.menu>li.act,
+.header-container.type22 .main-nav ul.menu>li:hover,.header-container.type22 .main-nav ul.menu>li.act,
+.header-container.type14 .main-nav ul.menu>li:hover,.header-container.type14 .main-nav ul.menu>li.act,
+.header-container.type7 .main-nav ul.menu>li:hover,.header-container.type7 .main-nav ul.menu>li.act,
+.header-container.type13 .main-nav ul.menu>li:hover,.header-container.type13 .main-nav ul.menu>li.act,
+.header-container.type26 .main-nav ul.menu>li:hover,.header-container.type26 .main-nav ul.menu>li.act,
+.header-container.type8 .main-nav ul.menu>li:hover,.header-container.type8 .main-nav ul.menu>li.act,
+.header-container.type9 .main-nav ul.menu>li:hover,.header-container.type9 .main-nav ul.menu>li.act,
+.header-container.type10 .main-nav ul.menu>li:hover,.header-container.type10 .main-nav ul.menu>li.act,
+.header-container.type11 .main-nav ul.menu>li:hover,.header-container.type11 .main-nav ul.menu>li.act,
+.header-container.type23 .main-nav ul.menu>li:hover,.header-container.type23 .main-nav ul.menu>li.act,
+.header-container.type24 .main-nav ul.menu>li:hover,.header-container.type24 .main-nav ul.menu>li.act,
+.header-container.header-newskin .main-nav ul.menu>li:hover,.header-container.header-newskin .main-nav ul.menu>li.act,
+.header-container.header-newskin .menu.side-menu>li:hover,.header-container.header-newskin .menu.side-menu>li.act,
+.header-container.type12 .menu.side-menu>li:hover,.header-container.type12 .menu.side-menu>li.act{
+    background-color:transparent;
+}
+.main-nav .menu>li.menu-full-width .nav-sublist-dropdown,.main-nav .menu>li.menu-static-width .nav-sublist-dropdown,.fixed-header .menu>li.menu-full-width .nav-sublist-dropdown,.fixed-header .menu>li.menu-static-width .nav-sublist-dropdown{
+    background-color:#53b947;
+}
+.main-nav .menu>li.menu-full-width .nav-sublist-dropdown a,.main-nav .menu>li.menu-static-width .nav-sublist-dropdown a,.fixed-header .menu>li.menu-full-width .nav-sublist-dropdown a,.fixed-header .menu>li.menu-static-width .nav-sublist-dropdown a{
+    color:#ffffff;
+}
+.footer-top{
+    background-color:#181818;
+}
+.footer-middle{
+    background-color:#e0eaf4;
+}
+.footer-middle, .footer-middle p, .footer-middle .contact-info i{
+    color:#484c4d;
+}
+.footer-middle-2{
+    background-color:#181818;
+}
+.footer-bottom{
+    background-color:#bac3cc;
+}
+.footer-bottom, .footer-bottom p{
+    color:#484c4d;
+}
+#totop{
+}
+#totop:hover{
+}

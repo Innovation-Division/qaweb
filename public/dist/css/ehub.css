@@ -1,0 +1,457 @@
+   /* Adjusted CSS Button Large */
+	.ehub-btn-lg-primary-default,
+	.ehub-btn-lg-primary-hover,
+	.ehub-btn-lg-primary-pressed,
+	.ehub-btn-lg-primary-disabled,
+	.ehub-btn-lg-secondary-default,
+	.ehub-btn-lg-secondary-hover,
+	.ehub-btn-lg-secondary-pressed,
+	.ehub-btn-lg-secondary-disabled,
+	.ehub-btn-lg-outline-hover{
+		width: 167px;
+		height: 48px;
+		border-radius: 12px;
+		color: #ffffff;
+		box-sizing: border-box;
+		position: absolute;
+		padding: 14px 16px;
+   }
+
+	.ehub-btn-lg-outline-default,
+	.ehub-btn-lg-outline-pressed,
+	.ehub-btn-lg-outline-disabled{
+	   width: 167px;
+	   height: 48px;
+	   border-radius: 12px;
+	   color: #008080;
+	   box-sizing: border-box;
+	   position: absolute;
+	   padding: 14px 16px;
+  }
+	.ehub-btn-lg-text-default,
+	.ehub-btn-lg-text-hover,
+	.ehub-btn-lg-text-pressed,
+	.ehub-btn-lg-text-disabled{
+		width: 167px;
+		height: 48px;
+		border-radius: 12px;
+		color: #008080;
+		box-sizing: border-box;
+		position: absolute;
+		border: 1px solid #ffffff;
+		background-color: #ffffff;
+		padding: 14px 16px;
+	}
+
+	
+	/* Primary Button Large */
+	.ehub-btn-lg-primary-default{
+		border: 1px solid #008080;
+		background-color: #008080;
+	}
+
+	.ehub-btn-lg-primary-hover{
+		border: 1px solid #4DBDBD;
+		background-color: #4DBDBD;
+
+	}
+
+	.ehub-btn-lg-primary-pressed{
+		border: 1px solid #006666;
+		background: #006666;
+
+	}
+
+	.ehub-btn-lg-primary-disabled{
+		border: 1px solid #B6DBDB;
+		background: #B6DBDB;
+	}
+
+
+	/* Secondary Button Large*/
+	.ehub-btn-lg-secondary-default{
+		background: #60B3B3;
+		border: 1px solid #60B3B3;
+	}
+
+	.ehub-btn-lg-secondary-hover{
+		background: #008080;
+		border: 1px solid #008080;
+	}
+
+	.ehub-btn-lg-secondary-pressed{
+		background: #006666;
+		border: 1px solid #006666;
+	}
+	.ehub-btn-lg-secondary-disabled{
+		background: #E0F5F5;
+		border: 1px solid #E0F5F5;
+	}
+
+	/*  Outline Button Large */ 
+	.ehub-btn-lg-outline-default{
+		border: 1px solid #008080,
+	}
+
+	.ehub-btn-lg-outline-hover{
+		background: #008080;
+	}
+
+	.ehub-btn-lg-outline-pressed{
+		background: #E0F5F5;
+		border: 1px solid #008080
+
+	}
+	.ehub-btn-lg-outline-disabled{
+		border: 1px solid #B6DBDB
+	}
+
+	/* Adjusted CSS Button Medium */
+	.ehub-btn-md-primary-default,
+	.ehub-btn-md-primary-hover,
+	.ehub-btn-md-primary-pressed,
+	.ehub-btn-md-primary-disabled,
+	.ehub-btn-md-secondary-default,
+	.ehub-btn-md-secondary-hover,
+	.ehub-btn-md-secondary-pressed,
+	.ehub-btn-md-secondary-disabled{
+		width: 167px;
+		height: 44px;
+		border-radius: 12px;
+		color: #ffffff;
+		box-sizing: border-box;
+		position: absolute;
+		padding: 12px 16px;
+	}
+
+	.ehub-btn-md-primary-default,
+	.ehub-btn-md-primary-hover,
+	.ehub-btn-md-primary-pressed,
+	.ehub-btn-md-primary-disabled,
+	.ehub-btn-md-secondary-default,
+	.ehub-btn-md-secondary-hover,
+	.ehub-btn-md-secondary-pressed,
+	.ehub-btn-md-secondary-disabled,
+	.ehub-btn-md-outline-hover{
+		width: 167px;
+		height: 44px;
+		border-radius: 12px;
+		color: #ffffff;
+		box-sizing: border-box;
+		position: absolute;
+		padding: 12px 16px;
+	}
+
+	.ehub-btn-md-outline-default,
+	.ehub-btn-md-outline-pressed,
+	.ehub-btn-md-outline-disabled{
+	   width: 167px;
+	   height: 44px;
+	   border-radius: 12px;
+	   color: #008080;
+	   box-sizing: border-box;
+	   position: absolute;
+	   padding: 12px 16px;
+  	}
+	.ehub-btn-md-text-default,
+	.ehub-btn-md-text-hover,
+	.ehub-btn-md-text-pressed,
+	.ehub-btn-md-text-disabled{
+		width: 167px;
+		height: 44px;
+		border-radius: 12px;
+		color: #008080;
+		box-sizing: border-box;
+		position: absolute;
+		border: 1px solid #ffffff;
+		background-color: #ffffff;
+		padding: 12px 16px;
+	}
+
+	/* Primary Button MEDIUM */
+	.ehub-btn-md-primary-default{
+		background: #008080;
+		border: 1px solid #008080;
+	}
+
+	.ehub-btn-md-primary-hover{
+		background: #4DBDBD;
+		border: 1px solid #4DBDBD;
+	}
+
+	.ehub-btn-md-primary-pressed{
+		background: #006666;
+		border: 1px solid #006666;
+	}
+
+	.ehub-btn-md-primary-disabled{
+		background: #B6DBDB;
+		border: 1px solid #B6DBDB;
+	}
+
+
+	/* Secondary Button Medium*/
+	.ehub-btn-md-secondary-default{
+		background: #60B3B3;
+		border: 1px solid #60B3B3;
+	}
+
+	.ehub-btn-md-secondary-hover{
+		background: #008080;
+		border: 1px solid #008080;
+	}
+
+	.ehub-btn-md-secondary-pressed{
+		background: #006666;
+		border: 1px solid #006666;
+
+	}
+
+	.ehub-btn-md-secondary-disabled{
+		background: #E0F5F5;
+		border: 1px solid #E0F5F5;
+
+	}
+
+	/*  Outline Button Medium */ 
+	.ehub-btn-md-outline-default{
+		border: 1px solid #008080
+	}
+
+	.ehub-btn-md-outline-hover{
+		background: #008080;
+	}
+
+	.ehub-btn-md-outline-pressed{
+		background: #E0F5F5;
+
+	}
+
+	.ehub-btn-md-outline-disabled{
+		border: 1px solid #B6DBDB
+
+	}
+
+	/* Adjusted CSS Button SMALL */
+	.ehub-btn-sm-primary-default,
+	.ehub-btn-sm-primary-hover,
+	.ehub-btn-sm-primary-pressed,
+	.ehub-btn-sm-primary-disabled,
+	.ehub-btn-sm-secondary-default,
+	.ehub-btn-sm-secondary-hover,
+	.ehub-btn-sm-secondary-pressed,
+	.ehub-btn-sm-secondary-disabled,
+	.ehub-btn-sm-outline-hover{
+		width: 167px;
+		height: 40px;
+		border-radius: 12px;
+		color: #ffffff;
+		box-sizing: border-box;
+		position: absolute;
+		padding: 10px 12px;
+	}
+
+	.ehub-btn-sm-outline-default,
+	.ehub-btn-sm-outline-pressed,
+	.ehub-btn-sm-outline-disabled{
+		width: 167px;
+		height: 40px;
+		border-radius: 12px;
+		color: #008080;
+		box-sizing: border-box;
+		position: absolute;
+		padding: 10px 12px;
+	}
+	.ehub-btn-sm-text-default,
+	.ehub-btn-sm-text-hover,
+	.ehub-btn-sm-text-pressed,
+	.ehub-btn-sm-text-disabled{
+		width: 167px;
+		height: 40px;
+		border-radius: 12px;
+		color: #008080;
+		box-sizing: border-box;
+		position: absolute;
+		border: 1px solid #ffffff;
+		background-color: #ffffff;
+		padding: 10px 12px;
+	}
+
+	/* Primary Button Small */
+
+	.ehub-btn-sm-primary-default{
+		background: #008080;
+		border: 1px solid #008080;
+	}
+
+	.ehub-btn-sm-primary-hover{
+		background: #4DBDBD;
+		border: 1px solid #4DBDBD;
+
+	}
+
+	.ehub-btn-sm-primary-pressed{
+		background: #006666;
+		border: 1px solid #006666;
+
+	}
+
+	.ehub-btn-sm-primary-disabled{
+		background: #B6DBDB;
+		border: 1px solid #B6DBDB;
+	}
+
+	/* Secondary Button Small*/
+
+	.ehub-btn-sm-secondary-default{
+		background: #60B3B3;
+		border: 1px solid #60B3B3;
+
+	}
+
+	.ehub-btn-sm-secondary-hover{
+		background: #008080;
+		border: 1px solid #008080;
+	}
+
+	.ehub-btn-sm-secondary-pressed{
+		background: #006666;
+		border: 1px solid #006666;
+
+	}
+
+	.ehub-btn-sm-secondary-disabled{
+		background: #E0F5F5;
+		border: 1px solid #E0F5F5;
+
+	}
+
+	/*  Outline Button Small */ 
+	.ehub-btn-sm-outline-default{
+		border: 1px solid #008080
+	}
+
+	.ehub-btn-sm-outline-hover{
+		background: #008080;
+	}
+
+	.ehub-btn-sm-outline-pressed{
+		background: #E0F5F5;
+	}
+
+	.ehub-btn-sm-outline-disabled{
+		border: 1px solid #B6DBDB
+
+	}
+
+	
+	/* Adjusted CSS Button SMALL */
+	.ehub-btn-xs-primary-default,
+	.ehub-btn-xs-primary-hover,
+	.ehub-btn-xs-primary-pressed,
+	.ehub-btn-xs-primary-disabled,
+	.ehub-btn-xs-secondary-default,
+	.ehub-btn-xs-secondary-hover,
+	.ehub-btn-xs-secondary-pressed,
+	.ehub-btn-xs-secondary-disabled,
+	.ehub-btn-xs-outline-hover{
+		width: 167px;
+		height: 32px;
+		border-radius: 24px;
+		color: #ffffff;
+		box-sizing: border-box;
+		position: absolute;
+		padding: 6px 12px;
+	}
+
+	.ehub-btn-xs-outline-default,
+	.ehub-btn-xs-outline-pressed,
+	.ehub-btn-xs-outline-disabled{
+		width: 167px;
+		height: 32px;
+		border-radius: 24px;
+		color: #008080;
+		box-sizing: border-box;
+		position: absolute;
+		padding: 6px 12px;
+	}
+	.ehub-btn-xs-text-default,
+	.ehub-btn-xs-text-hover,
+	.ehub-btn-xs-text-pressed,
+	.ehub-btn-xs-text-disabled{
+		width: 167px;
+		height: 32px;
+		border-radius: 24px;
+		color: #008080;
+		box-sizing: border-box;
+		position: absolute;
+		border: 1px solid #ffffff;
+		background-color: #ffffff;
+		padding: 6px 12px;
+	}
+	
+
+	/* Primary Button Extra Small */
+	.ehub-btn-xs-primary-default{
+		background: #008080;
+		border: 1px solid #008080;
+	}
+
+	.ehub-btn-xs-primary-hover{
+		background: #4DBDBD;
+		border: 1px solid #4DBDBD;
+	}
+
+	.ehub-btn-xs-primary-pressed{
+		background: #006666;
+		border: 1px solid #006666;
+	}
+
+	.ehub-btn-xs-primary-disabled{
+		background: #B6DBDB;
+		border: 1px solid #B6DBDB;
+	}
+
+
+	/* Secondary  Button Extra Small */
+	.ehub-btn-xs-secondary-default{
+		background: #60B3B3;
+		border: 1px solid #60B3B3;
+
+	}
+
+	.ehub-btn-xs-secondary-hover{
+		background: #008080;
+		border: 1px solid #008080;
+
+	}
+
+	.ehub-btn-xs-secondary-pressed{
+		background: #006666;
+		border: 1px solid #006666;
+
+	}
+
+	.ehub-btn-xs-secondary-disabled{
+		background: #E0F5F5;
+		border: 1px solid #E0F5F5;
+	}
+
+
+	/*  Outline Button Extra Small */ 
+	.ehub-btn-xs-outline-default{
+		border: 1px solid #008080
+	}
+
+	.ehub-btn-xs-outline-hover{
+		background: #008080;
+	}
+
+	.ehub-btn-xs-outline-pressed{
+		background: #E0F5F5;
+	}
+	.ehub-btn-xs-outline-disabled{
+		border: 1px solid #B6DBDB
+	}
+ 
+

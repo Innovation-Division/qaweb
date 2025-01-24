@@ -1,0 +1,64 @@
+/* ==========================================================================
+   FEEDBACK CHAT
+   ========================================================================== */
+   .pop-up-chat2 {
+    position: fixed;
+    bottom:0;
+    right: 21%;
+    min-width: 280px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    z-index: 2;
+  }
+
+  .pop-up-chat2.show {
+    bottom:0 !important;
+  }
+
+  .chat-header2 {
+    background: #53b947;
+    -webkit-border-radius: 10px 10px 0 0;
+    border-radius: 10px 10px 0 0;
+    -webkit-box-shadow:inset 0 0 10px 0 rgba(254,254,254,0.3);
+    box-shadow:inset 0 0 10px 0 rgba(254,254,254,0.3);
+    padding: 10px;
+    cursor: pointer;
+    text-align: left;
+  }
+
+  .chat-header2 span {
+    color: #fff;
+    display: inline-block;
+  }
+
+  .chat-header2 > div {
+    display: inline-block;
+  }
+
+  .chat-header2 .icons {
+    float: right;
+  }
+
+  .chat-header2 .icons > span {
+    font-size: 1.3rem;
+  }
+
+  .chat-header2 .title span {
+    font-size: 1rem;
+    margin-right: 5px;
+  }
+
+  .chat-header2 .title span:not(.fa) {
+    text-transform: uppercase;
+    font: 60
+
+    display: block;
+  }
+
+  .chat-body2 span img{
+    width: 100%;
+    display: block !important;
+  }

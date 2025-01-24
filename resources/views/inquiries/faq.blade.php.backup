@@ -1,0 +1,119 @@
+@extends('layouts.app')
+
+@section('content')
+	<div class="top-container">
+            <!-- config enabled always -->
+            <div class="custom-banner custom-page-banner" data-uri-path="/inquiries/faqs">
+                <div class="page-banner-wrapper">
+                    <div class="image-banner-wrapper" style="background-image: url('{{ url('/images/ucpb-general-insurance-faq-philippines_1.png') }}');">  url('');">
+                    </div>
+                    <div class="text-banner-wrapper">
+                        <h3 class="short-description">
+                           Answers to your frequently asked questions.
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <div class="breadcrumbs">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 a-left">
+                            <ul>
+                                <li class="home"><a href="{{ url('/') }}" title="Go to Home Page">Home</a>
+                                    <span class="breadcrumbs-split"><i class="icon-keyboard_arrow_right"></i></span>
+                                </li>
+                                <li class="category40"><a href="{{ url('/inquiries') }}" title="">Inquiries</a>
+                                    <span class="breadcrumbs-split"><i class="icon-keyboard_arrow_right"></i></span>
+                                </li>
+                                <li class="category41"><strong>FAQs</strong> </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="category-name container">
+                <h1>
+                    FAQs
+                </h1>
+            </div>
+            <div class="category-banner container">
+                Your most commonly asked questions answered
+            </div>
+        </div>
+
+    <div class="main-container col1-layout">
+            <div class="main container">
+                <div class="col-main">
+                	   <div class="page-title category-title">
+                        <h1>
+                            FAQs</h1>
+                    </div>
+                    <div class="row" style="font-family: muli;">
+                        <div class="col-md-12">
+                            <div class="sort-by show">
+                                <label for="faq-list">
+                                    Filter By: &nbsp;&nbsp;</label><select id="faq-list" >
+                                        <option selected="selected" value="all">All</option>
+                                            @foreach($cocogen_admin_faq_category as $cocogen_admin_faq_categorysfilter)
+                                                <option value="faqs-{{$cocogen_admin_faq_categorysfilter->name}}">{{$cocogen_admin_faq_categorysfilter->name}}</option>
+                                            @endforeach
+                                        </select></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                                <div class="faq-list">
+                                    <div class="container">
+
+                                        @foreach($cocogen_admin_faq_category as $cocogen_admin_faq_categorys)
+                                            <div data-faqs="faqs-{{$cocogen_admin_faq_categorys->name}}">
+                                                <div class="faq-title">
+                                                    <h2>
+                                                        {{$cocogen_admin_faq_categorys->name}}</h2>
+                                                </div>
+                                                @foreach($cocogen_admin_faq as $cocogen_admin_faqs)
+                                                    @if($cocogen_admin_faq_categorys->id === (int)$cocogen_admin_faqs->categoryID)
+                                                <div class="faq-item">
+                                                    <div class="panel panel-default">
+                                                        <div class="panel-heading">
+                                                            <h2 class="panel-title">
+                                                                <a class="collapsed" href="#faq{{$cocogen_admin_faqs->id}}" data-toggle="collapse" data-parent="#accordion"
+                                                                    aria-expanded="false">{{$cocogen_admin_faqs->question}}</a></h2>
+                                                        </div>
+                                                        <div class="panel-collapse collapse" id="faq{{$cocogen_admin_faqs->id}}" style="height: 0px;" aria-expanded="false">
+                                                            <div class="panel-body">
+                                                                <ul style="list-style: disc; padding: 0 0 0 30px; line-height: normal;">
+                                                                    <p>{!!$cocogen_admin_faqs->answer!!}</p>
+
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                    @endif
+                                                @endforeach
+                                            </div>
+                                        @endforeach
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+             </div>
+     </div>
+     <script type="text/javascript">
+         jQuery( "#faq-list" ).change(function() {
+              var selectedEventType = this.options[this.selectedIndex].value
+              if (selectedEventType == "all") {
+                jQuery('.container div').removeClass('hidden');
+              } else {
+                // alert(selectedEventType);
+                <?php foreach ($cocogen_admin_faq_category as $cocogen_admin_faq_categoryshide) { ?>
+                        jQuery('.container div[data-faqs="faqs-{{$cocogen_admin_faq_categoryshide->name}}"]').addClass('hidden');
+                <?php } ?>
+                jQuery('.container div[data-faqs="' + selectedEventType + '"]').removeClass('hidden');
+              }
+            });
+     </script>
+@endsection

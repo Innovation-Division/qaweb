@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <title>Cocogen Insurance</title>
+
+        <link rel="icon" href="assets/img/favicon.ico" type="image/x-ico" />
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+        <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
+        <link rel="stylesheet/less" type="text/css" href="assets/css/products.less" />
+
+        <!-- DEV MODE -->
+        <script src="https://cdn.jsdelivr.net/npm/less@4.1.1" data-env="development"></script>
+        <script>
+            less.watch();
+        </script>
+        <!-- -->
+    </head>
+
+    <body>
+        <div class="product">
+            <section class="sticky d-flex align-items-center justify-content-center" id="know-more-sticky">
+                <div>
+                    <p class="mb-0 fs-6 d-block d-xl-inline-block align-middle fst-italic text-center text-xl-center">Want to know more? We can help you find the best insurance for you based on your needs.</p>
+                    <div class="d-block d-xl-inline-block ms-3 mt-3 mt-xl-0 align-middle text-center">
+                        <button class="btn btn-secondary-inverted" href="#" data-bs-toggle="modal" data-bs-target="#inquiry-modal">Inquire Now</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="breadcrumbs">
+                <img class="breadcrumbBanner" src="assets/img/breadcrumbs/products.png" alt="excel plus banner" />
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-12">
+                            <div class="row justify-content-center">
+                                <div class="col-12">
+                                    <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
+                                        <ol class="breadcrumb">
+                                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                            <li class="breadcrumb-item"><a href="#">Products</a></li>
+                                            <li class="breadcrumb-item"><a href="#">Excel Plus Packages</a></li>
+                                            <li class="breadcrumb-item" aria-current="page">Travel Excel Plus</li>
+                                        </ol>
+                                    </nav>
+                                </div>
+                                <div class="col-xs-12 align-self-end">
+                                    <h1 class="pageTitle">Travel Excel Plus</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="know-more" id="know-more">
+                <div class="container">
+                    <div class="know-more-content">
+                        <div class="card">
+                            <div class="card-icon d-flex justify-content-center align-items-center">
+                                <div class="image-container text-center">
+                                    <img src="assets/img/homeExcelPlus_green.svg" alt="home icon" />
+                                </div>
+                            </div>
+                            <div class="card-body d-flex">
+                                <p class="card-text mb-0 fs-6">
+                                    <span class="fs-5">Pack your bags and get ready to go.</span>
+                                    Cocogen Travel Excel Plus Insurance is your best travel buddy for a smooth business or leisure trip.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card-attachment justify-content-center align-items-center">
+                            <div class="text-center">
+                                <div>
+                                    <h6>Want to know more?</h6>
+                                </div>
+                                <p>We can help you find the best insurance cover for you based on your needs.</p>
+                                <div>
+                                    <a href="#" class="btn btn-secondary buttonInquire" data-bs-toggle="modal" data-bs-target="#inquiry-modal">Inquire Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="productInfo">
+                <div class="container">
+                    <div class="content">
+                        <div>
+                            <h6 class="mb-5">When you're traveling out of the country, you can explore your destination with complete protection benefits and get coverage for:</h6>
+                            <div class="contentGroup">
+                                <ul class="listChecklist listCol">
+                                    <li>
+                                        <span class="fw-lighter fs-6">Personal Accident</span>
+                                    </li>
+                                    <li>
+                                        <span class="fw-lighter fs-6">Personal Liability</span>
+                                    </li>
+                                    <li><span class="fw-lighter fs-6">Medical Expenses</span></li>
+                                    <li><span class="fw-lighter fs-6">Travel Assistance Service</span></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="mb-4">
+                            <h6 class="mb-2">International</h6>
+                            <p class="fw-lighter fs-3">Select the package that suits your protection with different amounts of coverage limit.</p>
+
+                            <div class="contentGroup">
+                                <div class="miniCards">
+                                    <div class="miniCard align-items-center">
+                                        <svg id="list" data-name="list" xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34">
+                                            <g id="Ellipse_254" data-name="Ellipse 254" fill="#fff" stroke="#007a70" stroke-width="3">
+                                                <circle cx="17" cy="17" r="17" stroke="none" />
+                                                <circle cx="17" cy="17" r="15.5" fill="none" />
+                                            </g>
+                                            <line id="Line_189" data-name="Line 189" x2="14" transform="translate(10 11)" fill="none" stroke="#007a70" stroke-linecap="round" stroke-width="3" />
+                                            <line id="Line_190" data-name="Line 190" x2="14" transform="translate(10 16.5)" fill="none" stroke="#007a70" stroke-linecap="round" stroke-width="3" />
+                                            <line id="Line_191" data-name="Line 191" x2="8" transform="translate(10 22)" fill="none" stroke="#007a70" stroke-linecap="round" stroke-width="3" />
+                                            <rect id="Rectangle_1105" data-name="Rectangle 1105" width="13" height="14" transform="translate(21 20)" fill="#fff" />
+                                            <g id="list" data-name="Group 463" transform="translate(22.389 21.5)">
+                                                <line id="Line_192" data-name="Line 192" x2="10" transform="translate(0 4.889)" fill="none" stroke="#007a70" stroke-linecap="round" stroke-width="3" />
+                                                <line id="Line_193" data-name="Line 193" x2="9.778" transform="translate(5) rotate(90)" fill="none" stroke="#007a70" stroke-linecap="round" stroke-width="3" />
+                                            </g>
+                                        </svg>
+
+                                        <p>Economy</p>
+                                    </div>
+                                    <div class="miniCard align-items-center">
+                                        <svg id="list" data-name="list" xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34">
+                                            <g id="Ellipse_254" data-name="Ellipse 254" fill="#fff" stroke="#007a70" stroke-width="3">
+                                                <circle cx="17" cy="17" r="17" stroke="none" />
+                                                <circle cx="17" cy="17" r="15.5" fill="none" />
+                                            </g>
+                                            <line id="Line_189" data-name="Line 189" x2="14" transform="translate(10 11)" fill="none" stroke="#007a70" stroke-linecap="round" stroke-width="3" />
+                                            <line id="Line_190" data-name="Line 190" x2="14" transform="translate(10 16.5)" fill="none" stroke="#007a70" stroke-linecap="round" stroke-width="3" />
+                                            <line id="Line_191" data-name="Line 191" x2="8" transform="translate(10 22)" fill="none" stroke="#007a70" stroke-linecap="round" stroke-width="3" />
+                                            <rect id="Rectangle_1105" data-name="Rectangle 1105" width="13" height="14" transform="translate(21 20)" fill="#fff" />
+                                            <g id="list" data-name="Group 463" transform="translate(22.389 21.5)">
+                                                <line id="Line_192" data-name="Line 192" x2="10" transform="translate(0 4.889)" fill="none" stroke="#007a70" stroke-linecap="round" stroke-width="3" />
+                                                <line id="Line_193" data-name="Line 193" x2="9.778" transform="translate(5) rotate(90)" fill="none" stroke="#007a70" stroke-linecap="round" stroke-width="3" />
+                                            </g>
+                                        </svg>
+
+                                        <p>Esteem</p>
+                                    </div>
+                                    <div class="miniCard align-items-center">
+                                        <svg id="list" data-name="list" xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34">
+                                            <g id="Ellipse_254" data-name="Ellipse 254" fill="#fff" stroke="#007a70" stroke-width="3">
+                                                <circle cx="17" cy="17" r="17" stroke="none" />
+                                                <circle cx="17" cy="17" r="15.5" fill="none" />
+                                            </g>
+                                            <line id="Line_189" data-name="Line 189" x2="14" transform="translate(10 11)" fill="none" stroke="#007a70" stroke-linecap="round" stroke-width="3" />
+                                            <line id="Line_190" data-name="Line 190" x2="14" transform="translate(10 16.5)" fill="none" stroke="#007a70" stroke-linecap="round" stroke-width="3" />
+                                            <line id="Line_191" data-name="Line 191" x2="8" transform="translate(10 22)" fill="none" stroke="#007a70" stroke-linecap="round" stroke-width="3" />
+                                            <rect id="Rectangle_1105" data-name="Rectangle 1105" width="13" height="14" transform="translate(21 20)" fill="#fff" />
+                                            <g id="list" data-name="Group 463" transform="translate(22.389 21.5)">
+                                                <line id="Line_192" data-name="Line 192" x2="10" transform="translate(0 4.889)" fill="none" stroke="#007a70" stroke-linecap="round" stroke-width="3" />
+                                                <line id="Line_193" data-name="Line 193" x2="9.778" transform="translate(5) rotate(90)" fill="none" stroke="#007a70" stroke-linecap="round" stroke-width="3" />
+                                            </g>
+                                        </svg>
+
+                                        <p>Executive</p>
+                                    </div>
+                                    <div class="miniCard align-items-center">
+                                        <svg id="list" data-name="list" xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34">
+                                            <g id="Ellipse_254" data-name="Ellipse 254" fill="#fff" stroke="#007a70" stroke-width="3">
+                                                <circle cx="17" cy="17" r="17" stroke="none" />
+                                                <circle cx="17" cy="17" r="15.5" fill="none" />
+                                            </g>
+                                            <line id="Line_189" data-name="Line 189" x2="14" transform="translate(10 11)" fill="none" stroke="#007a70" stroke-linecap="round" stroke-width="3" />
+                                            <line id="Line_190" data-name="Line 190" x2="14" transform="translate(10 16.5)" fill="none" stroke="#007a70" stroke-linecap="round" stroke-width="3" />
+                                            <line id="Line_191" data-name="Line 191" x2="8" transform="translate(10 22)" fill="none" stroke="#007a70" stroke-linecap="round" stroke-width="3" />
+                                            <rect id="Rectangle_1105" data-name="Rectangle 1105" width="13" height="14" transform="translate(21 20)" fill="#fff" />
+                                            <g id="list" data-name="Group 463" transform="translate(22.389 21.5)">
+                                                <line id="Line_192" data-name="Line 192" x2="10" transform="translate(0 4.889)" fill="none" stroke="#007a70" stroke-linecap="round" stroke-width="3" />
+                                                <line id="Line_193" data-name="Line 193" x2="9.778" transform="translate(5) rotate(90)" fill="none" stroke="#007a70" stroke-linecap="round" stroke-width="3" />
+                                            </g>
+                                        </svg>
+
+                                        <p>Elite</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h6>Travel Assistance Services</h6>
+                            <div class="contentGroup">
+                                <ul class="listChecklist listCol">
+                                    <li>
+                                        <span class="fw-lighter fs-6">Hospital Cash Income</span>
+                                    </li>
+                                    <li>
+                                        <span class="fw-lighter fs-6">Emergency Dental Care</span>
+                                    </li>
+                                    <li>
+                                        <span class="fw-lighter fs-6">Delivery of Medicines</span>
+                                    </li>
+                                    <li>
+                                        <span class="fw-lighter fs-6">Medical Referral/ Appointment of Local Medical Specialist</span>
+                                    </li>
+                                    <li>
+                                        <span class="fw-lighter fs-6">Long Distance Medical Information Service</span>
+                                    </li>
+                                    <li>
+                                        <span class="fw-lighter fs-6">Transport or Repatriation in case of Illness or Accident</span>
+                                    </li>
+                                    <li>
+                                        <span class="fw-lighter fs-6">Repatriation of a Family Member Traveling with the Insured</span>
+                                    </li>
+                                    <li>
+                                        <span class="fw-lighter fs-6">Repatriation of Mortal Remains</span>
+                                    </li>
+                                    <li>
+                                        <span class="fw-lighter fs-6">Escort of Dependent Child</span>
+                                    </li>
+                                    <li>
+                                        <span class="fw-lighter fs-6">Travel of One Immediate Family Member</span>
+                                    </li>
+                                    <li>
+                                        <span class="fw-lighter fs-6">Emergency Return Home following Death of a Close Family Member</span>
+                                    </li>
+                                    <li>
+                                        <span class="fw-lighter fs-6">Relay of Urgent Messages</span>
+                                    </li>
+                                    <li>
+                                        <span class="fw-lighter fs-6">Connection services</span>
+                                    </li>
+                                    <li>
+                                        <span class="fw-lighter fs-6">Advance of Bail Bond</span>
+                                    </li>
+                                    <li>
+                                        <span class="fw-lighter fs-6">Trip Cancellation</span>
+                                    </li>
+                                    <li>
+                                        <span class="fw-lighter fs-6">Delayed Departure</span>
+                                    </li>
+                                    <li>
+                                        <span class="fw-lighter fs-6">Flight Misconnection</span>
+                                    </li>
+                                    <li>
+                                        <span class="fw-lighter fs-6">Flight Diversion</span>
+                                    </li>
+                                    <li>
+                                        <span class="fw-lighter fs-6">Baggage Delay</span>
+                                    </li>
+                                    <li>
+                                        <span class="fw-lighter fs-6">Compensation for In-flight Loss and/ or Damage of Checked-in Baggage</span>
+                                    </li>
+                                    <li>
+                                        <span class="fw-lighter fs-6">Loss or Stolen Baggage/ Personal Belongings Not Checked-in</span>
+                                    </li>
+                                    <li>
+                                        <span class="fw-lighter fs-6">Location and Forwarding of Baggage and Personal Effects</span>
+                                    </li>
+                                    <li>
+                                        <span class="fw-lighter fs-6">Loss of Personal Money</span>
+                                    </li>
+                                    <li>
+                                        <span class="fw-lighter fs-6">Loss of Passport, Driving License, National Identity Card Abroad</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h6>Cruise Surcharge</h6>
+                            <p class="fw-lighter fs-3 my-0">Optional coverage for international travel.</p>
+
+                            <div class="contentGroup">
+                                <p class="fw-bold px-0 my-0">Benefits</p>
+                                <ul class="listChecklist listCol">
+                                    <li>
+                                        <span class="fw-lighter fs-6">Emergency Medical Repatriation</span>
+                                    </li>
+                                    <li>
+                                        <span class="fw-lighter fs-6">Repatriation of Mortal Remains</span>
+                                    </li>
+                                    <li>
+                                        <span class="fw-lighter fs-6">Emergency Medical Expense (including confinement)</span>
+                                    </li>
+                                    <li>
+                                        <span class="fw-lighter fs-6">Cruise Cancellation</span>
+                                    </li>
+                                    <li>
+                                        <span class="fw-lighter fs-6">Cruise Curtailment</span>
+                                    </li>
+                                    <li>
+                                        <span class="fw-lighter fs-6">Cruise Delays (exclduing technical failures, poor weather conditions and Acts of Nature)</span>
+                                    </li>
+                                    <li>
+                                        <span class="fw-lighter fs-6">Baggage Loss/ Damage of Personal Baggage/ Property (cabin checked-in items only)</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h6>COVID-19 Coverage</h6>
+                            <p class="fw-lighter fs-3">Cocogen Travel Excel Plus now offers COVID-19 coverage for international trips:</p>
+
+                            <div class="contentGroup">
+                                <div class="miniCards">
+                                    <div class="miniCard align-items-center">
+                                        <svg id="list" data-name="list" xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34">
+                                            <g id="Ellipse_254" data-name="Ellipse 254" fill="#fff" stroke="#007a70" stroke-width="3">
+                                                <circle cx="17" cy="17" r="17" stroke="none" />
+                                                <circle cx="17" cy="17" r="15.5" fill="none" />
+                                            </g>
+                                            <line id="Line_189" data-name="Line 189" x2="14" transform="translate(10 11)" fill="none" stroke="#007a70" stroke-linecap="round" stroke-width="3" />
+                                            <line id="Line_190" data-name="Line 190" x2="14" transform="translate(10 16.5)" fill="none" stroke="#007a70" stroke-linecap="round" stroke-width="3" />
+                                            <line id="Line_191" data-name="Line 191" x2="8" transform="translate(10 22)" fill="none" stroke="#007a70" stroke-linecap="round" stroke-width="3" />
+                                            <rect id="Rectangle_1105" data-name="Rectangle 1105" width="13" height="14" transform="translate(21 20)" fill="#fff" />
+                                            <g id="list" data-name="Group 463" transform="translate(22.389 21.5)">
+                                                <line id="Line_192" data-name="Line 192" x2="10" transform="translate(0 4.889)" fill="none" stroke="#007a70" stroke-linecap="round" stroke-width="3" />
+                                                <line id="Line_193" data-name="Line 193" x2="9.778" transform="translate(5) rotate(90)" fill="none" stroke="#007a70" stroke-linecap="round" stroke-width="3" />
+                                            </g>
+                                        </svg>
+
+                                        <p>Medical Expense and Hospitalization</p>
+                                    </div>
+                                    <div class="miniCard align-items-center">
+                                        <svg id="list" data-name="list" xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34">
+                                            <g id="Ellipse_254" data-name="Ellipse 254" fill="#fff" stroke="#007a70" stroke-width="3">
+                                                <circle cx="17" cy="17" r="17" stroke="none" />
+                                                <circle cx="17" cy="17" r="15.5" fill="none" />
+                                            </g>
+                                            <line id="Line_189" data-name="Line 189" x2="14" transform="translate(10 11)" fill="none" stroke="#007a70" stroke-linecap="round" stroke-width="3" />
+                                            <line id="Line_190" data-name="Line 190" x2="14" transform="translate(10 16.5)" fill="none" stroke="#007a70" stroke-linecap="round" stroke-width="3" />
+                                            <line id="Line_191" data-name="Line 191" x2="8" transform="translate(10 22)" fill="none" stroke="#007a70" stroke-linecap="round" stroke-width="3" />
+                                            <rect id="Rectangle_1105" data-name="Rectangle 1105" width="13" height="14" transform="translate(21 20)" fill="#fff" />
+                                            <g id="list" data-name="Group 463" transform="translate(22.389 21.5)">
+                                                <line id="Line_192" data-name="Line 192" x2="10" transform="translate(0 4.889)" fill="none" stroke="#007a70" stroke-linecap="round" stroke-width="3" />
+                                                <line id="Line_193" data-name="Line 193" x2="9.778" transform="translate(5) rotate(90)" fill="none" stroke="#007a70" stroke-linecap="round" stroke-width="3" />
+                                            </g>
+                                        </svg>
+
+                                        <p>Transport and Repatriation in case of Illness.</p>
+                                    </div>
+                                </div>
+
+                                <p class="fw-lighter px-0 mt-3 mb-0 fs-3">All benefits apply if caused by COVID-19. Coverage is effective for 15 days only from the date of departure.</p>
+
+                                <ul class="listInfo">
+                                    <li class="listItemBordered mt-0">
+                                        <p class="ps-0 fs-4 my-0 fw-bold">Conditions</p>
+                                        <ul class="listArrow ps-4">
+                                            <li class="ms-0 mt-2"><span class="fw-lighter fs-6">Age Limit Based on selected Travel Excel Plan</span></li>
+                                            <li class="ms-0 mt-2"><span class="fw-lighter fs-6">Applicant must present negative test result of valid RT-PCR COVID-19, administered within seventy-two (72) hours before initial actual departure from the Philippines.</span></li>
+                                            <li class="ms-0 mt-2"><span class="fw-lighter fs-6">COVID-19 RT-PCR test must have been administered by any of the Department of Health (DOH) authorized and licensed laboratory, clinics, hospitals, and medical facilities.</span></li>
+                                            <li class="ms-0 mt-2"><span class="fw-lighter fs-6">Applicant should not be a confirmed positive (asymptomatic or symptomatic), suspected, or probably case of COVID-19 at the time of the application. </span></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="footnote">If you want to know more about Travel Excel Plus, visit our <a href="#" class="text-color-secondary">FAQs</a> page.</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="divider">
+                <img src="assets/img/wave-lines.svg" alt="divider" />
+            </section>
+
+            <section class="productSelection relatedProducts">
+                <div class="container">
+                    <div class="row justify-content-center align-items-center">
+                        <div class="col-xs-12 justify-content-center align-items-center">
+                            <div class="text-center">
+                                <h2>Related Products</h2>
+                            </div>
+                            <div class="row justify-content-center">
+                                <div class="col-sm-12 col-md-6 col-lg-3 justify-content-center">
+                                    <div class="card productSelectionItem">
+                                        <div class="cardIconLabel d-flex text-center justify-content-center align-items-center">
+                                            <img src="assets/img/homeExcelPlus_white.svg" alt="home icon" />
+                                        </div>
+                                        <div class="productImage">
+                                            <img class="card-img-top" src="assets/img/cards/home.png" alt="Home excel plus" />
+                                        </div>
+                                        <div class="card-body productContent">
+                                            <h5 class="card-title productName"><a href="#">Home Excel Plus</a></h5>
+                                            <p class="card-text productDescription">
+                                                Protect the home<br />
+                                                that protects you
+                                            </p>
+                                        </div>
+                                        <div class="card-footer productFooter">
+                                            <a href="#" class="btn btn-secondary-light productButton" data-bs-toggle="modal" data-bs-target="#inquiry-modal">Inquire Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-3 justify-content-center">
+                                    <div class="card productSelectionItem">
+                                        <div class="cardIconLabel d-flex text-center justify-content-center align-items-center">
+                                            <img src="assets/img/homeExcelPlus_white.svg" alt="home icon" />
+                                        </div>
+                                        <div class="productImage">
+                                            <img class="card-img-top" src="assets/img/cards/travel.png" alt="travel excel plus" />
+                                        </div>
+                                        <div class="card-body productContent">
+                                            <h5 class="card-title productName"><a href="#">Travel Excel Plus</a></h5>
+                                            <p class="card-text productDescription">Go global confidently</p>
+                                        </div>
+                                        <div class="card-footer productFooter">
+                                            <a href="#" class="btn btn-secondary-light productButton" data-bs-toggle="modal" data-bs-target="#inquiry-modal">Inquire Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-3 justify-content-center">
+                                    <div class="card productSelectionItem">
+                                        <div class="cardIconLabel d-flex text-center justify-content-center align-items-center">
+                                            <img src="assets/img/condoExcelPlus_white.svg" alt="home icon" />
+                                        </div>
+                                        <div class="productImage">
+                                            <img class="card-img-top" src="assets/img/cards/condo.png" alt="Condo excel plus" />
+                                        </div>
+                                        <div class="card-body productContent">
+                                            <h5 class="card-title productName"><a href="#">Condo Excel Plus</a></h5>
+                                            <p class="card-text productDescription">Make your urban living more comfortable</p>
+                                        </div>
+                                        <div class="card-footer productFooter">
+                                            <a href="#" class="btn btn-secondary-light productButton" data-bs-toggle="modal" data-bs-target="#inquiry-modal">Inquire Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-3 justify-content-center">
+                                    <div class="card productSelectionItem">
+                                        <div class="cardIconLabel d-flex text-center justify-content-center align-items-center">
+                                            <img src="assets/img/autoExcelPlus_white.svg" alt="auto icon" />
+                                        </div>
+                                        <div class="productImage">
+                                            <img class="card-img-top" src="assets/img/cards/auto.png" alt="auto excel plus" />
+                                        </div>
+                                        <div class="card-body productContent">
+                                            <h5 class="card-title productName"><a href="#">Auto Excel Plus</a></h5>
+                                            <p class="card-text productDescription">Shift to a broader protection</p>
+                                        </div>
+                                        <div class="card-footer productFooter">
+                                            <a href="#" class="btn btn-secondary-light productButton" data-bs-toggle="modal" data-bs-target="#inquiry-modal">Inquire Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="modal fade inquiry-modal" tabindex="-1" role="dialog" id="inquiry-modal">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                    <div class="modal-header d-flex justify-content-between">
+                        <div class="logo">
+                            <div class="imageContainer">
+                                <img class="logo" src="assets/img/logo_white.png" alt="cocogen logo" />
+                            </div>
+                        </div>
+                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                            <svg id="close" data-name="close" xmlns="http://www.w3.org/2000/svg" width="67.891" height="67.891" viewBox="0 0 67.891 67.891">
+                                <path id="Path_1686" data-name="Path 1686" d="M37.741,34.059l-8.6-8.6,8.6-8.6a2.608,2.608,0,0,0-3.688-3.688l-8.6,8.6-8.6-8.6a2.5,2.5,0,0,0-3.688,0,2.52,2.52,0,0,0,0,3.688l8.6,8.6-8.6,8.6a2.522,2.522,0,0,0,0,3.688,2.591,2.591,0,0,0,3.688,0l8.6-8.6,8.6,8.6a2.62,2.62,0,0,0,3.688,0A2.591,2.591,0,0,0,37.741,34.059Z" transform="translate(8.494 8.487)" fill="#fff" />
+                                <path id="Path_1687" data-name="Path 1687" d="M37.321,7.945A29.381,29.381,0,0,1,58.1,58.1,29.381,29.381,0,0,1,16.545,16.545a29.182,29.182,0,0,1,20.775-8.6m0-4.57A33.946,33.946,0,1,0,71.266,37.321,33.94,33.94,0,0,0,37.321,3.375Z" transform="translate(-3.375 -3.375)" fill="#fff" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-heading">
+                            <div class="text-center">
+                                <h2 class="modal-title text-color-light">Send Inquiry</h2>
+                            </div>
+                        </div>
+                        <div class="modal-form">
+                            <form>
+                                <div class="formRow">
+                                    <div class="mb-2">
+                                        <div>
+                                            <label for="fName" class="form-label">Topic *</label>
+                                            <div>
+                                                <select class="styled-select" name="inquiry">
+                                                    <option value="inquiry">Product Inquiry</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mb-2">
+                                        <div>
+                                            <label for="fName" class="form-label">Product *</label>
+                                            <div>
+                                                <select class="styled-select" name="product">
+                                                    <option value="protech">Protech Computer Insurance</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="formRow">
+                                    <div class="mb-2">
+                                        <div class="invalid invalid-required">
+                                            <label for="fName" class="form-label">First Name *</label>
+                                            <input type="fname" class="form-control" id="fName" />
+                                            <span class="feedback"> Please fill in required field. </span>
+                                        </div>
+                                    </div>
+                                    <div class="mb-2">
+                                        <div>
+                                            <label for="lName" class="form-label">Last Name *</label>
+                                            <input type="lname" class="form-control" id="lName" />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="formRow mb-2">
+                                    <div class="mb-2">
+                                        <div>
+                                            <label for="email" class="form-label">Email *</label>
+                                            <input type="email" class="form-control" id="email" />
+                                        </div>
+                                    </div>
+                                    <div class="mb-2">
+                                        <div>
+                                            <label for="mobile" class="form-label">Contact Number *</label>
+                                            <input type="mobile" class="form-control" id="mobile" />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="mb-2">
+                                    <label for="message" class="form-label">Message *</label>
+                                    <textarea class="form-control" rows="3" id="message"></textarea>
+                                </div>
+
+                                <div class="submit-button text-center my-5">
+                                    <button type="submit" class="btn btn-secondary">Submit</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade inquiry-modal" tabindex="-1" role="dialog" id="inquiry-modal">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                    <div class="modal-header d-flex justify-content-between">
+                        <div class="logo">
+                            <div class="imageContainer">
+                                <img class="logo" src="assets/img/logo_white.png" alt="cocogen logo" />
+                            </div>
+                        </div>
+                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                            <svg id="close" data-name="close" xmlns="http://www.w3.org/2000/svg" width="67.891" height="67.891" viewBox="0 0 67.891 67.891">
+                                <path id="Path_1686" data-name="Path 1686" d="M37.741,34.059l-8.6-8.6,8.6-8.6a2.608,2.608,0,0,0-3.688-3.688l-8.6,8.6-8.6-8.6a2.5,2.5,0,0,0-3.688,0,2.52,2.52,0,0,0,0,3.688l8.6,8.6-8.6,8.6a2.522,2.522,0,0,0,0,3.688,2.591,2.591,0,0,0,3.688,0l8.6-8.6,8.6,8.6a2.62,2.62,0,0,0,3.688,0A2.591,2.591,0,0,0,37.741,34.059Z" transform="translate(8.494 8.487)" fill="#fff" />
+                                <path id="Path_1687" data-name="Path 1687" d="M37.321,7.945A29.381,29.381,0,0,1,58.1,58.1,29.381,29.381,0,0,1,16.545,16.545a29.182,29.182,0,0,1,20.775-8.6m0-4.57A33.946,33.946,0,1,0,71.266,37.321,33.94,33.94,0,0,0,37.321,3.375Z" transform="translate(-3.375 -3.375)" fill="#fff" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-heading">
+                            <div class="text-center">
+                                <h2 class="modal-title text-color-light">Send Inquiry</h2>
+                            </div>
+                        </div>
+                        <div class="modal-form">
+                            <form>
+                                <div class="formRow">
+                                    <div class="mb-2">
+                                        <div>
+                                            <label for="fName" class="form-label">Topic *</label>
+                                            <div>
+                                                <select class="styled-select" name="inquiry">
+                                                    <option value="inquiry">Product Inquiry</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mb-2">
+                                        <div>
+                                            <label for="fName" class="form-label">Product *</label>
+                                            <div>
+                                                <select class="styled-select" name="product">
+                                                    <option value="protech">Protech Computer Insurance</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="formRow">
+                                    <div class="mb-2">
+                                        <div class="invalid invalid-required">
+                                            <label for="fName" class="form-label">First Name *</label>
+                                            <input type="fname" class="form-control" id="fName" />
+                                            <span class="feedback"> Please fill in required field. </span>
+                                        </div>
+                                    </div>
+                                    <div class="mb-2">
+                                        <div>
+                                            <label for="lName" class="form-label">Last Name *</label>
+                                            <input type="lname" class="form-control" id="lName" />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="formRow mb-2">
+                                    <div class="mb-2">
+                                        <div>
+                                            <label for="email" class="form-label">Email *</label>
+                                            <input type="email" class="form-control" id="email" />
+                                        </div>
+                                    </div>
+                                    <div class="mb-2">
+                                        <div>
+                                            <label for="mobile" class="form-label">Contact Number *</label>
+                                            <input type="mobile" class="form-control" id="mobile" />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="mb-2">
+                                    <label for="message" class="form-label">Message *</label>
+                                    <textarea class="form-control" rows="3" id="message"></textarea>
+                                </div>
+
+                                <div class="submit-button text-center my-5">
+                                    <button type="submit" class="btn btn-secondary">Submit</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+        <script src="assets/js/products.js"></script>
+
+        <script>
+            $(document).ready(function () {
+                $(".styled-select").select2({
+                    minimumResultsForSearch: Infinity,
+                });
+            });
+        </script>
+    </body>
+</html>

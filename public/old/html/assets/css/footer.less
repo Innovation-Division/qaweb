@@ -1,0 +1,245 @@
+@import "./variables.less";
+
+footer {
+    position: relative;
+    z-index: 1;
+
+    .bottomContentWrapper {
+        background-color: #2a2a2a;
+        .container {
+            padding-left: calc(1.5rem * 0.5);
+            padding-right: calc(1.5rem * 0.5);
+        }
+    }
+
+    .sitemapRow {
+        .footerContent {
+            position: relative;
+
+            .infoBox {
+                padding-left: 100px;
+                > .inner {
+                    .row {
+                        padding: 40px 20px 30px;
+                        background-color: @color-primary;
+                    }
+                }
+
+                .footerLogo {
+                    margin-bottom: 30px;
+                    img {
+                        max-width: 100%;
+                        height: 60px;
+
+                        @media @tablet {
+                            height: 50px;
+                        }
+                    }
+                }
+
+                .infoList {
+                    ul {
+                        list-style: none;
+
+                        li {
+                            display: flex;
+                            align-items: flex-start;
+                            margin: 20px auto;
+
+                            svg {
+                                fill: @text-secondary;
+                                width: 20px;
+                                margin-top: 3px;
+                                margin-right: 15px;
+                            }
+
+                            p {
+                                flex: 1 1 calc(100% - 50px);
+                                color: @text-secondary;
+                                font-size: 14px;
+                                margin: 0;
+                            }
+
+                            &:first-child {
+                                margin-top: 0;
+                            }
+                        }
+
+                        @media @tablet {
+                            padding-left: 0;
+                        }
+                    }
+                }
+                @media only screen and (max-width: 1440px) {
+                    padding-left: 0px;
+                }
+                @media @tablet {
+                    order: 2;
+                    padding-right: 0px;
+                }
+            }
+
+            .link-list {
+                padding: 50px 20px 0;
+
+                h5 {
+                    position: relative;
+                    color: @text-secondary;
+                    font-size: 18px;
+                    margin-bottom: 10px;
+                    text-transform: uppercase;
+                    transition: 0.3s;
+
+                    @media @tablet {
+                        text-transform: unset;
+                        color: @color-primary;
+                        margin-bottom: 0;
+                        width: 100%;
+                        text-align: left;
+                        padding: 20px 20px;
+                        cursor: pointer;
+
+                        &:after {
+                            position: absolute;
+                            top: 50%;
+                            right: 10px;
+                            margin-top: -12px;
+                            background: url(../img/chevronRight.svg) no-repeat center center;
+                            background-size: cover;
+                            content: "";
+                            width: 15px;
+                            height: 24px;
+                        }
+                    }
+                }
+
+                li {
+                    a {
+                        color: @text-secondary;
+                        font-size: 14px;
+
+                        @media @tablet {
+                            font-size: 14px;
+                        }
+
+                        &:hover {
+                            text-decoration: underline;
+
+                            @media @tablet {
+                                color: @text-secondary;
+                            }
+                        }
+                    }
+                }
+
+                @media @tablet {
+                    display: block;
+                    overflow: hidden;
+                    padding: 0;
+                    border-bottom: 1px solid @color-primary;
+
+                    ul {
+                        display: none;
+                        padding: 0px 20px 10px;
+                    }
+                    &.list-toggle ul {
+                        display: block;
+                    }
+                    &.list-toggle h5:after {
+                        transform: rotate(90deg);
+                        right: 14px;
+                    }
+                }
+            }
+
+            .socialMedia {
+                padding: 20px 0px;
+                max-height: none;
+
+                ul {
+                    justify-content: flex-end;
+                }
+
+                svg {
+                    width: auto;
+                    height: 33.75px;
+                }
+
+                .fblink:hover path:last-child {
+                    fill: @color-secondary;
+                }
+                .twlink:hover path {
+                    stroke: @color-secondary;
+                }
+                .inslink:hover path {
+                    fill: @color-secondary;
+                }
+                .vblink:hover path {
+                    fill: @color-secondary;
+                }
+                .ttlink:hover path {
+                    stroke: @color-secondary;
+                }
+
+                @media @desktop {
+                    right: 20px;
+                }
+                @media @tablet {
+                    position: static;
+                    padding: 15px 0px;
+                    ul {
+                        justify-content: center;
+                    }
+                }
+            }
+
+            @media @tablet {
+                flex-direction: column;
+            }
+        }
+    }
+
+    .copyrightRow {
+        background-color: transparent;
+        padding: 20px 0px;
+
+        li {
+            position: relative;
+            padding: 0px 10px;
+            a {
+                color: @color-primary;
+
+                &:hover {
+                    color: @color-secondary;
+                }
+            }
+        }
+
+        li:after {
+            content: "";
+            position: absolute;
+            top: 0px;
+            bottom: 0px;
+            right: 0px;
+            border-right: 1px solid @color-primary;
+        }
+        li:last-child:after {
+            content: none;
+        }
+
+        @media @tablet {
+            li {
+                font-size: .9rem;
+            }
+        }
+        @media @if (Agent::isMobile()) {
+            li {
+                font-size: .6rem;
+                padding: 0px 8px;
+            }
+            p {
+                font-size: .7rem;
+            }
+        }
+    }
+}

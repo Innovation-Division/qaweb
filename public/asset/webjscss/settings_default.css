@@ -1,0 +1,10 @@
+/**
+ * WARNING: Do not change this file. Your changes will be lost.
+ * 2019-07-17 03:10:01 */
+
+@media (max-width: 480px) {
+    .category-products .products-grid li.item {
+        float: none !important;
+        width: 100% !important;
+    }
+}

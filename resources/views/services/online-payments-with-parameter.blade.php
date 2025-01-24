@@ -1,0 +1,440 @@
+@extends('layouts.app')
+
+@section('content')
+@if(count($errors) > 0)
+  <br><br>
+  <div class="col-md-12 col-md-offset-0" style="text-align: left;font-family: muli;">
+      <div class="error-msg">
+        <i class="fa fa-times-circle"></i>
+      
+     <?php 
+        $idname = "";
+
+        if($errors->first('name') === "The name format is invalid."){
+              $message = "The email must be a valid email address.";
+          }elseif($errors->first('email') === "The email must be a valid email address."){
+              $message = "The name format is invalid.";
+          }else{
+              if($errors->has('name')){
+                $idname = "name";
+              }
+
+              if($errors->has('policy_no.*')){
+                if($idname){
+                  $idname = $idname .", policy no";
+                }else{
+                  $idname = "policy no";
+                }                
+              }
+
+              if($errors->has('amount.*')){
+                if($idname){
+                  $idname = $idname .", amount";
+                }else{
+                  $idname = "amount";
+                }                
+              }
+
+              if($errors->has('contact')){
+                if($idname){
+                  $idname = $idname .", contact";
+                }else{
+                  $idname = "contact";
+                }                
+              }
+
+              if($errors->has('email')){
+                
+                if($idname){
+                  $idname = $idname .", email";
+                }else{
+                  $idname = "email";
+                }            
+              }
+             $message  = "The ".$idname." field is required.";
+          }
+      ?> 
+        {{$message}}
+      </div>
+  </div> 
+  <br><br>  
+@endif
+<?php 
+
+if(!empty($cocogen_admin_paidpolicies)){
+  $gross = $cocogen_admin_paidpolicies[0]['gross']; 
+  $paid = $cocogen_admin_paidpolicies[0]['paid']; 
+  if($gross){
+    if($paid){
+      $total = $gross - $paid;
+      $total = number_format($total,2);
+    }else{
+      $total = $gross;
+      $total = number_format($total,2);
+
+    }
+  }
+
+}else{
+  
+  $total = ""; 
+}
+
+
+if(!empty($cocogen_epolicy_dtl)){
+  $policy = $cocogen_epolicy_dtl[0]['policyNo']; 
+  $name = $cocogen_epolicy_dtl[0]['clientName']; 
+  $email = $cocogen_epolicy_dtl[0]['email'];
+  $contact = $cocogen_epolicy_dtl[0]['contactNo']; 
+  
+}else{
+  $policy = "";  
+  $name = ""; 
+  $email = "";
+  $contact = ""; 
+} 
+?>
+@if(session('message'))
+    <br><br>
+    <div class="col-md-12 col-md-offset-0" style="text-align: left;font-family: muli">
+        <div class='alert bg bg-success'>
+              <i class="fa fa-check-circle"></i> 
+            {{session('message')}}
+        </div>
+    </div>
+    <br>    <br> 
+@endif
+
+<div class="container" style="text-align: left;font-family: muli;">
+                        <div class="row">
+                            <div class="product-view">
+                                <div class="short-description">
+                                    <div class="product-name col-md-12">
+                                        <h1>
+                                            Online Payments</h1>
+                                    </div>
+                                    <div class="std col-md-12 prod-desc">
+                                        <p style="line-height: inherit;">
+                                            Avoid the hassle of leaving the house and long lines. Pay for your insurance here
+                                            by filling in the details below:</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   <form class="inline-form" role="form" method="post" action="{{ route('onlinepaymentspays') }}" enctype="multipart/form-data">
+          {{ csrf_field() }}
+                    <div class="container" id="error-alert">
+                    </div>
+                    <div class="container"  style="text-align: left;font-family: muli;">
+                        <div class="row fieldset-row">
+                            <div class="col-md-12">
+                                <div class="form-page-header fieldset-header">
+                                    <h3>
+                                        CREATE PAYMENT INFORMATION</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row fieldset-row" >
+                            <div class="col-md-4 {{ $errors->has('name') ? ' has-error' : '' }}">
+                                <div class="form-page-header fieldset-header">
+                                    <label>
+                                        Name:</label><br>
+                                    <input type="text" class="form-control" placeholder="" name="name" id="name"
+                                        value="{{old('name',$name)}}" maxlength="500">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        
+                            <div class="multi-field-wrapper">
+                                <div class="multi-fields">
+                                    <div class="multi-field" style="margin-bottom: 10px;margin-left: -14px;">
+                                        <div class="col-md-4">
+                                            <div class="select-form-wrapper {{ $errors->has('policy_no.*') ? ' has-error' : '' }}">
+                                               <label>
+                                                    Policy Number:</label><br>
+                                                <input type="text" class="form-control" placeholder="LL-SSS-BB-YY-NNNNNNN-RR"   id="policy_no" 
+                                                    name="policy_no[]" maxlength="100" value="{{$policy}}">
+                                               
+                                            </div>
+
+                                         </div>
+                                       
+                                         <div class="col-md-4" style="margin-left: 5px;">
+                                            <div class="select-form-wrapper {{ $errors->has('amount.*') ? ' has-error' : '' }}">
+                                              <label>
+                                                    Amount:</label><br>
+                                                   
+                                                <input type="text" class="form-control accessoryValue2" placeholder="0.00"  name="amount[]" id="amount" value="{{$total}}">
+                                                
+                                             
+                                            </div>
+
+                                         </div>
+                                         <br>
+                                        <div class="a btn btn-primary a-btn-slide-text add-field">
+                                            <span class="glyphicon glyphicon-plus " aria-hidden="true"></span>
+                                            <!-- <span><strong>Add</strong></span> -->
+                                            <span><strong></strong></span>
+                                        </div>
+                                        <div class="btn btn-danger a-btn-slide-text remove-field">
+                                            <span class="fa fa-trash" aria-hidden="true"></span>
+                                            <!-- <span><strong>Delete</strong></span> -->
+                                            <span><strong></strong></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br>
+                            </div>
+
+                            <?php                          
+                                $policy_no = Request::old('policy_no');
+                                $invoice = Request::old('invoice');
+                                $amount = Request::old('amount');
+                             ?>
+                            @if(count($policy_no) > 0)
+                            <script type="text/javascript">
+                              for (var i = 1; i < {{count($policy_no)}}; i++) {
+                                generate();
+                                var polcomplex = <?php echo json_encode($policy_no); ?>;
+                                var polindex; 
+                                for (polindex = 0; polindex < polcomplex.length; ++polindex) {                                
+                                  if(polindex === 0){
+                                    var x= 0;
+                                    jQuery("input[name='policy_no[]']:eq(" + x +")").val(polcomplex[polindex]);
+                                  }
+                                  if(i === (polindex)){
+                                    jQuery("input[name='policy_no[]']:eq(" + i +")").val(polcomplex[polindex]);  
+                                 }                                                                   
+                                } 
+
+                                var invcomplex = <?php echo json_encode($invoice); ?>;
+                                var invindex;
+                                for (invindex = 0; invindex < invcomplex.length; ++invindex) {                                
+                                  if(invindex === 0){
+                                    var y= 0;
+                                    jQuery("input[name='invoice[]']:eq(" + y +")").val(invcomplex[invindex]);
+                                  }
+                                  if(i === (invindex)){
+                                    jQuery("input[name='invoice[]']:eq(" + i +")").val(invcomplex[invindex]);  
+                                 }                                                                   
+                                } 
+
+                                var ammcomplex = <?php echo json_encode($amount); ?>;
+                                var ammindex;
+                                for (ammindex = 0; ammindex < ammcomplex.length; ++ammindex) {                                
+                                  if(ammindex === 0){
+                                    var z= 0;
+                                    jQuery("input[name='amount[]']:eq(" + z +")").val(ammcomplex[ammindex]);
+                                  }
+                                  if(i === (ammindex)){
+                                    jQuery("input[name='amount[]']:eq(" + i +")").val(ammcomplex[ammindex]);  
+                                 }                                                                   
+                                }                                   
+                              }
+
+                              function generate(policy1){  
+                                jQuery('.multi-field .remove-field').show();                           
+                                  jQuery('.multi-field-wrapper').each(function() {
+                                  var $wrapper = jQuery('.multi-fields', this);                                
+                                  jQuery('.multi-field:first-child', $wrapper).clone(true).appendTo($wrapper).find('input[name="policy_no1[]"]').eq(1).val(policy1).focus()
+                                });
+                              }
+                            </script>
+                            @endif
+
+                             <script type="text/javascript">
+                              if({{count($policy_no)}} > 0){                                
+                              }else{
+                                jQuery('.multi-field .remove-field').hide();
+                              }
+                              
+                              jQuery('.multi-field-wrapper').each(function() {
+                                  var $wrapper = jQuery('.multi-fields', this);
+                                   
+
+                                  jQuery(".add-field", jQuery(this)).click(function(e) {
+                                      jQuery('.multi-field:first-child', $wrapper).clone(true).appendTo($wrapper).find('#amount1').val('0.00').focus()
+                                      jQuery('.multi-field .remove-field').show();
+                                     
+                                      if (jQuery('.multi-field', $wrapper).length > 9){
+                                       alert("You can add max of 10 policy.");
+                                      }
+
+                                   });
+                                  jQuery('.multi-field .accesso', $wrapper).click(function() {
+                                  if (jQuery('.multi-field', $wrapper).length > 1)
+                                        jQuery(this).selectpicker("refresh");
+                                  });
+
+                                jQuery('.multi-field .remove-field', $wrapper).click(function() {
+                                  if (jQuery('.multi-field', $wrapper).length > 1)
+                                    jQuery(this).parent('.multi-field').remove();
+                                  });
+                              });
+                            </script>
+                            <script>
+                              jQuery(document).ready(function(){
+                                        // Jquery Dependency
+                                   jQuery(".accessoryValue2").on({
+                                        keyup: function() {
+                                          formatCurrency(jQuery(this));
+                                        },
+                                        blur: function() { 
+                                          formatCurrency(jQuery(this), "blur");
+                                        }
+                                    });
+
+
+                                    function formatNumber(n) {
+                                      // format number 1000000 to 1,234,567
+                                      return n.replace(/\D/g, "").replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+                                    }
+
+
+                                    function formatCurrency(input, blur) {
+                                      // appends $ to value, validates decimal side
+                                      // and puts cursor back in right position.
+                                      
+                                      // get input value
+                                      var input_val = input.val();
+                                      
+                                      // don't validate empty input
+                                      if (input_val === "") { return; }
+                                      
+                                      // original length
+                                      var original_len = input_val.length;
+
+                                      // initial caret position 
+                                      var caret_pos = input.prop("selectionStart");
+                                        
+                                      // check for decimal
+                                      if (input_val.indexOf(".") >= 0) {
+
+                                        // get position of first decimal
+                                        // this prevents multiple decimals from
+                                        // being entered
+                                        var decimal_pos = input_val.indexOf(".");
+
+                                        // split number by decimal point
+                                        var left_side = input_val.substring(0, decimal_pos);
+                                        var right_side = input_val.substring(decimal_pos);
+
+                                        // add commas to left side of number
+                                        left_side = formatNumber(left_side);
+
+                                        // validate right side
+                                        right_side = formatNumber(right_side);
+                                        
+                                        // On blur make sure 2 numbers after decimal
+                                        if (blur === "blur") {
+                                          right_side += "00";
+                                        }
+                                        
+                                        // Limit decimal to only 2 digits
+                                        right_side = right_side.substring(0, 2);
+
+                                        // join number by .
+                                        input_val = left_side + "." + right_side;
+
+                                    } else {
+                                        // no decimal entered
+                                        // add commas to number
+                                        // remove all non-digits
+                                        input_val = formatNumber(input_val);
+                                       // input_val = "$" + input_val;
+                                        
+                                        // final formatting
+                                        if (blur === "blur") {
+                                          input_val += ".00";
+                                        }
+                                      }
+                                      
+                                      // send updated string to input
+                                      input.val(input_val);
+
+                                      // put caret back in the right position
+                                      var updated_len = input_val.length;
+                                      caret_pos = updated_len - original_len + caret_pos;
+                                      input[0].setSelectionRange(caret_pos, caret_pos);
+                                    }
+                                     jQuery(".otherdivAccessory").show();
+                                    var accessory1 = jQuery( ".selectaccessory" ).val();
+                                        if(accessory1 === "Others"){
+                                                jQuery(".otherdivAccessory").show();
+                                            }else{
+                                                //jQuery(".otherdivAccessory").hide();
+                                        }                                        
+                                    jQuery('.selectaccessory').change(function(){                                        
+                                        if(jQuery(this).val() != '')                                        {                
+                                             var accessory = jQuery(this).val();
+                                             if(accessory === "Others"){
+                                                jQuery(".otherdivAccessory").show();
+                                             }else{
+                                                //jQuery(".otherdivAccessory").hide();
+                                             }        
+                                       
+                                        }
+                                       }); 
+                               
+                                });
+                            </script>
+                        <br>
+                        <div class="row fieldset-row">
+                            <div class="col-md-4 {{ $errors->has('email') ? ' has-error' : '' }}">
+                                <div class="form-page-header fieldset-header">
+                                    <label>
+                                        Email Address:</label><br>
+                                    <input type="text" class="form-control" placeholder=""
+                                        name="email" id="email" value="{{old('email',$email)}}" maxlength="500">
+                                        
+                                </div>
+                            </div>
+                            <div class="col-md-4 {{ $errors->has('contact') ? ' has-error' : '' }}">
+                                <div class="form-page-header fieldset-header">
+                                    <label>
+                                        Contact Number:</label><br>
+                                    <input type="text" class="form-control" placeholder=""
+                                        name="contact" id="contact"  value="{{old('contact',$contact)}}">
+                                        
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <br>
+                                <br>
+                                <input id="Pay" name="pay" type="submit" class="btn btn-primary" value="Pay Now">
+                                @if (!Auth::guest())
+                                  @if(Auth::user()->type == "A")
+                                  <input id="PaymentLater" name="PaymentLater" type="submit" class="btn btn-primary" value="Send Payment Link">
+                                  @endif
+                                @endif
+                            </div>
+                        </div>
+                    </div>
+                    </form>
+                    <div class="container" style="text-align: left;">
+                        <div class="row">
+                            <p>
+                                <br>
+                            </p>
+                            <p>
+                                <em>*Submitting your details will redirect you to our payment partner page. All details
+                                    submitted will be subject to secure data protection measures. You will receive a
+                                    confirmation e-mail once your payment has pushed through.</em></p>
+                            <p>
+                                <em></em>
+                            </p>
+                            <p>
+                                <em>*Some payment channels may charge additional processing fees.</em></p>
+                            <p>
+                                <em>*Please note that payment made via this platform will be reflected on your ePolicy/ePartner Hub accounts after 2 days.</em></p>
+                            <p>
+                                <em>*UCPB General Insurance Company, Inc. has changed its brand name from UCPB GEN to COCOGEN. However, UCPB General Insurance Company, Inc. remains to be the corporate name. Thus, all legitimate policies, documents, and payments bearing the name of UCPB General Insurance Company, Inc. remains to be valid.</em></p>
+                        </div>
+                    </div>
+@endsection

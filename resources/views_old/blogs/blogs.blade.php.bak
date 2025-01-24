@@ -1,0 +1,69 @@
+@extends('layouts.app')
+
+@section('content')
+<script>
+  gtag('event', 'page_view', {
+    'send_to': 'AW-936227039',
+    'value': 'replace with value',
+    'items': [{
+      'id': '6488316056',
+      'google_business_vertical': 'retail'
+    }]
+  });
+</script>
+<div class="top-container">
+    <div class="breadcrumbs">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 a-left" >
+                    @if($cocogen_admin_breadcrumbs)
+                        <ul> 
+                            <?php for ($i = 0; $i < count($cocogen_admin_breadcrumbs); $i++) {?>
+                                @if($i+1 === count($cocogen_admin_breadcrumbs))
+                                    @if($cocogen_admin_breadcrumbs[$i]['links'])
+                                        <li class="home"><a href="{{ url('/') }}/{{$cocogen_admin_breadcrumbs[$i]['links']}}" > {{$cocogen_admin_breadcrumbs[$i]['name']}}</a></li>
+                                    @else
+                                        <li class="category4"><span> {{$cocogen_admin_breadcrumbs[$i]['name']}} </span> </li>
+                                    @endif
+                                @else
+                                    @if($cocogen_admin_breadcrumbs[$i]['links'])
+                                        <li class="home"><a href="{{ url('/') }}/{{$cocogen_admin_breadcrumbs[$i]['links']}}" > {{$cocogen_admin_breadcrumbs[$i]['name']}}</a><span class="breadcrumbs-split"><i class="fa fa-angle-right" aria-hidden="true"></i></span></li>
+                                    @else
+                                        <li class="category4"><span> {{$cocogen_admin_breadcrumbs[$i]['name']}} </span> <span class="breadcrumbs-split"><i class="fa fa-angle-right" aria-hidden="true"></i></span></li>
+                                    @endif
+                                @endif
+                            <?php } ?>
+                        </ul>
+                    @endif
+                </div>
+            </div>
+        </div>
+<?php $newDateFormat2 = date('F d, Y', strtotime($cocogen_admin_pages_blogs[0]['created_at'])); ?>
+    </div>
+		<div style="margin-top: 50px;font-family: muli">
+			<span style="font-size:30px;color:#00539e;"><b>{{$cocogen_admin_pages_blogs[0]['name']}}</b></span>
+		</div>
+		<!-- <div style="font-family: muli">
+			<span style="font-size:12px;opacity: 0.9;">Created by: <b>{{$cocogen_admin_pages_blogs[0]['writtenBy']}}</b></span>
+		</div> -->
+		<div style="font-family: muli">
+			<span style="font-size:12px;opacity: 0.9;">{{$newDateFormat2}}</span>
+		</div>
+		<div style="margin-top: 50px; ">
+			<img src="{{ $cocogen_admin_pages_blogs[0]['location']}}" >
+		</div>
+		<div style="margin-top: 50px;font-family: muli;width: 80%;margin-left: 10%;margin-right: 10%"><br>
+			<?php echo $cocogen_admin_pages[0]['content'] ?>
+		</div>
+		<div style="margin-top: 50px;font-family: muli"><br>
+			
+		</div>
+
+</div>
+
+<a href="#" id="totop" style="display: none;"><i class="fa fa-chevron-up"></i></a>
+
+
+
+
+@endsection

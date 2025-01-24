@@ -1,0 +1,156 @@
+@import "./global.less";
+
+.styledSelect {
+    z-index: 99;
+
+    @media @mobile-mini {
+        width: 100%;
+    }
+}
+
+.styledSelect-v2 {
+    margin-right: 0;
+
+    .list-choice-title {
+        position: relative;
+        border: 1px solid @color-border-2;
+        border-radius: 5px !important;
+        box-shadow: none !important;
+
+        &:after {
+            position: absolute;
+            content: url("../img/chevron-down.svg");
+            right: 20px;
+        }
+    }
+
+    .list-choice-objects {
+        border-radius: 5px !important;
+        box-shadow: none !important;
+    }
+
+    .list-choice {
+        border: none;
+    }
+
+    .list-choice:hover {
+        .list-choice-title {
+            border-radius: 5px 5px 0 0 !important;
+        }
+        .list-choice-objects {
+            border-radius: 0 0 5px 5px !important;
+            border: 1px solid @color-border-2;
+            border-top: none;
+        }
+    }
+
+    @media @tablet {
+        margin-top: 20px;
+    }
+}
+
+.list-choice {
+    min-width: 320px;
+    position: relative;
+    cursor: pointer;
+
+    @media @desktop {
+        min-width: 200px;
+    }
+
+    @media @mobile-mini {
+        min-width: unset;
+        width: 100%;
+    }
+}
+.list-choice input[type="radio"] {
+    position: absolute;
+    left: -9999px;
+}
+
+.list-choice-title {
+    background-color: @color-inverted;
+    padding: 10px 20px;
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    color: @text-primary;
+    border-radius: 40px;
+    transition: none;
+    font-size: 26px;
+
+    @media @desktop {
+        font-size: 20px;
+    }
+}
+
+.list-choice:hover .list-choice-title {
+    border-radius: 30px 30px 0 0;
+    @box-shadow-1();
+}
+
+.list-choice-objects label:nth-last-of-type(1) span {
+    border-radius: 0 0 0.2em 0.2em;
+}
+
+.list-choice input[type="radio"] + span {
+    padding: 5px 20px;
+    display: block;
+    box-sizing: border-box;
+    cursor: pointer;
+    width: 100%;
+    color: @text-primary;
+}
+
+.list-choice-objects {
+    position: absolute;
+    top: 58px;
+    background-color: @color-inverted;
+    left: 0;
+    box-sizing: border-box;
+    width: 100%;
+    overflow: hidden;
+    max-height: 0;
+    transition: none;
+    border-radius: 0 0 30px 30px;
+
+    label {
+        width: 100%;
+        padding: 0 20px;
+        font-size: 26px;
+        margin-bottom: 5px;
+
+        @media @desktop {
+            font-size: 20px;
+        }
+    }
+}
+
+.list-choice:hover .list-choice-objects input[type="radio"] + span {
+    position: relative;
+    top: 0;
+    border-radius: 40px;
+    transition: none;
+}
+
+.list-choice:hover input[type="radio"] + span:hover {
+    background: @color-primary;
+    color: @text-secondary;
+}
+
+.list-choice:hover input[type="radio"]:checked + span:hover {
+    background: @color-primary;
+}
+
+.list-choice input[type="radio"]:checked + span {
+    background: @color-primary;
+    position: absolute;
+    top: 0em;
+    color: @text-secondary;
+}
+
+.list-choice:hover .list-choice-objects {
+    max-height: 540px;
+    padding-bottom: 10px;
+    @box-shadow-1();
+}

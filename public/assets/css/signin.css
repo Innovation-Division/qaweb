@@ -1,0 +1,189 @@
+@import "./global.less";
+
+.sign-in {
+    .breadcrumb-container {
+        max-width: 1720px;
+    }
+    .breadcrumb {
+        color: #fff;
+    }
+    .breadcrumb-item + .breadcrumb-item::before {
+        color: #fff;
+    }
+}
+
+.sign-in-board {
+    position: relative;
+    max-width: 540px;
+    width: 100%;
+
+    @media only screen and (max-width: 767px) {
+        margin: 0 auto;
+    }
+}
+
+.sign-in-type {
+    // position: absolute;
+    // z-index: 1;
+    // left: 20px;
+    // top: -50px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+
+    a {
+        display: inline-block;
+        background-color: @color-secondary;
+        color: @text-secondary;
+        padding: 10px 10px 10px;
+        margin: 0 5px;
+        border-radius: 10px 10px 0 0;
+        font-size: 20px;
+        font-family: "MuliLight";
+        @box-shadow-2();
+
+        &.active {
+            position: relative;
+            background-color: @color-common-white;
+            color: @color-primary;
+
+            &:after {
+                position: absolute;
+                content: "";
+                background-color: @color-common-white;
+                height: 30px;
+                width: 100%;
+                left: 0;
+                bottom: -20px;
+            }
+        }
+    }
+
+    @media @desktop-min {
+        a {
+            font-size: 14px;
+        }
+    }
+    @media only screen and (max-width: 320px) {
+        a {
+            font-size: 12px;
+            padding: 10px 5px 10px;
+            margin: 0 3px;
+        }
+    }
+}
+
+.sign-in-form {
+    background-color: @color-common-white;
+    position: relative;
+    padding: 25px 25px;
+    width: 100%;
+    border-radius: 10px;
+    @box-shadow-2();
+
+    h2 {
+        font-size: 26px;
+    }
+
+    .form-control {
+        padding: 10px;
+    }
+
+    .submitButton {
+        button {
+           font-size: 20px; 
+        //    padding-top: 12px;
+        //    padding-bottom: 18px !important;
+        //    padding-left: 30px;
+        //    padding-right: 30px;
+        }
+    }
+
+    .links {
+        display: flex;
+        justify-content: space-between;
+
+        a {
+            font-size: 16px;
+            color: @color-secondary;
+        }
+    }
+
+    @media @desktop-min {
+        .submitButton {
+            button {
+                font-size: 20px; 
+            }
+        }
+    }
+
+    @media @tablet {
+        padding: 20px 20px;
+
+        .submitButton {
+            button {
+                font-size: 18px; 
+            }
+        }
+
+        .links {
+            flex-direction: column;
+            a:last-child {
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
+.text-content {
+    p {
+        color: @text-secondary;
+
+        &:nth-child(1) {
+            // font-size: 58px;
+            line-height: 1.2;
+        }
+
+        &:nth-child(2) {
+            // font-size: 30px;
+            // font-family: "MuliLight";
+        }
+    }
+
+    @media @mobile {
+        &:nth-child(1) {
+            line-height: 1;
+        }
+    }
+}
+
+.sign-in-partner > .inner {
+    background: url("../img/bg/partner.png") center center no-repeat;
+    background-size: cover;
+
+    @media @tablet {
+        background-position: center top;
+        background-size: auto;
+    }
+}
+
+.sign-in-policyholder {
+    background: url("../img/bg/policyholder.png") center center no-repeat;
+    background-size: cover;
+
+    @media @tablet {
+        background-position: center top;
+        background-size: auto;
+    }
+}
+
+.sign-in-content {
+    max-width: 1380px;
+    margin: 0 auto;
+}
+
+.footnote {
+    padding: 30px 20px;
+    color: @text-secondary;
+}
