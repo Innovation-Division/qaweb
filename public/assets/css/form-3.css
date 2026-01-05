@@ -1,0 +1,242 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+form#form3 {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+/* .f3-main-container {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    padding: 0 !important;
+    max-width: 100%; 
+    overflow-x: hidden; 
+    justify-content: center; 
+    align-items: center; 
+} */
+
+.f3-main-container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+/* .f3-content-container {
+    width: 784px;
+    height: 542px auto;
+    top: 96px;
+    left: 349px;
+    padding: 25px;
+    gap: 25px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 65px;
+    margin-right: 432px;
+} */
+ 
+
+.f3-main-content-container {
+    width: 100%; 
+    max-width: 784px;
+    height: auto;
+    padding: 35px;
+    gap: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    box-sizing: border-box; 
+    margin-top: -223px;
+    margin-left: 440px;
+} 
+
+.f3-content {
+    gap: 35px;
+    display: flex;
+    flex-direction: column;
+}
+
+.f3-field-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-p {
+    font-size: 16px;
+    color: black;
+    font-style: "Inter", serif;
+    font-weight: 500;
+}
+
+.form-span {
+    color: red;
+}
+
+.row-1,
+.row-2,
+.row-3 {
+    justify-content: space-between;
+    gap: 25px;
+    display: flex;
+    height: 56px; 
+    margin-bottom: 0; 
+}
+
+.row-1 > *,
+.row-2 > * {
+    flex: 1;
+    min-width: 0;
+}
+
+.zip-container {
+    flex: none; 
+    width: 221.33px;
+}
+
+.f3-title {
+    color: var(--Primary-Black, #2d2727);
+    font-family: Inter, sans-serif;
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 0;
+}
+
+.f3-button-container {
+    display: flex;
+    justify-content: space-between; 
+    gap: 25px;
+    align-self: stretch;
+    /* flex-direction: column-reverse;  */
+}
+
+.row-3 .text-field {
+    width: 221px;
+}
+
+.dropdown-text .dropdown-option {
+    color: var(--Surfaces-LVL-9, #1e1f21);
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; 
+    text-transform: capitalize;
+}
+
+@media (max-width: 1280px) {
+
+    .f3-title {
+        color: var(--Primary-Black, #2d2727);
+        font-family: Inter, sans-serif;
+        font-size: 18px !important;
+        font-style: normal !important;
+        font-weight: 700 !important;
+        line-height: normal !important;
+    }
+
+    .f3-main-content-container .back-button-title {
+        color: var(--Primary-Black, #2d2727);
+        font-family: Inter, sans-serif;
+        font-size: 18px !important;
+        font-style: normal !important;
+        font-weight: 700 !important;
+        line-height: normal !important;
+    }
+
+    .mobile-f3-title {
+        display: block; 
+        color: var(--Primary-Black, #2D2727);
+        font-family: Inter, sans-serif;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin-bottom: 10px;
+    }
+
+    .f3-title {
+        display: block; 
+    }
+
+    .f3-main-container {
+        flex-direction: column; 
+        align-items: flex-start; 
+        padding: 0 15px;
+        overflow-x: hidden; 
+        margin: 0;
+    }
+
+    .f3-main-content-container {
+        width: 100%; 
+        max-width: 100%; 
+        height: auto;
+        gap: 15px;
+        padding: 20px; 
+        box-sizing: border-box; 
+        margin: 0px !important;
+    }
+
+    .f3-main-container, 
+    .f3-main-content-container,
+    .f3-content,
+    .f3-field-container {
+        box-sizing: border-box;
+    }
+
+    .row-1,
+    .row-2,
+    .row-3 {
+        flex-direction: column;
+        gap: 10px;
+        height: auto;
+    }
+
+    .row-1 > *,
+    .row-2 > *,
+    .row-3 > * {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .zip-container {
+        width: 100% !important;
+    }
+
+    .zip-container .text-field-container {
+        width: 100% !important; 
+    }
+
+    .row-3 .text-field {
+        width: 100% !important;
+    }
+
+    .f3-button-container {
+        gap: 15px;
+        flex-direction: column-reverse; 
+    }
+
+    .f3-field-container{
+        gap: 10px;
+    }
+}
+
+ 
+html, body {
+    overflow-x: hidden; 
+    width: 100%;
+    box-sizing: border-box; 
+}
+

@@ -1,0 +1,214 @@
+form#form1 {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+.f1-main-container {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    padding: 0 !important;
+    max-width: 100%;
+    overflow-x: hidden;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.f1-main-content-container {
+    flex: 1;
+    width: 100%;
+    max-width: 784px;
+    height: auto;
+    padding: 35px;
+    gap: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0 auto;
+    box-sizing: border-box;
+    margin-top: 0px;
+    margin-right: 440.5px;
+}
+
+.form-row-1,
+.form-row-3,
+.form-row-2,
+.form-row-4 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 20px;
+}
+
+.f1-field-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.f1-content-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.f1-existing-policy {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.f1-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.f1-pill-buttons .pill-buttons-container {
+    width: 199px !important;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+}
+
+
+
+@media (max-width: 1280px) {
+    .f1-main-content-container .back-button-title {
+        color: var(--Primary-Black, #2d2727);
+        font-family: Inter, sans-serif;
+        font-size: 18px !important;
+        font-style: normal !important;
+        font-weight: 700 !important;
+        line-height: normal !important;
+    }
+
+    .f1-main-content-container {
+        margin: auto;
+        padding: 20px;
+    }
+
+    .stepper-logo-container-mobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .f1-layout-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .f1-main-container {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+    }
+
+    .form-row-1,
+    .form-row-3,
+    .form-row-2,
+    .form-row-4 {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .f1-buttons {
+        flex-direction: column-reverse;
+        gap: 15px;
+    }
+
+    .f1-pill-buttons .pill-buttons-container {
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 15px;
+    }
+
+    form#form1 x-stepper {
+        position: static;
+        width: 100%;
+    }
+
+    .back-button .back-button-icon {
+        display: none;
+    }
+}
+
+.registered-contents .content-text .content-title h2 {
+    color: #2d2727;
+    text-align: center;
+    font-family: "Inter-Bold", sans-serif;
+    font-size: 27px;
+    font-weight: 700;
+    position: relative;
+    align-self: stretch;
+}
+
+.modal-background {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    background: #9e9c9c80;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-container {
+    gap: 31px;
+    background: #fff;
+    width: 440px;
+    height: 391px;
+    padding: 35px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+}
+
+.modal-content {
+    text-align: center;
+    gap: 33px;
+}
+
+.warning-icon {
+    width: 65px;
+    height: 65px;
+    margin: auto;
+}
+
+.content-title {
+    font-weight: 700;
+    font-family: "Inter", serif;
+    font-size: 27px;
+    color: #2d2727;
+}
+
+.content-p {
+    font-size: 16px;
+    font-family: "Inter", serif;
+    font-weight: 500;
+    color: #585858;
+}
+
+.modal-text {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.modal-continue-later-button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}

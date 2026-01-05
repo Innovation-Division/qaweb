@@ -1,0 +1,844 @@
+.f2-main-container {
+    display: flex;
+    flex-direction: row; 
+    height: 100%;
+    width: 100%;
+    padding: 0 !important;
+    max-width: 100%;
+    overflow-x: hidden;
+    justify-content: flex-start; 
+    align-items: flex-start;
+}
+
+.f2-main-content-container {
+    flex: 1; 
+    width: 100%;
+    max-width: 784px;
+    height: auto;
+    padding: 35px;
+    gap: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    margin: 0 auto;
+    box-sizing: border-box;
+    margin-right: 440.5px;
+    margin-top: 55px;
+}
+
+.f2-policy-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    align-self: stretch;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.policy-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: repeat(2, auto);
+    gap: 15px;
+    width: 100%;
+}
+
+.f2-pill-button-container{
+    margin-top: 20px !important;
+    margin-bottom: 35px !important;
+}
+
+.f2-contact-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto); 
+    gap: 15px;
+    align-items: flex-start;
+}
+
+.f2-button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start; 
+    align-items: center; 
+    gap: 25px;
+    align-self: stretch;
+}
+
+.f2-title-container {
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
+    gap: 10px; 
+}
+
+.desktop-only {
+    display: inline-block;
+}
+
+.mobile-only {
+    display: none;
+}
+
+/* Hide the button by default */
+#backToForm1FromForm2 {
+    display: none !important;
+}
+
+
+@media (min-width: 0px) and (max-width: 379px) {
+
+    .f2-main-content-container .back-button-title {
+        color: var(--Primary-Black, #2d2727);
+        font-family: Inter, sans-serif;
+        font-size: 18px !important;
+        font-style: normal !important;
+        font-weight: 700 !important;
+        line-height: normal !important;
+    }
+
+    #backToForm1FromForm2 {
+        display: inline-block !important;
+    }
+
+    #cancelForm2 {
+        display: none !important;
+    }
+
+    .f2-main-container {
+        flex-direction: column; 
+        align-items: flex-start; 
+        padding: 0 15px;
+        overflow-x: hidden; 
+        margin: 0;
+        margin-top: 0px !important;
+    }
+
+    .f2-main-content-container{
+        margin: auto;
+        padding: 20px;
+        margin: 0 auto !important; /* Center horizontally */
+        display: flex;
+        justify-content: center; /* Center content horizontally */
+
+    }
+
+    .policy-grid {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        align-self: stretch;
+    }
+
+    .f2-pill-buttons-container {
+        display: flex !important;
+        flex-direction: column !important; 
+        justify-content: flex-start !important; 
+        align-items: center; 
+        gap: 15px; 
+        width: auto; 
+    }
+
+    .f2-branch-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        align-self: stretch;
+    }
+
+    .f2-title-container {
+        display: flex;
+        flex-direction: row; 
+        align-items: center;
+        gap: 5px; 
+    }
+
+    .f2-content-title-3 {
+        margin-bottom: 20px;
+    }
+
+    .f2-dropdown-container {
+        display: flex;
+        align-items: flex-end;
+        gap: 20px;
+        align-self: stretch;
+    }
+
+    .f2-contact-main-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .f2-contact-container {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .f2-left-container,
+    .f2-right-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .f2-button-container {
+        display: flex;
+        flex-direction: column-reverse; 
+        justify-content: flex-start; 
+        align-items: center;
+        gap: 15px; 
+        align-self: stretch;
+    }
+
+    .f2-contact-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .f2-title-content {
+        display: flex;
+        align-items: center; 
+        gap: 5px; 
+    }
+
+    .f2-title-container {
+        display: flex;
+        align-items: center;
+        gap: 5px; 
+    }
+
+    .f2-content-title-4,
+    .f2-content-title {
+        white-space: normal; 
+        line-height: 1.5;
+    }
+}
+
+@media (min-width: 380px) and (max-width: 480px) {
+
+    #backToForm1FromForm2 {
+        display: inline-block !important;
+    }
+
+    #cancelForm2 {
+        display: none !important;
+    }
+
+    .f2-main-content-container .back-button-title {
+        color: var(--Primary-Black, #2d2727);
+        font-family: Inter, sans-serif;
+        font-size: 18px !important;
+        font-style: normal !important;
+        font-weight: 700 !important;
+        line-height: normal !important;
+    }
+
+    .f2-main-container {
+        flex-direction: column; 
+        align-items: flex-start; 
+        padding: 0 15px;
+        overflow-x: hidden; 
+        margin: 0;
+        
+    }
+
+    .f2-main-content-container{
+        /* margin-top: 630px; */
+        padding: 20px;
+        margin-top: 0px !important;
+        margin: 0 auto !important; /* Center horizontally */
+        display: flex;
+        justify-content: center; /* Center content horizontally */
+    }
+
+    .policy-grid {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        align-self: stretch;
+    }
+
+    .f2-pill-buttons-container {
+        display: flex !important;
+        flex-direction: column !important; 
+        justify-content: flex-start !important; 
+        align-items: center; 
+        gap: 15px; 
+        width: auto; 
+    }
+
+    .f2-branch-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        align-self: stretch;
+    }
+
+    .f2-title-container {
+        display: flex;
+        flex-direction: row; 
+        align-items: center; 
+        gap: 5px; 
+    }
+
+    .f2-content-title-3 {
+        margin-bottom: 20px;
+    }
+
+    .f2-dropdown-container {
+        display: flex;
+        align-items: flex-end;
+        gap: 20px;
+        align-self: stretch;
+    }
+
+    .f2-contact-main-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .f2-contact-container {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .f2-left-container,
+    .f2-right-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .f2-button-container {
+        display: flex;
+        flex-direction: column-reverse; 
+        justify-content: flex-start; 
+        align-items: center;
+        gap: 15px; 
+        align-self: stretch;
+    }
+
+    .f2-contact-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .f2-title-content {
+        display: flex;
+        align-items: center; 
+        gap: 5px; 
+    }
+
+    .f2-title-container {
+        display: flex;
+        align-items: center;
+        gap: 5px; 
+    }
+
+    .f2-content-title-4,
+    .f2-content-title {
+        white-space: normal; 
+        line-height: 1.5; 
+    }
+}
+
+@media (min-width: 481px) and (max-width: 537px) {
+
+    #backToForm1FromForm2 {
+        display: inline-block !important;
+    }
+
+    #cancelForm2 {
+        display: none !important;
+    }
+
+    .f2-main-content-container .back-button-title {
+        color: var(--Primary-Black, #2d2727);
+        font-family: Inter, sans-serif;
+        font-size: 18px !important;
+        font-style: normal !important;
+        font-weight: 700 !important;
+        line-height: normal !important;
+    }
+
+    .f2-main-container {
+        flex-direction: column; 
+        align-items: flex-start; 
+        padding: 0 15px;
+        overflow-x: hidden; 
+        margin: 0;
+    }
+
+    .f2-main-content-container{
+        /* margin-top: 630px; */
+        padding: 20px;
+        margin-top: 0px !important;
+        margin: 0 auto !important; /* Center horizontally */
+        display: flex;
+        justify-content: center; /* Center content horizontally */
+
+    }
+
+    .policy-grid {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        align-self: stretch;
+    }
+
+    .f2-pill-buttons-container {
+        display: flex !important;
+        flex-direction: column !important; 
+        justify-content: flex-start !important; 
+        align-items: center; 
+        gap: 15px; 
+        width: auto;
+    }
+
+    .f2-branch-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        align-self: stretch;
+    }
+
+    .f2-title-container {
+        display: flex;
+        flex-direction: row; 
+        align-items: center; 
+        gap: 5px; 
+    }
+
+    .f2-content-title-3 {
+        margin-bottom: 20px;
+    }
+
+    .f2-dropdown-container {
+        display: flex;
+        align-items: flex-end;
+        gap: 20px;
+        align-self: stretch;
+    }
+
+    .f2-contact-main-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .f2-contact-container {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .f2-left-container,
+    .f2-right-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .f2-button-container {
+        display: flex;
+        flex-direction: column-reverse; 
+        justify-content: flex-start; 
+        align-items: center;
+        gap: 15px; 
+        align-self: stretch;
+    }
+
+    .f2-contact-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .f2-title-content {
+        display: flex;
+        align-items: center; 
+        gap: 5px; 
+    }
+
+    .f2-title-container {
+        display: flex;
+        align-items: center;
+        gap: 5px; 
+    }
+
+    .f2-content-title-4,
+    .f2-content-title {
+        white-space: normal; 
+        line-height: 1.5; 
+    }
+}
+
+@media (min-width: 538px) and (max-width: 636px) {
+
+    #backToForm1FromForm2 {
+        display: inline-block !important;
+    }
+
+    #cancelForm2 {
+        display: none !important;
+    }
+
+    .f2-main-content-container .back-button-title {
+        color: var(--Primary-Black, #2d2727);
+        font-family: Inter, sans-serif;
+        font-size: 18px !important;
+        font-style: normal !important;
+        font-weight: 700 !important;
+        line-height: normal !important;
+    }
+
+    .back-button-title{
+        color: var(--Primary-Black, #2D2727);
+        font-family: Inter;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .f2-main-container {
+        flex-direction: column; 
+        align-items: flex-start; 
+        padding: 0 15px;
+        overflow-x: hidden; 
+        margin: 0;
+    }
+
+    .f2-main-content-container{
+        /* margin-top: 600px; */
+        padding: 20px;
+        margin-top: 0px !important;
+        margin: 0 auto !important; /* Center horizontally */
+        display: flex;
+        justify-content: center; /* Center content horizontally */
+
+    }
+
+    .policy-grid {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        align-self: stretch;
+    }
+
+    .f2-pill-buttons-container {
+        display: flex !important;
+        flex-direction: column !important; 
+        justify-content: flex-start !important; 
+        align-items: center; 
+        gap: 15px; 
+        width: auto; 
+    }
+
+    .f2-branch-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        align-self: stretch;
+    }
+
+    .f2-title-container {
+        display: flex;
+        flex-direction: row; 
+        align-items: center; 
+        gap: 5px; 
+    }
+
+    .f2-content-title-3 {
+        margin-bottom: 20px;
+    }
+
+    .f2-dropdown-container {
+        display: flex;
+        align-items: flex-end;
+        gap: 20px;
+        align-self: stretch;
+    }
+
+    .f2-contact-main-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .f2-contact-container {
+        display: flex;
+        flex-direction: column; 
+        gap: 15px;
+    }
+
+    .f2-left-container,
+    .f2-right-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .f2-button-container {
+        display: flex;
+        flex-direction: column-reverse; 
+        justify-content: flex-start;
+        align-items: center;
+        gap: 15px;
+        align-self: stretch;
+    }
+
+    .f2-contact-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .f2-title-content {
+        display: flex;
+        align-items: center; 
+        gap: 5px; 
+    }
+
+    .f2-title-container {
+        display: flex;
+        align-items: center;
+        gap: 5px; 
+    }
+
+    .f2-content-title-4,
+    .f2-content-title {
+        white-space: normal; 
+        line-height: 1.5; 
+    }
+}
+   
+@media (min-width: 637px) and (max-width: 1280px) {
+
+    #backToForm1FromForm2 {
+        display: inline-block !important;
+    }
+
+    #cancelForm2 {
+        display: none !important;
+    }
+
+    .f2-main-content-container .back-button-title {
+        color: var(--Primary-Black, #2d2727);
+        font-family: Inter, sans-serif;
+        font-size: 18px !important;
+        font-style: normal !important;
+        font-weight: 700 !important;
+        line-height: normal !important;
+    }
+
+    .f2-main-container {
+        flex-direction: column; 
+        align-items: flex-start; 
+        padding: 0 15px;
+        overflow-x: hidden; 
+        margin: 0;
+    }
+
+    .f2-main-content-container{
+       padding: 20px;
+       margin-top: 0px !important;
+       margin: 0 auto !important; /* Center horizontally */
+        display: flex;
+        justify-content: center; /* Center content horizontally */
+
+    }
+
+    .policy-grid {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        align-self: stretch;
+    }
+
+    .f2-pill-buttons-container {
+        display: flex !important;
+        flex-direction: column !important; 
+        justify-content: flex-start !important; 
+        align-items: center; 
+        gap: 15px; 
+        width: auto; 
+    }
+
+    .f2-branch-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        align-self: stretch;
+    }
+
+    .f2-title-container {
+        display: flex;
+        flex-direction: row; 
+        align-items: center; 
+        gap: 5px;
+    }
+
+    .f2-content-title-3 {
+        margin-bottom: 20px;
+    }
+
+    .f2-dropdown-container {
+        display: flex;
+        align-items: flex-end;
+        gap: 20px;
+        align-self: stretch;
+    }
+
+    .f2-contact-main-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .f2-contact-container {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .f2-left-container,
+    .f2-right-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .f2-button-container {
+        display: flex;
+        flex-direction: column-reverse; 
+        justify-content: flex-start;
+        align-items: center;
+        gap: 15px; 
+        align-self: stretch;
+    }
+
+    .f2-contact-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .f2-title-content {
+        display: flex;
+        align-items: center; 
+        gap: 5px; 
+    }
+
+    .f2-title-container {
+        display: flex;
+        align-items: center;
+        gap: 5px; 
+    }
+
+    .f2-content-title-4,
+    .f2-content-title {
+        white-space: normal; 
+        line-height: 1.5; 
+    }
+}
+
+@media (max-width: 1280px) {
+
+    #backToForm1FromForm2 {
+        display: inline-block !important;
+    }
+
+    #cancelForm2 {
+        display: none !important;
+    }
+
+    .f2-main-content-container .back-button-title {
+        color: var(--Primary-Black, #2d2727);
+        font-family: Inter, sans-serif;
+        font-size: 18px !important;
+        font-style: normal !important;
+        font-weight: 700 !important;
+        line-height: normal !important;
+    }
+
+    .f2-main-container {
+        flex-direction: column; 
+        align-items: flex-start;
+    }
+
+    .stepper-container {
+        flex: none; 
+        width: 100%; 
+        justify-content: flex-start;
+    }
+
+    .f2-main-content-container {
+        width: 100%; 
+        padding: 20px;
+        margin-top: 0px !important;
+        margin: 0 auto !important; /* Center horizontally */
+        display: flex;
+        justify-content: center; /* Center content horizontally */
+
+    }
+
+    .desktop-only {
+        display: none !important;
+    }
+
+    .mobile-only {
+        display: inline-block !important;
+    }
+
+    .f2-pill-button-container {
+        display: flex !important;
+        flex-direction: column !important; /* Ensure contents are displayed vertically */
+        justify-content: flex-start !important;
+        align-items: center !important;
+        gap: 15px !important;
+        width: auto !important;
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+
+    .f2-title-container {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start; /* Align items to the start */
+        gap: 5px;
+    }
+}
+

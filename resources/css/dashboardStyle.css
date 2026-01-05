@@ -1,0 +1,9 @@
+.apexcharts-legend-text {
+    width: 100% !important;
+}
+
+.apexcharts-legend-series {
+    width: 100% !important;
+    gap: 5px !important;
+    margin: 5px 0 !important;
+}

@@ -1,0 +1,79 @@
+.is-invalid select {
+    background: #fff7f7 !important;
+    color: #dd0707 !important;
+}
+
+.is-invalid select option[value=""] {
+    color: #dd0707 !important;
+}
+
+.is-invalid {
+    color: #dd0707 !important;
+    background: #fff7f7 !important;
+    border-bottom: 1px solid #dd0707 !important;
+}
+
+.is-invalid-text {
+    color: #dd0707 !important;
+}
+
+.is-invalid:hover,
+.is-invalid:focus {
+    background: #ffe2e2 !important;
+    color: #dd0707 !important;
+}
+
+.is-invalid x-text-field {
+    background: #fff7f7 !important;
+    color: #dd0707 !important;
+}
+
+.is-invalid input {
+    background: transparent !important;
+    color: #dd0707 !important;
+    border-color: #dd0707 !important;
+}
+
+.is-invalid input::placeholder {
+    color: #dd0707 !important;
+    opacity: 1;
+}
+
+.is-invalid .x-question-label {
+    color: #dd0707 !important;
+}
+
+input[type="checkbox"].is-invalid {
+    border: 2px solid #ff2424 !important;
+    background-color: #ffe2e2 !important;
+}
+
+.policy-grid.is-invalid {
+    border: 2px solid #dd0707 !important;
+    background: #fff7f7 !important;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.policy-grid input[type="checkbox"].is-invalid {
+    border: 2px solid #ff2424 !important;
+    background-color: #ffe2e2 !important;
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-3px);
+    }
+    50% {
+        transform: translateX(3px);
+    }
+    75% {
+        transform: translateX(-3px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}

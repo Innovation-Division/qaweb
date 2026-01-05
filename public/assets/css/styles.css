@@ -1,0 +1,7 @@
+/* ...existing code... */
+
+.is-invalid::placeholder {
+    color: #DD0707;
+}
+
+/* ...existing code... */

@@ -1,0 +1,1419 @@
+ /* btn primary */
+ .btn-primary-payment {
+     background-color: #008080;
+     /* Custom color */
+     border-color: #008080;
+     height: 48px;
+     border-radius: 4px !important;
+     padding: 10px 20px 10px 20px;
+     display: flex;
+     flex-direction: row;
+     gap: 10px;
+     align-items: center;
+     justify-content: center;
+     flex-shrink: 0;
+     color: #ffffff;
+     font-family: "Inter-Medium", sans-serif;
+     font-size: 16px;
+     line-height: 20px;
+     font-weight: 500;
+     z-index: 0 !important;
+ }
+
+ .btn-primary-payment:hover {
+     background-color: #008080;
+     /* Darker hover color */
+     border-color: #008080;
+     color: #fff;
+ }
+
+
+ .btn-primary-payment:focus,
+ .btn-primary-payment:active {
+     background-color: #60b3b3 !important;
+     border: 1px solid #60b3b3 !important;
+     color: #fff !important;
+     height: 48px;
+ }
+
+ .btn-primary-arrow-payment:focus:before,
+ .btn-primary-arrow-payment:active:before {
+     background-color: transparent !important;
+     color: #fff !important;
+     content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='none' viewBox='0 0 24 32'%3E%3Cpath fill='%23fff' d='m27.707 16.707-9 9a1 1 0 0 1-1.415-1.415L24.587 17H5a1 1 0 0 1 0-2h19.586l-7.293-7.293a1 1 0 0 1 1.415-1.415l9 9a1.001 1.001 0 0 1 0 1.415Z'/%3E%3C/svg%3E%0A");
+     display: absolute;
+     width: 24px !important;
+     height: 24px !important;
+ }
+
+ .btn-primary-arrow-payment:visited:before,
+ .btn-primary-arrow-payment:target:before,
+ .btn-primary-arrow-payment:hover:before {
+     background-color: transparent !important;
+     color: #fff !important;
+     content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='none' viewBox='0 0 24 32'%3E%3Cpath fill='%23fff' d='m27.707 16.707-9 9a1 1 0 0 1-1.415-1.415L24.587 17H5a1 1 0 0 1 0-2h19.586l-7.293-7.293a1 1 0 0 1 1.415-1.415l9 9a1.001 1.001 0 0 1 0 1.415Z'/%3E%3C/svg%3E%0A");
+     display: absolute;
+     width: 24px !important;
+     height: 24px !important;
+ }
+
+ /* end btn primary */
+ /* btn secondary */
+ .btn-secondary-payment {
+     height: 48px;
+     border-radius: 4px !important;
+     border: 0;
+     background-color: transparent;
+     padding: 10px 20px 10px 20px;
+     display: flex;
+     flex-direction: row;
+     gap: 10px;
+     align-items: center;
+     justify-content: center;
+     flex-shrink: 0;
+     position: relative;
+     color: #008080;
+     text-align: left;
+     font-family: "Inter-Medium", sans-serif;
+     font-size: 16px !important;
+     line-height: 20px;
+     font-weight: 500;
+     position: relative;
+     z-index: 0 !important;
+ }
+
+ .btn-secondary-payment:hover {
+     background-color: transparent !important;
+     color: #008080 !important;
+     border: 1px solid #008080 !important;
+ }
+
+ .btn-secondary-payment:focus,
+ .btn-secondary-payment:active {
+     background-color: #c0e6e6 !important;
+     border: 1px solid #c0e6e6 !important;
+     color: #008080 !important;
+ }
+
+ .btn-secondary-arrow-payment:focus:before,
+ .btn-secondary-arrow-payment:active:before {
+     background-color: transparent !important;
+     color: #008080 !important;
+     content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='none' viewBox='0 0 24 32'%3E%3Cpath fill='%23008080' d='m27.707 16.707-9 9a1 1 0 0 1-1.415-1.415L24.587 17H5a1 1 0 0 1 0-2h19.586l-7.293-7.293a1 1 0 0 1 1.415-1.415l9 9a1.001 1.001 0 0 1 0 1.415Z'/%3E%3C/svg%3E%0A");
+     display: absolute;
+     width: 24px !important;
+     height: 24px !important;
+ }
+
+ .btn-secondary-arrow-payment:visited:before,
+ .btn-secondary-arrow-payment:target:before,
+ .btn-secondary-arrow-payment:hover:before {
+     background-color: transparent !important;
+     color: #008080 !important;
+     content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='none' viewBox='0 0 24 32'%3E%3Cpath fill='%23008080' d='m27.707 16.707-9 9a1 1 0 0 1-1.415-1.415L24.587 17H5a1 1 0 0 1 0-2h19.586l-7.293-7.293a1 1 0 0 1 1.415-1.415l9 9a1.001 1.001 0 0 1 0 1.415Z'/%3E%3C/svg%3E%0A");
+     display: absolute;
+     width: 24px !important;
+     height: 24px !important;
+ }
+
+ .btn-secondary-arrow-back-payment:focus:before,
+ .btn-secondary-arrow-back-payment:active:before {
+     background-color: transparent !important;
+     color: #008080 !important;
+     content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='none' viewBox='0 0 24 32'%3E%3Cpath fill='%23008080' d='m-2.707 16.707 9 9a1 1 0 0 1 1.415-1.415L-1.413 17H18a1 1 0 0 1 0-2H-1.586l7.293-7.293a1 1 0 0 1-1.415-1.415l-9 9a1.001 1.001 0 0 1 0 1.415Z'/%3E%3C/svg%3E%0A");
+     display: absolute;
+     width: 24px !important;
+     height: 24px !important;
+ }
+
+ .btn-secondary-arrow-back-payment:visited:before,
+ .btn-secondary-arrow-back-payment:target:before,
+ .btn-secondary-arrow-back-payment:hover:before {
+     background-color: transparent !important;
+     color: #008080 !important;
+     content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='none' viewBox='0 0 24 32'%3E%3Cpath fill='%23008080' d='m-2.707 16.707 9 9a1 1 0 0 1 1.415-1.415L-1.413 17H18a1 1 0 0 1 0-2H-1.586l7.293-7.293a1 1 0 0 1-1.415-1.415l-9 9a1.001 1.001 0 0 1 0 1.415Z'/%3E%3C/svg%3E%0A");
+     display: absolute;
+     width: 24px !important;
+     height: 24px !important;
+ }
+
+ /* end btn secondary */
+
+ /* btn red */
+ .btn-red {
+     height: 48px;
+     border-radius: 4px !important;
+     border: 1px solid #dd0707;
+     background-color: transparent;
+     padding: 10px 20px 10px 20px;
+     display: flex;
+     flex-direction: row;
+     gap: 10px;
+     align-items: center;
+     justify-content: center;
+     flex-shrink: 0;
+     position: relative;
+     color: #dd0707;
+     text-align: left;
+     font-family: "Inter-Medium", sans-serif;
+     font-size: 16px !important;
+     line-height: 20px;
+     font-weight: 500;
+     position: relative;
+     z-index: 1 !important;
+ }
+
+ .btn-red:hover {
+     background-color: transparent !important;
+     color: #dd0707 !important;
+     border: 1px solid #dd0707 !important;
+ }
+
+ .btn-red:focus,
+ .btn-red:active {
+     background-color: #ffe2e2 !important;
+     border: 1px solid #ffe2e2 !important;
+     color: #dd0707 !important;
+ }
+
+ .btn-red-arrow:focus:before,
+ .btn-red-arrow:active:before {
+     background-color: transparent !important;
+     color: #dd0707 !important;
+     content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='none' viewBox='0 0 24 32'%3E%3Cpath fill='%23dd0707' d='m27.707 16.707-9 9a1 1 0 0 1-1.415-1.415L24.587 17H5a1 1 0 0 1 0-2h19.586l-7.293-7.293a1 1 0 0 1 1.415-1.415l9 9a1.001 1.001 0 0 1 0 1.415Z'/%3E%3C/svg%3E%0A");
+     display: absolute;
+     width: 24px !important;
+     height: 24px !important;
+ }
+
+ .btn-red-arrow:visited:before,
+ .btn-red-arrow:target:before,
+ .btn-red-arrow:hover:before {
+     background-color: transparent !important;
+     color: #dd0707 !important;
+     content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='none' viewBox='0 0 24 32'%3E%3Cpath fill='%23dd0707' d='m27.707 16.707-9 9a1 1 0 0 1-1.415-1.415L24.587 17H5a1 1 0 0 1 0-2h19.586l-7.293-7.293a1 1 0 0 1 1.415-1.415l9 9a1.001 1.001 0 0 1 0 1.415Z'/%3E%3C/svg%3E%0A");
+     display: absolute;
+     width: 24px !important;
+     height: 24px !important;
+ }
+
+ /* end btn red */
+
+
+ /* textbox */
+ /* Apply custom styles globally to all textboxes */
+ .form-control {
+     border: none;
+     /* Remove all borders */
+     border-bottom: 1px solid #006666;
+     /* Add teal bottom border */
+     border-radius: 0;
+     /* No rounded corners */
+     outline: none;
+     /* Remove focus outline */
+ }
+
+ /* Apply custom styles to the labels for all textboxes */
+ .form-label {
+     position: absolute;
+     /* Position it absolutely */
+     left: 0;
+     /* Align it to the left */
+     top: -10px;
+     /* Adjust the label to appear above the textbox */
+     background-color: white;
+     /* Ensure the label has a background */
+     padding: 0 5px;
+     /* Small padding for label */
+     color: #1e1f21;
+     /* Label color matching the bottom border */
+     font-size: 10px;
+     font-weight: 400;
+     padding-left: 14px;
+ }
+
+ /* Adjust the container to accommodate absolute positioning of labels */
+ .input-container {
+     position: relative;
+     /* Position relative to allow absolute positioning for labels */
+     margin-top: 20px;
+     /* Space above the textbox */
+ }
+
+ .form-control::placeholder {
+     opacity: 0.5;
+     /* Set the opacity of placeholder text to 0.5 */
+ }
+
+ /* end textbox */
+
+
+ /* btn disabled */
+
+ .btn:disabled,
+ .btn.disabled {
+     background: #c0e6e6;
+     border-radius: 3px;
+     padding: 10px 20px 10px 20px;
+     display: flex;
+     flex-direction: row;
+     gap: 10px;
+     align-items: center;
+     justify-content: center;
+     position: relative;
+     color: #ffffff;
+     text-align: left;
+     font-family: "Inter-Medium", sans-serif;
+     font-size: 16px;
+     font-weight: 500;
+     position: relative;
+     border: 0px;
+ }
+
+ /* end btn disabled */
+
+ /* selectpicker */
+ .bootstrap-select .dropdown-toggle {
+     border: none;
+     /* Remove borders */
+     border-radius: 0;
+     /* Remove rounded corners */
+     padding: 5px 10px;
+     /* Adjust padding */
+     width: 100%;
+     /* Ensure the width fits the content */
+     border: none;
+     border-bottom-width: medium;
+     border-bottom-style: none;
+     border-bottom-color: currentcolor;
+     border-bottom: 1px solid #006666;
+     background: transparent;
+     font-size: 14px;
+     padding-left: 14px;
+     padding-top: 14px;
+ }
+
+ input[type="text"]:focus,
+ input[type="email"]:focus,
+ input[type="password"]:focus,
+ .bootstrap-select .dropdown-toggle:focus,
+ .bootstrap-select .dropdown-toggle:hover {
+     border-bottom: 2px solid #008080;
+     background: transparent;
+ }
+
+ .form-control:focus {
+     box-shadow: none;
+ }
+
+ .dropdown-item.active,
+ .dropdown-item:active {
+     color: #1e1f21;
+     text-decoration: none;
+     background-color: #e0f5f5;
+ }
+
+ /* end selectpicker */
+ .bootstrap-select .dropdown-toggle:focus {
+     outline: none !important;
+ }
+
+ .invalid {
+     border-bottom: 1px solid #dd0707 !important;
+     color: #dd0707 !important;
+ }
+
+ .valid {
+     border-bottom: 1px solid darkgreen !important;
+ }
+
+
+
+ /* Set the font-family to Inter */
+ body {
+     background-color: #f7fcff;
+     /* Set the background color outside the card */
+     font-family: 'Inter', sans-serif;
+     /* Apply Inter font */
+ }
+
+ /* Center the stepper and set it to 60% width */
+ .stepper {
+     display: flex;
+     justify-content: space-between;
+     margin: 0 auto;
+     /* Center align */
+     width: 60%;
+     /* Set width to 60% of the container */
+     margin-bottom: 30px;
+ }
+
+ .step {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     position: relative;
+     width: 30%;
+     /* 3 steps, adjusted for equal spacing */
+     height: 0.4rem;
+     /* Set height to 0.4rem, reducing height by 80% */
+     background-color: #eff2f4;
+     /* Default color */
+     border-radius: 5px;
+     font-weight: bold;
+     color: #6c757d;
+     font-size: 16px;
+     transition: background-color 0.3s ease;
+ }
+
+ .step.active {
+     background-color: #54b947;
+     /* Active color */
+     color: white;
+ }
+
+ .step.completed {
+     background-color: #a9d3a4;
+     /* Completed color */
+     color: white;
+ }
+
+ .step .line {
+     position: absolute;
+     top: 18px;
+     left: 100%;
+     width: 100%;
+     height: 2px;
+     background-color: #ddd;
+     z-index: -1;
+ }
+
+ .step.active .line {
+     background-color: #54b947;
+     /* Line color when active */
+ }
+
+ .step.completed .line {
+     background-color: #a9d3a4;
+     /* Line color when completed */
+ }
+
+ .form-step {
+     display: none;
+ }
+
+ .form-step.active {
+     display: block;
+ }
+
+ .form-button {
+     width: 100%;
+ }
+
+ .page-title {
+     display: flex;
+     align-items: center;
+     font-size: 1.5rem;
+     font-weight: bold;
+     margin-bottom: 20px;
+     /* Add space below title */
+ }
+
+ /* Adding styles for title icon (SVG) */
+ .page-title svg {
+     width: 30px;
+     height: 45px;
+     margin-right: 10px;
+     margin-bottom: 10px;
+ }
+
+ .card-container {
+     max-width: 900px;
+     margin: 0 auto;
+     padding: 20px;
+     background-color: #fff;
+     border-radius: 8px;
+     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+ }
+
+ .payment-card {
+     margin-bottom: 20px;
+     /* Add space between cards */
+     cursor: pointer;
+     border-style: solid;
+     border-color: #e0f5f5;
+     border-width: 1px;
+ }
+
+ /* Ensure the stepper aligns properly */
+ .stepper {
+     display: flex;
+     justify-content: space-between;
+     margin: 0 auto;
+     /* Center align */
+     width: 60%;
+     /* Set width to 60% of the container */
+     margin-bottom: 30px;
+ }
+
+ /* Stacking the cards on small screens (less than 768px) */
+ @media (max-width: 767px) {
+     .col-12 {
+         width: 100%;
+         /* Full width on small screens */
+         margin-bottom: 20px;
+         /* Add spacing between cards */
+     }
+ }
+
+ .form-check-label-radio {
+     color: #585858;
+     text-align: left;
+     font-family: "Inter-Bold", sans-serif;
+     font-size: 16px;
+     line-height: 24px;
+     font-weight: 700;
+     position: relative;
+     cursor: pointer;
+ }
+
+ .card-text-payment-option {
+     color: #585858;
+     text-align: left;
+     font-family: "Inter-Medium", sans-serif;
+     font-size: 12px;
+     line-height: 20px;
+     font-weight: 500;
+     position: relative;
+     align-self: stretch;
+ }
+
+ /* CSS for selected bank item */
+ .bank-list-item.selected {
+     background-color: #e0f5f5;
+     /* Light gray background when selected */
+     border: 1px solid #e0f5f5;
+     /* Blue border */
+ }
+
+ /* Default styles for bank list items */
+ .bank-list-item {
+     cursor: pointer;
+     padding: 10px;
+     display: flex;
+     align-items: center;
+     border-radius: 5px;
+     transition: background-color 0.3s ease;
+ }
+
+ .bank-list-item-2ndpage {
+     cursor: pointer;
+     padding: 10px;
+     display: flex;
+     align-items: center;
+     border-radius: 5px;
+     transition: background-color 0.3s ease;
+ }
+
+ /* Optional: Add hover effect for better interactivity */
+
+ .bank-list-item:hover {
+     background-color: #e0f5f5;
+ }
+
+ .payment-card-hover:hover {
+     background-color: #e0f5f5;
+ }
+
+ .payment-mode-long-name {
+     color: #303030;
+     text-align: left;
+     font-family: "Inter-Medium", sans-serif;
+     font-size: 12px;
+     line-height: 20px;
+     font-weight: 500;
+ }
+
+ .form-check-input:checked[type="radio"] {
+     background-image: url("data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0A%3C!--%20License%3A%20PD.%20Made%20by%20Mary%20Akveo%3A%20https%3A%2F%2Fmaryakveo.com%2F%20--%3E%0A%3Csvg%20fill%3D%22white%22%20width%3D%22800px%22%20height%3D%22800px%22%20viewBox%3D%220%200%2024%2024%22%20id%3D%22check%22%20data-name%3D%22Flat%20Color%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20class%3D%22icon%20flat-color%22%3E%3Cpath%20id%3D%22primary%22%20d%3D%22M10%2C18a1%2C1%2C0%2C0%2C1-.71-.29l-5-5a1%2C1%2C0%2C0%2C1%2C1.42-1.42L10%2C15.59l8.29-8.3a1%2C1%2C0%2C1%2C1%2C1.42%2C1.42l-9%2C9A1%2C1%2C0%2C0%2C1%2C10%2C18Z%22%20style%3D%22fill%3A%20rgb(255%2C%20255%2C%20255)%3B%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
+     background-color: #28a745;
+     /* Green background */
+     color: red;
+     background-size: 100% 100%;
+     background-repeat: no-repeat;
+     background-position: center;
+ }
+
+ .custom-card {
+     background-color: #fff4da;
+     border-radius: 5px;
+     padding: 11px 10px 2px 10px;
+     display: flex;
+     flex-direction: row;
+     gap: 10px;
+     align-items: center;
+     justify-content: flex-start;
+     align-self: stretch;
+     flex-shrink: 0;
+     border: 0px;
+ }
+
+ .custom-card-title {
+     color: #3b3939;
+     text-align: left;
+     font-family: "Inter-Bold", sans-serif;
+     font-size: 14px;
+     line-height: 24px;
+     font-weight: 700;
+ }
+
+ .custom-card-title svg {
+     /* margin-right: 10px; Space between icon and text */
+ }
+
+ .custom-card-body {
+     padding: 0px;
+ }
+
+ .row {
+     display: flex;
+     /* Flexbox layout for the row */
+     justify-content: flex-start;
+     /* Align items to the left */
+ }
+
+ .col {
+     display: flex;
+     /* Flexbox layout for the columns */
+     justify-content: center;
+     /* Center the content horizontally within each column */
+     align-items: center;
+     /* Center the content vertically within each column */
+     padding: 0 10px;
+     /* Add horizontal padding to make the columns look spaced */
+ }
+
+ .text-link {
+     text-decoration: none;
+     cursor: pointer;
+     color: #2d2727;
+     font-family: "Inter-Medium", sans-serif;
+     font-size: 13px;
+     /* Slightly larger font size */
+     line-height: 32px;
+     font-weight: 500;
+     padding: 8px 16px;
+     /* Add padding to make links bigger */
+     display: block;
+     /* Make the link fill the width of the column */
+     text-align: left;
+     /* Align the text to the left */
+     width: 100%;
+     /* Ensure the link fills the column width */
+     border: 1px solid transparent;
+     /* Set a border to the link, for better visual feedback */
+     border-radius: 4px;
+     /* Rounded corners for the links */
+     transition: background-color 0.3s ease, border-color 0.3s ease;
+     /* Smooth transition */
+ }
+
+ .text-link:hover {
+     background-color: #e0f5f5;
+    /* Background color on hover */
+     /* border-color: #309999;  Border color on hover */
+     /* padding-bottom: 2px;  Adds space between the text and underline */
+     /* border-bottom: 1px solid #309999;  Underline effect */
+ }
+
+ .hidden {
+     display: none;
+ }
+
+ .selected-link {
+     background-color: #e0f5f5;
+     /* Background color when selected */
+     /* border-color: #309999;  Border color when selected */
+     padding-bottom: 2px;
+     /* Adds space between the text and underline */
+     border-bottom: 2px solid #309999;
+     /* Underline effect */
+ }
+
+ .bank-selected-2 {
+     color: #3b3939;
+     text-align: left;
+     font-family: "Inter-Black", sans-serif;
+     font-size: 22px;
+     font-weight: 700;
+ }
+
+ .bank-selected-2-memo {
+     color: #585858;
+     font-family: "Inter-Medium", sans-serif;
+     font-size: 12px;
+     font-weight:500;
+ }
+
+ @media (max-width: 768px) {
+     .text-link {
+         font-size: 14px;
+     }
+
+     #titleText {
+         color: #2d2727;
+         text-align: left;
+         font-family: "Inter-Bold", sans-serif;
+         font-size: 16px;
+         font-weight: 700;
+         position: relative;
+     }
+
+     #pageTitle svg {
+         width: 25px;
+         height: 15.67px;
+         margin-right: 0px;
+         margin-bottom: 10px;
+     }
+
+     #pageTitle img {
+         width: 72px;
+     }
+
+
+ }
+
+ .payment-product-title {
+     color: #2d2727;
+     text-align: left;
+     font-family: "Inter-Bold", sans-serif;
+     font-size: 23px;
+     font-weight: 700;
+ }
+
+ .payment-product-name {
+     color: #2d2727;
+     text-align: center;
+     font-family: "Inter-Bold", sans-serif;
+     font-size: 14px;
+     line-height: 24px;
+     font-weight: 700;
+ }
+
+ /* Button Style */
+ .styled-button {
+     color: #008080;
+     text-align: center;
+     font-family: "Inter-Medium", sans-serif;
+     font-size: 14px;
+     line-height: 24px;
+     font-weight: 500;
+     background-color: transparent;
+     border: none;
+     /* No border */
+     cursor: pointer;
+     text-decoration: none;
+     /* Ensure no underline by default */
+     transition: all 0.3s ease;
+     text-decoration: underline;
+     /* Underline on hover */
+ }
+
+ .styled-button-terms-dragonpay {
+     color: #fff;
+     text-align: center;
+     font-family: "Inter-Medium", sans-serif;
+     background-color: transparent;
+     border: none;
+     /* No border */
+     cursor: pointer;
+     text-decoration: none;
+     /* Ensure no underline by default */
+     transition: all 0.3s ease;
+     text-decoration: underline;
+     /* Underline on hover */
+ }
+
+ .styled-button-terms-dragonpay-last {
+     text-align: center;
+     font-family: "Inter-Medium", sans-serif;
+     background-color: transparent;
+     border: none;
+     /* No border */
+     font-weight: 700;
+     cursor: pointer;
+     text-decoration: none;
+     /* Ensure no underline by default */
+     transition: all 0.3s ease;
+     text-decoration: underline;
+     /* Underline on hover */
+ }
+
+ .styled-button:hover {
+     color: #008080;
+     text-decoration: underline;
+     /* Underline on hover */
+     text-decoration-color: #008080;
+     /* Underline color */
+ }
+
+ /* The Modal (background) */
+ .modal {
+     display: none;
+     /* Hidden by default */
+     position: fixed;
+     z-index: 1;
+     /* Sit on top */
+     left: 0;
+     top: 0;
+     width: 100%;
+     /* Full width */
+     height: 100%;
+     /* Full height */
+     overflow: auto;
+     /* Enable scroll if needed */
+     background-color: rgb(0, 0, 0);
+     /* Fallback color */
+     background-color: rgba(0, 0, 0, 0.4);
+     /* Black with opacity */
+ }
+
+ /* Modal Content */
+ .modal-content {
+     background-color: #fefefe;
+     margin: 15% auto;
+     padding: 20px;
+     border: 1px solid #888;
+     width: 50%;
+     /* Medium width (50% of the screen) */
+     max-width: 600px;
+     /* Maximum width (to prevent it from getting too large) */
+     width: 80%;
+     /* Could be more or less, depending on screen size */
+ }
+
+ /* The Close Button */
+ .close {
+     color: #aaa;
+     float: right;
+     font-size: 28px;
+     font-weight: bold;
+ }
+
+ .close:hover,
+ .close:focus {
+     color: black;
+     text-decoration: none;
+     cursor: pointer;
+ }
+
+ .mt-7 {
+     margin-top: .7rem !important;
+ }
+
+ .payment-product-content-text {
+     color: #585858;
+     text-align: center;
+     font-family: "Inter-Regular", sans-serif;
+     font-size: 12px;
+     line-height: 20px;
+     font-weight: 400;
+ }
+
+ .payment-product-content-amount {
+     color: #303030;
+     text-align: center;
+     font-family: "Inter-Bold", sans-serif;
+     font-size: 12px;
+     font-weight: 700;
+ }
+
+ .payment-product-content-status {
+     color: #303030;
+     text-align: center;
+     font-family: "Inter-Bold", sans-serif;
+     font-size: 13px;
+     font-weight: 700;
+ }
+
+ .payment-product-content-vat {
+     background: #f2f2f2;
+     padding: 10px 10px 10px 10px;
+     display: flex;
+     flex-direction: row;
+ }
+
+ .card {
+     --bs-card-border-color: #fff;
+ }
+
+ .card-container {
+     box-shadow: 4px 2px 10px 0px rgba(230, 230, 230, 0.5);
+ }
+
+ .card.selected {
+     border: 1px solid #008080;
+     /* Border color for the selected card */
+ }
+
+ .AccountText {
+     font-family: "Inter-Bold", sans-serif;
+     font-size: 19px;
+     line-height: 24px;
+     font-weight: 700;
+ }
+
+ .AccountText-payment-method {
+     font-family: "Inter-Bold", sans-serif;
+     font-size: 19px;
+     line-height: 24px;
+     font-weight: 700;
+ }
+
+ .credit-card-amount {
+     color: #3b3939;
+     text-align: left;
+     font-family: "Inter-Black", sans-serif;
+     font-size: 30px;
+     font-weight: 900;
+     position: relative;
+ }
+
+ .credit-card-amount-label {
+     color: #2d2727;
+     text-align: center;
+     font-family: "Inter-Medium", sans-serif;
+     font-size: 14px;
+     font-weight: 500;
+     position: relative;
+     align-self: stretch;
+ }
+
+ #cookieConsent {
+     position: fixed;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     padding: 15px 20px;
+     box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+     z-index: 9999;
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+     gap: 10px;
+     font-size: 14px;
+     background: #003333;
+     border-radius: 10px 10px 0px 0px;
+     padding: 45px 58px 45px 58px;
+ }
+
+ #cookieConsent .buttons {
+     display: flex;
+     justify-content: flex-end;
+     width: 100%;
+     gap: 10px;
+ }
+
+ /* Ensuring the buttons and text are well aligned and mobile-friendly */
+ #cookieConsent .btn {
+     width: 100%;
+ }
+
+ #acceptCookies {
+     border-radius: 5px;
+     border-style: solid;
+     border-color: #003333;
+     border-width: 1px;
+     padding: 5px 25px 5px 25px;
+     background: #fff;
+     color: #000;
+     position: relative;
+     color: #003333;
+     text-align: left;
+     font-family: "Inter-Medium", sans-serif;
+     font-size: 14px;
+     line-height: 24px;
+     font-weight: 500;
+ }
+
+ #disagreeCookies {
+     border-radius: 5px;
+     border-style: solid;
+     border-color: #ffffff;
+     border-width: 1px;
+     padding: 5px 25px 5px 25px;
+     color: #ffffff;
+     text-align: left;
+     font-family: "Inter-Medium", sans-serif;
+     font-size: 14px;
+     line-height: 24px;
+     font-weight: 500;
+     position: relative;
+ }
+
+ #disagreeCookies:hover {
+     background: none;
+     border: none;
+     color: inherit;
+ }
+
+ .cookie-title {
+     color: #ffffff;
+     text-align: left;
+     font-family: "Inter-Bold", sans-serif;
+     font-size: 22px;
+     font-weight: 700;
+     position: relative;
+     align-self: stretch;
+ }
+
+ .cookie-content {
+     color: #ffffff;
+     font-size: 15px;
+     line-height: 24px;
+     font-weight: 500;
+     font-family: "Inter-Medium", sans-serif;
+ }
+
+ @media (min-width: 576px) {
+     #cookieConsent {
+         flex-direction: row;
+         justify-content: space-between;
+         align-items: center;
+     }
+
+     #cookieConsent .btn {
+         width: auto;
+     }
+ }
+
+ @media (max-width: 575px) {
+     .cookie-title {
+         font-size: 18px;
+         font-weight: 700;
+     }
+
+     .cookie-content {
+         font-size: 14px;
+         line-height: 24px;
+         font-weight: 500;
+     }
+
+     #cookieConsent .btn {
+         width: 50% !important;
+     }
+
+     #cookie_svg {
+         width: 70px;
+         height: 70px;
+     }
+
+     .modal-right {
+         position: fixed;
+         top: 0 !important;
+         right: 0px !important;
+         width: 100% !important;
+         margin: 0 !important;
+         padding: 0 !important;
+         margin-top: -34px !important;
+     }
+ }
+
+ /* Full-page overlay */
+ #overlay {
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background-color: rgba(0, 0, 0, 0.5);
+     /* Semi-transparent dark background */
+     z-index: 9998;
+     /* Just below the cookie consent banner */
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .timer-label {
+     color: #505558;
+     text-align: left;
+     font-family: "Inter-Medium", sans-serif;
+     font-size: 12px;
+     line-height: 20px;
+     font-weight: 500;
+     position: relative;
+ }
+
+ .timer-label-bold {
+     color: #2d2727;
+     text-align: left;
+     font-family: "Inter-Bold", sans-serif;
+     font-size: 14px;
+     line-height: 24px;
+     font-weight: 700;
+ }
+
+ .modal-expired-title-name {
+     color: #2d2727;
+     text-align: center;
+     font-family: "Inter-Bold", sans-serif;
+     font-size: 27px;
+     font-weight: 700;
+     position: relative;
+     align-self: stretch;
+ }
+
+ .modal-expired-title-content {
+     color: #585858;
+     text-align: center;
+     font-family: "Inter-Medium", sans-serif;
+     font-size: 16px;
+     line-height: 24px;
+     font-weight: 500;
+     position: relative;
+     align-self: stretch;
+ }
+
+ /* The modal container for       #mdl-product-modal */
+ #mdl-product-modal {
+     display: none;
+     /* Hidden by default */
+     position: fixed;
+     top: 50%;
+     /* Vertically center the modal */
+     left: 62%;
+     transform: translateY(-50%);
+     width: 38%;
+     background-color: white;
+     padding: 20px;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+     z-index: 1000;
+     /* Ensure it appears above other content */
+     border: 0;
+ }
+
+ /* The modal content */
+ #mdl-product-modal .modal-content {
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+     border: 0;
+ }
+
+
+
+ #product-info {
+     position: relative;
+     /* Allows positioning of elements inside */
+     background-color: white;
+     padding: 20px;
+     border-radius: 8px;
+     max-width: 600px;
+     /* Adjust this value as needed */
+     width: 100%;
+     z-index: 2;
+ }
+
+ .close {
+     position: absolute;
+     /* Positions the close button relative to the modal */
+     /* top: 22px;  */
+     right: 10px;
+     /* Adjust the horizontal distance from the right */
+     cursor: pointer;
+     z-index: 10000;
+     /* Ensure it’s above other content */
+     left: 0;
+ }
+
+ .close svg {
+     display: block;
+     /* Ensures the SVG behaves like a block element */
+     width: 26px;
+     height: 26px;
+ }
+
+ .modal-product-name {
+     color: #2d2727;
+     text-align: left;
+     font-family: "Inter-Bold", sans-serif;
+     font-size: 23px;
+     font-weight: 700;
+     position: relative;
+     align-self: stretch;
+ }
+
+ /* Custom CSS for right-aligned modal */
+ .modal-right {
+     /* position: fixed;
+          top: 0;
+          right: -41px;
+          margin-top: 0;
+          margin-right: 0;
+          margin: 0;
+          padding: 0;
+          margin-top: -66px; */
+     position: fixed;
+     top: -45px;
+     right: -80px;
+     margin-top: 0;
+     margin-right: 0;
+     margin: 0;
+     padding: 0;
+     margin-top: -66px;
+     min-width: 40%;
+ }
+
+ .modal-content {
+     height: 100vh;
+     border-radius: 0;
+ }
+
+ .modal-backdrop {
+     display: none;
+     /* Optionally hide backdrop */
+ }
+
+ .modal-header-product {
+     justify-content: left;
+ }
+
+ .mdl-view-plan-name-field {
+     color: #373a3d;
+     text-align: left;
+     font-family: "Inter-Regular", sans-serif;
+     font-size: 14px;
+     line-height: 24px;
+     font-weight: 400;
+     position: relative;
+ }
+
+ .mdl-view-plan-value-field {
+     color: #2d2727;
+     text-align: left;
+     font-family: "Inter-Regular", sans-serif;
+     font-size: 14px;
+     line-height: 24px;
+     font-weight: 650;
+     position: relative;
+ }
+
+ .mdl-view-plan-name-field-header {
+     color: #2d2727;
+     text-align: left;
+     font-family: "Inter-Regular", sans-serif;
+     font-size: 16px;
+     line-height: 24px;
+     font-weight: 700;
+     position: relative;
+ }
+
+ .mdl-view-plan-name-field-title {
+     color: #373a3d;
+     text-align: left;
+     font-family: "Inter-Regular", sans-serif;
+     font-size: 12px;
+     line-height: 24px;
+     font-weight: 400;
+     position: relative;
+ }
+
+ .mdl-view-plan-value-field-title {
+     color: #2d2727;
+     text-align: left;
+     font-family: "Inter-Regular", sans-serif;
+     font-size: 12px;
+     line-height: 24px;
+     font-weight: 700;
+     position: relative;
+ }
+
+ @media (max-width: 767px) {
+     .mdl-view-plan-title-main {
+         margin-left: 1rem;
+     }
+ }
+
+ .modal-header .btn-close {
+     position: absolute;
+     right: 10px;
+     /* Adjust the distance from the right */
+     top: 10px;
+     /* Adjust the distance from the top */
+     left: auto;
+     bottom: auto;
+ }
+
+ .card-border-bottom {
+     border-bottom: 1px solid #f0f0f0;
+ }
+
+ /* Hide default checkbox */
+ input[type="checkbox"] {
+     height: 22px;
+     width: 22px;
+     padding: 1px;
+ }
+
+ input[type="checkbox"]:checked {
+     background-color: #1e1f21;
+     /* Blue background when checked */
+     border-color: #1e1f21;
+     /* Border color when checked */
+ }
+
+ .card-gcashpay {
+     border-style: solid;
+     border-color: #003592;
+     border-width: 0px 0px 0px 3px;
+ }
+
+ .payment-agree {
+     color: #1e1f21;
+     text-align: left;
+     font-family: "Inter-Regular", sans-serif;
+     font-size: 14px;
+     line-height: 24px;
+     font-weight: 400;
+     position: relative;
+ }
+
+ .gcash-bills-pay {
+     color: #1e1f21;
+     text-align: left;
+     font-family: "Inter-Regular", sans-serif;
+     font-size: 14px !important;
+     line-height: 24px;
+     font-weight: 400 !important;
+     position: relative;
+ }
+
+ .modal .modal-content {
+     margin: 0 auto;
+     background-color: #fff;
+     color: #ffffff;
+     margin-top: 195px;
+     height: 90vh;
+ }
+
+@media (max-width: 575px) {
+    .modal .modal-content {
+        margin-top: 110px !important;
+    }
+}
+
+ .mdl-view-plan-title-main {
+     color: #2d2727;
+     text-align: center;
+     font-family: "Inter-Bold", sans-serif;
+     font-size: 20px;
+     line-height: 24px;
+     font-weight: 700;
+     position: relative;
+ }
+
+ form .form-label {
+     font-size: 13px;
+ }
+
+ form .form-control {
+     box-shadow: none !important;
+     font-size: 14px;
+     padding-top: 12px;
+ }
+
+ .bootstrap-select>.dropdown-toggle.bs-placeholder,
+ .bootstrap-select>.dropdown-toggle.bs-placeholder:active,
+ .bootstrap-select>.dropdown-toggle.bs-placeholder:focus,
+ .bootstrap-select>.dropdown-toggle.bs-placeholder:hover {
+     color: #999;
+     padding-top: 14px;
+ }
+
+ .circle {
+     display: inline-flex;
+     align-items: center;
+     justify-content: center;
+     width: 45px;
+     height: 45px;
+     background-color: #008080;
+     /* Teal color */
+     color: white;
+     font-size: 14px;
+     border-radius: 50%;
+     /* Makes it a circle */
+     text-align: center;
+     font-weight: bold;
+     line-height: 50px;
+     /* Centers the text vertically */
+ }
+
+ #chckIAGREE:checked {
+     background-color: #008080;
+ }
+
+ .modal-payment-title {
+     color: #2d2727;
+     text-align: left;
+     font-family: "Inter-Bold", sans-serif;
+     font-size: 27px;
+     font-weight: 700;
+     position: relative;
+     align-self: stretch;
+ }
+
+ .accordion-item:first-of-type .accordion-button {
+     border-top-left-radius: var(--bs-accordion-inner-border-radius);
+     border-top-right-radius: var(--bs-accordion-inner-border-radius);
+     border-bottom: 1px solid #f2f2f2;
+ }
+
+ .accordion-button:not(.collapsed) {
+     color: #212529;
+     background-color: none;
+     box-shadow: none;
+ }
+
+ .accordion-button:not(.collapsed) {
+     color: #000 !important;
+     background-color: transparent !important;
+     box-shadow: none !important;
+ }
+
+ .accordion-item {
+     border: none;
+ }
+
+ .accordion-button:focus {
+     box-shadow: none;
+ }
+
+ .accordion-button::after {
+     content: "";
+     display: inline-block;
+     width: 16px;
+     height: 16px;
+     margin-left: -20px;
+     background-size: contain;
+     background-repeat: no-repeat;
+     background-position: center;
+     background-image: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%20%20%3Cpath%20d%3D%22M6%202l6%206-6%206%22%20stroke%3D%22%23008080%22%20fill%3D%22none%22%20stroke-width%3D%222%22%2F%3E%0A%3C%2Fsvg%3E') !important;
+     /* Right arrow */
+     transition: transform 0.3s ease;
+ }
+
+ /* Arrow rotates to down when the accordion is expanded */
+ .accordion-button:not(.collapsed)::after {
+     transform: rotate(-90deg);
+     /* Rotate to down when expanded */
+ }
+
+ .disabled_label {
+     background-color: #e9ecef;
+     width: 100%;
+ }
+
+ /* .div-start{
+      background:#f0ffff
+    } */
